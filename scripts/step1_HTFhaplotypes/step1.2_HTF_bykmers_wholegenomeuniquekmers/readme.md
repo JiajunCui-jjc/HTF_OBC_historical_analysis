@@ -41,7 +41,7 @@
 - `step3_dump_wgdistribution_Rvisual.R`  
 
 > In **step3**, I analyze whole-genome (WG) k-mer distributions.  
-> I visualize the distribution in R, then compute the mean WG k-mer count as a threshold for filtering. [See the whole genome kmer distribution](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/53b68d9a09e3f351d17d7b28e99eb2f5baea395c/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step2_isolate_kmers/wg_distribution)
+> I visualize the distribution in R, then compute the mean WG k-mer count (after quality control, 2 < read <=mean +3*sd ) as a threshold for filtering. [See the whole genome kmer distribution](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/53b68d9a09e3f351d17d7b28e99eb2f5baea395c/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step2_isolate_kmers/wg_distribution)
 
 ---
 
