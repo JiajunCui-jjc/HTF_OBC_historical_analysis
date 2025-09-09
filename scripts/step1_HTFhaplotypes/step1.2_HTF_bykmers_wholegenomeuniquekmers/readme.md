@@ -41,7 +41,7 @@
 - `step3_dump_wgdistribution_Rvisual.R`  
 
 > In **step3**, I analyze whole-genome (WG) k-mer distributions.  
-> I visualize the distribution in R, then compute the mean WG k-mer count (after quality control, 2 < read <=mean +3*sd ) as a threshold for filtering. [See the whole genome kmer distribution](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/53b68d9a09e3f351d17d7b28e99eb2f5baea395c/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step2_isolate_kmers/wg_distribution)
+> I visualize the distribution in R, then compute the mean WG k-mer count (after quality control, 2 < read <=mean +3*sd ) as a threshold for filtering. [See the whole genome kmer distribution](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/0be4345d26b12a9e1e9d88831ca1f1476a78677e/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step2_isolate_kmers/isolate_jf/distribution/filtered)
 
 ---
 
@@ -53,7 +53,7 @@
 > - Use R to calculate the proportion of HTF-specific k-mers to the total matched HTF k-mers for that isolate
 > - Use this index to rank the best HTF matches  
 > - Generate mixture histograms of HTF and WG k-mer distributions
-> To do this, I run `step1.sh` to obtain `wg_p25.c2_depthsummary` (long-format k-mer counts), then run `mix.R` to plot the distribution. [See mixed kmer distribution plots](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/6a7d80d3a4ef1de19f9e1bf8e317affb6307e235/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step3_query_kmers/kmer_distribution_mix/distributions)
+> To do this, I run `step1.sh` to obtain `wg_p25.c2_depthsummary` (long-format k-mer counts), then run `mix.R` to plot the distribution. [See mixed kmer distribution plots](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/0be4345d26b12a9e1e9d88831ca1f1476a78677e/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step3_query_kmers/kmer_distribution_mix/distributions)
 
 ---
 
@@ -64,7 +64,7 @@
 > - Isolates that break the HTF-OBC pattern:
 >   - Remove `64.GBR` as a uncertain calls  
 >   - Confirm `PL0240` as a confident break
-> - [See analysis summary slides](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/5674707e4d0ed4b5442bdbd3c2bb40522701eb2d/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step2_coinfection/summary_breaking_coninfection)
+> - [See analysis summary slides](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/0be4345d26b12a9e1e9d88831ca1f1476a78677e/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step2_coinfection/summary_breaking_coninfection/additional_analysis_breakingisolates_coinfection.pptx)
 > - Calculate HTF length group frequency differences, plot boxplots and raw data versus time and geography [See plots](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/5674707e4d0ed4b5442bdbd3c2bb40522701eb2d/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step3_HTFfreq).
 
 ---
