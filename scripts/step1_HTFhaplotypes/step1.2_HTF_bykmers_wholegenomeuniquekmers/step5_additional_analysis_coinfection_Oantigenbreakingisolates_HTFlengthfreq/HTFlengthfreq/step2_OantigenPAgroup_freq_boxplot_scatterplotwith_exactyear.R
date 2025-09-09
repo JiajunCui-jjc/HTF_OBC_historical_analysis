@@ -7,19 +7,27 @@ library(readr)
 # === Load data ===
 # Modern
 
+# ================================
+# 1️⃣ Load modern + historical prop tables
+# ================================
 # Modern
-modern_df <- read.table("/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step3_query_kmers/newsummarymodern57_tailocin_kmer_propnorm.tsv" ,header = TRUE, sep = "\t"
+modern_df <- read.table("/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step3_query_kmers/newsummarymodern57_tailocin_kmer_propnorm.tsv" ,header = TRUE, sep = "\t"
 )
+#rm  p12.F2 p13.C7 p6.A10 p9.C4
+# List of samples to remove
+samples_to_remove <- c("p12.F2", "p13.C7", "p6.A10", "p9.C4")
 
+# Filter out those samples
+modern_df <- modern_df[!modern_df$Isolate %in% samples_to_remove, ]
 # Historical
 historical_df <- read.table(
-"/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step3_query_kmers/newsummaryhistorical40_tailocin_kmer_propnorm.tsv",
+  "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step3_query_kmers/newsummaryhistorical40_tailocin_kmer_propnorm.tsv",
   header = TRUE, sep = "\t"
 )
 
 #rm historical_df$Isolate=="64.GBR_1933b_S36" & historical_df$Reference=="HTF_p21.F9"
 #for now, we believe 64 is unknown
-historical_df <- historical_df[!(historical_df$Isolate == "64.GBR_1933b_S36" ), ]
+historical_df <- historical_df[!(historical_df$Isolate == "64.GBR_1933b_S36"), ]
 # Label isolate type
 modern_df$IsolateType <- "Modern"
 historical_df$IsolateType <- "Historical"
@@ -126,7 +134,7 @@ p1 <- ggplot(freq_oa_group, aes(
   theme_minimal(base_size = 14)
 
 ggsave(
-  "/Users/cuijiajun/Desktop/others/tmphernan/2025_july_figHTFoantigen/step1_HTF/HTFlengthfrq/results/step2_1_oantigen_presence_barplot_updated.pdf",
+  "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step3_HTFfreq/step2_1_oantigen_presence_barplot_updated.pdf",
   plot = p1, width = 8, height = 6
 )
 cat("✅ Plot saved: oantigen_presence_barplot.pdf\n")
@@ -142,7 +150,7 @@ cat("✅ Plot saved: oantigen_presence_barplot.pdf\n")
 
 # 1. Historical years from text
 dates_df <- read_tsv(
-"/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/HTFlengthfreq/allOTU5candidates46_withdatesandlocs_uniq.txt", show_col_types = FALSE)
+"/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/HTFlengthfreq/allh46_withdatesandlocs_uniq.txt", show_col_types = FALSE)
 dates_df <- dates_df %>%
   select(Isolate = `samplename`, Year = year) %>%
   filter(!is.na(Year))
@@ -198,11 +206,11 @@ p <- ggplot(dominant_df, aes(
   )
 
 ggsave(
-"/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step3_HTFfreq/step2_2_HTF_oantigen_timeline_jitter.pdf", plot = p, width = 16, height = 3)
+"/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step3_HTFfreq/step2_2_HTF_oantigen_timeline_jitter.pdf", plot = p, width = 16, height = 3)
 cat("✅ Plot saved: HTF_oantigen_timeline_jitter.pdf\n")
 
 
 write.table(dominant_df,
-            file = "/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step3_HTFfreq/step2_3_HTF_oantigen_dominant_table.tsv",
+            file = "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step3_HTFfreq/step2_3_HTF_oantigen_dominant_table.tsv",
             sep = "\t", row.names = FALSE, quote = FALSE)
 

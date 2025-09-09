@@ -10,9 +10,9 @@ library(rnaturalearth)
 library(rnaturalearthdata)
 
 # === Paths ===
-samples_path <- "/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/HTFlengthfreq/tmp489_withdatesandlocs_uniq.txt"
-dominant_path <- "/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step3_HTFfreq/step2_3_HTF_oantigen_dominant_table.tsv"
-out_plot <- "/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step3_HTFfreq/step3_h34_m57_OTU5candidates_map_HTFshape_yearfill.pdf"
+samples_path <- "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/HTFlengthfreq/tmp489_withdatesandlocs_uniq.txt"
+dominant_path <- "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step3_HTFfreq/step2_3_HTF_oantigen_dominant_table.tsv"
+out_plot <- "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step3_HTFfreq/step3_h34_m57_OTU5candidates_map_HTFshape_yearfill.pdf"
 
 # === Load and clean sample metadata ===
 samples <- read.table(samples_path, header = TRUE, sep = '\t')
@@ -35,7 +35,12 @@ new_samples <- new_samples[, colnames(samples)]
 
 # Append to samples
 samples <- rbind(samples, new_samples)
+#rm  p12.F2 p13.C7 p6.A10 p9.C4
+# List of samples to remove
+samples_to_remove <- c("p12.F2", "p13.C7", "p6.A10", "p9.C4")
 
+# Filter out those samples
+samples <- samples[!samples$samplename %in% samples_to_remove, ]
 
 #match the sample names
 samples$samplename <- ifelse(

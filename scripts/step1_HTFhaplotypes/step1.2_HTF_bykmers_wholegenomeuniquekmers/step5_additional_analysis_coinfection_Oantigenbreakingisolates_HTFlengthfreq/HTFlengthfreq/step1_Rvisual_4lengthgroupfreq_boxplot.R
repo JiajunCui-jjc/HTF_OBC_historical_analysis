@@ -7,12 +7,17 @@ library(binom)
 # 1️⃣ Load modern + historical prop tables
 # ================================
 # Modern
-modern_df <- read.table("/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step3_query_kmers/newsummarymodern57_tailocin_kmer_propnorm.tsv" ,header = TRUE, sep = "\t"
+modern_df <- read.table("/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step3_query_kmers/newsummarymodern57_tailocin_kmer_propnorm.tsv" ,header = TRUE, sep = "\t"
 )
+#rm  p12.F2 p13.C7 p6.A10 p9.C4
+# List of samples to remove
+samples_to_remove <- c("p12.F2", "p13.C7", "p6.A10", "p9.C4")
 
+# Filter out those samples
+modern_df <- modern_df[!modern_df$Isolate %in% samples_to_remove, ]
 # Historical
 historical_df <- read.table(
-"/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step3_query_kmers/newsummaryhistorical40_tailocin_kmer_propnorm.tsv",
+"/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step3_query_kmers/newsummaryhistorical40_tailocin_kmer_propnorm.tsv",
   header = TRUE, sep = "\t"
 )
 
@@ -142,7 +147,7 @@ print(p_length)
 
 # Save
 ggsave(
-  "/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step3_HTFfreq/step1_htf_4lengthgroup_frequencies_pointplot.pdf",
+  "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step3_HTFfreq/step1_htf_4lengthgroup_frequencies_pointplot.pdf",
   plot = p_length,
   width = 8, height = 6
 )

@@ -1,0 +1,490 @@
+samplename	At_percent	At_covered	At_depth	Ps_percent	Ps_covered	Ps_depth	group	type	source	year	country
+PL0001	0.61	0.8761	10.8152	0.03394	0.91162	5.12634	cover>=65%Ps	Plant tissue herbarium	PL	1966	Spain
+PL0002	0.401	0.90914	9.11389	0.00297	0.31743	0.456821	nointerests	Plant tissue herbarium	PL	1968	Spain
+PL0003	0.506	0.87954	7.22477	0.00291	0.14305	0.193782	nointerests	Plant tissue herbarium	PL	1966	Spain
+PL0017	0.588	0.91616	12.2791	7e-04	0.03426	0.039361	nointerests	Plant tissue herbarium	PL	1925	Sweden
+PL0030	0.651	0.90413	14.3652	0.00052	0.03459	0.0379866	nointerests	Plant tissue herbarium	PL	1960	Sweden
+PL0037	0.62	0.87773	12.1686	0.00046	0.01401	0.0162987	nointerests	Plant tissue herbarium	PL	1998	Spain
+PL0044	0.584	0.83432	4.08934	0.00054	0.00418	0.00532937	nointerests	Plant tissue herbarium	PL	2015	Spain
+LND0702ad	0.633	0.87873	10.2821	0.00046	0.01764	0.019829	nointerests	Plant tissue herbarium	PL	1891	Sweden
+MGC0051ab	0.54	0.89245	10.1418	0.00354	0.23972	0.322436	nointerests	Plant tissue herbarium	PL	1966	Spain
+PL0007	0.488	0.88463	14.6766	0.00275	0.24024	0.346429	nointerests	Plant tissue herbarium	PL	1885	United Kingdom
+PL0008	0.522	0.88813	11.7468	0.00108	0.07648	0.0930249	nointerests	Plant tissue herbarium	PL	1885	United Kingdom
+PL0011	0.596	0.89619	13.1829	0.00198	0.12877	0.166816	nointerests	Plant tissue herbarium	PL	1936	Sweden
+PL0020	0.698	0.89162	10.2331	0.00102	0.04271	0.0474722	nointerests	Plant tissue herbarium	PL	1940	Sweden
+PL0023	0.66	0.86667	4.84813	0.00123	0.01578	0.0174238	nointerests	Plant tissue herbarium	PL	1887	Sweden
+PL0026	0.5	0.89862	15.3497	0.01012	0.72721	1.73593	cover>=65%Ps	Plant tissue herbarium	PL	2002	Sweden
+PL0033	0.632	0.88776	12.8883	0.00058	0.03271	0.0387777	nointerests	Plant tissue herbarium	PL	1905	Germany
+PL0034	0.622	0.88736	13.7748	0.00183	0.11647	0.141599	nointerests	Plant tissue herbarium	PL	1905	Germany
+PL0045	0.63	0.89178	10.7866	0.00017	0.00484	0.00536506	nointerests	Plant tissue herbarium	PL	2015	Spain
+PL0052	0.266	0.87874	11.3778	0.00152	0.19908	0.301336	nointerests	Plant tissue herbarium	PL	1983	Spain
+PL0059	0.121	0.87141	7.82769	0.36115	0.93333	487.888	cover>=65%Ps	Plant tissue herbarium	PL	1985	Spain
+PL0073	0.563	0.88145	10.0684	0.02439	0.83728	3.12649	cover>=65%Ps	Plant tissue herbarium	PL	1991	Spain
+PL0077	0.555	0.88366	10.055	0.0015	0.09734	0.116872	nointerests	Plant tissue herbarium	PL	1969	Spain
+PL0087	0.44	0.88465	10.9083	0.00607	0.62676	1.25742	nointerests	Plant tissue herbarium	PL	NA	Spain
+PL0088	0.617	0.86899	9.7074	0.00062	0.0184	0.0207784	nointerests	Plant tissue herbarium	PL	1998	Spain
+PL0091	0.634	0.90132	9.90442	0.00114	0.03957	0.0450578	nointerests	Plant tissue herbarium	PL	1948	Switzerland
+PL0095	0.585	0.89234	12.7759	0.00053	0.03043	0.0350365	nointerests	Plant tissue herbarium	PL	1992	Portugal
+PL0096	0.549	0.87703	10.6376	0.0012	0.06843	0.0818218	nointerests	Plant tissue herbarium	PL	1942	Portugal
+PL0099	0.397	0.88967	10.348	0.00227	0.14954	0.209467	nointerests	Plant tissue herbarium	PL	1840	Germany
+PL0100	0.531	0.89504	10.3742	0.00169	0.08195	0.104385	nointerests	Plant tissue herbarium	PL	1840	Germany
+PL0102	0.256	0.89592	8.90204	0.08611	0.95596	45.2298	cover>=65%Ps	Plant tissue herbarium	PL	1888	Germany
+PL0103	0.56	0.90192	13.0969	0.00298	0.14069	0.25153	nointerests	Plant tissue herbarium	PL	1889	Sweden
+PL0104	0.696	0.89786	11.0399	0.00095	0.04417	0.0495636	nointerests	Plant tissue herbarium	PL	1923	Sweden
+PL0105	0.519	0.89425	10.3658	0.01001	0.64746	1.29204	nointerests	Plant tissue herbarium	PL	1920	Sweden
+PL0106	0.658	0.89179	9.24179	0.0104	0.57648	1.08827	nointerests	Plant tissue herbarium	PL	1953	Sweden
+PL0107	0.639	0.88528	8.16917	0.00094	0.02527	0.0285905	nointerests	Plant tissue herbarium	PL	1919	Sweden
+PL0108	0.196	0.89743	10.9964	0.01089	0.80949	7.15582	cover>=65%Ps	Plant tissue herbarium	PL	1946	Sweden
+PL0109	0.605	0.88879	10.8617	5e-04	0.00894	0.0146514	nointerests	Plant tissue herbarium	PL	1881	Sweden
+PL0115	0.695	0.88812	10.37	3e-04	0.00961	0.0107256	nointerests	Plant tissue herbarium	PL	1923	Sweden
+PL0117	0.52	0.88521	9.51223	0.00271	0.24278	0.311691	nointerests	Plant tissue herbarium	PL	1945	Sweden
+PL0119	0.465	0.87459	6.86701	0.00354	0.15365	0.200287	nointerests	Plant tissue herbarium	PL	1884	Sweden
+PL0120	0.629	0.87279	7.00648	0.00075	0.01929	0.0218074	nointerests	Plant tissue herbarium	PL	1895	Sweden
+PL0121	0.684	0.88954	10.0922	0.00045	0.00922	0.011209	nointerests	Plant tissue herbarium	PL	1912	Sweden
+PL0122	0.598	0.89209	11.2893	0.00051	0.01926	0.0225322	nointerests	Plant tissue herbarium	PL	1903	Sweden
+PL0124	0.645	0.86695	8.80005	0.0012	0.05395	0.0620361	nointerests	Plant tissue herbarium	PL	1946	Spain
+PL0125	0.286	0.87228	10.427	0.00056	0.05056	0.0705704	nointerests	Plant tissue herbarium	PL	1986	Spain
+PL0126	0.664	0.91964	9.78644	0.00246	0.14998	0.184657	nointerests	Plant tissue herbarium	PL	1998	Spain
+PL0128	0.678	0.8909	9.88116	0.00036	0.00651	0.0103364	nointerests	Plant tissue herbarium	PL	1974	Spain
+PL0129	0.629	0.87835	8.48785	0.00085	0.01367	0.017089	nointerests	Plant tissue herbarium	PL	2000	Spain
+PL0130	0.631	0.88584	10.6859	0.00126	0.08185	0.0955197	nointerests	Plant tissue herbarium	PL	1975	Spain
+PL0131	0.18	0.87703	8.12768	0.11808	0.93165	87.6795	cover>=65%Ps	Plant tissue herbarium	PL	1980	Spain
+PL0133	0.36	0.88414	10.1986	0.00132	0.13266	0.170325	nointerests	Plant tissue herbarium	PL	1994	Spain
+PL0134	0.673	0.87759	6.96641	0.00172	0.07721	0.090002	nointerests	Plant tissue herbarium	PL	1982	Spain
+PL0136	0.597	0.88593	11.126	0.00189	0.08752	0.114342	nointerests	Plant tissue herbarium	PL	1934	Sweden
+PL0138	0.444	0.89078	8.92266	0.00455	0.35857	0.538251	nointerests	Plant tissue herbarium	PL	1927	Sweden
+PL0139	0.139	0.79106	2.95194	0.00559	0.71335	1.72419	cover>=65%Ps	Plant tissue herbarium	PL	1996	Sweden
+PL0141	0.644	0.88966	8.70078	0.00111	0.03731	0.0421144	nointerests	Plant tissue herbarium	PL	1942	Sweden
+PL0142	0.285	0.88761	8.00439	0.01493	0.59811	3.6706	nointerests	Plant tissue herbarium	PL	1932	Sweden
+PL0143	0.704	0.8923	9.8036	0.00012	0.00255	0.00299474	nointerests	Plant tissue herbarium	PL	1886	Sweden
+PL0144	0.603	0.89887	9.4328	0.00038	0.01284	0.0154941	nointerests	Plant tissue herbarium	PL	1947	Sweden
+PL0145	0.626	0.88712	9.60685	0.00057	0.02632	0.0287711	nointerests	Plant tissue herbarium	PL	1918	Sweden
+PL0147	0.479	0.88736	9.34871	0.00125	0.06671	0.0875686	nointerests	Plant tissue herbarium	PL	1881	Sweden
+PL0148	0.614	0.88884	10.1559	0.00244	0.1458	0.179695	nointerests	Plant tissue herbarium	PL	1930	Sweden
+PL0152	0.667	0.885	9.45982	0.00088	0.03481	0.0400407	nointerests	Plant tissue herbarium	PL	1990	Spain
+PL0153	0.594	0.86082	10.1725	0.00371	0.30145	0.406322	nointerests	Plant tissue herbarium	PL	2013	Spain
+PL0154	0.404	0.87954	6.21549	0.00154	0.08924	0.110702	nointerests	Plant tissue herbarium	PL	1984	Spain
+PL0155	0.583	0.84612	9.38815	0.00056	0.01177	0.0171045	nointerests	Plant tissue herbarium	PL	2013	Spain
+PL0157	0.619	0.87563	7.77603	0.0042	0.18498	0.226453	nointerests	Plant tissue herbarium	PL	1867	United Kingdom
+PL0158	0.705	0.87889	9.09142	0.00057	0.01937	0.0218638	nointerests	Plant tissue herbarium	PL	1900	United Kingdom
+PL0159	0.478	0.87621	9.69964	0.00283	0.21277	0.302632	nointerests	Plant tissue herbarium	PL	1866	United Kingdom
+PL0160	0.606	0.89269	9.81179	0.00047	0.01453	0.0166489	nointerests	Plant tissue herbarium	PL	1898	United Kingdom
+PL0162	0.515	0.88816	8.5668	0.00135	0.07183	0.0897563	nointerests	Plant tissue herbarium	PL	1846	United Kingdom
+PL0163	0.723	0.89654	9.70456	0.00018	0.00361	0.00416467	nointerests	Plant tissue herbarium	PL	1971	United Kingdom
+PL0164	0.646	0.88514	7.54116	0.00091	0.01976	0.0224448	nointerests	Plant tissue herbarium	PL	1915	United Kingdom
+PL0166	0.623	0.88594	11.2744	0.00075	0.03647	0.044611	nointerests	Plant tissue herbarium	PL	1937	United Kingdom
+PL0168	0.322	0.87471	9.8676	0.00195	0.27106	0.390614	nointerests	Plant tissue herbarium	PL	1858	United Kingdom
+PL0169	0.309	0.88492	9.32083	0.00263	0.29538	0.426927	nointerests	Plant tissue herbarium	PL	1891	United Kingdom
+PL0170	0.457	0.88595	8.17058	0.00327	0.18678	0.256189	nointerests	Plant tissue herbarium	PL	1891	United Kingdom
+PL0171	0.705	0.88592	7.8362	0.00031	0.00668	0.00740279	nointerests	Plant tissue herbarium	PL	1915	United Kingdom
+PL0172	0.455	0.88997	10.4157	0.00162	0.20256	0.250265	nointerests	Plant tissue herbarium	PL	1919	United Kingdom
+PL0173	0.593	0.89032	10.1555	0.00787	0.56362	0.979163	nointerests	Plant tissue herbarium	PL	1906	United Kingdom
+PL0174	0.678	0.88638	11.8115	0.00053	0.01729	0.0278599	nointerests	Plant tissue herbarium	PL	1932	United Kingdom
+PL0175	0.704	0.89266	9.67061	0.00013	0.00312	0.00366529	nointerests	Plant tissue herbarium	PL	1865	United Kingdom
+PL0176	0.756	0.88172	8.53866	0.00019	0.00218	0.00366714	nointerests	Plant tissue herbarium	PL	1858	United Kingdom
+PL0177	0.67	0.8824	8.86778	0.00735	0.34185	0.493478	nointerests	Plant tissue herbarium	PL	1912	United Kingdom
+PL0178	0.428	0.88549	10.3098	0.00349	0.30146	0.4674	nointerests	Plant tissue herbarium	PL	1923	United Kingdom
+PL0179	0.266	0.81611	3.8281	0.00126	0.10809	0.133751	nointerests	Plant tissue herbarium	PL	1870	United Kingdom
+PL0180	0.698	0.88985	10.5547	0.00051	0.01311	0.0149087	nointerests	Plant tissue herbarium	PL	1928	Sweden
+PL0183	0.573	0.89745	9.64453	0.00122	0.03573	0.0415696	nointerests	Plant tissue herbarium	PL	1944	Sweden
+PL0184	0.662	0.8818	9.67924	0.00027	0.00964	0.010544	nointerests	Plant tissue herbarium	PL	1923	Sweden
+PL0185	0.432	0.89062	10.3455	0.01071	0.82221	3.08129	cover>=65%Ps	Plant tissue herbarium	PL	1994	Germany
+PL0186	0.534	0.88136	8.52979	0.00061	0.01166	0.0164826	nointerests	Plant tissue herbarium	PL	2015	Germany
+PL0187	0.362	0.89332	10.6548	0.00253	0.168	0.236042	nointerests	Plant tissue herbarium	PL	1993	Germany
+PL0188	0.544	0.88997	9.30909	0.00097	0.04304	0.0517285	nointerests	Plant tissue herbarium	PL	2000	Germany
+PL0190	0.471	0.86804	7.93377	0.00051	0.02859	0.0319892	nointerests	Plant tissue herbarium	PL	1886	United Kingdom
+PL0191	0.67	0.87216	8.57372	0.00063	0.01859	0.0204903	nointerests	Plant tissue herbarium	PL	NA	United Kingdom
+PL0194	0.464	0.88588	10.4194	9e-04	0.0735	0.0852217	nointerests	Plant tissue herbarium	PL	1886	United Kingdom
+PL0195	0.646	0.88475	9.98335	0.00067	0.02222	0.0244967	nointerests	Plant tissue herbarium	PL	1845	United Kingdom
+PL0196	0.71	0.91185	10.6601	0.00011	0.00189	0.00238681	nointerests	Plant tissue herbarium	PL	1893	United Kingdom
+PL0197	0.613	0.89023	10.7742	0.00419	0.34769	0.496878	nointerests	Plant tissue herbarium	PL	1875	United Kingdom
+PL0199	0.658	0.88924	10.4699	0.00032	0.01071	0.0118672	nointerests	Plant tissue herbarium	PL	1900	United Kingdom
+PL0200	0.36	0.83185	4.31161	0.00644	0.45528	0.715444	nointerests	Plant tissue herbarium	PL	1884	United Kingdom
+PL0201	0.322	0.8889	9.80185	0.00546	0.4921	1.08844	nointerests	Plant tissue herbarium	PL	1905	United Kingdom
+PL0202	0.618	0.86245	11.3266	0.00102	0.04827	0.0552867	nointerests	Plant tissue herbarium	PL	1863	United Kingdom
+PL0203	0.548	0.88492	10.5537	0.01133	0.72815	1.85807	cover>=65%Ps	Plant tissue herbarium	PL	1880	United Kingdom
+PL0204	0.692	0.89138	11.0796	0.00026	0.00558	0.0081999	nointerests	Plant tissue herbarium	PL	1950	United Kingdom
+PL0205	0.644	0.89402	10.6531	0.00151	0.04928	0.0585925	nointerests	Plant tissue herbarium	PL	1937	United Kingdom
+PL0206	0.382	0.88928	10.5627	0.00234	0.14454	0.195757	nointerests	Plant tissue herbarium	PL	1867	United Kingdom
+PL0207	0.666	0.88944	10.4053	0.00067	0.02064	0.0233712	nointerests	Plant tissue herbarium	PL	1867	United Kingdom
+PL0208	0.662	0.87997	9.61623	0.001	0.03824	0.0428077	nointerests	Plant tissue herbarium	PL	1850	United Kingdom
+PL0210	0.303	0.84957	5.42479	0.0536	0.87842	12.5157	cover>=65%Ps	Plant tissue herbarium	PL	1838	United Kingdom
+PL0211	0.544	0.89885	10.452	0.00182	0.08807	0.105082	nointerests	Plant tissue herbarium	PL	1915	United Kingdom
+PL0213	0.583	0.87139	6.90601	0.00076	0.0314	0.0405481	nointerests	Plant tissue herbarium	PL	1835	United Kingdom
+PL0214	0.663	0.89383	9.94562	0.00035	0.01121	0.0135241	nointerests	Plant tissue herbarium	PL	1938	United Kingdom
+PL0215	0.481	0.88138	8.4465	0.00381	0.19205	0.309932	nointerests	Plant tissue herbarium	PL	1870	United Kingdom
+PL0217	0.542	0.88519	9.60886	0.00353	0.19807	0.282093	nointerests	Plant tissue herbarium	PL	1894	United Kingdom
+PL0218	0.649	0.89383	10.9123	0.00037	0.01342	0.0160698	nointerests	Plant tissue herbarium	PL	1896	United Kingdom
+PL0219	0.637	0.89181	9.6926	0.00204	0.12497	0.147603	nointerests	Plant tissue herbarium	PL	1884	United Kingdom
+PL0220	0.486	0.88469	6.85925	0.1647	0.89824	23.3863	cover>=65%Ps	Plant tissue herbarium	PL	1946	United Kingdom
+PL0221	0.621	0.88888	10.6374	8e-04	0.03401	0.0417544	nointerests	Plant tissue herbarium	PL	1887	United Kingdom
+PL0222	0.421	0.8912	10.7997	0.00631	0.65297	1.34323	cover>=65%Ps	Plant tissue herbarium	PL	1887	United Kingdom
+PL0224	0.202	0.89011	7.82059	0.01728	0.93532	8.12245	cover>=65%Ps	Plant tissue herbarium	PL	1889	United Kingdom
+PL0225	0.585	0.89203	10.8633	0.00064	0.02736	0.0308991	nointerests	Plant tissue herbarium	PL	1840	United Kingdom
+PL0226	0.684	0.88601	11.5772	0.00013	0.00386	0.00534974	nointerests	Plant tissue herbarium	PL	1919	United Kingdom
+PL0228	0.506	0.88383	10.7638	0.0018	0.14023	0.175429	nointerests	Plant tissue herbarium	PL	1877	United Kingdom
+PL0229	0.682	0.88924	10.9833	0.00014	0.0035	0.00557797	nointerests	Plant tissue herbarium	PL	1927	United Kingdom
+PL0230	0.573	0.90324	10.864	0.01731	0.79049	2.22828	cover>=65%Ps	Plant tissue herbarium	PL	1851	United Kingdom
+PL0231	0.208	0.83725	4.46963	0.00177	0.19103	0.248147	nointerests	Plant tissue herbarium	PL	1832	United Kingdom
+PL0232	0.675	0.89318	11.697	0.00081	0.03172	0.0368067	nointerests	Plant tissue herbarium	PL	1913	United Kingdom
+PL0233	0.558	0.88612	10.6624	0.00031	0.00866	0.01683	nointerests	Plant tissue herbarium	PL	1963	United Kingdom
+PL0234	0.665	0.87859	7.86909	0.00062	0.01756	0.0198261	nointerests	Plant tissue herbarium	PL	1898	United Kingdom
+PL0235	0.403	0.86392	6.06288	0.06616	0.92324	10.0957	cover>=65%Ps	Plant tissue herbarium	PL	1905	United Kingdom
+PL0236	0.319	0.88082	9.51225	0.00366	0.3328	0.579093	nointerests	Plant tissue herbarium	PL	1857	United Kingdom
+PL0237	0.625	0.88945	9.74226	0.00139	0.04577	0.0588168	nointerests	Plant tissue herbarium	PL	1929	United Kingdom
+PL0238	0.702	0.89103	10.2153	0.00042	0.01214	0.014476	nointerests	Plant tissue herbarium	PL	1901	United Kingdom
+PL0239	0.634	0.88984	10.888	0.00036	0.01202	0.014623	nointerests	Plant tissue herbarium	PL	1923	United Kingdom
+PL0240	0.667	0.88965	11.0522	0.06142	0.85095	8.49216	cover>=65%Ps	Plant tissue herbarium	PL	1875	United Kingdom
+PL0241	0.65	0.89169	11.4197	0.00317	0.28355	0.370786	nointerests	Plant tissue herbarium	PL	1869	United Kingdom
+PL0242	0.596	0.88941	9.87927	0.00463	0.30012	0.410466	nointerests	Plant tissue herbarium	PL	1889	United Kingdom
+PL0243	0.669	0.88495	9.84341	0.00038	0.01468	0.0160499	nointerests	Plant tissue herbarium	PL	1884	United Kingdom
+PL0244	0.354	0.88584	10.3392	0.00375	0.48886	0.797289	nointerests	Plant tissue herbarium	PL	1860	United Kingdom
+PL0245	0.165	0.81049	4.20385	0.00155	0.21842	0.278449	nointerests	Plant tissue herbarium	PL	1838	United Kingdom
+PL0246	0.631	0.88738	10.431	5e-04	0.01819	0.0203288	nointerests	Plant tissue herbarium	PL	1906	United Kingdom
+PL0248	0.556	0.89633	11.2296	0.0032	0.18678	0.291901	nointerests	Plant tissue herbarium	PL	1889	United Kingdom
+PL0249	0.626	0.88195	10.5556	0.00174	0.07556	0.0877223	nointerests	Plant tissue herbarium	PL	1892	United Kingdom
+PL0250	0.691	0.87765	10.6144	0.00024	0.00645	0.00734691	nointerests	Plant tissue herbarium	PL	1845	United Kingdom
+PL0251	0.683	0.89661	10.5564	0.00757	0.44753	0.722131	nointerests	Plant tissue herbarium	PL	1972	United Kingdom
+PL0252	0.647	0.89546	10.1586	0.00665	0.41227	0.623038	nointerests	Plant tissue herbarium	PL	1894	United Kingdom
+PL0253	0.711	0.8808	10.7701	2e-04	0.00606	0.00689769	nointerests	Plant tissue herbarium	PL	1925	United Kingdom
+PL0256	0.128	0.77601	2.53427	0.00181	0.27067	0.36941	nointerests	Plant tissue herbarium	PL	1900	United Kingdom
+PL0258	0.499	0.88394	9.44928	0.02354	0.83684	3.92515	cover>=65%Ps	Plant tissue herbarium	PL	1913	United Kingdom
+PL0259	0.588	0.88678	10.0937	0.00079	0.03445	0.0386642	nointerests	Plant tissue herbarium	PL	1858	United Kingdom
+PL0260	0.694	0.88629	10.6643	0.00025	0.00673	0.00775489	nointerests	Plant tissue herbarium	PL	1931	United Kingdom
+PL0261	0.578	0.88916	10.4018	0.00107	0.06773	0.0837022	nointerests	Plant tissue herbarium	PL	1863	United Kingdom
+RJB0022ad	0.558	0.89435	11.193	0.00155	0.07808	0.0968563	nointerests	Plant tissue herbarium	PL	1985	Spain
+PL0006	0.446	0.9004	10.2121	0.00381	0.3663	0.544215	nointerests	Plant tissue herbarium	PL	2009	Germany
+PL0012	0.641	0.89203	10.7122	0.00121	0.04334	0.0508297	nointerests	Plant tissue herbarium	PL	1881	Sweden
+PL0013	0.452	0.89144	10.8282	0.00167	0.14857	0.183817	nointerests	Plant tissue herbarium	PL	1901	Sweden
+PL0014	0.671	0.88448	10.7347	0.00019	0.00599	0.00665498	nointerests	Plant tissue herbarium	PL	1900	Sweden
+PL0015	0.653	0.89575	14.6971	0.00031	0.00822	0.00982931	nointerests	Plant tissue herbarium	PL	1960	Sweden
+PL0018	0.696	0.89445	12.4803	0.00248	0.2105	0.269734	nointerests	Plant tissue herbarium	PL	1921	Sweden
+PL0019	0.613	0.88924	11.788	0.0011	0.05048	0.0577651	nointerests	Plant tissue herbarium	PL	1891	Sweden
+PL0021	0.691	0.8939	10.702	0.00072	0.02484	0.0275854	nointerests	Plant tissue herbarium	PL	1900	Sweden
+PL0022	0.452	0.89823	12.8184	0.00158	0.25856	0.340998	nointerests	Plant tissue herbarium	PL	1935	Sweden
+PL0024	0.284	0.89413	11.7187	0.00225	0.25846	0.40979	nointerests	Plant tissue herbarium	PL	1959	Sweden
+PL0025	0.703	0.89106	12.2844	0.00044	0.02417	0.0266772	nointerests	Plant tissue herbarium	PL	1951	Sweden
+PL0027	0.483	0.89786	10.5883	0.00652	0.66198	1.42203	cover>=65%Ps	Plant tissue herbarium	PL	1939	Sweden
+PL0029	0.605	0.8914	11.1602	0.00148	0.05718	0.0683915	nointerests	Plant tissue herbarium	PL	1965	Sweden
+PL0031	0.7	0.88809	10.9438	0.00013	0.00397	0.00429309	nointerests	Plant tissue herbarium	PL	1887	Sweden
+PL0032	0.613	0.89421	12.6189	0.00061	0.01919	0.0220877	nointerests	Plant tissue herbarium	PL	2010	Sweden
+PL0035	0.47	0.88736	10.534	0.00199	0.08298	0.103419	nointerests	Plant tissue herbarium	PL	1984	Spain
+PL0036	0.65	0.88534	11.8049	0.00023	0.00906	0.00989613	nointerests	Plant tissue herbarium	PL	1950	Spain
+PL0038	0.646	0.87226	12.1868	0.00052	0.02181	0.0248688	nointerests	Plant tissue herbarium	PL	1993	Spain
+PL0040	0.292	0.88637	10.2876	0.00088	0.20528	0.274159	nointerests	Plant tissue herbarium	PL	NA	Spain
+PL0041	0.363	0.89863	14.2174	0.00223	0.45374	0.763982	nointerests	Plant tissue herbarium	PL	1969	Spain
+PL0042	0.282	0.88618	10.1202	0.21576	0.94257	127.974	cover>=65%Ps	Plant tissue herbarium	PL	1982	Spain
+PL0046	0.49	0.88927	15.5592	0.08517	0.90175	24.0336	cover>=65%Ps	Plant tissue herbarium	PL	1974	Spain
+PL0047	0.292	0.88796	13.1697	0.0016	0.26071	0.369876	nointerests	Plant tissue herbarium	PL	1998	Spain
+PL0048	0.694	0.88755	10.8314	0.00046	0.02401	0.0267541	nointerests	Plant tissue herbarium	PL	1989	Spain
+PL0049	0.544	0.89994	13.494	0.00114	0.05886	0.0726102	nointerests	Plant tissue herbarium	PL	1988	Spain
+PL0051	0.015	0.20731	0.28096	0.05023	0.90405	23.276	cover>=65%Ps	Plant tissue herbarium	PL	1983	Spain
+PL0053	0.077	0.64015	1.48009	0.02937	0.94623	13.6448	cover>=65%Ps	Plant tissue herbarium	PL	1987	Spain
+PL0054	0.399	0.88668	10.7582	0.00162	0.19189	0.276195	nointerests	Plant tissue herbarium	PL	1991	Spain
+PL0057	0.65	0.8862	9.05794	0.00037	0.01493	0.0182214	nointerests	Plant tissue herbarium	PL	1969	Spain
+PL0060	0.717	0.88487	10.2456	0.00023	0.0167	0.0185713	nointerests	Plant tissue herbarium	PL	1986	Spain
+PL0061	0.581	0.87011	7.72254	0.00571	0.40409	0.613162	nointerests	Plant tissue herbarium	PL	1984	Spain
+PL0062	0.563	0.88219	9.10617	0.00183	0.18591	0.232328	nointerests	Plant tissue herbarium	PL	1985	Spain
+PL0063	0.42	0.88757	9.71115	0.00179	0.16163	0.204013	nointerests	Plant tissue herbarium	PL	1985	Spain
+PL0064	0.582	0.89248	15.9137	0.00118	0.06904	0.0824703	nointerests	Plant tissue herbarium	PL	1977	Spain
+PL0065	0.399	0.88608	16.628	0.0035	0.69267	1.53741	cover>=65%Ps	Plant tissue herbarium	PL	2015	Spain
+PL0066	0.434	0.89489	19.3347	0.00588	0.7092	1.8354	cover>=65%Ps	Plant tissue herbarium	PL	2015	Spain
+PL0068	0.172	0.8928	10.8585	0.01276	0.92306	14.9394	cover>=65%Ps	Plant tissue herbarium	PL	1986	Spain
+PL0069	0.63	0.89139	10.8394	0.00107	0.04164	0.0656048	nointerests	Plant tissue herbarium	PL	1985	Spain
+PL0070	0.527	0.89282	12.7489	0.00067	0.03763	0.0455821	nointerests	Plant tissue herbarium	PL	2010	Spain
+PL0072	0.664	0.8853	9.8506	0.00074	0.04251	0.047718	nointerests	Plant tissue herbarium	PL	1985	Spain
+PL0074	0.672	0.89242	10.9955	0.00031	0.01002	0.0114045	nointerests	Plant tissue herbarium	PL	1977	Spain
+PL0075	0.6	0.88794	13.6037	0.00045	0.01461	0.0167339	nointerests	Plant tissue herbarium	PL	NA	Spain
+PL0076	0.641	0.89871	12.7131	0.00072	0.02321	0.0267177	nointerests	Plant tissue herbarium	PL	1977	Spain
+PL0079	0.61	0.88645	13.0636	0.00017	0.03055	0.0350994	nointerests	Plant tissue herbarium	PL	1980	Spain
+PL0080	0.019	0.39764	0.652761	0.04355	0.94949	36.6779	cover>=65%Ps	Plant tissue herbarium	PL	1985	Spain
+PL0081	0.305	0.87135	11.3337	0.0032	0.4468	0.747547	nointerests	Plant tissue herbarium	PL	1994	Spain
+PL0082	0.633	0.88941	10.7276	0.00104	0.0542	0.0619151	nointerests	Plant tissue herbarium	PL	1982	Spain
+PL0083	0.424	0.88092	10.207	0.00086	0.0636	0.0767671	nointerests	Plant tissue herbarium	PL	1977	Spain
+PL0084	0.088	0.75882	2.28826	0.00148	0.21405	0.321452	nointerests	Plant tissue herbarium	PL	1984	Spain
+PL0085	0.461	0.90037	12.2274	0.00201	0.24469	0.327112	nointerests	Plant tissue herbarium	PL	1985	Spain
+PL0086	0.367	0.87744	10.8637	0.00145	0.09801	0.122275	nointerests	Plant tissue herbarium	PL	1973	Spain
+PL0089	0.602	0.89306	10.972	0.00105	0.03495	0.0405382	nointerests	Plant tissue herbarium	PL	1994	Spain
+PL0090	0.548	0.87527	11.262	0.00132	0.05281	0.0652143	nointerests	Plant tissue herbarium	PL	1979	Spain
+PL0092	0.529	0.89704	13.3752	0.00381	0.28613	0.438357	nointerests	Plant tissue herbarium	PL	1872	France
+PL0093	0.588	0.88277	14.6852	0.00065	0.03292	0.0450868	nointerests	Plant tissue herbarium	PL	1980	Spain
+PL0094	0.609	0.86743	9.46697	0.00033	0.022	0.024389	nointerests	Plant tissue herbarium	PL	1989	Portugal
+PL0098	0.647	0.88102	10.0957	1e-04	0.00317	0.00339212	nointerests	Plant tissue herbarium	PL	1979	Portugal
+PL0101	0.223	0.89945	11.5721	0.00263	0.37701	0.780025	nointerests	Plant tissue herbarium	PL	1891	Germany
+PL0111	0.684	0.88297	7.909	0.00046	0.01065	0.0118073	nointerests	Plant tissue herbarium	PL	1931	Sweden
+PL0113	0.599	0.87886	7.75024	0.00027	0.01089	0.0119738	nointerests	Plant tissue herbarium	PL	1832	Germany
+PL0116	0.546	0.89065	11.0152	0.00095	0.04257	0.0502707	nointerests	Plant tissue herbarium	PL	1933	Sweden
+PL0127	0.091	0.45217	0.746882	0.05133	0.9365	10.0511	cover>=65%Ps	Plant tissue herbarium	PL	1979	Spain
+PL0137	0.013	0.01886	0.0213945	0.37113	0.8979	20.1951	cover>=65%Ps	Plant tissue herbarium	PL	1961	Sweden
+PL0151	0.595	0.85634	8.24488	0.00064	0.01042	0.012745	nointerests	Plant tissue herbarium	PL	2003	Spain
+PL0161	0.649	0.89595	11.6228	0.00051	0.02418	0.0284498	nointerests	Plant tissue herbarium	PL	1973	United Kingdom
+PL0165	0.575	0.89834	13.3813	0.00199	0.12437	0.201036	nointerests	Plant tissue herbarium	PL	1900	United Kingdom
+PL0181	0.657	0.88301	12.3243	0.00032	0.01571	0.0181654	nointerests	Plant tissue herbarium	PL	1910	Sweden
+PL0198	0.591	0.86931	5.83498	0.00308	0.09639	0.117233	nointerests	Plant tissue herbarium	PL	1871	United Kingdom
+PL0255	0.109	0.39304	0.61686	0.00408	0.17113	0.253255	nointerests	Plant tissue herbarium	PL	1900	United Kingdom
+PL0257	0.137	0.38578	0.63881	0.00098	0.0264	0.0535588	nointerests	Plant tissue herbarium	PL	1924	United Kingdom
+1.CAN_1994a_S53	0.687	0.86732	5.37476	0.00018	0.00753	0.00832311	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1994	Canada
+2.CAN_1994b_S55	0.682	0.87968	4.73173	1e-04	0.00223	0.0027544	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1994	Canada
+3.CYP_1884_S20	0.619	0.84809	3.33854	0.00174	0.02507	0.0269153	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1884	Cyprus
+4.DEU_1915_S41	0.72	0.89237	6.51002	7e-05	0.00227	0.00255327	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1915	Germany
+5.DEU_1922_S33	0.478	0.87277	4.17333	0.00347	0.24279	0.300423	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1922	Germany
+6.DEU_1972_S43	0.059	0.09982	0.113869	0.02321	0.42194	0.614866	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1972	Germany
+7.DRC_1972_S45	0.616	0.84511	4.36397	1e-04	0.00339	0.00415911	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1972	Congo
+8.DZA_1862	0.557	0.8376	4.13926	0.00456	0.18156	0.206596	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1862	Algeria
+9.ERI_1969_S50	0.568	0.85026	3.93121	0.00013	0.00361	0.00436041	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1969	Eritrea
+10.ESP_1820	0.069	0.03104	0.336461	0.01557	0.2702	0.995629	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1820	Spain
+11.ESP_1908a	0.651	0.81904	3.19697	0.00021	0.00318	0.00344346	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1908	Spain
+12.ESP_1908b	0.7	0.89845	7.60688	4e-05	0.00101	0.00103376	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1908	Spain
+13.ESP_1911	0.592	0.78679	3.8472	0.00347	0.07584	0.0845937	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1911	Spain
+14.ESP_1912a	0.693	0.89073	7.4713	0.00034	0.00555	0.0058922	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1912	Spain
+15.ESP_1912b	0.691	0.89992	5.65468	8e-05	0.004	0.00417073	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1912	Spain
+16.ESP_1913_S15	0.642	0.77961	2.46136	0.00029	0.00489	0.00497609	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1913	Spain
+17.ESP_1914	0.662	0.88228	6.58	0.00324	0.11452	0.126471	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1914	Spain
+18.ESP_1924	0.613	0.71518	2.15996	0.00207	0.02027	0.0212997	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1924	Spain
+19.ESP_1926_S46	0.746	0.88228	5.8807	5e-05	0.00193	0.00197764	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1926	Spain
+20.ESP_1927	0.654	0.88856	6.35504	0.00015	0.00295	0.00320362	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1927	Spain
+21.ESP_1930	0.668	0.88817	7.16675	0.00013	0.00355	0.00361194	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1930	Spain
+22.ESP_1944	0.683	0.90363	8.85936	0.00119	0.06694	0.0713544	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1944	Spain
+23.ESP_1946	0.549	0.87318	7.04894	0.00092	0.03781	0.0479884	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1946	Spain
+24.ESP_1966	0.573	0.85876	4.67775	0.0011	0.02227	0.024186	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1966	Spain
+25.ESP_1966_S41	0.694	0.89658	6.6667	0.00413	0.20212	0.236658	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1966	Spain
+26.ESP_1968	0.626	0.90017	8.01291	0.00115	0.02676	0.0293462	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1968	Spain
+27.ESP_1975	0.055	0.07222	0.657734	0.00768	0.7237	1.65807	cover>=65%Ps	Plant tissue herbarium	(Lopez et al., 2022)	1975	Spain
+28.ESP_1982	0.658	0.88889	6.39436	0.00044	0.00818	0.00893996	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1982	Spain
+29.ESP_1983a	0.607	0.88169	5.3711	0.00594	0.32075	0.412059	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1983	Spain
+30.ESP_1983b	0.047	0.47138	0.816751	0.00534	0.73098	1.68837	cover>=65%Ps	Plant tissue herbarium	(Lopez et al., 2022)	1983	Spain
+31.ESP_1983d_S46	0.185	0.00169	0.00178546	0.00319	5e-04	0.000503921	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1983	Spain
+32.ESP_1985a_S33	0.022	0.01669	0.017483	0.00299	0.0405	0.0419065	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1985	Spain
+33.ESP_1985b	0.008	0.07016	0.163393	0.07954	0.89694	29.3574	cover>=65%Ps	Plant tissue herbarium	(Lopez et al., 2022)	1985	Spain
+34.ESP_1985c_S36	0.211	0.61018	2.25377	0.21689	0.87148	36.7151	cover>=65%Ps	Plant tissue herbarium	(Lopez et al., 2022)	1985	Spain
+35.ESP_1985d_S11	0.738	0.8462	3.9907	0	6e-05	0	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1985	Spain
+36.ESP_1987	0.009	0.06198	0.06965	0.00154	0.15839	0.198003	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1987	Spain
+37.ESP_1992	0.302	0.84258	3.0377	0.00705	0.53084	0.874064	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1992	Spain
+38.ESP_1995_S29	0.693	0.87639	5.34069	1e-04	0.00428	0.00429932	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1995	Spain
+39.ESP_1998a	0.645	0.88948	8.40312	0.00026	0.01006	0.0104295	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1998	Spain
+40.ESP_1998b_S2	0.66	0.88369	7.72409	0.00012	0.00633	0.00667552	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1998	Spain
+41.ESP_1999_S34	0.723	0.8885	6.72528	0.00012	0.00608	0.00613558	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1999	Spain
+42.ESP_2002	0.627	0.87739	4.50454	0.00097	0.01723	0.0187573	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	2002	Spain
+43.ESP_2007_S15	0.673	0.89042	6.45942	0.00023	0.01217	0.0128724	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	2007	Spain
+44.ESP_2008_S22	0.632	0.89342	6.31693	0.00016	0.00718	0.00795434	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	2008	Spain
+45.ETH_1838_S20	0.513	0.61437	1.91982	0.0044	0.06905	0.0761112	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1838	Ethiopia
+46.ETH_1838_S52	0.654	0.86635	3.87544	0.00065	0.02354	0.0245548	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1838	Ethiopia
+47.ETH_1852a_S45	0.584	0.75457	2.31735	0.03278	0.57418	0.932168	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1852	Ethiopia
+48.ETH_1852b_S18	0.716	0.05465	0.0634566	0.00087	0.00038	0.000383242	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1852	Ethiopia
+49.ETH_1892_S30	0.615	0.69298	1.8041	0.00254	0.03819	0.0393656	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1892	Ethiopia
+50.ETH_1965_S37	0.694	0.85475	5.16249	0	0.00025	0.000250446	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1965	Ethiopia
+51.ETH_1968a_S7	0.571	0.7408	2.31745	0.00088	0.01428	0.0145816	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1968	Ethiopia
+52.ETH_1968b_S44	0.581	0.72702	2.37345	0.00358	0.0649	0.0682131	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1968	Ethiopia
+53.ETH_1968c_S26	0.618	0.73497	2.10501	0.00023	0.00623	0.00630019	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1968	Ethiopia
+54.ETH_1973_S63	0.606	0.8337	3.82367	4e-05	0.00081	0.0010925	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1973	Ethiopia
+55.ETH_1984	0.661	0.87822	9.36178	0.00016	0.01006	0.0103191	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1984	Ethiopia
+56.ETH_2003	0.653	0.87908	7.08363	0.00017	0.00648	0.00802251	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	2003	Ethiopia
+57.FRA_1943_S25	0.622	0.66354	1.72763	0.00036	0.00691	0.00703015	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1943	France
+58.GBR_1867_S19	0.527	0.76005	2.1166	0.00295	0.03443	0.0368248	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1867	UK
+59.GBR_1899	0.489	0.70658	2.44325	0.0043	0.09829	0.111921	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1899	UK
+60.GBR_1902_S22	0.544	0.80553	2.49666	0.00195	0.02887	0.0307085	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1902	UK
+61.GBR_1918_S17	0.644	0.78809	2.45669	0.00052	0.00647	0.00661308	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1918	UK
+62.GBR_1921	0.639	0.84845	3.6998	0.00098	0.02703	0.0289775	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1921	UK
+63.GBR_1933a_S43	0.625	0.85529	3.68968	0.00016	0.00499	0.00532466	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1933	UK
+64.GBR_1933b_S36	0.396	0.74176	1.97367	0.09096	0.84695	5.42331	cover>=65%Ps	Plant tissue herbarium	(Lopez et al., 2022)	1933	UK
+65.GBR_1953_S18	0.093	0.42562	0.638563	0.00297	0.20108	0.352195	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1953	UK
+66.GBR_1967_S13	0.688	0.89852	6.546	0.00919	0.39274	0.552592	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1967	UK
+67.GBR_2008_S17	0.467	0.69638	1.57231	0.00018	0.00316	0.00365098	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	2008	UK
+68.ITA_1973_S11	0.595	0.8935	6.35807	0.00026	0.01722	0.0183253	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1973	Italy
+69.KAZ_1914_S32	0.643	0.89336	4.74155	0.00013	0.00256	0.00295586	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1914	Kazakhstan
+70.KAZ_1921_S1	0.632	0.88063	4.74231	0.00043	0.01316	0.0195684	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1921	Kazakhstan
+71.KAZ_1956_S8	0.71	0.87159	6.0992	3e-05	0.00109	0.00114535	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1956	Kazakhstan
+72.KEN_1935_S42	0.564	0.76071	2.87007	7e-05	0.00092	0.00141599	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1935	Kenya
+73.KEN_1967_S36	0.288	0.71699	2.12322	0.00173	0.06505	0.157808	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1967	Kenya
+74.KEN_1997_S41	0.641	0.86377	5.16851	0.00029	0.0093	0.0140677	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1997	Kenya
+75.LTU_1894_S30	0.402	0.87962	3.58278	0.05704	0.88642	6.10635	cover>=65%Ps	Plant tissue herbarium	(Lopez et al., 2022)	1894	Lithuania
+76.LTU_2009_S19	0.002	0.03358	0.0372458	0.24224	0.87154	62.2338	cover>=65%Ps	Plant tissue herbarium	(Lopez et al., 2022)	2009	Lithuania
+77.MAR_1981	0.449	0.83843	3.66212	0.01146	0.46568	0.700262	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1981	Morocco
+78.NLD_1960_S12	0.488	0.73858	1.9027	0.0023	0.03989	0.0422913	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1960	Netherlands
+79.NOR_1898a	0.637	0.90454	9.93707	0.00139	0.04792	0.0513673	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1898	Norway
+80.NOR_1898_S26	0.699	0.84296	4.02095	1e-04	0.00232	0.00245716	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1898	Norway
+81.NOR_1899	0.675	0.90267	8.61187	0.00495	0.26755	0.326819	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1899	Norway
+82.NOR_1905	0.658	0.88144	5.64251	0.00236	0.09521	0.103286	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1905	Norway
+83.NOR_1906_S9	0.672	0.87758	4.90957	0.00209	0.09047	0.0977089	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1906	Norway
+84.NOR_1907_S24	0.696	0.89189	5.73195	0.00016	0.006	0.00630187	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1907	Norway
+85.NOR_1908	0.539	0.87784	5.3645	0.00381	0.08416	0.189661	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1908	Norway
+86.NOR_1911_S7	0.316	0.83445	3.77505	0.00842	0.65671	1.32199	cover>=65%Ps	Plant tissue herbarium	(Lopez et al., 2022)	1911	Norway
+87.NOR_1912	0.525	0.75475	1.89132	0.00298	0.03089	0.0335467	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1912	Norway
+88.NOR_1912_S13	0.641	0.77466	2.33901	0.00021	0.00295	0.00302218	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1912	Norway
+89.NOR_1916	0.675	0.90364	7.14019	0.00079	0.01793	0.0188008	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1916	Norway
+90.NOR_1918_S2	0.613	0.88254	4.80487	0.00011	0.00296	0.00365149	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1918	Norway
+91.NOR_1925	0.65	0.90524	6.58971	0.00011	0.00291	0.0032637	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1925	Norway
+92.NOR_1927_S25	0.587	0.87431	4.2519	0.00016	0.0052	0.00593041	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1927	Norway
+93.NOR_1928_S6	0.638	0.85652	3.39502	0.01085	0.33751	0.43868	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1928	Norway
+94.NOR_1929	0.665	0.8977	8.67014	0.00091	0.04065	0.0428575	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1929	Norway
+95.NOR_1934	0.476	0.88265	4.59505	0.00713	0.43797	0.636235	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1934	Norway
+96.NOR_1935	0.629	0.87904	5.34393	0.00147	0.02258	0.0243902	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1935	Norway
+97.NOR_1935_S3	0.717	0.87323	3.6528	0.00423	0.11122	0.123702	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1935	Norway
+98.NOR_1942	0.521	0.87818	4.73135	0.00151	0.03276	0.0353169	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1942	Norway
+99.NOR_1949a	0.605	0.90323	8.72589	0.00321	0.09392	0.107198	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1949	Norway
+100.NOR_1949_S5	0.68	0.87168	4.86881	0.00066	0.02775	0.029339	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1949	Norway
+101.NOR_1952	0.636	0.89439	6.54719	0.00082	0.03023	0.0312835	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1952	Norway
+102.NOR_1954_S21	0.699	0.89824	8.5986	0.00011	0.00653	0.00668932	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1954	Norway
+103.NOR_1955_S42	0.379	0.00427	0.00459515	0.00803	0.00116	0.00116201	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1955	Norway
+104.NOR_1956	0.043	0.24813	0.332303	0.00782	0.19784	1.35709	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1956	Norway
+105.NOR_1966	0.569	0.8899	5.17472	0.00431	0.08794	0.164933	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1966	Norway
+106.NOR_1967_S28	0.415	0.00463	0.00487659	0.01082	0.00149	0.00149594	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1967	Norway
+107.NOR_1968	0.401	0.88951	7.95441	0.00046	0.04232	0.045592	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1968	Norway
+108.NOR_1976	0.678	0.90829	18.6306	0.00087	0.04405	0.047157	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1976	Norway
+109.NOR_1990	0.048	0.30044	0.423214	0.11982	0.91325	25.9351	cover>=65%Ps	Plant tissue herbarium	(Lopez et al., 2022)	1990	Norway
+110.NOR_1992	0.573	0.89853	7.58712	0.00105	0.05724	0.0612215	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1992	Norway
+111.NOR_1994	0.656	0.88571	5.86862	0.00105	0.01883	0.0209198	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1994	Norway
+112.NOR_1995_S22	0.68	0.87717	4.84334	7e-05	0.00191	0.00223752	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1995	Norway
+113.NOR_1995_S35	0.638	0.8919	5.43416	0.00022	0.00937	0.00994713	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1995	Norway
+114.NOR_2003	0.617	0.84425	3.96963	0.0024	0.02835	0.0308348	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	2003	Norway
+115.NPL_1952	0.365	0.87233	4.39997	0.00273	0.0981	0.119401	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1952	Nepal
+116.POL_1895_S10	0.305	0.79356	2.15623	0.00263	0.08909	0.235843	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1895	Poland
+117.POL_2007_S5	0.693	0.89472	4.66161	0.00017	0.00549	0.00569915	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	2007	Poland
+118.PRT_1954	0.474	0.86324	6.16969	0.0181	0.32592	0.80816	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1954	Portugal
+119.PRT_1971	0.7	0.89031	7.45699	3e-04	0.00504	0.00566532	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1971	Portugal
+120.RUS_1860	0.181	0.70538	1.77285	0.03585	0.87691	5.51044	cover>=65%Ps	Plant tissue herbarium	(Lopez et al., 2022)	1860	Russia
+121.RUS_1885_S16	0.572	0.78158	2.22116	0.00225	0.035	0.0367524	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1885	Russia
+122.RUS_1906_S7	0.715	0.88905	6.48734	0.00026	0.01129	0.011763	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1906	Russia
+123.RUS_1907_S11	0.675	0.83083	3.88239	0.00094	0.03171	0.0339307	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1907	Russia
+124.RUS_1909_S40	0.629	0.90229	5.00932	0.00857	0.31231	0.490688	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1909	Russia
+125.RUS_1912_S16	0.426	0.87366	4.49496	0.00023	0.02182	0.0237678	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1912	Russia
+126.RUS_1917_S29	0.076	0.33382	0.464128	0.00467	0.1277	0.461326	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1917	Russia
+127.RUS_1926_S28	0.687	0.89249	6.54712	8e-05	0.00231	0.00243225	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1926	Russia
+128.RUS_1927_S31	0.645	0.8868	4.7961	0.00019	0.00446	0.00510704	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1927	Russia
+129.RUS_1950_S10	0.703	0.89669	6.47401	0.00021	0.01036	0.010494	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1950	Russia
+130.RUS_1960_S9	0.642	0.76755	2.09344	0.00136	0.02514	0.0257331	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1960	Russia
+131.RUS_1974_S24	0.735	0.89854	6.12566	2e-04	0.00738	0.00813712	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1974	Russia
+132.RWA_1974_S49	0.638	0.84124	4.95887	3e-05	0.00108	0.00111674	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1974	Rwanda
+133.SP_1897	0.572	0.56084	1.31514	0.00103	0.01024	0.0103883	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1897	Spain
+134.TZA_1894_S43	0.628	0.75479	3.55116	1e-05	0.00046	0.000497693	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1894	Tanzania
+135.TZA_1908_S47	0.707	0.86312	4.92788	0.00014	0.00568	0.00583969	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1908	Tanzania
+136.TZA_1953_S47	0.603	0.84209	4.82218	8e-05	0.0014	0.00206719	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1953	Tanzania
+137.TZA_1985_S38	0.655	0.86144	5.70599	4e-05	0.00084	0.000888678	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1985	Tanzania
+138.TZA_2011_S34	0.59	0.19301	0.266249	0.00027	0.00023	0.00025802	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	2011	Tanzania
+139.UKR_1902_S18	0.568	0.79119	2.33646	0.00247	0.0304	0.0323765	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1902	Ukraine
+140.UKR_1952_S24	0.025	0.05415	0.219268	1e-05	0.00074	0.000800147	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1952	Ukraine
+141.US_1986_S54	0.748	0.90012	5.50252	0	0.00021	0.000215942	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1986	USA
+142.US_2010_S56	0.725	0.8979	5.34769	1e-05	5e-04	0.000508633	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	2010	USA
+143.ZAF_1917_S6	0.538	0.70241	2.20183	0.00045	0.01439	0.0146299	nointerests	Plant tissue herbarium	(Lopez et al., 2022)	1917	South Africa
+HB0702	0.473	0.89464	5.90506	1e-04	0.00509	0.0067691	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1905	Germany
+HB0711	0.524	0.84048	4.24798	0.00049	0.02143	0.0251105	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1840	Germany
+HB0713	0.469	0.87415	5.12528	0.00069	0.05385	0.0627534	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1826	Germany
+HB0715	0.487	0.88146	5.65755	0.00066	0.05968	0.0701276	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1828	Germany
+HB0717	0.65	0.87207	5.74672	5e-05	0.00243	0.00259114	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1826	Germany
+HB0718	0.363	0.88307	5.8345	0.00078	0.07755	0.101242	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1890	Germany
+HB0719	0.535	0.87316	4.9997	0.00036	0.01368	0.0165166	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1890	Germany
+HB0722	0.315	0.8767	4.98678	0.00096	0.05817	0.0973956	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1891	Germany
+HB0725	0.625	0.87058	4.99901	0.00458	0.19233	0.244157	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1888	Germany
+HB0729	0.406	0.88355	5.38084	0.00121	0.13381	0.162974	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1866	Germany
+HB0732	0.627	0.89086	7.38565	0.00018	0.0047	0.00567559	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1932	Germany
+HB0737	0.408	0.88147	5.22799	0.0674	0.90577	11.2645	cover>=65%Ps	Plant tissue herbarium	(Latorre et al., 2022)	1937	Germany
+HB0742	0.293	0.88313	7.55188	0.00127	0.1632	0.210021	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1953	Germany
+HB0749	0.611	0.87899	6.76346	0.00245	0.15382	0.186103	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1849	Germany
+HB0750	0.586	0.87444	5.38558	0.00022	0.00941	0.0112103	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1957	Germany
+HB0752	0.631	0.883	6.21364	0.00029	0.01077	0.0130395	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1952	Germany
+HB0754	0.556	0.88094	6.45306	0.00048	0.0292	0.0340352	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1951	Germany
+HB0756	0.666	0.88521	6.45464	1e-05	0.00019	0.00020719	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1951	Germany
+HB0757	0.295	0.88657	7.31737	0.00096	0.1128	0.190593	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1951	Germany
+HB0759	0.646	0.88728	5.27976	7e-05	0.00117	0.00150688	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1893	Germany
+HB0764	0.525	0.88783	6.47373	0.00012	0.00386	0.00530127	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1905	Germany
+HB0766	0.489	0.88307	6.98054	0.05669	0.88517	9.20669	cover>=65%Ps	Plant tissue herbarium	(Latorre et al., 2022)	1846	Germany
+HB0768	0.55	0.87209	6.43917	2e-05	0.00077	0.000850808	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1894	Germany
+HB0808	0.551	0.88061	6.84285	0.01265	0.60175	1.16871	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1817	Germany
+HB0814	0.192	0.88508	5.74871	0.02283	0.9396	10.4923	cover>=65%Ps	Plant tissue herbarium	(Latorre et al., 2022)	1882	Germany
+HB0817	0.669	0.83617	3.51417	1e-05	0.00053	0.000536405	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1934	Germany
+HB0818	0.576	0.88464	5.94408	0.00016	0.00728	0.00859998	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1928	Germany
+HB0819	0.464	0.90146	6.09226	0.00031	0.01446	0.0190334	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1928	Germany
+HB0821	0.553	0.8832	7.06863	0.00054	0.04084	0.0463188	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1874	Germany
+HB0822	0.605	0.80653	3.58693	0.00026	0.00876	0.00983049	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1936	Germany
+HB0826	0.543	0.89537	7.26187	0.00612	0.47288	0.782313	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1948	Germany
+HB0828	0.391	0.89472	7.50092	0.00875	0.73931	1.97043	cover>=65%Ps	Plant tissue herbarium	(Latorre et al., 2022)	1890	Germany
+HB0830	0.63	0.88593	6.12923	0.00018	0.00756	0.00858416	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1862	Germany
+HB0840	0.497	0.89447	7.25678	0.01476	0.76725	1.98138	cover>=65%Ps	Plant tissue herbarium	(Latorre et al., 2022)	1851	Germany
+HB0841	0.494	0.89208	6.64603	0.0142	0.73621	1.75237	cover>=65%Ps	Plant tissue herbarium	(Latorre et al., 2022)	1875	Germany
+HB0862	0.045	0.22966	0.328291	0.00232	0.10453	0.295142	nointerests	Plant tissue herbarium	(Latorre et al., 2022)	1954	Somalia
+HB0863	0.232	0.76878	3.70839	0.0071	0.65409	1.77164	cover>=65%Ps	Plant tissue herbarium	(Latorre et al., 2022)	1954	Somalia
+p25_C2	NA	NA	NA	NA	0.99993	42.2917	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p3_F12	NA	NA	NA	NA	0.99973	74.2801	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p8_B3	NA	NA	NA	NA	0.99973	86.1378	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p3_A3	NA	NA	NA	NA	0.99942	13.3451	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p4_A6	NA	NA	NA	NA	0.99935	11.7885	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p25_D2	NA	NA	NA	NA	0.99727	11.6663	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p25_B2	NA	NA	NA	NA	0.99518	10.2988	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p6_A10	NA	NA	NA	NA	0.96547	95.204	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p20_D4	NA	NA	NA	NA	0.9595	25.1609	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p12_A11	NA	NA	NA	NA	0.95078	45.9799	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p21_A8	NA	NA	NA	NA	0.94627	48.4712	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p21_F9	NA	NA	NA	NA	0.94565	42.6239	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p20_F10	NA	NA	NA	NA	0.945	25.8688	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p20_G9	NA	NA	NA	NA	0.9444	24.6677	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p9_C4	NA	NA	NA	NA	0.94276	42.6611	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p12_E2	NA	NA	NA	NA	0.93987	117.38	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p12_F2	NA	NA	NA	NA	0.93843	63.2212	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p12_G7	NA	NA	NA	NA	0.93764	26.3989	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p5_C1	NA	NA	NA	NA	0.93716	85.2981	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p3_G9	NA	NA	NA	NA	0.92903	40.688	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p8_C7	NA	NA	NA	NA	0.92707	51.4319	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p13_F3	NA	NA	NA	NA	0.92243	173.521	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p22_D1	NA	NA	NA	NA	0.92214	9.34079	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p25_C11	NA	NA	NA	NA	0.91811	7.2272	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p8_B9	NA	NA	NA	NA	0.91536	47.2482	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p7_G11	NA	NA	NA	NA	0.91535	63.0731	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p23_A3	NA	NA	NA	NA	0.91411	81.6646	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p21_F1	NA	NA	NA	NA	0.91251	48.7056	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p13_C1	NA	NA	NA	NA	0.91119	86.4578	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p6_B9	NA	NA	NA	NA	0.91006	41.6058	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p13_D10	NA	NA	NA	NA	0.90976	78.9596	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p8_E4	NA	NA	NA	NA	0.90845	38.3512	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p13_C7	NA	NA	NA	NA	0.9079	28.6377	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p26_E7	NA	NA	NA	NA	0.9031	23.4618	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p23_B8	NA	NA	NA	NA	0.90253	22.9306	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p24_H2	NA	NA	NA	NA	0.90114	30.1982	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p5_C3	NA	NA	NA	NA	0.90042	56.6838	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p4_E6	NA	NA	NA	NA	0.9004	24.3753	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p26_B7	NA	NA	NA	NA	0.90034	16.1704	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p21_E3	NA	NA	NA	NA	0.89961	36.7162	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p27_D6	NA	NA	NA	NA	0.8993	54.2726	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p5_D5	NA	NA	NA	NA	0.89868	44.3047	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p22_C1	NA	NA	NA	NA	0.8981	39.3295	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p22_A8	NA	NA	NA	NA	0.89786	37.3074	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p4_D2	NA	NA	NA	NA	0.89659	39.7399	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p5_H11	NA	NA	NA	NA	0.89463	22.1605	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p22_B5	NA	NA	NA	NA	0.89456	28.0728	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p3_F8	NA	NA	NA	NA	0.8931	13.3644	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p27_F2	NA	NA	NA	NA	0.89179	26.9927	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p24_B5	NA	NA	NA	NA	0.8912	20.8226	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p4_E5	NA	NA	NA	NA	0.88896	8.16498	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p8_H7	NA	NA	NA	NA	0.88809	61.8387	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p26_D6	NA	NA	NA	NA	0.88432	8.93449	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p25_A12	NA	NA	NA	NA	0.8729	7.3414	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p22_D4	NA	NA	NA	NA	0.86542	5.70028	OTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p12_H7	NA	NA	NA	NA	0.56104	1.34732	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p13_F1	NA	NA	NA	NA	0.34676	0.959643	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p9_H10	NA	NA	NA	NA	0.23087	0.99343	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p8_G10	NA	NA	NA	NA	0.21379	0.99073	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p13_F5	NA	NA	NA	NA	0.19199	0.487225	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p8_D11	NA	NA	NA	NA	0.19006	0.806409	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p7_F2	NA	NA	NA	NA	0.1842	0.596928	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p6_F1	NA	NA	NA	NA	0.18222	1.16001	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p3_G11	NA	NA	NA	NA	0.14875	2.83774	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p12_A9	NA	NA	NA	NA	0.14815	0.257385	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p13_D5	NA	NA	NA	NA	0.13278	0.300065	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p8_G2	NA	NA	NA	NA	0.12615	0.71735	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p6_B5	NA	NA	NA	NA	0.12506	0.651948	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p6_D10	NA	NA	NA	NA	0.12023	0.580953	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p20_B10	NA	NA	NA	NA	0.11841	0.478625	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p6_G2	NA	NA	NA	NA	0.11566	1.92076	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p5_F2	NA	NA	NA	NA	0.10979	0.762043	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p4_H3	NA	NA	NA	NA	0.10649	1.02383	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p6_E9	NA	NA	NA	NA	0.10511	0.50172	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p6_G3	NA	NA	NA	NA	0.10128	1.01136	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+mDC3000	NA	NA	NA	NA	0.09289	3.81314	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p5_A5	NA	NA	NA	NA	0.09197	1.64926	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p27_C5	NA	NA	NA	NA	0.0759	0.396381	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p23_A5	NA	NA	NA	NA	0.0693	0.408023	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p23_B4	NA	NA	NA	NA	0.05615	0.577572	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p4_A8	NA	NA	NA	NA	0.05585	0.719153	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p26_C10	NA	NA	NA	NA	0.05459	0.521326	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p4_D11	NA	NA	NA	NA	0.05141	0.482722	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p26_F6	NA	NA	NA	NA	0.04474	0.112027	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
+p4_C5	NA	NA	NA	NA	0.02845	0.152854	nonOTU5	Pseudomonas culture	(Backman et al., 2023)	2018	Germany
