@@ -1,0 +1,771 @@
+
+
+== Warning ==  No assembly mode was specified! If you intend to assemble high-coverage multi-cell/isolate data, use '--isolate' option.
+
+
+Command line: /SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/bin/spades.py	-s	/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/the2fastq/64.GBR_1933b_S36.inclHTF.fastq.gz	-o	/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output	-t	4	--careful	-k	21,33	
+
+System information:
+  SPAdes version: 3.15.5
+  Python version: 3.10.16
+  OS: Linux-3.10.0-1160.114.2.el7.x86_64-x86_64-with-glibc2.17
+
+Output dir: /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output
+Mode: read error correction and assembling
+Debug mode is turned OFF
+
+Dataset parameters:
+  Standard mode
+  For multi-cell/isolate data we recommend to use '--isolate' option; for single-cell MDA data use '--sc'; for metagenomic data use '--meta'; for RNA-Seq use '--rna'.
+  Reads:
+    Library number: 1, library type: single
+      left reads: not specified
+      right reads: not specified
+      interlaced reads: not specified
+      single reads: ['/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/the2fastq/64.GBR_1933b_S36.inclHTF.fastq.gz']
+      merged reads: not specified
+Read error correction parameters:
+  Iterations: 1
+  PHRED offset will be auto-detected
+  Corrected reads will be compressed
+Assembly parameters:
+  k: [21, 33]
+  Repeat resolution is enabled
+  Mismatch careful mode is turned ON
+  MismatchCorrector will be used
+  Coverage cutoff is turned OFF
+Other parameters:
+  Dir for temp files: /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/tmp
+  Threads: 4
+  Memory limit (in Gb): 7
+
+
+======= SPAdes pipeline started. Log can be found here: /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/spades.log
+
+/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/the2fastq/64.GBR_1933b_S36.inclHTF.fastq.gz: max reads length: 75
+
+Reads length: 75
+
+
+===== Before start started. 
+
+
+===== Read error correction started. 
+
+
+===== Read error correction started. 
+
+
+== Running: /SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/bin/spades-hammer /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/corrected/configs/config.info
+
+  0:00:00.000     1M / 20M   INFO    General                 (main.cpp                  :  75)   Starting BayesHammer, built from N/A, git revision N/A
+  0:00:00.000     1M / 20M   INFO    General                 (main.cpp                  :  76)   Loading config from /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/corrected/configs/config.info
+  0:00:00.016     1M / 20M   INFO    General                 (main.cpp                  :  78)   Maximum # of threads to use (adjusted due to OMP capabilities): 4
+  0:00:00.023     1M / 20M   INFO    General                 (memory_limit.cpp          :  54)   Memory limit set to 7 Gb
+  0:00:00.023     1M / 20M   INFO    General                 (main.cpp                  :  86)   Trying to determine PHRED offset
+  0:00:00.025     1M / 20M   INFO    General                 (main.cpp                  :  92)   Determined value is 33
+  0:00:00.026     1M / 20M   INFO    General                 (hammer_tools.cpp          :  38)   Hamming graph threshold tau=1, k=21, subkmer positions = [ 0 10 ]
+  0:00:00.026     1M / 20M   INFO    General                 (main.cpp                  : 113)   Size of aux. kmer data 24 bytes
+     === ITERATION 0 begins ===
+  0:00:00.060     1M / 20M   INFO    General                 (kmer_index_builder.hpp    : 243)   Splitting kmer instances into 16 files using 4 threads. This might take a while.
+  0:00:00.104     1M / 20M   INFO    General                 (file_limit.hpp            :  42)   Open file limit set to 2048
+  0:00:00.104     1M / 20M   INFO    General                 (kmer_splitter.hpp         :  93)   Memory available for splitting buffers: 0.583325 Gb
+  0:00:00.104     1M / 20M   INFO    General                 (kmer_splitter.hpp         : 101)   Using cell size of 4194304
+  0:00:00.105  2305M / 2305M INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/the2fastq/64.GBR_1933b_S36.inclHTF.fastq.gz
+  0:00:09.051  2305M / 2305M INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 264788 reads
+  0:00:09.051  2305M / 2305M INFO   K-mer Splitting          (kmer_data.cpp             : 112)   Total 264788 reads processed
+  0:00:09.051     1M / 376M  INFO    General                 (kmer_index_builder.hpp    : 249)   Starting k-mer counting.
+  0:00:10.321     1M / 376M  INFO    General                 (kmer_index_builder.hpp    : 260)   K-mer counting done. There are 11515552 kmers in total.
+  0:00:10.478     1M / 376M  INFO   K-mer Index Building     (kmer_index_builder.hpp    : 395)   Building perfect hash indices
+  0:00:11.489     9M / 376M  INFO   K-mer Index Building     (kmer_index_builder.hpp    : 431)   Index built. Total 11515552 kmers, 8329168 bytes occupied (5.78638 bits per kmer).
+  0:00:11.490     9M / 376M  INFO   K-mer Counting           (kmer_data.cpp             : 354)   Arranging kmers in hash map order
+  0:00:12.481   186M / 376M  INFO    General                 (main.cpp                  : 148)   Clustering Hamming graph.
+  0:00:47.277   186M / 376M  INFO    General                 (main.cpp                  : 155)   Extracting clusters:
+  0:00:47.277   186M / 376M  INFO    General                 (concurrent_dsu.cpp        :  18)   Connecting to root
+  0:00:47.384   186M / 376M  INFO    General                 (concurrent_dsu.cpp        :  34)   Calculating counts
+  0:00:56.244   458M / 485M  INFO    General                 (concurrent_dsu.cpp        :  63)   Writing down entries
+  0:01:04.400   186M / 648M  INFO    General                 (main.cpp                  : 167)   Clustering done. Total clusters: 9739529
+  0:01:04.412    97M / 648M  INFO   K-mer Counting           (kmer_data.cpp             : 371)   Collecting K-mer information, this takes a while.
+  0:01:04.615   362M / 648M  INFO   K-mer Counting           (kmer_data.cpp             : 377)   Processing /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/the2fastq/64.GBR_1933b_S36.inclHTF.fastq.gz
+  0:01:14.374   362M / 648M  INFO   K-mer Counting           (kmer_data.cpp             : 384)   Collection done, postprocessing.
+  0:01:14.431   362M / 648M  INFO   K-mer Counting           (kmer_data.cpp             : 397)   There are 11515552 kmers in total. Among them 3120642 (27.0994%) are singletons.
+  0:01:14.431   362M / 648M  INFO    General                 (main.cpp                  : 173)   Subclustering Hamming graph
+  0:01:18.541   362M / 648M  INFO   Hamming Subclustering    (kmer_cluster.cpp          : 650)   Subclustering done. Total 10 non-read kmers were generated.
+  0:01:18.541   362M / 648M  INFO   Hamming Subclustering    (kmer_cluster.cpp          : 651)   Subclustering statistics:
+  0:01:18.541   362M / 648M  INFO   Hamming Subclustering    (kmer_cluster.cpp          : 652)     Total singleton hamming clusters: 8164584. Among them 7936132 (97.2019%) are good
+  0:01:18.541   362M / 648M  INFO   Hamming Subclustering    (kmer_cluster.cpp          : 653)     Total singleton subclusters: 11590. Among them 11590 (100%) are good
+  0:01:18.541   362M / 648M  INFO   Hamming Subclustering    (kmer_cluster.cpp          : 654)     Total non-singleton subcluster centers: 1576895. Among them 1449086 (91.8949%) are good
+  0:01:18.541   362M / 648M  INFO   Hamming Subclustering    (kmer_cluster.cpp          : 655)     Average size of non-trivial subcluster: 2.12505 kmers
+  0:01:18.541   362M / 648M  INFO   Hamming Subclustering    (kmer_cluster.cpp          : 656)     Average number of sub-clusters per non-singleton cluster: 1.0086
+  0:01:18.541   362M / 648M  INFO   Hamming Subclustering    (kmer_cluster.cpp          : 657)     Total solid k-mers: 9396808
+  0:01:18.541   362M / 648M  INFO   Hamming Subclustering    (kmer_cluster.cpp          : 658)     Substitution probabilities: [4,4]((0.953411,0.0101451,0.0301515,0.00629212),(0.0103511,0.94283,0.00877528,0.0380438),(0.0319722,0.00706106,0.9488,0.0121665),(0.00531916,0.020894,0.00756254,0.966224))
+  0:01:18.754   362M / 648M  INFO    General                 (main.cpp                  : 178)   Finished clustering.
+  0:01:18.754   362M / 648M  INFO    General                 (main.cpp                  : 197)   Starting solid k-mers expansion in 4 threads.
+  0:01:21.986   362M / 648M  INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 0 produced 174330 new k-mers.
+  0:01:25.041   362M / 648M  INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 1 produced 1512 new k-mers.
+  0:01:28.098   362M / 648M  INFO    General                 (main.cpp                  : 218)   Solid k-mers iteration 2 produced 4 new k-mers.
+  0:01:28.098   362M / 648M  INFO    General                 (main.cpp                  : 222)   Solid k-mers finalized
+  0:01:28.098   362M / 648M  INFO    General                 (hammer_tools.cpp          : 222)   Starting read correction in 4 threads.
+  0:01:28.098   362M / 648M  INFO    General                 (hammer_tools.cpp          : 266)   Correcting single reads: /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/the2fastq/64.GBR_1933b_S36.inclHTF.fastq.gz
+  0:01:29.180   470M / 648M  INFO    General                 (hammer_tools.cpp          : 129)   Prepared batch 0 of 264788 reads.
+  0:01:33.432   482M / 648M  INFO    General                 (hammer_tools.cpp          : 134)   Processed batch 0
+  0:01:33.744   482M / 648M  INFO    General                 (hammer_tools.cpp          : 138)   Written batch 0
+  0:01:34.432   362M / 648M  INFO    General                 (hammer_tools.cpp          : 276)   Correction done. Changed 41699 bases in 34934 reads.
+  0:01:34.438   362M / 648M  INFO    General                 (hammer_tools.cpp          : 277)   Failed to correct 88 bases out of 24805847.
+  0:01:34.475     1M / 648M  INFO    General                 (main.cpp                  : 255)   Saving corrected dataset description to /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/corrected/corrected.yaml
+  0:01:35.300     1M / 648M  INFO    General                 (main.cpp                  : 262)   All done. Exiting.
+
+===== Read error correction finished. 
+
+
+===== corrected reads compression started. 
+
+
+== Running: /SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/bin/python /SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/share/spades/spades_pipeline/scripts/compress_all.py --input_file /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/corrected/corrected.yaml --ext_python_modules_home /SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/share/spades --max_threads 4 --output_dir /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/corrected --gzip_output
+
+== Compressing corrected reads (with gzip)
+== Files to compress: ['/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/corrected/64.GBR_1933b_S36.inclHTF.fastq.00.0_0.cor.fastq']
+== Files compression is finished
+== Dataset yaml file is updated
+
+===== corrected reads compression finished. 
+
+
+===== Read error correction finished. 
+
+
+===== Assembling started. 
+
+
+===== K21 started. 
+
+
+== Running: /SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/bin/spades-core /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K21/configs/config.info /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K21/configs/careful_mode.info
+
+  0:00:00.000     1M / 20M   INFO    General                 (main.cpp                  :  99)   Loaded config from /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K21/configs/config.info
+  0:00:00.000     1M / 20M   INFO    General                 (main.cpp                  :  99)   Loaded config from /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K21/configs/careful_mode.info
+  0:00:00.000     1M / 20M   INFO    General                 (memory_limit.cpp          :  54)   Memory limit set to 7 Gb
+  0:00:00.000     1M / 20M   INFO    General                 (main.cpp                  : 107)   Starting SPAdes, built from N/A, git revision N/A
+  0:00:00.000     1M / 20M   INFO    General                 (main.cpp                  : 108)   Maximum k-mer length: 128
+  0:00:00.000     1M / 20M   INFO    General                 (main.cpp                  : 109)   Assembling dataset (/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/dataset.info) with K=21
+  0:00:00.000     1M / 20M   INFO    General                 (main.cpp                  : 110)   Maximum # of threads to use (adjusted due to OMP capabilities): 4
+  0:00:00.000     1M / 20M   INFO    General                 (pipeline.cpp              : 212)   SPAdes started
+  0:00:00.000     1M / 20M   INFO    General                 (pipeline.cpp              : 225)   Starting from stage: read_conversion
+  0:00:00.000     1M / 20M   INFO    General                 (pipeline.cpp              : 231)   Two-step repeat resolution disabled
+  0:00:00.000     1M / 20M   INFO   GraphCore                (graph_core.hpp            : 672)   Graph created, vertex min_id: 3, edge min_id: 3
+  0:00:00.000     1M / 20M   INFO   GraphCore                (graph_core.hpp            : 673)   Vertex size: 48, edge size: 40
+  0:00:00.027     1M / 20M   INFO    General                 (edge_index.hpp            : 113)   Size of edge index entries: 12/8
+  0:00:00.048     1M / 20M   INFO   StageManager             (stage.cpp                 : 185)   STAGE == Binary Read Conversion (id: read_conversion)
+  0:00:00.159     1M / 20M   INFO    General                 (read_converter.cpp        :  72)   Converting reads to binary format for library #0 (takes a while)
+  0:00:00.159     1M / 20M   INFO    General                 (read_converter.cpp        :  73)   Converting paired reads
+  0:00:00.203    23M / 23M   INFO    General                 (binary_converter.cpp      : 111)   0 reads written
+  0:00:00.203     1M / 20M   INFO    General                 (read_converter.cpp        :  86)   Converting single reads
+  0:00:00.515    32M / 32M   INFO    General                 (binary_converter.cpp      :  96)   16384 reads processed
+  0:00:00.532    33M / 33M   INFO    General                 (binary_converter.cpp      :  96)   32768 reads processed
+  0:00:00.552    36M / 36M   INFO    General                 (binary_converter.cpp      :  96)   65536 reads processed
+  0:00:00.803    34M / 64M   INFO    General                 (binary_converter.cpp      :  96)   131072 reads processed
+  0:00:01.234    38M / 75M   INFO    General                 (binary_converter.cpp      :  96)   262144 reads processed
+  0:00:01.336    31M / 75M   INFO    General                 (binary_converter.cpp      : 111)   264290 reads written
+  0:00:01.336    21M / 75M   INFO    General                 (read_converter.cpp        :  92)   Converting merged reads
+  0:00:01.706    31M / 75M   INFO    General                 (binary_converter.cpp      : 111)   0 reads written
+  0:00:02.623     1M / 75M   INFO   StageManager             (stage.cpp                 : 185)   STAGE == de Bruijn graph construction (id: construction)
+  0:00:02.674     1M / 75M   INFO    General                 (construction.cpp          : 153)   Max read length 139
+  0:00:02.674     1M / 75M   INFO    General                 (construction.cpp          : 159)   Average read length 93.836
+  0:00:02.674     1M / 75M   INFO    General                 (stage.cpp                 : 117)   PROCEDURE == k+1-mer counting (id: construction:kpomer_counting)
+  0:00:02.674     1M / 75M   INFO    General                 (kmer_index_builder.hpp    : 243)   Splitting kmer instances into 40 files using 4 threads. This might take a while.
+  0:00:02.758     1M / 75M   INFO    General                 (file_limit.hpp            :  42)   Open file limit set to 2048
+  0:00:02.758     1M / 75M   INFO    General                 (kmer_splitter.hpp         :  93)   Memory available for splitting buffers: 0.583311 Gb
+  0:00:02.758     1M / 75M   INFO    General                 (kmer_splitter.hpp         : 101)   Using cell size of 1677721
+  0:00:08.276  2401M / 2401M INFO    General                 (kmer_splitters.hpp        : 125)   Processed 528580 reads
+  0:00:08.276     1M / 234M  INFO    General                 (kmer_splitters.hpp        : 131)   Used 528580 reads
+  0:00:08.291     1M / 234M  INFO    General                 (kmer_index_builder.hpp    : 249)   Starting k-mer counting.
+  0:00:25.645     1M / 234M  INFO    General                 (kmer_index_builder.hpp    : 260)   K-mer counting done. There are 5134105 kmers in total.
+  0:00:25.645     1M / 234M  INFO    General                 (stage.cpp                 : 117)   PROCEDURE == Extension index construction (id: construction:extension_index_construction)
+  0:00:25.932     1M / 234M  INFO   K-mer Index Building     (kmer_index_builder.hpp    : 438)   Building kmer index
+  0:00:25.932     1M / 234M  INFO    General                 (kmer_index_builder.hpp    : 243)   Splitting kmer instances into 40 files using 4 threads. This might take a while.
+  0:00:25.981     1M / 234M  INFO    General                 (file_limit.hpp            :  42)   Open file limit set to 2048
+  0:00:25.981     1M / 234M  INFO    General                 (kmer_splitter.hpp         :  93)   Memory available for splitting buffers: 0.583305 Gb
+  0:00:25.981     1M / 234M  INFO    General                 (kmer_splitter.hpp         : 101)   Using cell size of 1677721
+  0:00:34.047  2401M / 2401M INFO    General                 (kmer_splitters.hpp        : 194)   Processed 5134105 kmers
+  0:00:34.047  2401M / 2401M INFO    General                 (kmer_splitters.hpp        : 199)   Used 5134105 kmers.
+  0:00:34.047     1M / 234M  INFO    General                 (kmer_index_builder.hpp    : 249)   Starting k-mer counting.
+  0:00:37.269     1M / 234M  INFO    General                 (kmer_index_builder.hpp    : 260)   K-mer counting done. There are 5136420 kmers in total.
+  0:00:37.269     1M / 234M  INFO   K-mer Index Building     (kmer_index_builder.hpp    : 395)   Building perfect hash indices
+  0:00:38.133     5M / 234M  INFO   K-mer Index Building     (kmer_index_builder.hpp    : 431)   Index built. Total 5136420 kmers, 3739792 bytes occupied (5.82474 bits per kmer).
+  0:00:38.133     5M / 234M  INFO    General                 (kmer_index_builder.hpp    : 169)   Merging final buckets.
+  0:00:42.913    10M / 234M  INFO   DeBruijnExtensionIndexBu (kmer_extension_index_build: 100)   Building k-mer extensions from k+1-mers
+  0:00:44.185    10M / 234M  INFO   DeBruijnExtensionIndexBu (kmer_extension_index_build: 105)   Building k-mer extensions from k+1-mers finished.
+  0:00:44.187     9M / 234M  INFO    General                 (stage.cpp                 : 117)   PROCEDURE == Early tip clipping (id: construction:early_tip_clipper)
+  0:00:44.187     9M / 234M  INFO    General                 (construction.cpp          : 301)   Early tip clipper length bound set as (RL - K)
+  0:00:44.187     9M / 234M  INFO   Early tip clipping       (early_simplification.hpp  :  47)   Early tip clipping
+  0:00:45.163    11M / 234M  INFO   Early tip clipping       (early_simplification.hpp  :  82)   #tipped junctions: 16824
+  0:00:45.168    11M / 234M  INFO   Early tip clipping       (early_simplification.hpp  :  93)   Clipped tips: 16853
+  0:00:45.171     9M / 234M  INFO   Early tip clipping       (early_simplification.hpp  :  49)   209735 22-mers were removed by early tip clipper
+  0:00:45.171     9M / 234M  INFO    General                 (stage.cpp                 : 117)   PROCEDURE == Condensing graph (id: construction:graph_condensing)
+  0:00:45.214    10M / 234M  INFO   UnbranchingPathExtractor (debruijn_graph_constructor: 354)   Extracting unbranching paths
+  0:00:46.146    12M / 234M  INFO   UnbranchingPathExtractor (debruijn_graph_constructor: 373)   Extracting unbranching paths finished. 38359 sequences extracted
+  0:00:46.599    12M / 234M  INFO   UnbranchingPathExtractor (debruijn_graph_constructor: 309)   Collecting perfect loops
+  0:00:46.826    12M / 234M  INFO   UnbranchingPathExtractor (debruijn_graph_constructor: 342)   Collecting perfect loops finished. 1 loops collected
+  0:00:46.831    12M / 234M  INFO    General                 (debruijn_graph_constructor: 487)   Total 76720 edges to create
+  0:00:46.831    15M / 234M  INFO    General                 (debruijn_graph_constructor: 489)   Collecting link records
+  0:00:46.845    16M / 234M  INFO    General                 (debruijn_graph_constructor: 491)   Ordering link records
+  0:00:46.849    16M / 234M  INFO    General                 (debruijn_graph_constructor: 493)   Sorting done
+  0:00:46.849    17M / 234M  INFO    General                 (debruijn_graph_constructor: 503)   Total 40675 vertices to create
+  0:00:46.849    21M / 234M  INFO    General                 (debruijn_graph_constructor: 506)   Connecting the graph
+  0:00:46.868    18M / 234M  INFO    General                 (stage.cpp                 : 117)   PROCEDURE == Filling coverage indices (PHM) (id: construction:coverage_filling_phm)
+  0:00:46.868    18M / 234M  INFO   K-mer Index Building     (kmer_index_builder.hpp    : 395)   Building perfect hash indices
+  0:00:47.891    22M / 234M  INFO   K-mer Index Building     (kmer_index_builder.hpp    : 431)   Index built. Total 5134105 kmers, 3738176 bytes occupied (5.82485 bits per kmer).
+  0:00:47.909    42M / 234M  INFO    General                 (coverage_hash_map_builder.:  47)   Collecting k-mer coverage information from reads, this takes a while.
+  0:00:49.918    42M / 234M  INFO    General                 (construction.cpp          : 430)   Filling coverage and flanking coverage from PHM
+  0:00:50.990    42M / 234M  INFO    General                 (coverage_filling.hpp      :  82)   Processed 76712 edges
+  0:00:52.478     9M / 234M  INFO   StageManager             (stage.cpp                 : 185)   STAGE == EC Threshold Finding (id: ec_threshold_finder)
+  0:00:52.480     9M / 234M  INFO    General                 (kmer_coverage_model.cpp   : 181)   Kmer coverage valley at: 16
+  0:00:52.480     9M / 234M  INFO    General                 (kmer_coverage_model.cpp   : 201)   K-mer histogram maximum: 21
+  0:00:52.480     9M / 234M  INFO    General                 (kmer_coverage_model.cpp   : 237)   Estimated median coverage: 22. Coverage mad: 4.4478
+  0:00:52.480     9M / 234M  INFO    General                 (kmer_coverage_model.cpp   : 259)   Fitting coverage model
+  0:00:52.513     9M / 234M  INFO    General                 (kmer_coverage_model.cpp   : 295)   ... iteration 2
+  0:00:52.555     9M / 234M  INFO    General                 (kmer_coverage_model.cpp   : 295)   ... iteration 4
+  0:00:52.648     9M / 234M  INFO    General                 (kmer_coverage_model.cpp   : 295)   ... iteration 8
+  0:00:52.713     9M / 234M  INFO    General                 (kmer_coverage_model.cpp   : 309)   Fitted mean coverage: 63.5949. Fitted coverage std. dev: 26.6408
+  0:00:52.713     9M / 234M  INFO    General                 (kmer_coverage_model.cpp   : 334)   Probability of erroneous kmer at valley: 1
+  0:00:52.713     9M / 234M  INFO    General                 (kmer_coverage_model.cpp   : 358)   Preliminary threshold calculated as: 49
+  0:00:52.713     9M / 234M  INFO    General                 (kmer_coverage_model.cpp   : 362)   Threshold adjusted to: 39
+  0:00:52.713     9M / 234M  INFO    General                 (kmer_coverage_model.cpp   : 375)   Estimated genome size (ignoring repeats): 505
+  0:00:52.713     9M / 234M  INFO    General                 (genomic_info_filler.cpp   :  55)   Mean coverage was calculated as 63.5949
+  0:00:52.713     9M / 234M  INFO    General                 (genomic_info_filler.cpp   :  70)   EC coverage threshold value was calculated as 39
+  0:00:52.713     9M / 234M  INFO    General                 (genomic_info_filler.cpp   :  71)   Trusted kmer low bound: 0
+  0:00:52.713     9M / 234M  INFO   StageManager             (stage.cpp                 : 185)   STAGE == Raw Simplification (id: raw_simplification)
+  0:00:52.725     9M / 234M  INFO    General                 (simplification.cpp        : 127)   PROCEDURE == Initial cleaning
+  0:00:52.726     9M / 234M  INFO    General                 (graph_simplification.hpp  : 662)   Flanking coverage based disconnection disabled
+  0:00:52.726     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Self conjugate edge remover
+  0:00:52.732     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Self conjugate edge remover triggered 0 times
+  0:00:52.733     9M / 234M  INFO   StageManager             (stage.cpp                 : 185)   STAGE == Simplification (id: simplification)
+  0:00:52.733     9M / 234M  INFO    General                 (simplification.cpp        : 368)   Graph simplification started
+  0:00:52.733     9M / 234M  INFO    General                 (graph_simplification.hpp  : 634)   Creating parallel br instance
+  0:00:52.733     9M / 234M  INFO    General                 (simplification.cpp        : 373)   PROCEDURE == Simplification cycle, iteration 1
+  0:00:52.733     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Tip clipper
+  0:00:52.744     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Tip clipper triggered 426 times
+  0:00:52.744     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Bulge remover
+  0:00:52.871     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Bulge remover triggered 3893 times
+  0:00:52.872     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Low coverage edge remover
+  0:00:52.958    10M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Low coverage edge remover triggered 4351 times
+  0:00:52.959    10M / 234M  INFO    General                 (simplification.cpp        : 373)   PROCEDURE == Simplification cycle, iteration 2
+  0:00:52.960    10M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Tip clipper
+  0:00:52.965     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Tip clipper triggered 135 times
+  0:00:52.968     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Bulge remover
+  0:00:52.971     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Bulge remover triggered 15 times
+  0:00:52.971     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Low coverage edge remover
+  0:00:52.977     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Low coverage edge remover triggered 259 times
+  0:00:52.980     9M / 234M  INFO    General                 (simplification.cpp        : 373)   PROCEDURE == Simplification cycle, iteration 3
+  0:00:52.980     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Tip clipper
+  0:00:52.980     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Tip clipper triggered 2 times
+  0:00:52.980     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Bulge remover
+  0:00:52.981     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Bulge remover triggered 4 times
+  0:00:52.981     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Low coverage edge remover
+  0:00:52.982     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Low coverage edge remover triggered 41 times
+  0:00:52.982     9M / 234M  INFO    General                 (simplification.cpp        : 373)   PROCEDURE == Simplification cycle, iteration 4
+  0:00:52.982     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Tip clipper
+  0:00:52.982     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Tip clipper triggered 0 times
+  0:00:52.982     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Bulge remover
+  0:00:52.983     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Bulge remover triggered 2 times
+  0:00:52.983     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Low coverage edge remover
+  0:00:52.983     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Low coverage edge remover triggered 13 times
+  0:00:52.983     9M / 234M  INFO    General                 (simplification.cpp        : 373)   PROCEDURE == Simplification cycle, iteration 5
+  0:00:52.983     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Tip clipper
+  0:00:52.983     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Tip clipper triggered 0 times
+  0:00:52.983     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Bulge remover
+  0:00:52.983     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Bulge remover triggered 0 times
+  0:00:52.983     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Low coverage edge remover
+  0:00:52.984     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Low coverage edge remover triggered 8 times
+  0:00:52.984     9M / 234M  INFO    General                 (simplification.cpp        : 373)   PROCEDURE == Simplification cycle, iteration 6
+  0:00:52.984     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Tip clipper
+  0:00:52.984     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Tip clipper triggered 0 times
+  0:00:52.984     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Bulge remover
+  0:00:52.984     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Bulge remover triggered 0 times
+  0:00:52.984     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Low coverage edge remover
+  0:00:52.984     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Low coverage edge remover triggered 6 times
+  0:00:52.984     9M / 234M  INFO    General                 (simplification.cpp        : 373)   PROCEDURE == Simplification cycle, iteration 7
+  0:00:52.984     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Tip clipper
+  0:00:52.984     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Tip clipper triggered 0 times
+  0:00:52.984     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Bulge remover
+  0:00:52.984     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Bulge remover triggered 0 times
+  0:00:52.984     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Low coverage edge remover
+  0:00:52.984     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Low coverage edge remover triggered 5 times
+  0:00:52.984     9M / 234M  INFO    General                 (simplification.cpp        : 373)   PROCEDURE == Simplification cycle, iteration 8
+  0:00:52.984     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Tip clipper
+  0:00:52.984     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Tip clipper triggered 0 times
+  0:00:52.984     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Bulge remover
+  0:00:52.984     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Bulge remover triggered 0 times
+  0:00:52.984     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Low coverage edge remover
+  0:00:52.985     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Low coverage edge remover triggered 5 times
+  0:00:52.985     9M / 234M  INFO    General                 (simplification.cpp        : 373)   PROCEDURE == Simplification cycle, iteration 9
+  0:00:52.985     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Tip clipper
+  0:00:52.985     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Tip clipper triggered 0 times
+  0:00:52.985     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Bulge remover
+  0:00:52.985     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Bulge remover triggered 0 times
+  0:00:52.985     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Low coverage edge remover
+  0:00:52.985     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Low coverage edge remover triggered 1 times
+  0:00:52.985     9M / 234M  INFO    General                 (simplification.cpp        : 373)   PROCEDURE == Simplification cycle, iteration 10
+  0:00:52.985     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Tip clipper
+  0:00:52.985     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Tip clipper triggered 0 times
+  0:00:52.985     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Bulge remover
+  0:00:52.985     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Bulge remover triggered 0 times
+  0:00:52.985     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Low coverage edge remover
+  0:00:52.985     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Low coverage edge remover triggered 1 times
+  0:00:52.985     9M / 234M  INFO    General                 (simplification.cpp        : 373)   PROCEDURE == Simplification cycle, iteration 11
+  0:00:52.985     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Tip clipper
+  0:00:52.989     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Tip clipper triggered 0 times
+  0:00:52.989     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Bulge remover
+  0:00:52.992     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Bulge remover triggered 0 times
+  0:00:52.993     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Low coverage edge remover
+  0:00:52.995     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Low coverage edge remover triggered 0 times
+  0:00:52.997     9M / 234M  INFO   StageManager             (stage.cpp                 : 185)   STAGE == Simplification Cleanup (id: simplification_cleanup)
+  0:00:52.997     9M / 234M  INFO    General                 (simplification.cpp        : 176)   PROCEDURE == Post simplification
+  0:00:52.997     9M / 234M  INFO    General                 (graph_simplification.hpp  : 448)   Disconnection of relatively low covered edges disabled
+  0:00:52.997     9M / 234M  INFO    General                 (graph_simplification.hpp  : 485)   Complex tip clipping disabled
+  0:00:52.997     9M / 234M  INFO    General                 (graph_simplification.hpp  : 634)   Creating parallel br instance
+  0:00:52.997     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Tip clipper
+  0:00:53.004     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Tip clipper triggered 0 times
+  0:00:53.004     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Bulge remover
+  0:00:53.007     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Bulge remover triggered 0 times
+  0:00:53.007     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Tip clipper
+  0:00:53.011     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Tip clipper triggered 0 times
+  0:00:53.011     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Bulge remover
+  0:00:53.013     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Bulge remover triggered 0 times
+  0:00:53.013     9M / 234M  INFO    General                 (simplification.cpp        : 327)   Disrupting self-conjugate edges
+  0:00:53.021     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Removing isolated edges
+  0:00:53.032     9M / 234M  INFO   Simplification           (parallel_processing.hpp   : 170)   Removing isolated edges triggered 3770 times
+  0:00:53.033     9M / 234M  INFO    General                 (simplification.cpp        : 495)   After simplification:
+  0:00:53.033     9M / 234M  INFO    General                 (simplification.cpp        : 496)     Average coverage = 4.13591
+  0:00:53.034     9M / 234M  INFO    General                 (simplification.cpp        : 497)     Total length = 4320805
+  0:00:53.035     9M / 234M  INFO    General                 (simplification.cpp        : 498)     Median edge length: 727
+  0:00:53.035     9M / 234M  INFO    General                 (simplification.cpp        : 499)     Edges: 16056
+  0:00:53.035     9M / 234M  INFO    General                 (simplification.cpp        : 500)     Vertices: 30366
+  0:00:53.035     9M / 234M  WARN    General                 (simplification.cpp        : 504)   The determined erroneous connection coverage threshold may be determined improperly
+  0:00:53.035     9M / 234M  INFO   StageManager             (stage.cpp                 : 185)   STAGE == Contig Output (id: contig_output)
+  0:00:53.154     9M / 234M  INFO    General                 (read_converter.cpp        : 107)   Outputting contigs to /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K21/simplified_contigs
+  0:00:53.167    11M / 234M  INFO    General                 (binary_converter.cpp      : 111)   8029 reads written
+  0:00:53.209     9M / 234M  INFO    General                 (pipeline.cpp              : 287)   SPAdes finished
+  0:00:53.220     1M / 234M  INFO    General                 (main.cpp                  : 136)   Assembling time: 0 hours 0 minutes 53 seconds
+
+===== K21 finished. 
+
+
+===== K33 started. 
+
+
+== Running: /SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/bin/spades-core /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K33/configs/config.info /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K33/configs/careful_mode.info
+
+  0:00:00.000     1M / 20M   INFO    General                 (main.cpp                  :  99)   Loaded config from /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K33/configs/config.info
+  0:00:00.000     1M / 20M   INFO    General                 (main.cpp                  :  99)   Loaded config from /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K33/configs/careful_mode.info
+  0:00:00.000     1M / 20M   INFO    General                 (memory_limit.cpp          :  54)   Memory limit set to 7 Gb
+  0:00:00.000     1M / 20M   INFO    General                 (main.cpp                  : 107)   Starting SPAdes, built from N/A, git revision N/A
+  0:00:00.000     1M / 20M   INFO    General                 (main.cpp                  : 108)   Maximum k-mer length: 128
+  0:00:00.000     1M / 20M   INFO    General                 (main.cpp                  : 109)   Assembling dataset (/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/dataset.info) with K=33
+  0:00:00.000     1M / 20M   INFO    General                 (main.cpp                  : 110)   Maximum # of threads to use (adjusted due to OMP capabilities): 4
+  0:00:00.000     1M / 20M   INFO    General                 (pipeline.cpp              : 212)   SPAdes started
+  0:00:00.001     1M / 20M   INFO    General                 (pipeline.cpp              : 225)   Starting from stage: read_conversion
+  0:00:00.001     1M / 20M   INFO    General                 (pipeline.cpp              : 231)   Two-step repeat resolution disabled
+  0:00:00.001     1M / 20M   INFO   GraphCore                (graph_core.hpp            : 672)   Graph created, vertex min_id: 3, edge min_id: 3
+  0:00:00.001     1M / 20M   INFO   GraphCore                (graph_core.hpp            : 673)   Vertex size: 48, edge size: 40
+  0:00:00.001     1M / 20M   INFO    General                 (edge_index.hpp            : 113)   Size of edge index entries: 12/8
+  0:00:00.001     1M / 20M   INFO    General                 (pipeline.cpp              : 242)   Will need read mapping, kmer mapper will be attached
+  0:00:00.001     1M / 20M   INFO   StageManager             (stage.cpp                 : 185)   STAGE == Binary Read Conversion (id: read_conversion)
+  0:00:00.389     1M / 20M   INFO    General                 (read_converter.cpp        :  53)   Binary reads detected
+  0:00:00.390     1M / 20M   INFO   StageManager             (stage.cpp                 : 185)   STAGE == de Bruijn graph construction (id: construction)
+  0:00:00.390     1M / 20M   INFO    General                 (construction.cpp          : 118)   Contigs from previous K will be used: /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K21/simplified_contigs
+  0:00:00.825     1M / 20M   INFO    General                 (construction.cpp          : 153)   Max read length 139
+  0:00:00.828     1M / 20M   INFO    General                 (construction.cpp          : 159)   Average read length 93.836
+  0:00:00.828     1M / 20M   INFO    General                 (stage.cpp                 : 117)   PROCEDURE == k+1-mer counting (id: construction:kpomer_counting)
+  0:00:00.828     1M / 20M   INFO    General                 (kmer_index_builder.hpp    : 243)   Splitting kmer instances into 40 files using 4 threads. This might take a while.
+  0:00:00.857     1M / 20M   INFO    General                 (file_limit.hpp            :  42)   Open file limit set to 2048
+  0:00:00.858     1M / 20M   INFO    General                 (kmer_splitter.hpp         :  93)   Memory available for splitting buffers: 0.583308 Gb
+  0:00:00.858     1M / 20M   INFO    General                 (kmer_splitter.hpp         : 101)   Using cell size of 838860
+  0:00:05.203  2401M / 2401M INFO    General                 (kmer_splitters.hpp        : 125)   Processed 544638 reads
+  0:00:05.204     1M / 362M  INFO    General                 (kmer_splitters.hpp        : 131)   Used 544638 reads
+  0:00:05.240     1M / 362M  INFO    General                 (kmer_index_builder.hpp    : 249)   Starting k-mer counting.
+  0:00:07.404     1M / 362M  INFO    General                 (kmer_index_builder.hpp    : 260)   K-mer counting done. There are 5067374 kmers in total.
+  0:00:07.413     1M / 362M  INFO    General                 (stage.cpp                 : 117)   PROCEDURE == Extension index construction (id: construction:extension_index_construction)
+  0:00:07.458     1M / 362M  INFO   K-mer Index Building     (kmer_index_builder.hpp    : 438)   Building kmer index
+  0:00:07.458     1M / 362M  INFO    General                 (kmer_index_builder.hpp    : 243)   Splitting kmer instances into 40 files using 4 threads. This might take a while.
+  0:00:07.469     1M / 362M  INFO    General                 (file_limit.hpp            :  42)   Open file limit set to 2048
+  0:00:07.469     1M / 362M  INFO    General                 (kmer_splitter.hpp         :  93)   Memory available for splitting buffers: 0.583302 Gb
+  0:00:07.469     1M / 362M  INFO    General                 (kmer_splitter.hpp         : 101)   Using cell size of 838860
+  0:00:15.086  2401M / 2401M INFO    General                 (kmer_splitters.hpp        : 194)   Processed 5067374 kmers
+  0:00:15.089  2401M / 2401M INFO    General                 (kmer_splitters.hpp        : 199)   Used 5067374 kmers.
+  0:00:15.089     1M / 362M  INFO    General                 (kmer_index_builder.hpp    : 249)   Starting k-mer counting.
+  0:00:17.368     1M / 362M  INFO    General                 (kmer_index_builder.hpp    : 260)   K-mer counting done. There are 5075289 kmers in total.
+  0:00:17.368     1M / 362M  INFO   K-mer Index Building     (kmer_index_builder.hpp    : 395)   Building perfect hash indices
+  0:00:17.941     5M / 362M  INFO   K-mer Index Building     (kmer_index_builder.hpp    : 431)   Index built. Total 5075289 kmers, 3695304 bytes occupied (5.82478 bits per kmer).
+  0:00:17.942     5M / 362M  INFO    General                 (kmer_index_builder.hpp    : 169)   Merging final buckets.
+  0:00:19.214    10M / 362M  INFO   DeBruijnExtensionIndexBu (kmer_extension_index_build: 100)   Building k-mer extensions from k+1-mers
+  0:00:20.508    10M / 362M  INFO   DeBruijnExtensionIndexBu (kmer_extension_index_build: 105)   Building k-mer extensions from k+1-mers finished.
+  0:00:20.512    10M / 362M  INFO    General                 (stage.cpp                 : 117)   PROCEDURE == Condensing graph (id: construction:graph_condensing)
+  0:00:20.561    10M / 362M  INFO   UnbranchingPathExtractor (debruijn_graph_constructor: 354)   Extracting unbranching paths
+  0:00:21.786    13M / 362M  INFO   UnbranchingPathExtractor (debruijn_graph_constructor: 373)   Extracting unbranching paths finished. 64032 sequences extracted
+  0:00:22.413    13M / 362M  INFO   UnbranchingPathExtractor (debruijn_graph_constructor: 309)   Collecting perfect loops
+  0:00:22.747    13M / 362M  INFO   UnbranchingPathExtractor (debruijn_graph_constructor: 342)   Collecting perfect loops finished. 0 loops collected
+  0:00:22.755    13M / 362M  INFO    General                 (debruijn_graph_constructor: 487)   Total 128064 edges to create
+  0:00:22.755    18M / 362M  INFO    General                 (debruijn_graph_constructor: 489)   Collecting link records
+  0:00:22.790    20M / 362M  INFO    General                 (debruijn_graph_constructor: 491)   Ordering link records
+  0:00:22.797    20M / 362M  INFO    General                 (debruijn_graph_constructor: 493)   Sorting done
+  0:00:22.798    21M / 362M  INFO    General                 (debruijn_graph_constructor: 503)   Total 71947 vertices to create
+  0:00:22.798    28M / 362M  INFO    General                 (debruijn_graph_constructor: 506)   Connecting the graph
+  0:00:22.826    24M / 362M  INFO    General                 (stage.cpp                 : 117)   PROCEDURE == Filling coverage indices (PHM) (id: construction:coverage_filling_phm)
+  0:00:22.826    24M / 362M  INFO   K-mer Index Building     (kmer_index_builder.hpp    : 395)   Building perfect hash indices
+  0:00:23.558    28M / 362M  INFO   K-mer Index Building     (kmer_index_builder.hpp    : 431)   Index built. Total 5067374 kmers, 3689616 bytes occupied (5.8249 bits per kmer).
+  0:00:23.580    48M / 362M  INFO    General                 (coverage_hash_map_builder.:  47)   Collecting k-mer coverage information from reads, this takes a while.
+  0:00:25.336    48M / 362M  INFO    General                 (construction.cpp          : 430)   Filling coverage and flanking coverage from PHM
+  0:00:26.721    48M / 362M  INFO    General                 (coverage_filling.hpp      :  82)   Processed 128063 edges
+  0:00:27.111    15M / 362M  INFO   StageManager             (stage.cpp                 : 185)   STAGE == EC Threshold Finding (id: ec_threshold_finder)
+  0:00:27.112    15M / 362M  INFO    General                 (kmer_coverage_model.cpp   : 181)   Kmer coverage valley at: 17
+  0:00:27.112    15M / 362M  INFO    General                 (kmer_coverage_model.cpp   : 201)   K-mer histogram maximum: 18
+  0:00:27.112    15M / 362M  WARN    General                 (kmer_coverage_model.cpp   : 218)   Too many erroneous kmers, the estimates might be unreliable
+  0:00:27.112    15M / 362M  INFO    General                 (kmer_coverage_model.cpp   : 237)   Estimated median coverage: 18. Coverage mad: 14.0652
+  0:00:27.112    15M / 362M  INFO    General                 (kmer_coverage_model.cpp   : 259)   Fitting coverage model
+  0:00:27.128    15M / 362M  INFO    General                 (kmer_coverage_model.cpp   : 295)   ... iteration 2
+  0:00:27.159    15M / 362M  INFO    General                 (kmer_coverage_model.cpp   : 295)   ... iteration 4
+  0:00:27.198    15M / 362M  INFO    General                 (kmer_coverage_model.cpp   : 295)   ... iteration 8
+  0:00:27.248    15M / 362M  INFO    General                 (kmer_coverage_model.cpp   : 295)   ... iteration 16
+  0:00:27.261    15M / 362M  INFO    General                 (kmer_coverage_model.cpp   : 309)   Fitted mean coverage: 40.1351. Fitted coverage std. dev: 16.9608
+  0:00:27.261    15M / 362M  INFO    General                 (kmer_coverage_model.cpp   : 334)   Probability of erroneous kmer at valley: 0.99839
+  0:00:27.261    15M / 362M  INFO    General                 (kmer_coverage_model.cpp   : 358)   Preliminary threshold calculated as: 41
+  0:00:27.261    15M / 362M  INFO    General                 (kmer_coverage_model.cpp   : 362)   Threshold adjusted to: 28
+  0:00:27.261    15M / 362M  INFO    General                 (kmer_coverage_model.cpp   : 375)   Estimated genome size (ignoring repeats): 802
+  0:00:27.261    15M / 362M  INFO    General                 (genomic_info_filler.cpp   :  55)   Mean coverage was calculated as 40.1351
+  0:00:27.261    15M / 362M  INFO    General                 (genomic_info_filler.cpp   :  70)   EC coverage threshold value was calculated as 28
+  0:00:27.261    15M / 362M  INFO    General                 (genomic_info_filler.cpp   :  71)   Trusted kmer low bound: 0
+  0:00:27.261    15M / 362M  INFO   StageManager             (stage.cpp                 : 185)   STAGE == Gap Closer (id: early_gapcloser)
+  0:00:27.261    15M / 362M  INFO    General                 (gap_closer.cpp            : 429)   No paired-end libraries exist, skipping gap closer
+  0:00:27.261    15M / 362M  INFO   StageManager             (stage.cpp                 : 185)   STAGE == Raw Simplification (id: raw_simplification)
+  0:00:27.261    15M / 362M  INFO    General                 (simplification.cpp        : 127)   PROCEDURE == Initial cleaning
+  0:00:27.262    15M / 362M  INFO    General                 (simplification.cpp        :  61)   Most init cleaning disabled on main iteration
+  0:00:27.262    15M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Self conjugate edge remover
+  0:00:27.268    15M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Self conjugate edge remover triggered 0 times
+  0:00:27.268    15M / 362M  INFO   StageManager             (stage.cpp                 : 185)   STAGE == Simplification (id: simplification)
+  0:00:27.268    15M / 362M  INFO    General                 (simplification.cpp        : 368)   Graph simplification started
+  0:00:27.268    15M / 362M  INFO    General                 (graph_simplification.hpp  : 634)   Creating parallel br instance
+  0:00:27.268    15M / 362M  INFO    General                 (simplification.cpp        : 373)   PROCEDURE == Simplification cycle, iteration 1
+  0:00:27.268    15M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Tip clipper
+  0:00:27.487    15M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Tip clipper triggered 19574 times
+  0:00:27.488    15M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Bulge remover
+  0:00:27.703    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Bulge remover triggered 1467 times
+  0:00:27.704    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Low coverage edge remover
+  0:00:27.756    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Low coverage edge remover triggered 2463 times
+  0:00:27.757    20M / 362M  INFO    General                 (simplification.cpp        : 373)   PROCEDURE == Simplification cycle, iteration 2
+  0:00:27.757    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Tip clipper
+  0:00:27.760    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Tip clipper triggered 65 times
+  0:00:27.760    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Bulge remover
+  0:00:27.763    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Bulge remover triggered 8 times
+  0:00:27.763    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Low coverage edge remover
+  0:00:27.769    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Low coverage edge remover triggered 242 times
+  0:00:27.770    20M / 362M  INFO    General                 (simplification.cpp        : 373)   PROCEDURE == Simplification cycle, iteration 3
+  0:00:27.770    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Tip clipper
+  0:00:27.770    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Tip clipper triggered 1 times
+  0:00:27.770    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Bulge remover
+  0:00:27.771    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Bulge remover triggered 5 times
+  0:00:27.771    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Low coverage edge remover
+  0:00:27.772    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Low coverage edge remover triggered 27 times
+  0:00:27.772    20M / 362M  INFO    General                 (simplification.cpp        : 373)   PROCEDURE == Simplification cycle, iteration 4
+  0:00:27.772    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Tip clipper
+  0:00:27.772    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Tip clipper triggered 0 times
+  0:00:27.772    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Bulge remover
+  0:00:27.772    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Bulge remover triggered 3 times
+  0:00:27.772    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Low coverage edge remover
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Low coverage edge remover triggered 4 times
+  0:00:27.773    20M / 362M  INFO    General                 (simplification.cpp        : 373)   PROCEDURE == Simplification cycle, iteration 5
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Tip clipper
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Tip clipper triggered 0 times
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Bulge remover
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Bulge remover triggered 0 times
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Low coverage edge remover
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Low coverage edge remover triggered 3 times
+  0:00:27.773    20M / 362M  INFO    General                 (simplification.cpp        : 373)   PROCEDURE == Simplification cycle, iteration 6
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Tip clipper
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Tip clipper triggered 0 times
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Bulge remover
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Bulge remover triggered 0 times
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Low coverage edge remover
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Low coverage edge remover triggered 2 times
+  0:00:27.773    20M / 362M  INFO    General                 (simplification.cpp        : 373)   PROCEDURE == Simplification cycle, iteration 7
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Tip clipper
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Tip clipper triggered 0 times
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Bulge remover
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Bulge remover triggered 0 times
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Low coverage edge remover
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Low coverage edge remover triggered 2 times
+  0:00:27.773    20M / 362M  INFO    General                 (simplification.cpp        : 373)   PROCEDURE == Simplification cycle, iteration 8
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Tip clipper
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Tip clipper triggered 0 times
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Bulge remover
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Bulge remover triggered 0 times
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Low coverage edge remover
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Low coverage edge remover triggered 0 times
+  0:00:27.773    20M / 362M  INFO    General                 (simplification.cpp        : 373)   PROCEDURE == Simplification cycle, iteration 9
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Tip clipper
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Tip clipper triggered 0 times
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Bulge remover
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Bulge remover triggered 0 times
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Low coverage edge remover
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Low coverage edge remover triggered 2 times
+  0:00:27.773    20M / 362M  INFO    General                 (simplification.cpp        : 373)   PROCEDURE == Simplification cycle, iteration 10
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Tip clipper
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Tip clipper triggered 0 times
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Bulge remover
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Bulge remover triggered 0 times
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Low coverage edge remover
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Low coverage edge remover triggered 2 times
+  0:00:27.773    20M / 362M  INFO    General                 (simplification.cpp        : 373)   PROCEDURE == Simplification cycle, iteration 11
+  0:00:27.773    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Tip clipper
+  0:00:27.777    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Tip clipper triggered 0 times
+  0:00:27.777    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Bulge remover
+  0:00:27.780    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Bulge remover triggered 0 times
+  0:00:27.780    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Low coverage edge remover
+  0:00:27.782    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Low coverage edge remover triggered 0 times
+  0:00:27.784    20M / 362M  INFO   StageManager             (stage.cpp                 : 185)   STAGE == Gap Closer (id: late_gapcloser)
+  0:00:27.784    20M / 362M  INFO    General                 (gap_closer.cpp            : 429)   No paired-end libraries exist, skipping gap closer
+  0:00:27.784    20M / 362M  INFO   StageManager             (stage.cpp                 : 185)   STAGE == Simplification Cleanup (id: simplification_cleanup)
+  0:00:27.784    20M / 362M  INFO    General                 (simplification.cpp        : 176)   PROCEDURE == Post simplification
+  0:00:27.784    20M / 362M  INFO    General                 (graph_simplification.hpp  : 448)   Disconnection of relatively low covered edges disabled
+  0:00:27.784    20M / 362M  INFO    General                 (graph_simplification.hpp  : 485)   Complex tip clipping disabled
+  0:00:27.784    20M / 362M  INFO    General                 (graph_simplification.hpp  : 634)   Creating parallel br instance
+  0:00:27.784    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Tip clipper
+  0:00:27.787    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Tip clipper triggered 0 times
+  0:00:27.787    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Bulge remover
+  0:00:27.790    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Bulge remover triggered 0 times
+  0:00:27.790    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Tip clipper
+  0:00:27.793    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Tip clipper triggered 0 times
+  0:00:27.794    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Bulge remover
+  0:00:27.797    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Bulge remover triggered 0 times
+  0:00:27.797    20M / 362M  INFO    General                 (simplification.cpp        : 327)   Disrupting self-conjugate edges
+  0:00:27.807    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 167)   Running Removing isolated edges
+  0:00:27.821    20M / 362M  INFO   Simplification           (parallel_processing.hpp   : 170)   Removing isolated edges triggered 4888 times
+  0:00:27.823    19M / 362M  INFO    General                 (simplification.cpp        : 495)   After simplification:
+  0:00:27.823    19M / 362M  INFO    General                 (simplification.cpp        : 496)     Average coverage = 3.49235
+  0:00:27.824    19M / 362M  INFO    General                 (simplification.cpp        : 497)     Total length = 4221316
+  0:00:27.826    19M / 362M  INFO    General                 (simplification.cpp        : 498)     Median edge length: 770
+  0:00:27.826    19M / 362M  INFO    General                 (simplification.cpp        : 499)     Edges: 14900
+  0:00:27.826    19M / 362M  INFO    General                 (simplification.cpp        : 500)     Vertices: 29416
+  0:00:27.826    19M / 362M  WARN    General                 (simplification.cpp        : 504)   The determined erroneous connection coverage threshold may be determined improperly
+  0:00:27.826    19M / 362M  INFO   StageManager             (stage.cpp                 : 185)   STAGE == Mismatch Correction (id: mismatch_correction)
+  0:00:27.826    19M / 362M  INFO    General                 (graph_pack.cpp            :  67)   Index refill
+  0:00:27.826    19M / 362M  INFO    General                 (edge_index.hpp            : 156)   Using small index (max_id = 128707)
+  0:00:27.925    19M / 362M  INFO   K-mer Index Building     (kmer_index_builder.hpp    : 395)   Building perfect hash indices
+  0:00:28.882    23M / 362M  INFO   K-mer Index Building     (kmer_index_builder.hpp    : 431)   Index built. Total 4221316 kmers, 3049640 bytes occupied (5.77951 bits per kmer).
+  0:00:28.900    59M / 362M  INFO    General                 (edge_index_builders.hpp   : 252)   Collecting edge information from graph, this takes a while.
+  0:00:29.339    59M / 362M  INFO    General                 (graph_pack.cpp            :  77)   Normalizing k-mer map. Total 117880 kmers to process
+  0:00:29.391    59M / 362M  INFO    General                 (graph_pack.cpp            :  79)   Normalizing done
+  0:00:29.391    59M / 362M  INFO    General                 (mismatch_correction.cpp   : 400)   Collect potential mismatches
+  0:00:29.466    59M / 362M  INFO    General                 (mismatch_correction.cpp   : 192)   Total 2354 edges (out of 14900) with 15136 potential mismatch positions (6.42991 positions per edge)
+  0:00:29.466    59M / 362M  INFO    General                 (mismatch_correction.cpp   : 402)   Potential mismatches collected
+  0:00:31.197    64M / 362M  INFO    General                 (sequence_mapper_notifier.h:  95)   Total 528580 reads processed
+  0:00:31.222    60M / 362M  INFO    General                 (mismatch_correction.cpp   : 395)   All edges processed
+  0:00:31.224    59M / 362M  INFO    General                 (mismatch_correction.cpp   : 450)   Corrected 0 nucleotides
+  0:00:31.224    59M / 362M  INFO   StageManager             (stage.cpp                 : 185)   STAGE == Contig Output (id: contig_output)
+  0:00:31.224    59M / 362M  INFO    General                 (contig_output.hpp         :  16)   Outputting contigs to /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K33/before_rr.fasta
+  0:00:32.618    59M / 362M  INFO    General                 (contig_output_stage.cpp   : 151)   Writing GFA graph to /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K33/assembly_graph_after_simplification.gfa
+  0:00:33.065    59M / 362M  INFO   StageManager             (stage.cpp                 : 185)   STAGE == Paired Information Counting (id: late_pair_info_count)
+  0:00:33.091    61M / 362M  INFO    General                 (graph_pack.cpp            :  77)   Normalizing k-mer map. Total 117880 kmers to process
+  0:00:33.091    61M / 362M  INFO    General                 (graph_pack.cpp            :  79)   Normalizing done
+  0:00:33.092    61M / 362M  INFO    General                 (pair_info_count.cpp       : 339)   Min edge length for estimation: 770
+  0:00:33.092    61M / 362M  INFO    General                 (pair_info_count.cpp       : 411)   Mapping single reads of library #0
+  0:00:33.092    61M / 362M  INFO    General                 (pair_info_count.cpp       :  48)   Selecting usual mapper
+  0:00:33.665    64M / 362M  INFO    General                 (sequence_mapper_notifier.h:  95)   Total 264290 reads processed
+  0:00:33.666    64M / 362M  INFO    General                 (pair_info_count.cpp       : 413)   Total paths obtained from single reads: 15179
+  0:00:33.666    64M / 362M  INFO   StageManager             (stage.cpp                 : 185)   STAGE == Distance Estimation (id: distance_estimation)
+  0:00:33.666    64M / 362M  INFO   StageManager             (stage.cpp                 : 185)   STAGE == Repeat Resolving (id: repeat_resolving)
+  0:00:33.666    64M / 362M  INFO    General                 (repeat_resolving.cpp      :  87)   Using Path-Extend repeat resolving
+  0:00:33.666    64M / 362M  INFO    General                 (launcher.cpp              : 600)   ExSPAnder repeat resolving tool started
+  0:00:34.022    64M / 362M  INFO    General                 (coverage_uniformity_analyz:  25)   genomic coverage is 3.68263 calculated of length 2112277
+  0:00:34.067    94M / 362M  INFO    General                 (launcher.cpp              : 418)   Creating main extenders, unique edge length = 2000
+  0:00:34.067    96M / 362M  INFO    General                 (launcher.cpp              : 342)   filling path container
+  0:00:34.073    98M / 362M  INFO    General                 (extenders_logic.cpp       :  47)   resolvable_repeat_length_bound set to 10000
+  0:00:34.080   100M / 362M  INFO    General                 (extenders_logic.cpp       : 543)   Using 0 paired-end libraries
+  0:00:34.080   100M / 362M  INFO    General                 (extenders_logic.cpp       : 544)   Using 0 paired-end scaffolding libraries
+  0:00:34.080   100M / 362M  INFO    General                 (extenders_logic.cpp       : 545)   Using 1 single read library
+  0:00:34.080   100M / 362M  INFO    General                 (launcher.cpp              : 447)   Total number of extenders is 1
+  0:00:34.080   100M / 362M  INFO    General                 (path_extenders.cpp        :  36)   Processed 0 paths from 7447 (0%)
+  0:00:34.081   100M / 362M  INFO    General                 (path_extenders.cpp        :  34)   Processed 128 paths from 7447 (1%)
+  0:00:34.083   101M / 362M  INFO    General                 (path_extenders.cpp        :  34)   Processed 256 paths from 7447 (3%)
+  0:00:34.085   102M / 362M  INFO    General                 (path_extenders.cpp        :  34)   Processed 512 paths from 7447 (6%)
+  0:00:34.087   103M / 362M  INFO    General                 (path_extenders.cpp        :  36)   Processed 745 paths from 7447 (10%)
+  0:00:34.089   104M / 362M  INFO    General                 (path_extenders.cpp        :  34)   Processed 1024 paths from 7447 (13%)
+  0:00:34.092   105M / 362M  INFO    General                 (path_extenders.cpp        :  36)   Processed 1490 paths from 7447 (20%)
+  0:00:34.097   108M / 362M  INFO    General                 (path_extenders.cpp        :  34)   Processed 2048 paths from 7447 (27%)
+  0:00:34.098   108M / 362M  INFO    General                 (path_extenders.cpp        :  36)   Processed 2235 paths from 7447 (30%)
+  0:00:34.104   111M / 362M  INFO    General                 (path_extenders.cpp        :  36)   Processed 2980 paths from 7447 (40%)
+  0:00:34.109   114M / 362M  INFO    General                 (path_extenders.cpp        :  36)   Processed 3725 paths from 7447 (50%)
+  0:00:34.112   116M / 362M  INFO    General                 (path_extenders.cpp        :  34)   Processed 4096 paths from 7447 (55%)
+  0:00:34.115   117M / 362M  INFO    General                 (path_extenders.cpp        :  36)   Processed 4470 paths from 7447 (60%)
+  0:00:34.120   120M / 362M  INFO    General                 (path_extenders.cpp        :  36)   Processed 5215 paths from 7447 (70%)
+  0:00:34.125   123M / 362M  INFO    General                 (path_extenders.cpp        :  36)   Processed 5960 paths from 7447 (80%)
+  0:00:34.130   126M / 362M  INFO    General                 (path_extenders.cpp        :  36)   Processed 6705 paths from 7447 (90%)
+  0:00:34.136   129M / 362M  INFO    General                 (launcher.cpp              : 250)   Finalizing paths
+  0:00:34.136   129M / 362M  INFO    General                 (launcher.cpp              : 252)   Deduplicating paths
+  0:00:34.141   129M / 362M  INFO    General                 (launcher.cpp              : 256)   Paths deduplicated
+  0:00:34.141   129M / 362M  INFO   PEResolver               (pe_resolver.cpp           :  60)   Removing overlaps
+  0:00:34.141   129M / 362M  INFO   PEResolver               (pe_resolver.cpp           :  63)   Sorting paths
+  0:00:34.147   129M / 362M  INFO   PEResolver               (pe_resolver.cpp           :  70)   Marking overlaps
+  0:00:34.147   129M / 362M  INFO   OverlapRemover           (overlap_remover.hpp       : 116)   Marking start/end overlaps
+  0:00:34.155   129M / 362M  INFO   OverlapRemover           (overlap_remover.hpp       : 119)   Marking remaining overlaps
+  0:00:34.163   129M / 362M  INFO   PEResolver               (pe_resolver.cpp           :  73)   Splitting paths
+  0:00:34.165   129M / 362M  INFO   PEResolver               (pe_resolver.cpp           :  78)   Deduplicating paths
+  0:00:34.168   129M / 362M  INFO   PEResolver               (pe_resolver.cpp           :  80)   Overlaps removed
+  0:00:34.175   129M / 362M  INFO    General                 (launcher.cpp              : 273)   Paths finalized
+  0:00:34.175   129M / 362M  INFO    General                 (launcher.cpp              : 454)   Closing gaps in paths
+  0:00:34.231   158M / 362M  INFO    General                 (launcher.cpp              : 484)   Gap closing completed
+  0:00:34.242   159M / 362M  INFO    General                 (launcher.cpp              : 302)   Traversing tandem repeats
+  0:00:34.316   159M / 362M  INFO    General                 (launcher.cpp              : 312)   Traversed 0 loops
+  0:00:34.316   159M / 362M  INFO    General                 (launcher.cpp              : 250)   Finalizing paths
+  0:00:34.317   159M / 362M  INFO    General                 (launcher.cpp              : 252)   Deduplicating paths
+  0:00:34.325   159M / 362M  INFO    General                 (launcher.cpp              : 256)   Paths deduplicated
+  0:00:34.325   159M / 362M  INFO   PEResolver               (pe_resolver.cpp           :  60)   Removing overlaps
+  0:00:34.325   159M / 362M  INFO   PEResolver               (pe_resolver.cpp           :  63)   Sorting paths
+  0:00:34.331   159M / 362M  INFO   PEResolver               (pe_resolver.cpp           :  70)   Marking overlaps
+  0:00:34.332   159M / 362M  INFO   OverlapRemover           (overlap_remover.hpp       : 116)   Marking start/end overlaps
+  0:00:34.346   159M / 362M  INFO   OverlapRemover           (overlap_remover.hpp       : 119)   Marking remaining overlaps
+  0:00:34.361   159M / 362M  INFO   PEResolver               (pe_resolver.cpp           :  73)   Splitting paths
+  0:00:34.363   159M / 362M  INFO   PEResolver               (pe_resolver.cpp           :  78)   Deduplicating paths
+  0:00:34.372   159M / 362M  INFO   PEResolver               (pe_resolver.cpp           :  80)   Overlaps removed
+  0:00:34.382   159M / 362M  INFO    General                 (launcher.cpp              : 273)   Paths finalized
+  0:00:34.383   159M / 362M  INFO    General                 (launcher.cpp              : 664)   ExSPAnder repeat resolving tool finished
+  0:00:34.413    93M / 362M  INFO   StageManager             (stage.cpp                 : 185)   STAGE == Contig Output (id: contig_output)
+  0:00:34.413    93M / 362M  INFO    General                 (contig_output.hpp         :  16)   Outputting contigs to /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K33/before_rr.fasta
+  0:00:36.918    93M / 362M  INFO    General                 (contig_output_stage.cpp   : 151)   Writing GFA graph to /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K33/assembly_graph_with_scaffolds.gfa
+  0:00:36.952    93M / 362M  INFO    General                 (contig_output_stage.cpp   : 165)   Outputting FastG graph to /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K33/assembly_graph.fastg
+  0:00:37.466    93M / 362M  INFO    General                 (contig_output_stage.cpp   : 196)   Breaking scaffolds
+  0:00:37.533   129M / 362M  INFO    General                 (contig_output_stage.cpp   :  98)   Outputting contigs to /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K33/final_contigs.fasta
+  0:00:38.451   129M / 362M  INFO    General                 (contig_output_stage.cpp   : 104)   Outputting FastG paths to /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K33/final_contigs.paths
+  0:00:38.759    99M / 362M  INFO    General                 (contig_output_stage.cpp   :  98)   Outputting contigs to /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K33/scaffolds.fasta
+  0:00:38.805    99M / 362M  INFO    General                 (contig_output_stage.cpp   : 104)   Outputting FastG paths to /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K33/scaffolds.paths
+  0:00:38.914    99M / 362M  INFO    General                 (contig_output_stage.cpp   : 111)   Populating GFA with scaffold paths
+  0:00:38.959    93M / 362M  INFO    General                 (pipeline.cpp              : 287)   SPAdes finished
+  0:00:38.990     1M / 362M  INFO    General                 (main.cpp                  : 136)   Assembling time: 0 hours 0 minutes 40 seconds
+
+===== K33 finished. 
+
+
+===== Copy files started. 
+
+
+== Running: /SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/bin/python /SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/share/spades/spades_pipeline/scripts/copy_files.py /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K33/before_rr.fasta /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/before_rr.fasta /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K33/assembly_graph_after_simplification.gfa /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/assembly_graph_after_simplification.gfa /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K33/final_contigs.fasta /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/contigs.fasta /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K33/first_pe_contigs.fasta /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/first_pe_contigs.fasta /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K33/strain_graph.gfa /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/strain_graph.gfa /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K33/scaffolds.fasta /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/scaffolds.fasta /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K33/scaffolds.paths /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/scaffolds.paths /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K33/assembly_graph_with_scaffolds.gfa /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/assembly_graph_with_scaffolds.gfa /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K33/assembly_graph.fastg /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/assembly_graph.fastg /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/K33/final_contigs.paths /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/contigs.paths
+
+
+===== Copy files finished. 
+
+
+===== Assembling finished. 
+
+
+===== Mismatch correction started. 
+
+
+===== Mismatch correction contigs started. 
+
+
+== Running: /SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/bin/python /SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/share/spades/spades_pipeline/scripts/correction_iteration_script.py --corrected /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/contigs.fasta --assembled /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/misc/assembled_contigs.fasta --assembly_type contigs --output_dir /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output --bin_home /SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/bin
+
+== Processing of contigs
+== Running contig polishing tool: /SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/bin/spades-corrector-core /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/mismatch_corrector/contigs/configs/corrector.info /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/misc/assembled_contigs.fasta
+== Dataset description file was created: /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/mismatch_corrector/contigs/configs/corrector.info
+Run: /SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/bin/spades-corrector-core /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/mismatch_corrector/contigs/configs/corrector.info /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/misc/assembled_contigs.fasta
+/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/mismatch_corrector/contigs/configs/log.properties  0:00:00.013     1M / 17M   INFO    General                 (main.cpp                  :  58)   Starting mismatch corrector, built from N/A, git revision N/A
+  0:00:00.014     1M / 17M   INFO    General                 (main.cpp                  :  59)   Maximum # of threads to use (adjusted due to OMP capabilities): 4
+  0:00:00.014     1M / 17M   INFO   DatasetProcessor         (dataset_processor.cpp     : 175)   Splitting assembly...
+  0:00:00.014     1M / 17M   INFO   DatasetProcessor         (dataset_processor.cpp     : 176)   Assembly file: /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/misc/assembled_contigs.fasta
+  0:07:30.295    14M / 17M   INFO   DatasetProcessor         (dataset_processor.cpp     : 128)   Running bwa index ...: /SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/bin/spades-bwa index /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/misc/assembled_contigs.fasta
+[bwa_index] Pack FASTA... 0.06 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 3.55 seconds elapse.
+[bwa_index] Update BWT... 0.04 sec
+[bwa_index] Pack forward-only FASTA... 0.04 sec
+[bwa_index] Construct SA from BWT and Occ... 0.62 sec
+[main] Version: 0.7.16a-r1181
+[main] CMD: /SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/bin/spades-bwa index /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/misc/assembled_contigs.fasta
+[main] Real time: 8.559 sec; CPU: 4.324 sec
+  0:07:41.067    14M / 17M   INFO   DatasetProcessor         (dataset_processor.cpp     : 190)   Processing single sublib of number 0
+  0:07:41.067    14M / 17M   INFO   DatasetProcessor         (dataset_processor.cpp     : 191)   /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/the2fastq/64.GBR_1933b_S36.inclHTF.fastq.gz
+  0:07:41.077    14M / 17M   INFO   DatasetProcessor         (dataset_processor.cpp     : 153)   Running bwa mem ...:/SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/bin/spades-bwa mem  -v 1 -t 4  /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/misc/assembled_contigs.fasta /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/the2fastq/64.GBR_1933b_S36.inclHTF.fastq.gz   > /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/tmp/corrector_m_19qhvh/lib0_ttmb3j/tmp.sam
+[main] Version: 0.7.16a-r1181
+[main] CMD: /SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/bin/spades-bwa mem -v 1 -t 4 /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/misc/assembled_contigs.fasta /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/the2fastq/64.GBR_1933b_S36.inclHTF.fastq.gz
+[main] Real time: 5.344 sec; CPU: 15.690 sec
+  0:07:46.469    14M / 17M   INFO   DatasetProcessor         (dataset_processor.cpp     : 199)   Adding samfile /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/tmp/corrector_m_19qhvh/lib0_ttmb3j/tmp.sam
+  0:19:52.605    23M / 62M   INFO   DatasetProcessor         (dataset_processor.cpp     : 227)   Processing contigs
+  0:22:22.438    24M / 69M   INFO   DatasetProcessor         (dataset_processor.cpp     : 247)   Gluing processed contigs
+  0:22:33.337     1M / 69M   INFO    General                 (main.cpp                  :  72)   Correcting time: 0 hours 22 minutes 33 seconds
+
+===== Mismatch correction contigs finished. 
+
+
+===== Mismatch correction scaffolds started. 
+
+
+== Running: /SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/bin/python /SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/share/spades/spades_pipeline/scripts/correction_iteration_script.py --corrected /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/scaffolds.fasta --assembled /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/misc/assembled_scaffolds.fasta --assembly_type scaffolds --output_dir /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output --bin_home /SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/bin
+
+== Processing of scaffolds
+== Running contig polishing tool: /SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/bin/spades-corrector-core /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/mismatch_corrector/scaffolds/configs/corrector.info /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/misc/assembled_scaffolds.fasta
+== Dataset description file was created: /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/mismatch_corrector/scaffolds/configs/corrector.info
+Run: /SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/bin/spades-corrector-core /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/mismatch_corrector/scaffolds/configs/corrector.info /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/misc/assembled_scaffolds.fasta
+/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/mismatch_corrector/scaffolds/configs/log.properties  0:00:00.000     1M / 17M   INFO    General                 (main.cpp                  :  58)   Starting mismatch corrector, built from N/A, git revision N/A
+  0:00:00.000     1M / 17M   INFO    General                 (main.cpp                  :  59)   Maximum # of threads to use (adjusted due to OMP capabilities): 4
+  0:00:00.000     1M / 17M   INFO   DatasetProcessor         (dataset_processor.cpp     : 175)   Splitting assembly...
+  0:00:00.000     1M / 17M   INFO   DatasetProcessor         (dataset_processor.cpp     : 176)   Assembly file: /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/misc/assembled_scaffolds.fasta
+  0:02:33.773    14M / 17M   INFO   DatasetProcessor         (dataset_processor.cpp     : 128)   Running bwa index ...: /SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/bin/spades-bwa index /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/misc/assembled_scaffolds.fasta
+[bwa_index] Pack FASTA... 0.05 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 2.91 seconds elapse.
+[bwa_index] Update BWT... 0.03 sec
+[bwa_index] Pack forward-only FASTA... 0.04 sec
+[bwa_index] Construct SA from BWT and Occ... 0.62 sec
+[main] Version: 0.7.16a-r1181
+[main] CMD: /SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/bin/spades-bwa index /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/misc/assembled_scaffolds.fasta
+[main] Real time: 5.153 sec; CPU: 3.660 sec
+  0:02:38.963    14M / 17M   INFO   DatasetProcessor         (dataset_processor.cpp     : 190)   Processing single sublib of number 0
+  0:02:38.963    14M / 17M   INFO   DatasetProcessor         (dataset_processor.cpp     : 191)   /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/the2fastq/64.GBR_1933b_S36.inclHTF.fastq.gz
+  0:02:38.980    14M / 17M   INFO   DatasetProcessor         (dataset_processor.cpp     : 153)   Running bwa mem ...:/SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/bin/spades-bwa mem  -v 1 -t 4  /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/misc/assembled_scaffolds.fasta /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/the2fastq/64.GBR_1933b_S36.inclHTF.fastq.gz   > /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/tmp/corrector_2at3gnbm/lib0_Uem6sQ/tmp.sam
+[main] Version: 0.7.16a-r1181
+[main] CMD: /SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/bin/spades-bwa mem -v 1 -t 4 /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/misc/assembled_scaffolds.fasta /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/the2fastq/64.GBR_1933b_S36.inclHTF.fastq.gz
+[main] Real time: 4.115 sec; CPU: 12.917 sec
+  0:02:43.117    14M / 17M   INFO   DatasetProcessor         (dataset_processor.cpp     : 199)   Adding samfile /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/tmp/corrector_2at3gnbm/lib0_Uem6sQ/tmp.sam
+  0:07:57.146    23M / 62M   INFO   DatasetProcessor         (dataset_processor.cpp     : 227)   Processing contigs
+  0:10:02.429    24M / 68M   INFO   DatasetProcessor         (dataset_processor.cpp     : 247)   Gluing processed contigs
+  0:10:24.913     1M / 68M   INFO    General                 (main.cpp                  :  72)   Correcting time: 0 hours 10 minutes 24 seconds
+
+===== Mismatch correction scaffolds finished. 
+
+
+===== Mismatch correction finished. 
+
+
+===== Breaking scaffolds started. 
+
+
+== Running: /SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/bin/python /SAN/ugi/aMetagenomics/jiajucui/tmpbigfile/miniconda3newdirtostore/envs/phylogeny_snp/share/spades/spades_pipeline/scripts/breaking_scaffolds_script.py --result_scaffolds_filename /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/scaffolds.fasta --misc_dir /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/misc --threshold_for_breaking_scaffolds 3
+
+
+===== Breaking scaffolds finished. 
+
+
+===== Terminate started. 
+
+
+===== Terminate finished. 
+
+ * Corrected reads are in /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/corrected/
+ * Assembled contigs are in /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/contigs.fasta
+ * Assembled scaffolds are in /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/scaffolds.fasta
+ * Paths in the assembly graph corresponding to the contigs are in /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/contigs.paths
+ * Paths in the assembly graph corresponding to the scaffolds are in /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/scaffolds.paths
+ * Assembly graph is in /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/assembly_graph.fastg
+ * Assembly graph in GFA format is in /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/assembly_graph_with_scaffolds.gfa
+
+======= SPAdes pipeline finished WITH WARNINGS!
+
+=== Error correction and assembling warnings:
+ * 0:00:53.035     9M / 234M  WARN    General                 (simplification.cpp        : 504)   The determined erroneous connection coverage threshold may be determined improperly
+ * 0:00:27.112    15M / 362M  WARN    General                 (kmer_coverage_model.cpp   : 218)   Too many erroneous kmers, the estimates might be unreliable
+======= Warnings saved to /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/warnings.log
+
+SPAdes log can be found here: /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/step1_minimap2toview/tmp_assemble_from_raw_Psfastq_thenminmap_64.GBR_1933b_S36.inclHTF/spades_output/spades.log
+
+Thank you for using SPAdes!

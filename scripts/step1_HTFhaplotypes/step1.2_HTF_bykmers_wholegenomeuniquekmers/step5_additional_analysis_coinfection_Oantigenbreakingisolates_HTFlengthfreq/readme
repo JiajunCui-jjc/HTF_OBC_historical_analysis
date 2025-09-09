@@ -1,7 +1,3 @@
-#now we use step2 to query the dump, m57 keeps no change, but h40 first rmdup...
-wd=/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers
-#dump_out=$wd/step2_isolate_kmers/isolate_jf/dump
-
 for all h40 and m55:
 but after week59, we change the strategy to first subset the fastq to reads mapped to OTU5 and then ask the kmer counts in this read pool (requires only the library, dont need assembly/reference)... (dont need p25.c2 unique wg kmers):
 
@@ -11,6 +7,7 @@ step2: then count kmer to jf file then dump -c to human readable count.
 
 step3: do a dist (m55 benchmark and h40)
 
-#all the threshold is 2< read <= mean +3sd, both in the plot and in the threshold.tsv and the mean used to count mean +3sd is after the count >2.
-#
+step4: simulate co-infection (eg two genomes in a single strain, normalize depth to the same level and then put them into one panel with different color/transparent).
 
+
+all the result are in local /Users/cuijiajun/Desktop/others/tmphernan/2025_June/step9_coinfection/

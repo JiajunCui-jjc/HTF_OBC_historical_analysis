@@ -56,7 +56,8 @@ h40_Pv_fastq="/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_20
 m57_raw_fastq=/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/all_fastq_m57
 #this is the fastq that coverted from bam files mapped to OTU5 ref with HTF and TFA... for h40
 #for m57 we use the pv raw fastq
-mkdir -p  step2_isolate_kmers step2_isolate_kmers/isolate_jf step2_isolate_kmers/isolate_jf/dump step3_query_kmers step3_query_kmers/match_results
+
+mkdir -p  step2_isolate_kmers step2_isolate_kmers/isolate_jf step2_isolate_kmers/isolate_jf/dump step3_query_kmers 
 dump_out=$wd/step2_isolate_kmers/isolate_jf/dump
 
 

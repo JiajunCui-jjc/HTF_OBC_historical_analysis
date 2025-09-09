@@ -47,7 +47,7 @@ for (sample_name in sample_list) {
   # === Find WG k-mer dump ===
   wg_path <- file.path(historical_wg_dir, paste0(sample_name, "_dump.txt"))
   if (!file.exists(wg_path)) {
-    wg_path <- file.path(modern_wg_dir, paste0(sample_name, "_dump_20percentrandom.txt"))
+    wg_path <- file.path(modern_wg_dir, paste0(sample_name, "_dump_20p_dump.txt"))
   }
   if (!file.exists(wg_path)) {
     cat("❌ No WG file for", sample_name, "\n")
@@ -57,7 +57,7 @@ for (sample_name in sample_list) {
   # === Load WG k-mers ===
   # Load WG k-mers
   df_wg <- fread(wg_path, col.names = c("kmer", "count"))
-  df_wg <- df_wg[count > 1]  # remove singleton kmers
+  df_wg <- df_wg[count > 2]  # remove singleton kmers
 
   if (nrow(df_wg) == 0) {
     cat("❌ WG file has no informative k-mers for", sample_name, "\n")
@@ -67,7 +67,7 @@ for (sample_name in sample_list) {
   # === Right-tail filtering: count ≤ mean + 2×SD ===
   depth_mean <- mean(df_wg$count)
   depth_sd   <- sd(df_wg$count)
-  cutoff_max <- depth_mean + 2 * depth_sd
+  cutoff_max <- depth_mean + 3 * depth_sd
   df_wg <- df_wg[count <= cutoff_max]
 
   if (nrow(df_wg) == 0) {
