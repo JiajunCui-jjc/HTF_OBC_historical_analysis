@@ -48,7 +48,7 @@ write.table(
 p <- ggplot(tablePs_46, aes(x = pos_from_5end, y = proportion, group = sample)) +
   geom_line(color = "#D04F4F", size = 0.8, alpha = 0.85) +
   labs(
-    title = expression("5′ C to T deamination in 46 historical plant " * italic("Pseudomonas viridiflava") * " ATUE5 genomes"),
+    title = expression("5′ C to T deamination in 46 historical " * italic("Pseudomonas viridiflava") * " genomes"),
     x = "Distance from 5′ end (bp)",
     y = "C to T Frequency"
   ) +
