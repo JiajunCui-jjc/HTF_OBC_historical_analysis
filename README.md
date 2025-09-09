@@ -24,7 +24,7 @@ Analysis pipeline
     - Extract reads mapping to HTF/TFA regions
     - Assemble with SPAdes (skip for modern samples, since we have modern assemblies)
     - Assign best haplotype based on covered proportion (minimap2)
-- [K-mer Based Approach](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/a5fa0d02f0791111d52f862ef5a3ab40a5e26eb1/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/readme.md):
+- [K-mer Based Approach](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/cd807f0385e3e23551ff4f63f40f35b93e19ea08/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/readme.md):
     - Build whole-genome-exclusive HTF-unique kmers
     - Apply iterative Hamming ≥ 2 filtering across haplotypes
     - Query isolate .jf files (Jellyfish)
