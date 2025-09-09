@@ -25,15 +25,15 @@
 
 ---
 
-### [`step2.1_generateisolate_jf_kmersm57.sh` ](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/6e91da43afa20c2747b33d58b55d7dedf2301b4a/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step2.1_generateisolate_jf_kmersm57.sh)
-### [`step2.2_generateisolate_jf_kmersh40.sh`](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/6e91da43afa20c2747b33d58b55d7dedf2301b4a/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step2.2_generateisolate_jf_kmersh40.sh)
+### [`step2.1_generateisolate_jf_kmersm57.sh` ](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/f1b328393e4d77bc2a5dd24a1d6d7a1e82b1d0ec/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step2.1_generateisolate_jf_kmersm57.sh)
+### [`step2.2_generateisolate_jf_kmersh40.sh`](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/f1b328393e4d77bc2a5dd24a1d6d7a1e82b1d0ec/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step2.2_generateisolate_jf_kmersh40.sh)
 
 > Here I generate `.jf` files for isolate k-mers.  
 > For H40 samples, I remove duplicates and use the `rmdup` FASTQ to generate `.jf` files.
 
 ---
 
-### [`step3_wg_background_distribution/`](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/6e91da43afa20c2747b33d58b55d7dedf2301b4a/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step3_wg_background_distribution)
+### [`step3_wg_background_distribution/`](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/f1b328393e4d77bc2a5dd24a1d6d7a1e82b1d0ec/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step3_wg_background_distribution)
 
 - `readme`  
 - `step1_dump_wgdistribution_Rvisual.R`  
@@ -45,7 +45,7 @@
 
 ---
 
-### [`step4_query_and_filterby_wgthreshold/`](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/53b68d9a09e3f351d17d7b28e99eb2f5baea395c/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step4_query_and_filterby_wgthreshold)
+### [`step4_query_and_filterby_wgthreshold/`](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/f1b328393e4d77bc2a5dd24a1d6d7a1e82b1d0ec/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step4_query_and_filterby_wgthreshold)
 
 > In **step4**, I query each isolate’s k-mers and filter them using the average WG k-mer threshold.  
 > Then I:
@@ -57,7 +57,7 @@
 
 ---
 
-### [`step5_additional_analysis/`](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/6a7d80d3a4ef1de19f9e1bf8e317affb6307e235/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq)
+### [`step5_additional_analysis/`](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/f1b328393e4d77bc2a5dd24a1d6d7a1e82b1d0ec/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq)
 
 > In **step5_additional_analysis**, I:
 > - Run coinfection detection
