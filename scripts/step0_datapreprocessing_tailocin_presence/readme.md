@@ -35,7 +35,7 @@ To confirm strain identity:
 
 - A maximum likelihood phylogeny was built using 296 biallelic SNPs from the 46 genomes, alongside 55 modern ATUE5 and 30 non-ATUE5 reference genomes.
 - Tree inference was performed with IQ-TREE using the TPM3+ASC+R2 substitution model.
-- Samples clustering within the ATUE5 clade were classified as ATUE5. [See phylogeny results](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/1eefb4421e942ba509d83aa258371c6b0b1ab0f7/results/step0_datapreprocessing_tailocin_presence/step3_h46_m85_tree).
+- Samples clustering within the ATUE5 clade were classified as ATUE5. [See phylogeny results](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/4acd9423ec129886d72a65daa42da2de4eba406b/results/step0_datapreprocessing_tailocin_presence/step3_h46_m85_tree).
 - **Output**: [40 authenticated historical ATUE5 genomes](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/1eefb4421e942ba509d83aa258371c6b0b1ab0f7/results/step0_datapreprocessing_tailocin_presence/step1_h40metadata/h40_metadata.txt).  
 
 ---
