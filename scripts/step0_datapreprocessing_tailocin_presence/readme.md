@@ -19,13 +19,13 @@ A total of 413 globally distributed *A. thaliana* herbarium specimens were scree
 
 ---
 
-## [Step 2: Ancient DNA Authentication](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/1eefb4421e942ba509d83aa258371c6b0b1ab0f7/scripts/step0_datapreprocessing_tailocin_presence/step2_mapdamage)
+## [Step 2: Ancient DNA Authentication](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/4e8e48ba5413d83cf1ba63e82f25914abb17725b/scripts/step0_datapreprocessing_tailocin_presence/step2_mapdamage)
 
 Ancient DNA authenticity was assessed using mapDamage:
 
 - Quantified 5′ C→T and 3′ G→A substitution frequencies.
 - Verified fragment length distributions.
-- All 46 samples showed characteristic ancient DNA patterns. [See DNA damage results](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/1eefb4421e942ba509d83aa258371c6b0b1ab0f7/results/step0_datapreprocessing_tailocin_presence/step2_mapdamageplot).  
+- All 46 samples showed characteristic ancient DNA patterns. [See DNA damage results](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/4e8e48ba5413d83cf1ba63e82f25914abb17725b/results/step0_datapreprocessing_tailocin_presence/step2_mapdamageplot/step3_h46ps_at) [See first base C to T freq correlation between two speices](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/4e8e48ba5413d83cf1ba63e82f25914abb17725b/results/step0_datapreprocessing_tailocin_presence/step2_mapdamageplot/step4_correlation).  
 
 ---
 
