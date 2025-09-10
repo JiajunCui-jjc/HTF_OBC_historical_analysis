@@ -67,30 +67,44 @@ country_coords$country <- world$name
 
 samples <- left_join(samples, country_coords[, c("country", "X", "Y")], by = "country") %>%
   rename(lon = X, lat = Y)
+# Create a copy so you don't modify the original
+samples_plot <- samples
 
-# === Plot map ===
+# Override lon/lat for the Russian sample
+samples_plot$lon[samples_plot$country == "Russia"] <- 40   # move westward
+samples_plot$lat[samples_plot$country == "Russia"] <- 60   # optionally tweak north/south
+# === Plot: O-antigen group colored on map (manuscript ready) ===
 p <- ggplot() +
-  geom_sf(data = world, fill = "#D7E8F4", color = "#CCE1EF", size = 0.1) +  # map base with thin border
-  geom_point(data = samples,
-             aes(x = lon, y = lat, shape = OAntigenStatus, fill = Year),
-             position = position_jitter(width = 1.5, height = 1.5),  # gentle jitter
-             size = 0.5, color = "grey30", stroke = 0.1) +
-  scale_shape_manual(values = c(
-    "HTF group with O-antigen" = 21,
-    "HTF group without O-antigen" = 24
-  )) +
-  scale_fill_gradient(low = "darkgreen", high = "yellow", name = "Year", na.value = "grey90") +
-  theme_minimal() +
-  labs(
-    title = "HTF Group Shape & Year Fill by Historical Sample Location",
-    x = NULL, y = NULL, shape = "O-antigen Group"
+  geom_sf(data = world, fill = "#F5F5F5", color = "#CCCCCC", size = 0.1) +
+  geom_point(
+    data = samples_plot,  # <-- use adjusted coordinates
+    aes(x = lon, y = lat, color = OAntigenStatus),
+    position = position_jitter(width = 0.7, height = 1),
+    size = 1.5, alpha = 0.9
   ) +
+  scale_color_manual(
+    name = "O-antigen Group",
+    values = c(
+      "HTF group with O-antigen" = "#E69F00",
+      "HTF group without O-antigen" = "#56B4E9"
+    )
+  ) +
+  coord_sf(
+    xlim = c(-15, 55), 
+    ylim = c(30, 70), 
+    expand = FALSE
+  ) +
+  theme_minimal(base_size = 14) +
+  labs(x = NULL, y = NULL) +
   theme(
     panel.grid = element_blank(),
+    axis.text = element_blank(),
     axis.ticks = element_blank(),
-    axis.text = element_blank()
+    legend.position = "top",
+    legend.title = element_text(size = 13, face = "bold"),
+    legend.text = element_text(size = 12),
+    plot.margin = margin(10, 10, 10, 10)
   )
-
 # === Save ===
 ggsave(out_plot, plot = p, width = 10, height = 6)
 cat("✅ Saved map to:", out_plot, "\n")
