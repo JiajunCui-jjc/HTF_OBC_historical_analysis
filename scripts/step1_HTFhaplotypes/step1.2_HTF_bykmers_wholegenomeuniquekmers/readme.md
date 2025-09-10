@@ -21,7 +21,7 @@
 ### [`step1.2_refkmers_hamming_filtering/`](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/015582c21dc87aebe781ac039d76fdd8c83a46d7/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step1.2_refkmers_hamming_filtering)
 
 > In **step1.2**, I compute the hamming distance matrix and visualize it, then use R to iteratively filter out any k-mer pairs with distance ≤1.  
-> This yields the final `kmers_unique_hamming2` set. [See results.](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/015582c21dc87aebe781ac039d76fdd8c83a46d7/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/kmers_unique_hamming2) [See Rplot of kmers locations.](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/6e91da43afa20c2747b33d58b55d7dedf2301b4a/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/kmers_unique_hamming2/runlocationofkmers)
+> This yields the final `kmers_unique_hamming2` set. [See results.](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/6e2e399e4e7be69c1d048f882571e1418aed81b2/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/kmers_unique_hamming2) [See Rplot of kmers locations.](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/6e2e399e4e7be69c1d048f882571e1418aed81b2/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/kmers_unique_hamming2/runlocationofkmers/HTF_kmer_positions_after.pdf)
 
 ---
 
