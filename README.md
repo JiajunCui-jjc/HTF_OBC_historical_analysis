@@ -7,7 +7,7 @@ This repository contains scripts, data, and results for profiling the hypothetic
 Main Figure
 --------------
 
-![HTF - OBC pattern](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/af99d2f8e0eed627206ae5a49abb8b86cc678349/results/figures_tables/combine/mainfig.png)
+![HTF - OBC pattern](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/0a0790064b9d38b634eb88d7158c4d9b7134365d/results/figures_tables/combine/main.png)
 
 Analysis pipeline
 --------------
@@ -37,7 +37,7 @@ Analysis pipeline
 - A gene is considered present if:
     (i) coverage ≥ 50%
     (ii) mean depth ≥ 75% of genome-wide average
-- espE2 handled separately via extended mapping and contig rescue
+- espE4 handled separately via extended mapping and contig rescue
 
 [**Combined Analysis**](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/a695d98148d520428c049db639f5bfdcfd774c5d/scripts/step3_combine/readme.md):
 
