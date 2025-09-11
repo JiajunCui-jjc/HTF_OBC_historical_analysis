@@ -1,4 +1,4 @@
-sample	HTF_haplotype	HTFgroup_Oantigen_PA	wfgD_PA	rmlC1_PA	tagG1_PA	tagH1_PA	spsA_PA	espE2_PA	espE2length	note
+sample	HTF_haplotype	HTFgroup_Oantigen_PA	wfgD_PA	rmlC1_PA	tagG2_PA	tagH2_PA	spsA_PA	espE4_PA	espE4length	note
 27.ESP_1975	HTF_p21.F9 (1245)	OBC_present	1	1	1	1	1	0	0	
 34.ESP_1985c_S36	HTF_p21.F9 (1245)	OBC_present	1	1	1	1	1	1	4665	
 64.GBR_1933b_S36	HTF_p7.G11 (1830)	OBC_present	0	0	0	0	0	0	0	
