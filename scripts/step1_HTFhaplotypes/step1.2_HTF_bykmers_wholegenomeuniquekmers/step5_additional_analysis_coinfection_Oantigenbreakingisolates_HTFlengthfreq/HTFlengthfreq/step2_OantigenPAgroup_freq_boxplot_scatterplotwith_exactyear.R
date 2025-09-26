@@ -10,7 +10,7 @@ modern_df <- read.table(
   header = TRUE, sep = "\t"
 )
 
-# Remove problematic modern samples
+# Remove modern samples so 53 modern samples are shown
 samples_to_remove <- c("p12.F2", "p13.C7", "p6.A10", "p9.C4")
 modern_df <- modern_df[!modern_df$Isolate %in% samples_to_remove, ]
 
@@ -25,7 +25,7 @@ historical_df <- historical_df[!(historical_df$Isolate == "64.GBR_1933b_S36"), ]
 modern_df$IsolateType <- "Modern"
 historical_df$IsolateType <- "Historical"
 
-# Combine and exclude more problematic samples
+# Combine and exclude 6 nonOTU5 and 4 samples that have no HTF assigned, as well the 64GBR which has conflicting assignment
 df_all <- bind_rows(modern_df, historical_df)
 base_exclude <- c("HB0828", "HB0863", "PL0066", "PL0108", "PL0203", "PL0258", "PL0027", "PL0053", "30.ESP_1983b", "PL0026")
 excluded_samples <- c(base_exclude, paste0(base_exclude, "|NA"))
@@ -144,3 +144,165 @@ ggsave(
   plot = p, width = 8, height = 6
 )
 cat("✅ Plot saved: oantigen_presence_barplot_withchisq.pdf\n")
+
+
+
+
+
+
+#year
+
+
+# === Add year info ===
+
+# 1. Historical years from text
+dates_df <- read_tsv(
+  "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/HTFlengthfreq/allh46_withdatesandlocs_uniq.txt", show_col_types = FALSE)
+dates_df <- dates_df %>%
+  select(Isolate = `samplename`, Year = year) %>%
+  filter(!is.na(Year))
+
+# 2. Modern samples assumed 2018 if isolate starts with 'p'
+modern_years <- dominant_df %>%
+  filter(IsolateType == "Modern" & grepl("^p", Isolate)) %>%
+  mutate(Year = 2018) %>%
+  select(Isolate, Year)
+
+# 3. Combine all years
+year_df <- bind_rows(dates_df, modern_years)
+
+# Join year into dominant table
+dominant_df <- dominant_df %>%
+  left_join(year_df, by = "Isolate") %>%
+  filter(!is.na(Year))
+
+# Add random Y value for jitter
+set.seed(123)  # reproducible jitter
+dominant_df$Yjitter <- runif(nrow(dominant_df), min = 0, max = 1)
+# === Plot with merged legend ===
+p <- ggplot(dominant_df, aes(
+  x = Year,
+  y = Yjitter,
+  shape = OAntigenStatus,
+  color = OAntigenStatus
+)) +
+  geom_point(alpha = 0.8, size = 3) +
+  scale_color_manual(
+    values = c(
+      "HTF group with O-antigen" = "#E41A1C",
+      "HTF group without O-antigen" = "#4DAF4A"
+    )
+  ) +
+  scale_shape_manual(
+    values = c(
+      "HTF group with O-antigen" = 21,
+      "HTF group without O-antigen" = 24
+    )
+  ) +
+  labs(
+    title = "Distribution of HTF Groups Over Time",
+    x = "Year",
+    y = "",
+    color = "HTF Group",
+    shape = "HTF Group"  # give same name as color
+  )  +
+  theme(
+    axis.text.y = element_blank(),
+    axis.ticks.y = element_blank(),
+    legend.position = "right"
+  )
+
+ggsave(
+  "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step3_HTFfreq/step2_2_1_HTF_oantigen_timeline_jitter.pdf", plot = p, width = 16, height = 3)
+cat("✅ Plot saved: HTF_oantigen_timeline_jitter.pdf\n")
+
+
+write.table(dominant_df,
+            file = "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step3_HTFfreq/step2_3_HTF_oantigen_dominant_table.tsv",
+            sep = "\t", row.names = FALSE, quote = FALSE)
+
+
+
+
+
+
+
+
+library(ggplot2)
+library(dplyr)
+
+# === Define colors for the 4 HTF groups ===
+length_colors <- c(
+  "1830" = "pink",      # top
+  "1383" = "#2166AC",   # 2nd
+  "1803" = "#D6604D",   # 3rd
+  "1245" = "#FFCC00"    # bottom
+)
+
+# === Reorder LengthGroup for y-axis ===
+length_groups <- c("1245", "1803", "1383", "1830")
+
+# === Jitter Year for modern samples (narrow spread) ===
+set.seed(7)
+dominant_df <- dominant_df %>%
+  mutate(
+    Year = ifelse(IsolateType == "Modern",
+                  2018 + runif(n(), -0.2, 0.2),  # jitter around 2018
+                  Year),
+    LengthGroup = factor(LengthGroup, levels = length_groups),
+    Ybase = as.numeric(LengthGroup),
+    Yjitter = Ybase + runif(n(), -0.3, 0.3)     # vertical jitter
+  )
+
+# === Plot ===
+p_htf_timeline <- ggplot(
+  dominant_df,
+  aes(x = Year, y = Yjitter, color = LengthGroup, alpha = IsolateType)
+) +
+  geom_point(shape = 16, size = 4) +   # same shape for both, alpha differs
+  # Colors: fixed order pink → blue → red → yellow
+  scale_color_manual(
+    values = length_colors,
+    breaks = c("1830","1383","1803","1245")
+  ) +
+  # Alpha: Modern solid, Historical transparent
+  scale_alpha_manual(
+    values = c("Historical" = 1, "Modern" = 0.45),guide = "none"   # << suppress legend
+  ) +
+  facet_wrap(~IsolateType, scales = "free_x") +
+  scale_x_continuous(
+    breaks = c(1850, 1900, 1950, 2000, 2018),
+    labels = c("1850", "1900", "1950", "2000", "2018")
+  ) +
+  scale_y_continuous(
+    breaks = 1:4,
+    #labels = length_groups,
+    labels = NULL,
+    
+    expand = expansion(mult = c(0.1, 0.1))
+  ) +
+  labs(
+    #title = "HTF haplotype distribution over time",
+    x = "Year",
+    #y = "HTF haplotypes (bp)",
+    y = NULL,
+    color = "HTF haplotypes",
+    alpha = "Isolate type"
+  ) +
+  theme_classic(base_size = 24) +
+  theme(
+    axis.title.y = element_blank(),
+    axis.text.y  = element_blank(),
+    axis.ticks.y = element_blank(),
+    axis.line.y  = element_blank(),
+    strip.background = element_blank(),
+    strip.text = element_text(face = "bold", size = 23),
+    #plot.title = element_text(hjust = 0.5, face = "bold")
+  )
+
+# === Save figure ===
+ggsave(
+  "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step3_HTFfreq/step2_2_2_HTF_length_timeline_HTFgrouped_alpha.pdf",
+  plot = p_htf_timeline,
+  width = 20, height = 4
+)
