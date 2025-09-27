@@ -64,14 +64,19 @@ samples <- left_join(samples,
 world <- ne_countries(scale = "medium", returnclass = "sf")
 
 # Country centroids
+# Country centroids
 country_coords <- world %>%
   st_centroid(of_largest_polygon = TRUE) %>%
   st_coordinates() %>%
   as.data.frame()
+
+# Make sure coords have correct names
+colnames(country_coords)[1:2] <- c("lon", "lat")
+
 country_coords$country <- world$name
 
-samples <- left_join(samples, country_coords[, c("country", "X", "Y")], by = "country") %>%
-  rename(lon = X, lat = Y)
+# Join back
+samples <- left_join(samples, country_coords[, c("country", "lon", "lat")], by = "country")
 set.seed(19)  # reproducible jitter
 
 # === Adjust lon/lat centers ===
@@ -96,6 +101,16 @@ samples_plot$lat[samples_plot$country == "Lithuania"] <- 55
 # UK, Spain, Germany centers (will use wide jitter)
 
 
+# === Define colors ===
+length_colors <- c(
+  "1830" = "#f6d6ff",
+  "1383" = "#638ccc",
+  "1803" = "#800233",
+  "1245" = "#f9d42a"
+)
+
+# === Desired order ===
+length_order <- c("1830", "1383", "1803", "1245")
 
 # === Plot with country-specific jitter ===
 p <- ggplot() +
