@@ -233,10 +233,10 @@ library(dplyr)
 
 # === Define colors for the 4 HTF groups ===
 length_colors <- c(
-  "1830" = "pink",      # top
-  "1383" = "#2166AC",   # 2nd
-  "1803" = "#D6604D",   # 3rd
-  "1245" = "#FFCC00"    # bottom
+  "1830" = "#f6d6ff",
+  "1383" = "#638ccc",
+  "1803" = "#800233",
+  "1245" = "#f9d42a"
 )
 
 # === Reorder LengthGroup for y-axis ===

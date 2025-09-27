@@ -160,10 +160,10 @@ library(dplyr)
 
 # === Define colors ===
 length_colors <- c(
-  "1830" = "pink",
-  "1383" = "#2166AC",
-  "1803" = "#D6604D",
-  "1245" = "#FFCC00"
+  "1830" = "#f6d6ff",
+  "1383" = "#638ccc",
+  "1803" = "#800233",
+  "1245" = "#f9d42a"
 )
 
 # === Desired order ===

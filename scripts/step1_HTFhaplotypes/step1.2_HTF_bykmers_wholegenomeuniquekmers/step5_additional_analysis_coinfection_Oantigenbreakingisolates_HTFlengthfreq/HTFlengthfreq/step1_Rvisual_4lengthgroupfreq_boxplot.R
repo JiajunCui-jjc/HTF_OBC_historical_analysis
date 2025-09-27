@@ -2,6 +2,7 @@
 library(dplyr)
 library(ggplot2)
 library(binom)
+setwd('/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step3_HTFfreq/')
 
 # ================================
 # 1️⃣ Load modern + historical prop tables
@@ -96,10 +97,10 @@ print(freq_table_length)
 # ================================
 
 length_colors <- c(
-  "1830" = "pink",
-  "1383" = "#2166AC",
-  "1803" = "#D6604D",
-  "1245" = "#FFCC00"
+  "1830" = "#f6d6ff",
+  "1383" = "#638ccc",
+  "1803" = "#800233",
+  "1245" = "#f9d42a"
 )
 
 
@@ -129,13 +130,13 @@ p_length <- ggplot(freq_table_length, aes(
     size = 5
   ) +
   scale_color_manual(values = length_colors) +
-  scale_alpha_manual(values = c("Modern" = 1, "Historical" = 0.6)) +
+  scale_alpha_manual(values = c("Modern" = 0.6, "Historical" = 1),guide = "none") +
   scale_y_continuous(labels = scales::percent_format(accuracy = 1), limits = c(0, 1)) +
   labs(
     title = "HTF Length Group Frequencies (Modern vs Historical) (95% CI)",
-    x = "HTF Length Group",
+    x = "HTF hyplotypes (bp)",
     y = "Proportion of Isolates",
-    color = "HTF Length Group",
+    color = "HTF hyplotypes",
     alpha = "Isolate Type"
   ) +
   theme_minimal(base_size = 14) +
@@ -151,3 +152,6 @@ ggsave(
   plot = p_length,
   width = 8, height = 6
 )
+
+
+
