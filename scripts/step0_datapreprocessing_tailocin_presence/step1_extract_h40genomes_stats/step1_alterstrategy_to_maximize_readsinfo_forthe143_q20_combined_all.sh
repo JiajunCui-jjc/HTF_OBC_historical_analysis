@@ -7,7 +7,9 @@
 #$ -V
 #$ -e /SAN/ugi/plant_genom/jiajucui/logs/
 #$ -o /SAN/ugi/plant_genom/jiajucui/logs/
-
+#for the 10 samples from lopez et al 2022 that have some reads longer than 75bp, we would lose info by collapsing the reads (overlap reads). So we have an alternative strategy to extract as much reads as possible:
+# first collapse reads to capture the short r1 r2 reads that could overlap (the molecular insert size is shorter than 150bp), second combine r1 and r2 after aln separetely and then merge as r1r2bam to capture the long 75bp reads of r1 and r2,
+# then we combine the two sources to finally has the bam files
 #variables
 i=${1}
 samplename=$(cat /SAN/ugi/plant_genom/jiajucui/1_initial_data/new_sequences/new_sampleindex.txt | sed -n $i'p' | awk '{print $2}')
