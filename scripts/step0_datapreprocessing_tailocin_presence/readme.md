@@ -25,7 +25,7 @@ Ancient DNA authenticity was assessed using mapDamage:
 
 - Quantified 5′ C→T and 3′ G→A substitution frequencies.
 - Verified fragment length distributions.
-- All 46 samples showed characteristic ancient DNA patterns. [See DNA damage results](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/9ba8ed4eff3cf87279332d113c72825d0778153f/results/step0_datapreprocessing_tailocin_presence/step2_mapdamageplot/step3_h46ps_at) [See first base C to T freq correlation between two speices](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/9ba8ed4eff3cf87279332d113c72825d0778153f/results/step0_datapreprocessing_tailocin_presence/step2_mapdamageplot/step4_correlation).  
+- All 46 samples showed characteristic ancient DNA patterns. [See DNA damage results](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/9ba8ed4eff3cf87279332d113c72825d0778153f/results/step0_datapreprocessing_tailocin_presence/step2_mapdamageplot/step3_h46ps_at), [See first base C to T freq correlation between two speices](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/9ba8ed4eff3cf87279332d113c72825d0778153f/results/step0_datapreprocessing_tailocin_presence/step2_mapdamageplot/step4_correlation),  [See length distributions](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/9ba8ed4eff3cf87279332d113c72825d0778153f/results/step0_datapreprocessing_tailocin_presence/step2_mapdamageplot/step5_lengthdistribution_insertsize). 
 
 ---
 
