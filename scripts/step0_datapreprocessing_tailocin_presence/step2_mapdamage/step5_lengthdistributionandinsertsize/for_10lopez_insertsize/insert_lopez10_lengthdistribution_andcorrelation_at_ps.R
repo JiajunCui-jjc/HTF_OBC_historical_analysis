@@ -31,7 +31,7 @@ df_len <- df_len %>%
 # ---- Arabidopsis ----
 p_arabi_len <- ggplot(df_len %>% filter(Species == "Arabidopsis", Length > 0),
                       aes(x = Length, y = Prop, group = Sample)) +
-  geom_line(alpha = 0.6, color = "#4575b4") +
+  geom_line(alpha = 1, color = "#d5da6d") +
   scale_y_continuous(labels = percent_format(accuracy = 1), limits = c(0, 0.03)) +
   labs(x = "Fragment length (bp)", y = "Reads (%)",
        title = expression(italic("Arabidopsis thaliana"))) +
@@ -45,7 +45,7 @@ p_arabi_len <- ggplot(df_len %>% filter(Species == "Arabidopsis", Length > 0),
 # ---- Pseudomonas ----
 p_ps_len <- ggplot(df_len %>% filter(Species == "Pseudomonas", Length > 0),
                    aes(x = Length, y = Prop, group = Sample)) +
-  geom_line(alpha = 0.6, color = "#d73027") +
+  geom_line(alpha = 1, color = "#e86b7d") +
   scale_y_continuous(labels = percent_format(accuracy = 1), limits = c(0, 0.03)) +
   labs(x = "Fragment length (bp)", y = "Reads (%)",
        title = expression(italic("Pseudomonas") ~ plain("sp."))) +
@@ -97,7 +97,7 @@ df_ps_tm    <- df_tm %>% mutate(Species = "Pseudomonas", MeanInsert = MeanInsert
 
 # ---- Arabidopsis insert size ----
 p_arabi_tm <- ggplot(df_arabi_tm, aes(x = MeanInsert, y = tmprop)) +
-  geom_point(color = "#4575b4", alpha = 0.8, size = 2) +
+  geom_point(color = "#d5da6d", alpha = 0.8, size = 2) +
   
   ylim(0, 1)+
   labs(x = "Mean insert size (bp)", y = "Collapsed / R1 ratio",
@@ -111,7 +111,7 @@ p_arabi_tm <- ggplot(df_arabi_tm, aes(x = MeanInsert, y = tmprop)) +
 
 # ---- Pseudomonas insert size ----
 p_ps_tm <- ggplot(df_ps_tm, aes(x = MeanInsert, y = tmprop)) +
-  geom_point(color = "#d73027", alpha = 0.8, size = 2) +
+  geom_point(color = "#e86b7d", alpha = 0.8, size = 2) +
   
   ylim(0, 1)+
   labs(x = "Mean insert size (bp)", y = "Collapsed / R1 ratio",
@@ -132,12 +132,57 @@ ggsave(file.path(out_dir, "SuppFig_InsertSize_Pseudomonas.pdf"),
 # ===============================
 # Optional combined figure
 # ===============================
-p_combined <- (p_arabi_len + p_ps_len) / (p_arabi_tm + p_ps_tm) 
-#+
-#  plot_annotation(tag_levels = 'A')
+p_combined <- (p_arabi_len + p_ps_len) / (p_arabi_tm + p_ps_tm) +
+  plot_annotation(tag_levels = 'A')
 
 ggsave(file.path(out_dir, "SuppFig2_InsertSize_FragmentLength_Combined.pdf"),
        p_combined, width = 10, height = 8, dpi = 600)
+
+
+
+#with threshold 0.65
+
+# ===========================================================
+# Supp Fig 2 — Combined 4-panel figure with red reference line (y = 0.65)
+# ===========================================================
+
+library(patchwork)
+library(ggplot2)
+library(scales)
+
+# --- add dashed line to insert-size panels ---
+
+p_arabi_tm_ref <- p_arabi_tm +
+  geom_hline(yintercept = 0.65, color = "red", linetype = "dashed", linewidth = 0.6) +
+  annotate("text", x = Inf, y = 0.65, label = "y = 0.65",
+           hjust = 1.1, vjust = -0.5, color = "red", size = 3) +
+  ylim(0, 1)
+
+p_ps_tm_ref <- p_ps_tm +
+  geom_hline(yintercept = 0.65, color = "red", linetype = "dashed", linewidth = 0.6) +
+  annotate("text", x = Inf, y = 0.65, label = "y = 0.65",
+           hjust = 1.1, vjust = -0.5, color = "red", size = 3) +
+  ylim(0, 1)
+
+# --- combine all four panels ---
+p_combined_ref <- (p_arabi_len + p_ps_len) / (p_arabi_tm_ref + p_ps_tm_ref) +
+  plot_annotation(
+    tag_levels = 'A',
+    tag_prefix = "",
+    tag_suffix = "",
+    theme = theme(
+      plot.tag = element_text(size = 14, face = "bold")
+    )
+  )
+
+# --- save combined figure ---
+ggsave(
+  file.path(out_dir, "SuppFig2_InsertSize_FragmentLength_Combined_withRefLine.pdf"),
+  plot = p_combined_ref,
+  width = 10,
+  height = 8,
+  dpi = 600
+)
 
 
 
@@ -195,11 +240,11 @@ make_insert_plot <- function(df, color, species_label){
 
 # ==== Build plots ====
 p_arabi_tm <- make_insert_plot(df_arabi_tm,
-                               "#4575b4",
+                               "#d5da6d",
                                expression(italic("Arabidopsis thaliana")))
 
 p_ps_tm <- make_insert_plot(df_ps_tm,
-                            "#d73027",
+                            "#e86b7d",
                               expression(italic("Pseudomonas") ~ plain("sp.")))
 
 # ==== Save ====
@@ -212,9 +257,8 @@ ggsave(file.path(out_dir, "SuppFig_withP_InsertSize_Pseudomonas.pdf"),
 # ===============================
 # Optional combined figure
 # ===============================
-p_combined <- (p_arabi_len + p_ps_len) / (p_arabi_tm + p_ps_tm) 
-#+
-#  plot_annotation(tag_levels = 'A')
+p_combined <- (p_arabi_len + p_ps_len) / (p_arabi_tm + p_ps_tm) +
+  plot_annotation(tag_levels = 'A')
 
 ggsave(file.path(out_dir, "SuppFig2_withpvalue_InsertSize_FragmentLength_Combined.pdf"),
        p_combined, width = 10, height = 8, dpi = 600)
@@ -309,3 +353,7 @@ ggsave(file.path(out_dir, "SuppFig_FragmentLength_Arabidopsis_ByIsolate_Labeled.
 
 ggsave(file.path(out_dir, "SuppFig_FragmentLength_Pseudomonas_ByIsolate_Labeled.pdf"),
        p_ps_len_labeled, width = 8, height = 5)
+
+
+
+
