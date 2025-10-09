@@ -1,0 +1,13 @@
+Length	Count	Sample	Genome	Prop
+75	2887792	results_34.ESP_1985c_S36_removalAt_mapped_to_ps.sorted.q20	Pseudomonas viridiflava	0.992816005016695
+75	2306836	results_33.ESP_1985b_removalAt_mapped_to_ps.sorted.q20	Pseudomonas viridiflava	0.991850084551879
+75	437605	results_75.LTU_1894_S30_removalAt_mapped_to_ps.sorted.q20	Pseudomonas viridiflava	0.930696248971163
+75	4192891	results_76.LTU_2009_S19_removalAt_mapped_to_ps.sorted.q20	Pseudomonas viridiflava	0.89573715871965
+75	94019	results_30.ESP_1983b_removalAt_mapped_to_ps.sorted.q20	Pseudomonas viridiflava	0.77557434522582
+75	68407	results_86.NOR_1911_S7_removalAt_mapped_to_ps.sorted.q20	Pseudomonas viridiflava	0.72953459602423
+75	1280309	results_109.NOR_1990_removalAt_mapped_to_ps.sorted.q20	Pseudomonas viridiflava	0.629753801097967
+75	257945	results_120.RUS_1860_removalAt_mapped_to_ps.sorted.q20	Pseudomonas viridiflava	0.590721406308326
+75	198050	results_64.GBR_1933b_S36_removalAt_mapped_to_ps.sorted.q20	Pseudomonas viridiflava	0.544942258958322
+75	66648	results_27.ESP_1975_removalAt_mapped_to_ps.sorted.q20	Pseudomonas viridiflava	0.468053429217523
+19	29619	PL0222.mapped_to_Pseudomonas.dd.q20.mapDamage	Pseudomonas viridiflava	0.137491006150632
+19	74101	PL0108.mapped_to_Pseudomonas.dd.q20.mapDamage	Pseudomonas viridiflava	0.0766118776790533
