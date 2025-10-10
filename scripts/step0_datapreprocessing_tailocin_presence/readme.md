@@ -6,7 +6,7 @@ This pipeline describes the steps used to extract, authenticate, and analyze his
 
 ## [Step 1: Extract ATUE5-Mapped Reads](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/f07c60d0ca494ab77376b9d2cd0f6163e3f5a068/scripts/step0_datapreprocessing_tailocin_presence/step1_extract_h40genomes_stats)
 
-A total of 413 globally distributed *A. thaliana* herbarium specimens were screened for the presence of *P. viridiflava* ATUE5.
+A total of 400+ globally distributed *A. thaliana* herbarium specimens were screened for the presence of *P. viridiflava* ATUE5.
 
 1. **Host depletion**:
    - Raw metagenomic reads were mapped to the *A. thaliana* TAIR10 reference genome using BWA aln.
@@ -15,7 +15,7 @@ A total of 413 globally distributed *A. thaliana* herbarium specimens were scree
 2. **ATUE5 mapping**:
    - Host-depleted reads were mapped to the *P. viridiflava* ATUE5 reference genome (p25.C2).
    - Samples with ≥63% genome breadth at sufficient depth (>1.2x) were retained.
-   - **Output**: 46 high-quality historical *P. viridiflava* genomes.
+   - **Output**: [46 high-quality historical *Pseudomonas sp,* genomes](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/75ffb2bde41f0ec50d9b0f81b5d4ecd85b16719d/results/step0_datapreprocessing_tailocin_presence/step1_h40metadata/allh46_metadata_withdedup.txt). 
 
 ---
 
@@ -36,7 +36,7 @@ To confirm strain identity:
 - A maximum likelihood phylogeny was built using 296 biallelic SNPs from the 46 genomes, alongside 55 modern ATUE5 and 30 non-ATUE5 reference genomes.
 - Tree inference was performed with IQ-TREE using the TPM3+ASC+R2 substitution model.
 - Samples clustering within the ATUE5 clade were classified as ATUE5. [See phylogeny results](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/9ba8ed4eff3cf87279332d113c72825d0778153f/results/step0_datapreprocessing_tailocin_presence/step3_h46_m85_tree).
-- **Output**: [40 authenticated historical ATUE5 genomes](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/9ba8ed4eff3cf87279332d113c72825d0778153f/results/step0_datapreprocessing_tailocin_presence/step1_h40metadata/h40_metadata.txt).  
+- **Output**: [40 authenticated historical ATUE5 genomes](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/75ffb2bde41f0ec50d9b0f81b5d4ecd85b16719d/results/step0_datapreprocessing_tailocin_presence/step1_h40metadata/allh40_metadata_withdedup.txt).  
 
 ---
 
