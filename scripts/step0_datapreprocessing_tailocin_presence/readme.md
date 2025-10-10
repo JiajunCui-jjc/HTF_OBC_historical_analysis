@@ -44,7 +44,7 @@ To confirm strain identity:
 
 We assessed the presence of the tailocin gene cluster:
 
-- All 40 authenticated genomes showed strong coverage of the tailocin region. [See all details](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/9ba8ed4eff3cf87279332d113c72825d0778153f/results/step0_datapreprocessing_tailocin_presence/step4_tailocin_presence/tailocin_coverage_summary.tsv).
+- All 40 authenticated genomes showed strong coverage of the tailocin region. [See all details](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/a4169a5d0b2bcdaa69054731d4433f80f4b8e661/results/step0_datapreprocessing_tailocin_presence/step4_tailocin_presence/tailocin_coverage_summary.tsv).
   - **Average covered proportion**: 0.81  
   - **Average depth**: 28.57×  
 
