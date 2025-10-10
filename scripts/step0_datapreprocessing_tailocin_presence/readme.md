@@ -14,7 +14,7 @@ A total of 413 globally distributed *A. thaliana* herbarium specimens were scree
 
 2. **ATUE5 mapping**:
    - Host-depleted reads were mapped to the *P. viridiflava* ATUE5 reference genome (p25.C2).
-   - Samples with ≥65% genome breadth at sufficient depth were retained.
+   - Samples with ≥63% genome breadth at sufficient depth (>1.2x) were retained.
    - **Output**: 46 high-quality historical *P. viridiflava* genomes.
 
 ---
