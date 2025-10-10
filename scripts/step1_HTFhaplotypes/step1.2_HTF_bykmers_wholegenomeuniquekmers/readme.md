@@ -73,7 +73,7 @@
 
 #### `combine/step1/`
 
-> In `combine`, I merge the HTF results with O-antigen data [See table](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/53fea9c55162a2232b097ccd8849375297ca1f14/results/step3_combine/combined_HTF_oantigen_m57_h35.txt).  
+> In `combine`, I merge the HTF results with O-antigen data [See table](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/8f6838eebf2e91b341e8b2133a905cdca54a4d69/results/figures_tables/supptables/supptable2sum/merged_final_HTF_tailocin.txt).  
 > This is the [**final main figure**](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/c2712d1d74848bd6f7a825a79ea9944951e8d4ed/results/figures_tables/suppfigs/pdfs/mainfig1new.png).
 
 #### `../confidence_matrix/`
