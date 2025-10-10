@@ -12,7 +12,7 @@ Main Figure
 
 Analysis pipeline
 --------------
-[**Data Preprocessing**](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/1e6008dab82bd964e0b4b3081960a34d615bf29f/scripts/step0_datapreprocessing_tailocin_presence/readme.md)
+[**Data Preprocessing**](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/8a53edbe3b9f8494c51e73238289d244550ece55/scripts/step0_datapreprocessing_tailocin_presence/readme.md)
  
 - Extract ATUE5-mapped reads from historical plant herbarium metagenomes
 - Authenticate historical DNA damage patterns
