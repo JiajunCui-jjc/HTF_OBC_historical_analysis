@@ -33,7 +33,7 @@ Analysis pipeline
     - Detect coinfections if multiple haplotypes exceed threshold
     - HTF length group frequency distribution
 
-[**O-antigen Gene P/A Detection**](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/e936a5a7c9dd58f8d5f3515d23d2a76afec5b014/scripts/step2_Oantigengenes/readme.md):
+[**O-antigen Gene P/A Detection**](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/e0dba7b6add8840283da01345d84e72859f7d370/scripts/step2_Oantigengenes/readme.md):
 
 - A gene is considered present if:
     (i) coverage ≥ 50%
