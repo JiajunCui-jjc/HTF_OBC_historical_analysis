@@ -65,7 +65,7 @@
 >   - Remove `64.GBR` as a uncertain calls  
 >   - Confirm `PL0240` as a confident break
 > - [See analysis summary slides](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/0be4345d26b12a9e1e9d88831ca1f1476a78677e/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step2_coinfection/summary_breaking_coninfection/additional_analysis_breakingisolates_coinfection.pptx)
-> - Calculate HTF length group frequency differences, plot boxplots and raw data versus time and geography [See plots](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/5674707e4d0ed4b5442bdbd3c2bb40522701eb2d/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step3_HTFfreq).
+> - Calculate HTF length group frequency differences, plot boxplots and raw data versus time and geography.
 
 ---
 
@@ -74,11 +74,11 @@
 #### `combine/step1/`
 
 > In `combine`, I merge the HTF results with O-antigen data [See table](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/53fea9c55162a2232b097ccd8849375297ca1f14/results/step3_combine/combined_HTF_oantigen_m57_h35.txt).  
-> This is the [**final main figure**](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/5babe407b7e6b507e5dc2fe04e92f8002469e2a1/results/step3_combine/mainfig_HTFoantigen_m53_h34/m53_h34_heatmap_sixgene_only_with_HTFanno.pdf).
+> This is the [**final main figure**](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/c2712d1d74848bd6f7a825a79ea9944951e8d4ed/results/figures_tables/suppfigs/pdfs/mainfig1new.png).
 
 #### `../confidence_matrix/`
 
-> In `confidence_matrix`, I combine **local assembly** and **k-mer** results to produce a **confidence matrix of HTF calls**. [See plots](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/5babe407b7e6b507e5dc2fe04e92f8002469e2a1/results/step3_combine/suppfig1_confidence_matrix_HTF/step2_Rvisual)
+> In `confidence_matrix`, I combine **local assembly** and **k-mer** results to produce a **confidence matrix of HTF calls**. [See plots](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/c2712d1d74848bd6f7a825a79ea9944951e8d4ed/results/figures_tables/suppfig1_confidence_matrix_HTF/step2_Rvisual)
 
 ---
 
