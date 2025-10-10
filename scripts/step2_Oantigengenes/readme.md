@@ -12,7 +12,7 @@ From **step1 to step7**, we assessed the presence/absence of six tailocin-associ
 > The BAM files were previously generated using `bwa aln`. Example commands are provided in `step0_datapreprocessing`.
 
 - In **step7**, we filtered results using the following thresholds:
-  - (i) **Coverage ≥ 50%**s
+  - (i) **Coverage ≥ 50%**
   - (ii) **Mean depth ≥ 75% of the isolate’s genome-wide average**
 
 Genes not meeting both thresholds were scored as **absent**. [The final result is a **binary gene presence/absence matrix** across isolates.](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/b73cbe487b45446d374f85cb44b5df5bc910dfac/results/step2_Oantigengenes/historical46_modern57_bybamcov/final_sixgenes_binary_matrix.tsv)
