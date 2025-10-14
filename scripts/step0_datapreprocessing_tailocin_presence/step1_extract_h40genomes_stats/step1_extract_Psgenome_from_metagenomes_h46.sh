@@ -5,8 +5,8 @@
 #$ -l h_rt=24:00:0
 #$ -wd /SAN/ugi/plant_genom/jiajucui/
 #$ -V
-#$ -N s2025_h40
-#$ -t 1-40
+#$ -N s2025_h46
+#$ -t 1-46
 #$ -o /SAN/ugi/plant_genom/jiajucui/logs/
 #$ -e /SAN/ugi/plant_genom/jiajucui/logs/
 
