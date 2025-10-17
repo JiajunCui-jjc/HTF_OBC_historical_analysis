@@ -1,6 +1,8 @@
 wd=./step1_modern57_fastq_to_bam
 we ran modern 57 from fastq to bam then to dedup bam (HTF assembly used fasta, kmer used fastq, Oantigen P/A used bams so rerun Oantigen with dedup).
 use rmdup
+note: i used ATUE5_withhaplotype ref, since we want to build the tree with historical who used the same ref.
+
 done
 
 wd=./step1_historical49_extractreads_from_metagenome
