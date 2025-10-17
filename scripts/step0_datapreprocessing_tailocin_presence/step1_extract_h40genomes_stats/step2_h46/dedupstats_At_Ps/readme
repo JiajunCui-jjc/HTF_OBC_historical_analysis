@@ -1,8 +1,0 @@
-we want to present the number stats for dedup bams for both at and ps,
-now we have dedup ps in /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/tailocin_46/markdup/PL0230.mapped_to_Pseudomonas.dd.q20.markeddup.bam
-
-what i need is dedup at, which i will run from _mapped_At_q20.sorted.bam in /SAN/ugi/plant_genom/jiajucui/4_mapping_to_A_thaliana/2024_413
-
-the 46 names are in /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step0_datapreprocessing_tailocin_presence/step1_extract_h40genomes_stats/step3_dedupstats_At_Ps/h46.txt 
-
-and then merge the depth after dedup to the txt /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step0_datapreprocessing_tailocin_presence/step1_extract_h40genomes_stats/step3_dedupstats_At_Ps/allh46_metadata.txt
