@@ -1,0 +1,1 @@
+bwa index -a bwtsw Pseudomonas.plate25.C2.pilon.contigs_renamed.with_Tail_Fiber_Haps.fasta
