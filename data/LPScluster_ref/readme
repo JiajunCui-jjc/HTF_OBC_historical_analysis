@@ -1,0 +1,4 @@
+ mydata_LPSgenesPA]$ cp results/output.fasta ../../4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/
+data/
+
+mv output.fasta LPS_sixgenes.fasta  
