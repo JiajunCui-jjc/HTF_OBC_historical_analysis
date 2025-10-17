@@ -4,7 +4,7 @@ This pipeline describes the steps used to extract, authenticate, and analyze his
 
 ---
 
-## [Step 1: Extract ATUE5-Mapped Reads](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/f07c60d0ca494ab77376b9d2cd0f6163e3f5a068/scripts/step0_datapreprocessing_tailocin_presence/step1_extract_h40genomes_stats)
+## [Step 1: Extract ATUE5-Mapped Reads](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/de9d7ced1c979795f5860cd4d0868c7ade7236d0/scripts/step0_datapreprocessing_tailocin_presence/step1_extract_h46genomes_stats)
 
 A total of 400+ globally distributed *A. thaliana* herbarium specimens were screened for the presence of *P. viridiflava* ATUE5.
 
@@ -14,8 +14,8 @@ A total of 400+ globally distributed *A. thaliana* herbarium specimens were scre
 
 2. **ATUE5 mapping**:
    - Host-depleted reads were mapped to the *P. viridiflava* ATUE5 reference genome (p25.C2).
-   - Samples with ≥63% genome breadth at sufficient depth (>1.2x) were retained.
-   - **Output**: [46 high-quality historical *Pseudomonas* sp. genomes](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/75ffb2bde41f0ec50d9b0f81b5d4ecd85b16719d/results/step0_datapreprocessing_tailocin_presence/step1_h40metadata/allh46_metadata_withdedup.txt). 
+   - Samples with ≥65% genome breadth at sufficient depth (>1.2x) were retained.
+   - **Output**: [46 high-quality historical *Pseudomonas* sp. genomes](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/de9d7ced1c979795f5860cd4d0868c7ade7236d0/results/step0_datapreprocessing_tailocin_presence/step1_h46metadata/SuppTable_h46_dedup_updated.txt). 
 
 ---
 
@@ -44,7 +44,7 @@ To confirm strain identity:
 
 We assessed the presence of the tailocin gene cluster:
 
-- All 40 authenticated genomes showed strong coverage of the tailocin region. [See all details](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/a4169a5d0b2bcdaa69054731d4433f80f4b8e661/results/step0_datapreprocessing_tailocin_presence/step4_tailocin_presence/tailocin_coverage_summary.tsv).
-  - **Average covered proportion**: 0.81  
-  - **Average depth**: 28.57×  
+- All 40 authenticated genomes showed strong coverage of the tailocin region. [See all details](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/f50945e6ddef9a45a48ec6979ea13be1f51d7572/results/step0_datapreprocessing_tailocin_presence/step4_tailocin_presence/tailocin_coverage_summary.tsv).
+  - **Average covered proportion**: 0.82  
+  - **Average depth**: 17.56×  
 
