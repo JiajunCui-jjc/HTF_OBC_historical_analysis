@@ -7,7 +7,7 @@ This repository contains scripts, data, and results for profiling the hypothetic
 Main Figure
 --------------
 
-![HTF - OBC pattern](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/bebf869a0fac5939cead9665bfe84027418704c9/results/figures_tables/suppfigs/pdfs/mainfig1new.png)
+![HTF - OBC pattern](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/c6f12daa4cb0915dc3ff7edd2d1c1387e661e8b1/results/figures_tables/suppfigs/pdfs/mainfig1new.png)
 [samples included](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/ed44f258896c7e46bad668f5938bbb8344963698/results/step3_combine/mainfig_HTFoantigen_m53_h34/m53_h34_names.txt)
 
 Analysis pipeline
