@@ -1,0 +1,268 @@
+/home/jiajucui/.profile: line 1: /SAN/ugi/plant_genom/jiajucui/tools/forpankmer/env: No such file or directory
+[Fri 17 Oct 06:54:37 BST 2025] Processing p23.A3
+[bwa_aln] 17bp reads: max_diff = 2
+[bwa_aln] 38bp reads: max_diff = 3
+[bwa_aln] 64bp reads: max_diff = 4
+[bwa_aln] 93bp reads: max_diff = 5
+[bwa_aln] 124bp reads: max_diff = 6
+[bwa_aln] 157bp reads: max_diff = 7
+[bwa_aln] 190bp reads: max_diff = 8
+[bwa_aln] 225bp reads: max_diff = 9
+[bwa_aln_core] calculate SA coordinate... 143.03 sec
+[bwa_aln_core] write to the disk... 0.02 sec
+[bwa_aln_core] 262144 sequences have been processed.
+[bwa_aln_core] calculate SA coordinate... 149.02 sec
+[bwa_aln_core] write to the disk... 0.02 sec
+[bwa_aln_core] 524288 sequences have been processed.
+[bwa_aln_core] calculate SA coordinate... 144.28 sec
+[bwa_aln_core] write to the disk... 0.01 sec
+[bwa_aln_core] 786432 sequences have been processed.
+[bwa_aln_core] calculate SA coordinate... 153.93 sec
+[bwa_aln_core] write to the disk... 0.01 sec
+[bwa_aln_core] 1048576 sequences have been processed.
+[bwa_aln_core] calculate SA coordinate... 139.63 sec
+[bwa_aln_core] write to the disk... 0.01 sec
+[bwa_aln_core] 1310720 sequences have been processed.
+[bwa_aln_core] calculate SA coordinate... 146.88 sec
+[bwa_aln_core] write to the disk... 0.01 sec
+[bwa_aln_core] 1572864 sequences have been processed.
+[bwa_aln_core] calculate SA coordinate... 149.90 sec
+[bwa_aln_core] write to the disk... 0.01 sec
+[bwa_aln_core] 1835008 sequences have been processed.
+[bwa_aln_core] calculate SA coordinate... 146.64 sec
+[bwa_aln_core] write to the disk... 0.01 sec
+[bwa_aln_core] 2097152 sequences have been processed.
+[bwa_aln_core] calculate SA coordinate... 126.56 sec
+[bwa_aln_core] write to the disk... 0.02 sec
+[bwa_aln_core] 2321578 sequences have been processed.
+[main] Version: 0.7.17-r1198-dirty
+[main] CMD: bwa aln -t 2 -l 1024 -f /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/all_fastq_m57/all_bams_m57/tmp/p23.A3.r1.sai /SAN/ugi/plant_genom/jiajucui/1_initial_data/reference_genome_Ps_with_tailocin_haplotypes/Pseudomonas.plate25.C2.pilon.contigs_renamed.with_Tail_Fiber_Haps.fasta /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/all_fastq_m57/p23.A3.pair1.truncated.gz
+[main] Real time: 662.620 sec; CPU: 1304.729 sec
+[bwa_aln] 17bp reads: max_diff = 2
+[bwa_aln] 38bp reads: max_diff = 3
+[bwa_aln] 64bp reads: max_diff = 4
+[bwa_aln] 93bp reads: max_diff = 5
+[bwa_aln] 124bp reads: max_diff = 6
+[bwa_aln] 157bp reads: max_diff = 7
+[bwa_aln] 190bp reads: max_diff = 8
+[bwa_aln] 225bp reads: max_diff = 9
+[bwa_aln_core] calculate SA coordinate... 134.68 sec
+[bwa_aln_core] write to the disk... 0.02 sec
+[bwa_aln_core] 262144 sequences have been processed.
+[bwa_aln_core] calculate SA coordinate... 137.18 sec
+[bwa_aln_core] write to the disk... 0.01 sec
+[bwa_aln_core] 524288 sequences have been processed.
+[bwa_aln_core] calculate SA coordinate... 135.57 sec
+[bwa_aln_core] write to the disk... 0.02 sec
+[bwa_aln_core] 786432 sequences have been processed.
+[bwa_aln_core] calculate SA coordinate... 136.65 sec
+[bwa_aln_core] write to the disk... 0.03 sec
+[bwa_aln_core] 1048576 sequences have been processed.
+[bwa_aln_core] calculate SA coordinate... 125.78 sec
+[bwa_aln_core] write to the disk... 0.02 sec
+[bwa_aln_core] 1310720 sequences have been processed.
+[bwa_aln_core] calculate SA coordinate... 133.37 sec
+[bwa_aln_core] write to the disk... 0.02 sec
+[bwa_aln_core] 1572864 sequences have been processed.
+[bwa_aln_core] calculate SA coordinate... 136.62 sec
+[bwa_aln_core] write to the disk... 0.02 sec
+[bwa_aln_core] 1835008 sequences have been processed.
+[bwa_aln_core] calculate SA coordinate... 142.81 sec
+[bwa_aln_core] write to the disk... 0.01 sec
+[bwa_aln_core] 2097152 sequences have been processed.
+[bwa_aln_core] calculate SA coordinate... 114.82 sec
+[bwa_aln_core] write to the disk... 0.01 sec
+[bwa_aln_core] 2321578 sequences have been processed.
+[main] Version: 0.7.17-r1198-dirty
+[main] CMD: bwa aln -t 2 -l 1024 -f /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/all_fastq_m57/all_bams_m57/tmp/p23.A3.r2.sai /SAN/ugi/plant_genom/jiajucui/1_initial_data/reference_genome_Ps_with_tailocin_haplotypes/Pseudomonas.plate25.C2.pilon.contigs_renamed.with_Tail_Fiber_Haps.fasta /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/all_fastq_m57/p23.A3.pair2.truncated.gz
+[main] Real time: 613.321 sec; CPU: 1202.696 sec
+[bwa_sai2sam_pe_core] convert to sequence coordinate... 
+[infer_isize] (25, 50, 75) percentile: (199, 246, 300)
+[infer_isize] low and high boundaries: 150 and 502 for estimating avg and std
+[infer_isize] inferred external isize from 140653 pairs: 258.431 +/- 59.309
+[infer_isize] skewness: 0.303; kurtosis: -0.900; ap_prior: 1.00e-05
+[infer_isize] inferred maximum insert size: 614 (6.00 sigma)
+[bwa_sai2sam_pe_core] time elapses: 1.18 sec
+[bwa_sai2sam_pe_core] changing coordinates of 159 alignments.
+[bwa_sai2sam_pe_core] align unmapped mate...
+[bwa_paired_sw] 49093 out of 51703 Q17 singletons are mated.
+[bwa_paired_sw] 42 out of 9853 Q17 discordant pairs are fixed.
+[bwa_sai2sam_pe_core] time elapses: 3.26 sec
+[bwa_sai2sam_pe_core] refine gapped alignments... 0.83 sec
+[bwa_sai2sam_pe_core] print alignments... 0.78 sec
+[bwa_sai2sam_pe_core] 262144 sequences have been processed.
+[bwa_sai2sam_pe_core] convert to sequence coordinate... 
+[infer_isize] (25, 50, 75) percentile: (199, 247, 300)
+[infer_isize] low and high boundaries: 150 and 502 for estimating avg and std
+[infer_isize] inferred external isize from 140323 pairs: 258.590 +/- 59.474
+[infer_isize] skewness: 0.301; kurtosis: -0.906; ap_prior: 1.00e-05
+[infer_isize] inferred maximum insert size: 615 (6.00 sigma)
+[bwa_sai2sam_pe_core] time elapses: 1.22 sec
+[bwa_sai2sam_pe_core] changing coordinates of 163 alignments.
+[bwa_sai2sam_pe_core] align unmapped mate...
+[bwa_paired_sw] 49657 out of 52247 Q17 singletons are mated.
+[bwa_paired_sw] 59 out of 9671 Q17 discordant pairs are fixed.
+[bwa_sai2sam_pe_core] time elapses: 3.30 sec
+[bwa_sai2sam_pe_core] refine gapped alignments... 0.84 sec
+[bwa_sai2sam_pe_core] print alignments... 0.77 sec
+[bwa_sai2sam_pe_core] 524288 sequences have been processed.
+[bwa_sai2sam_pe_core] convert to sequence coordinate... 
+[infer_isize] (25, 50, 75) percentile: (198, 245, 298)
+[infer_isize] low and high boundaries: 150 and 498 for estimating avg and std
+[infer_isize] inferred external isize from 137354 pairs: 257.200 +/- 59.084
+[infer_isize] skewness: 0.321; kurtosis: -0.881; ap_prior: 1.00e-05
+[infer_isize] inferred maximum insert size: 612 (6.00 sigma)
+[bwa_sai2sam_pe_core] time elapses: 1.21 sec
+[bwa_sai2sam_pe_core] changing coordinates of 154 alignments.
+[bwa_sai2sam_pe_core] align unmapped mate...
+[bwa_paired_sw] 50984 out of 53849 Q17 singletons are mated.
+[bwa_paired_sw] 61 out of 9973 Q17 discordant pairs are fixed.
+[bwa_sai2sam_pe_core] time elapses: 3.38 sec
+[bwa_sai2sam_pe_core] refine gapped alignments... 0.83 sec
+[bwa_sai2sam_pe_core] print alignments... 0.77 sec
+[bwa_sai2sam_pe_core] 786432 sequences have been processed.
+[bwa_sai2sam_pe_core] convert to sequence coordinate... 
+[infer_isize] (25, 50, 75) percentile: (199, 246, 299)
+[infer_isize] low and high boundaries: 150 and 499 for estimating avg and std
+[infer_isize] inferred external isize from 137667 pairs: 257.801 +/- 59.225
+[infer_isize] skewness: 0.317; kurtosis: -0.881; ap_prior: 1.00e-05
+[infer_isize] inferred maximum insert size: 613 (6.00 sigma)
+[bwa_sai2sam_pe_core] time elapses: 1.29 sec
+[bwa_sai2sam_pe_core] changing coordinates of 169 alignments.
+[bwa_sai2sam_pe_core] align unmapped mate...
+[bwa_paired_sw] 51482 out of 54327 Q17 singletons are mated.
+[bwa_paired_sw] 59 out of 9814 Q17 discordant pairs are fixed.
+[bwa_sai2sam_pe_core] time elapses: 3.56 sec
+[bwa_sai2sam_pe_core] refine gapped alignments... 0.90 sec
+[bwa_sai2sam_pe_core] print alignments... 0.82 sec
+[bwa_sai2sam_pe_core] 1048576 sequences have been processed.
+[bwa_sai2sam_pe_core] convert to sequence coordinate... 
+[infer_isize] (25, 50, 75) percentile: (200, 247, 301)
+[infer_isize] low and high boundaries: 150 and 503 for estimating avg and std
+[infer_isize] inferred external isize from 132562 pairs: 258.976 +/- 59.418
+[infer_isize] skewness: 0.302; kurtosis: -0.899; ap_prior: 1.00e-05
+[infer_isize] inferred maximum insert size: 615 (6.00 sigma)
+[bwa_sai2sam_pe_core] time elapses: 1.23 sec
+[bwa_sai2sam_pe_core] changing coordinates of 161 alignments.
+[bwa_sai2sam_pe_core] align unmapped mate...
+[bwa_paired_sw] 54078 out of 57112 Q17 singletons are mated.
+[bwa_paired_sw] 53 out of 9132 Q17 discordant pairs are fixed.
+[bwa_sai2sam_pe_core] time elapses: 3.54 sec
+[bwa_sai2sam_pe_core] refine gapped alignments... 0.81 sec
+[bwa_sai2sam_pe_core] print alignments... 0.76 sec
+[bwa_sai2sam_pe_core] 1310720 sequences have been processed.
+[bwa_sai2sam_pe_core] convert to sequence coordinate... 
+[infer_isize] (25, 50, 75) percentile: (200, 249, 302)
+[infer_isize] low and high boundaries: 150 and 506 for estimating avg and std
+[infer_isize] inferred external isize from 138998 pairs: 259.956 +/- 59.592
+[infer_isize] skewness: 0.281; kurtosis: -0.917; ap_prior: 1.00e-05
+[infer_isize] inferred maximum insert size: 618 (6.00 sigma)
+[bwa_sai2sam_pe_core] time elapses: 1.28 sec
+[bwa_sai2sam_pe_core] changing coordinates of 177 alignments.
+[bwa_sai2sam_pe_core] align unmapped mate...
+[bwa_paired_sw] 51347 out of 53915 Q17 singletons are mated.
+[bwa_paired_sw] 60 out of 9636 Q17 discordant pairs are fixed.
+[bwa_sai2sam_pe_core] time elapses: 3.42 sec
+[bwa_sai2sam_pe_core] refine gapped alignments... 0.84 sec
+[bwa_sai2sam_pe_core] print alignments... 0.78 sec
+[bwa_sai2sam_pe_core] 1572864 sequences have been processed.
+[bwa_sai2sam_pe_core] convert to sequence coordinate... 
+[infer_isize] (25, 50, 75) percentile: (201, 248, 302)
+[infer_isize] low and high boundaries: 150 and 504 for estimating avg and std
+[infer_isize] inferred external isize from 139510 pairs: 259.670 +/- 59.664
+[infer_isize] skewness: 0.285; kurtosis: -0.913; ap_prior: 1.00e-05
+[infer_isize] inferred maximum insert size: 618 (6.00 sigma)
+[bwa_sai2sam_pe_core] time elapses: 1.25 sec
+[bwa_sai2sam_pe_core] changing coordinates of 136 alignments.
+[bwa_sai2sam_pe_core] align unmapped mate...
+[bwa_paired_sw] 50881 out of 53574 Q17 singletons are mated.
+[bwa_paired_sw] 60 out of 9403 Q17 discordant pairs are fixed.
+[bwa_sai2sam_pe_core] time elapses: 3.35 sec
+[bwa_sai2sam_pe_core] refine gapped alignments... 0.84 sec
+[bwa_sai2sam_pe_core] print alignments... 0.76 sec
+[bwa_sai2sam_pe_core] 1835008 sequences have been processed.
+[bwa_sai2sam_pe_core] convert to sequence coordinate... 
+[infer_isize] (25, 50, 75) percentile: (201, 248, 302)
+[infer_isize] low and high boundaries: 150 and 504 for estimating avg and std
+[infer_isize] inferred external isize from 142117 pairs: 259.659 +/- 59.499
+[infer_isize] skewness: 0.284; kurtosis: -0.907; ap_prior: 1.00e-05
+[infer_isize] inferred maximum insert size: 617 (6.00 sigma)
+[bwa_sai2sam_pe_core] time elapses: 1.31 sec
+[bwa_sai2sam_pe_core] changing coordinates of 177 alignments.
+[bwa_sai2sam_pe_core] align unmapped mate...
+[bwa_paired_sw] 49558 out of 52037 Q17 singletons are mated.
+[bwa_paired_sw] 39 out of 9282 Q17 discordant pairs are fixed.
+[bwa_sai2sam_pe_core] time elapses: 3.29 sec
+[bwa_sai2sam_pe_core] refine gapped alignments... 0.85 sec
+[bwa_sai2sam_pe_core] print alignments... 0.76 sec
+[bwa_sai2sam_pe_core] 2097152 sequences have been processed.
+[bwa_sai2sam_pe_core] convert to sequence coordinate... 
+[infer_isize] (25, 50, 75) percentile: (200, 247, 300)
+[infer_isize] low and high boundaries: 150 and 500 for estimating avg and std
+[infer_isize] inferred external isize from 119739 pairs: 258.686 +/- 59.211
+[infer_isize] skewness: 0.302; kurtosis: -0.893; ap_prior: 1.00e-05
+[infer_isize] inferred maximum insert size: 614 (6.00 sigma)
+[bwa_sai2sam_pe_core] time elapses: 1.23 sec
+[bwa_sai2sam_pe_core] changing coordinates of 137 alignments.
+[bwa_sai2sam_pe_core] align unmapped mate...
+[bwa_paired_sw] 43406 out of 45643 Q17 singletons are mated.
+[bwa_paired_sw] 40 out of 8078 Q17 discordant pairs are fixed.
+[bwa_sai2sam_pe_core] time elapses: 3.06 sec
+[bwa_sai2sam_pe_core] refine gapped alignments... 0.80 sec
+[bwa_sai2sam_pe_core] print alignments... 0.72 sec
+[bwa_sai2sam_pe_core] 2321578 sequences have been processed.
+[main] Version: 0.7.17-r1198-dirty
+[main] CMD: bwa sampe -r @RG\tID:p23.A3\tSM:p23.A3 -f /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/all_fastq_m57/all_bams_m57/tmp/p23.A3.sam /SAN/ugi/plant_genom/jiajucui/1_initial_data/reference_genome_Ps_with_tailocin_haplotypes/Pseudomonas.plate25.C2.pilon.contigs_renamed.with_Tail_Fiber_Haps.fasta /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/all_fastq_m57/all_bams_m57/tmp/p23.A3.r1.sai /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/all_fastq_m57/all_bams_m57/tmp/p23.A3.r2.sai /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/all_fastq_m57/p23.A3.pair1.truncated.gz /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/all_fastq_m57/p23.A3.pair2.truncated.gz
+[main] Real time: 71.424 sec; CPU: 65.924 sec
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
+[bam_rmdup_core] processing reference 1...
+[bam_rmdup_core] 1 unmatched pairs
+[bam_rmdup_core] processing reference 2...
+[bam_rmdup_core] processing reference 3...
+[bam_rmdup_core] processing reference 5...
+[bam_rmdup_core] processing reference 6...
+[bam_rmdup_core] 5 unmatched pairs
+[bam_rmdup_core] processing reference 7...
+[bam_rmdup_core] processing reference 9...
+[bam_rmdup_core] processing reference 11...
+[bam_rmdup_core] 1 unmatched pairs
+[bam_rmdup_core] processing reference 12...
+[bam_rmdup_core] 6 unmatched pairs
+[bam_rmdup_core] processing reference 13...
+[bam_rmdup_core] processing reference 14...
+[bam_rmdup_core] 21 unmatched pairs
+[bam_rmdup_core] processing reference 15...
+[bam_rmdup_core] processing reference 16...
+[bam_rmdup_core] processing reference 17...
+[bam_rmdup_core] processing reference 18...
+[bam_rmdup_core] 2 unmatched pairs
+[bam_rmdup_core] processing reference 20...
+[bam_rmdup_core] processing reference 21...
+[bam_rmdup_core] 10 unmatched pairs
+[bam_rmdup_core] processing reference 22...
+[bam_rmdup_core] processing reference 23...
+[bam_rmdup_core] processing reference 24...
+[bam_rmdup_core] processing reference 25...
+[bam_rmdup_core] processing reference 26...
+[bam_rmdup_core] processing reference 28...
+[bam_rmdup_core] processing reference 29...
+[bam_rmdup_core] processing reference 30...
+[bam_rmdup_core] processing reference 31...
+[bam_rmdup_core] processing reference 32...
+[bam_rmdup_core] 4 unmatched pairs
+[bam_rmdup_core] processing reference 34...
+[bam_rmdup_core] 1 unmatched pairs
+[bam_rmdup_core] processing reference 35...
+[bam_rmdup_core] 1 unmatched pairs
+[bam_rmdup_core] processing reference 36...
+[bam_rmdup_core] 4 unmatched pairs
+[bam_rmdup_core] processing reference 37...
+[bam_rmdup_core] 1 unmatched pairs
+[bam_rmdup_core] processing reference TFA_p25.A12...
+[bam_rmdup_core] processing reference TFA_p7.G11...
+[bam_rmdup_core] processing reference HTF_p21.F9...
+[bam_rmdup_core] processing reference HTF_p25.A12...
+[bam_rmdup_core] processing reference HTF_p7.G11...
+[bam_rmdup_core] 162007 / 1679328 = 0.0965 in library '	'
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
+[Fri 17 Oct 07:19:09 BST 2025] ✅ Done: p23.A3 → /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/all_fastq_m57/all_bams_m57/p23.A3_mapped_Ps_q20.dedup.sorted.bam
