@@ -1,4 +1,0 @@
-group	avg_tailocin_cov_prop	avg_tailocin_depth
-H40	0.8140	15.52
-M57	0.9300	46.66
-ALL	0.8822	33.82
