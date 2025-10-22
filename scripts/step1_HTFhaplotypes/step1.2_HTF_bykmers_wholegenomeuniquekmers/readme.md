@@ -64,7 +64,7 @@
 > - Isolates that break the HTF-OBC pattern:
 >   - Remove `64.GBR` as a uncertain calls  
 >   - Confirm `PL0240` as a confident break
-> - [See analysis summary slides](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/0be4345d26b12a9e1e9d88831ca1f1476a78677e/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step2_coinfection/summary_breaking_coninfection/additional_analysis_breakingisolates_coinfection.pptx)
+> - [See analysis summary slides](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/1cf701cfecc3025ad6d43a7c47ae4783d15816d2/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step2_coinfection/summary_breaking_coninfection)
 > - Calculate HTF length group frequency differences, plot boxplots and raw data versus time and geography.
 
 ---
