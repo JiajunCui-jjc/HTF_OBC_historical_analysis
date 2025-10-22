@@ -49,11 +49,11 @@ sample, HTFgroup_Oantigen_PA, wfgD_PA, rmlC1_PA, tagG1_PA, tagH1_PA, spsA_PA, es
 ---
 
 ## Step 2: R plot 
-[final figure, HTF - OBC](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/c2712d1d74848bd6f7a825a79ea9944951e8d4ed/results/figures_tables/suppfigs/pdfs/mainfig1new.png) 
+[final figure, HTF - OBC](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/aac5748ead1d0646992745da4941ef74805a518f/results/figures_tables/suppfigs/pdfs/mainfig1new.png) 
 
 ---
 
-## Step 3: [Confidence matrix](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/c2712d1d74848bd6f7a825a79ea9944951e8d4ed/results/figures_tables/suppfig1_confidence_matrix_HTF/step2_Rvisual)
+## Step 3: [Confidence matrix](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/62488f1c57edbfbb10c1220c9e41ad6b8836566c/results/figures_tables/suppfig1_confidence_matrix_HTF/step2_Rvisual)
 columns: modern57 and h35
 rows: HTF by kmer, HTF by local assembly and HTF modern from previous study
 
