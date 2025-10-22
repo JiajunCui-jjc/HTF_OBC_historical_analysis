@@ -41,7 +41,7 @@ Analysis pipeline
     (ii) mean depth ≥ 75% of genome-wide average
 - espE4 handled separately via extended mapping and contig rescue
 
-[**Combined Analysis**](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/ceb753d5d088e3ca64fabbb3dee263903441ffe6/scripts/step3_combine/readme.md):
+[**Combined Analysis**](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/f9195e406240fb96f3bef44861769cb0709e4c38/scripts/step3_combine/readme.md):
 
 - Merge HTF and OBC profiles
 - Output metadata tables and combined heatmaps
