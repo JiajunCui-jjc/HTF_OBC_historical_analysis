@@ -1,1 +1,0 @@
-First create a huilu, then export pdf as png with 500 pix/inch, then drag the pic to it

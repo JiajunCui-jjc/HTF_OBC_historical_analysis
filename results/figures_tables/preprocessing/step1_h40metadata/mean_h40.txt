@@ -1,7 +1,0 @@
-Column	Mean
-At_percent	0.291075
-At_covered	0.711956
-At_depth	6.18811
-Ps_percent	0.0736462
-Ps_covered	0.850683
-Ps_depth	29.6543
