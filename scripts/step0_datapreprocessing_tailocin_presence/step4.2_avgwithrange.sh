@@ -6,8 +6,8 @@ avg_detail_out="$OUT_DIR/avg_stats_tailocin_detailed.txt"
 
 # --- regenerate all_samples.tmp by combining group tables if missing ---
 if [ ! -f "$OUT_DIR/all_samples.tmp" ]; then
-    echo "♻️  Regenerating all_samples.tmp from H40 + M57 tables..."
-    cat "$OUT_DIR/h40_samples.tsv" "$OUT_DIR/m57_samples.tsv" > "$OUT_DIR/all_samples.tmp"
+    echo "♻️  Regenerating all_samples.tmp from H43 + M57 tables..."
+    cat "$OUT_DIR/h43_samples.tsv" "$OUT_DIR/m57_samples.tsv" > "$OUT_DIR/all_samples.tmp"
 fi
 
 echo -e "group\tcov_prop_mean(min-max)\tdepth_mean(min-max)" > "$avg_detail_out"
@@ -32,7 +32,7 @@ compute_detailed_avg () {
     fi
 }
 
-compute_detailed_avg "$OUT_DIR/h40_samples.tsv" "H40" >> "$avg_detail_out"
+compute_detailed_avg "$OUT_DIR/h43_samples.tsv" "H43" >> "$avg_detail_out"
 compute_detailed_avg "$OUT_DIR/m57_samples.tsv" "M57" >> "$avg_detail_out"
 compute_detailed_avg "$OUT_DIR/all_samples.tmp" "ALL" >> "$avg_detail_out"
 
