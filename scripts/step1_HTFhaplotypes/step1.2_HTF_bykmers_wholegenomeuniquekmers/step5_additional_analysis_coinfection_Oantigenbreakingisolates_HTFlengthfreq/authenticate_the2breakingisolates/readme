@@ -1,2 +1,23 @@
-summary check the ppt
-after running the bam files, i used igvviewer to see the mapping to the whole tailocin and the specific HTF/TFA haplotypes, and found that tailocin is present in both isolates, while PL0240 has firm evidence for HTF_p21.F9 but 64. has doubt between p7.G11 and p21.F9.
+for all h40 and m55:
+but after week59, we change the strategy to first subset the fastq to reads mapped to OTU5 and then ask the kmer counts in this read pool (requires only the library, dont need assembly/reference)... (dont need p25.c2 unique wg kmers):
+
+step1: from bam markdup (done) and rmdup, extract reads (we have the bam/fastq in tailocin_46/isolates_fastq that mapped to OTU5 ref +7HTF and TFA) 
+
+step2: then count kmer to jf file then dump -c to human readable count.  
+
+step3: do a dist (m55 benchmark and h40)
+
+step4: simulate co-infection (eg two genomes in a single strain, normalize depth to the same level and then put them into one panel with different color/transparent).
+
+
+all the result are in local /Users/cuijiajun/Desktop/others/tmphernan/2025_June/step9_coinfection/
+
+
+
+> In **step5_additional_analysis**, I:
+> - Run coinfection detection
+> - Isolates that break the HTF-OBC pattern:
+>   - Remove `64.GBR` as a uncertain calls  
+>   - Confirm `PL0240` as a confident break
+> - [See analysis summary slides](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/8172ca79b8794439f3dfb40b923af94470a24986/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step2_coinfection/summary_breaking_coninfection)
+> - Calculate HTF length group frequency differences, plot boxplots and raw data versus time and geography [See plots](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/5674707e4d0ed4b5442bdbd3c2bb40522701eb2d/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step3_HTFfreq).

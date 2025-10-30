@@ -1,0 +1,9 @@
+ln -s ../../isolates_fastq/historical46/64.GBR_1933b_S36.inclHTF.fastq.gz ./
+(base) [jiajucui@pchuckle the2fastq]$ ls
+64.GBR_1933b_S36.inclHTF.fastq.gz
+(base) [jiajucui@pchuckle the2fastq]$ ls -lh
+total 32K
+lrwxrwxrwx 1 jiajucui miscbio 67 Jun  9 19:24 64.GBR_1933b_S36.inclHTF.fastq.gz -> ../../isolates_fastq/historical46/64.GBR_1933b_S36.inclHTF.fastq.gz
+(base) [jiajucui@pchuckle the2fastq]$ ln -s ../../isolates_fastq/historical46/PL0240.inclHTF.fastq.gz ./
+(base) [jiajucui@pchuckle the2fastq]$ 
+
