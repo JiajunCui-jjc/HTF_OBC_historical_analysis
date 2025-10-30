@@ -8,12 +8,12 @@ Main Figure
 --------------
 
 ![HTF - OBC pattern](results/figureandtable/figs/pdfs/mainfig1.png)
-[samples included](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/ed44f258896c7e46bad668f5938bbb8344963698/results/step3_combine/mainfig_HTFoantigen_m53_h34/m53_h34_names.txt), 
-[samples filtering note](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/29ea610d0d1198197c74355fda1e3872b9703e9a/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step2_coinfection/summary_breaking_coninfection)
+[samples included](results/step3_combine/mainfig_HTFoantigen_m53_h43_38/m53_h38_heatmap_sixgene_only_with_HTFanno.pdf), 
+[samples filtering note](results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step2_coinfection/breaking_coninfection)
 
 Analysis pipeline
 --------------
-[**Data Preprocessing**](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/71ea095799fd4773e1cd5624640efb2dd8468a1f/scripts/step0_datapreprocessing_tailocin_presence/readme.md)
+[**Data Preprocessing**](scripts/step0_datapreprocessing_tailocin_presence/readme.md)
  
 - Extract ATUE5-mapped reads from historical plant herbarium metagenomes
 - Authenticate historical DNA damage patterns
@@ -22,11 +22,11 @@ Analysis pipeline
 
 **HTF Haplotype Assignment**:
 
-- [Local Assembly Approach](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/8a2d34315a1ab4712382a89c205be19589da1d3f/scripts/step1_HTFhaplotypes/step1.1_HTF_bylocalassembly/readme.md):
+- [Local Assembly Approach](scripts/step1_HTFhaplotypes/step1.1_HTF_bylocalassembly/readme.md):
     - Extract reads mapping to HTF/TFA regions
     - Assemble with SPAdes (skip for modern samples, since we have modern assemblies)
     - Assign best haplotype based on covered proportion (minimap2)
-- [K-mer Based Approach](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/341cffff6bf03f7b0206fef39c70f0cbf9886595/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/readme.md):
+- [K-mer Based Approach](scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/readme.md):
     - Build whole-genome-exclusive HTF-unique kmers
     - Apply iterative Hamming ≥ 2 filtering across haplotypes
     - Query isolate .jf files (Jellyfish)
@@ -34,25 +34,26 @@ Analysis pipeline
     - Detect coinfections if multiple haplotypes exceed threshold
     - HTF length group frequency distribution
 
-[**O-antigen Gene P/A Detection**](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/e0dba7b6add8840283da01345d84e72859f7d370/scripts/step2_Oantigengenes/readme.md):
+[**O-antigen Gene P/A Detection**](scripts/step2_Oantigengenes/readme.md):
 
 - A gene is considered present if:
-    (i) coverage ≥ 50%
-    (ii) mean depth ≥ 75% of genome-wide average
+    (i) coverage ≥ 65%
+    (ii) Mean depth ≥ mean depth - 0.25*sd of the isolate’s genome-wide average
+  
 - espE4 handled separately via extended mapping and contig rescue
 
-[**Combined Analysis**](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/f9195e406240fb96f3bef44861769cb0709e4c38/scripts/step3_combine/readme.md):
+[**Combined Analysis**](scripts/step3_combine/readme.md):
 
 - Merge HTF and OBC profiles
 - Output metadata tables and combined heatmaps
 
 Large data including raw fastq, fasta, reference and so on are stored on Zenodo. Link: 
 
-[Directory Structure](https://github.com/CJJ8848/HTF_OBC_historical_analysis/blob/01535b6afe4fab72f44866cbcf305e59b1537f87/structure.txt)
+[Directory Structure](structure.txt)
 -------------------
 data/
 
-    - modern57.txt, 40h_OTU5.txt: lists of modern/historical samples.
+    - modern57.txt, historical*.txt: lists of modern/historical samples.
     - readme.txt: description of input formats.
 
 scripts/
@@ -66,7 +67,7 @@ scripts/
 
 results/
 
-    - figures_tables/: Contains all figures and tables used in the manuscript and all analyses
+    - figureandtable/: Contains all figures and tables used in the manuscript and all analyses
     - step0_datapreprocessing_tailocin_presence/: h40 metadata, historical DNA authentication and summary table of tailocin presence in ATUE5 genomes
     - step1_HTFhaplotypes/: HTF haplotype results (assembly/kmer-based)
     - step2_Oantigengenes/: binary P/A gene matrix and espE2 analysis
