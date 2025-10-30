@@ -19,9 +19,9 @@ from the very raw fastq for h49 samples that after dedup has above 60% cov prop 
 
 4. we then calculate cov and depth to the two speices after dedup bams... (lopez use rmdup since the header is messy combined paired and single, others use markdup -r)
 
-The stats summary suppfig1 and metadata supptable1 scripts are in ./step2_suppfig1AB_suppmetatable
+The stats summary suppfig1 and metadata supptable1 scripts are in suppfig1AB
 
-5. run mapdamage, run length distribution and insert size for lopez 10, run tree 85+49 after dedup.
+5. run mapdamage, run length distribution and insert size for lopez 10, run tree 83+49 after dedup.
 
 6. run HTF assembly with dedup bams, run HTF kmer with dedup h49, and Oantigen with dedup.
 ~                                                                                                   
