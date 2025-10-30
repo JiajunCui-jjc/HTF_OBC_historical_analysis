@@ -1,0 +1,11 @@
+tailocin	18057	12115	18057	-	NODE_1_length_15057_cov_41.510383	15057	367	6309	5808	5942	60	NM:i:134	ms:i:3262	AS:i:3262	nn:i:0	tp:A:P	cm:i:410	s1:i:4601	s2:i:0	de:f:0.0226	zd:i:1	rl:i:0	cg:Z:5942M
+tailocin	18057	3946	10539	-	NODE_1_length_15057_cov_41.510383	15057	7762	14205	6259	6593	60	NM:i:334	ms:i:2783	AS:i:2451	nn:i:0	tp:A:P	cm:i:381	s1:i:4275	s2:i:0	de:f:0.0289	zd:i:2	rl:i:0	cg:Z:123M123I1390M27I4930M
+tailocin	18057	0	2092	-	NODE_2_length_3599_cov_35.466910	3599	1085	3176	2033	2092	60	NM:i:59	ms:i:889	AS:i:889	nn:i:0	tp:A:P	cm:i:106	s1:i:1237	s2:i:0	de:f:0.0282	rl:i:0	cg:Z:1026M1I1065M
+tailocin	18057	10856	12060	-	NODE_1_length_15057_cov_41.510383	15057	6364	7568	1169	1204	60	NM:i:35	ms:i:504	AS:i:504	nn:i:0	tp:A:P	cm:i:45	s1:i:505	s2:i:0	de:f:0.0291	zd:i:3	rl:i:0	cg:Z:1204M
+TFA_p21.F9	498	0	498	-	NODE_2_length_3599_cov_35.466910	3599	284	782	497	498	60	NM:i:1	ms:i:478	AS:i:478	nn:i:0	tp:A:P	cm:i:40	s1:i:457	s2:i:0	de:f:0.0020	rl:i:0	cg:Z:498M
+HTF_p26.D6	1803	1207	1803	-	NODE_1_length_15057_cov_41.510383	15057	13609	14205	575	596	60	NM:i:21	ms:i:204	AS:i:176	nn:i:0	tp:A:P	cm:i:25	s1:i:359	s2:i:0	de:f:0.0352	rl:i:0	cg:Z:596M
+HTF_p21.F9	1245	0	1245	-	NODE_1_length_15057_cov_41.510383	15057	13609	14854	1235	1245	60	NM:i:10	ms:i:1045	AS:i:1045	nn:i:0	tp:A:P	cm:i:96	s1:i:1097	s2:i:0	de:f:0.0080	rl:i:0	cg:Z:1245M
+HTF_p25.C2	1803	1207	1803	-	NODE_1_length_15057_cov_41.510383	15057	13609	14205	583	596	60	NM:i:13	ms:i:336	AS:i:336	nn:i:0	tp:A:P	cm:i:30	s1:i:418	s2:i:0	de:f:0.0218	rl:i:0	cg:Z:596M
+HTF_p5.D5	1803	1197	1803	-	NODE_1_length_15057_cov_41.510383	15057	13609	14215	598	606	60	NM:i:8	ms:i:446	AS:i:446	nn:i:0	tp:A:P	cm:i:36	s1:i:440	s2:i:0	de:f:0.0132	rl:i:0	cg:Z:606M
+HTF_p25.A12	1383	787	1383	-	NODE_1_length_15057_cov_41.510383	15057	13609	14205	580	596	60	NM:i:16	ms:i:346	AS:i:276	nn:i:0	tp:A:P	cm:i:34	s1:i:455	s2:i:0	de:f:0.0268	rl:i:0	cg:Z:596M
+HTF_p7.G11	1830	1234	1830	-	NODE_1_length_15057_cov_41.510383	15057	13609	14205	576	596	60	NM:i:20	ms:i:286	AS:i:196	nn:i:0	tp:A:P	cm:i:30	s1:i:412	s2:i:0	de:f:0.0336	rl:i:0	cg:Z:596M
