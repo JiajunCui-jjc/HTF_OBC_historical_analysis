@@ -1,0 +1,6 @@
+extractfastqR1R2for10nsqs.sh  pipetoextractreadsandcutfastq.sh
+
+
+get the format_tailocin.txt ready and 
+run pipetoextractreadsandcutfastq.sh first,
+then run extractfastqR1R2for10nsqs.sh for R1 and R2 10

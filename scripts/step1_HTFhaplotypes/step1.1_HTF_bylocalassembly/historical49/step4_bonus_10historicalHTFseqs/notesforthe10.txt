@@ -1,0 +1,11 @@
+sample	top_HTFhaplotype	HTF_prop
+109.NOR_1990	p5.D5	1	longcontig,fully mapped by one contig
+76.LTU_2009_S19	p21.F9	1	longcontig,fully mapped by one contig
+PL0059	p21.F9	1	longcontig,fully mapped by one contig, i guess coinfected two strains red and yellow (p21.F9 1245bp), kmer said its red since deeper kmer read. but assembly show the p21.F9 is complete...
+PL0042	p25.A12	0.993492	longcontig mappped from 9 to 1383, can be recovered to full length
+PL0102	p25.A12	0.993492	1800bpcontig mappped from 9 to 1383, can be recovered to full length
+PL0240	p21.F9	0.985542	by two contigs, contig1 from 5:840 and contig two from 853 to 1245, the first 5bp could be recovered by extend contig1 but cant get 840-853
+PL0131	p5.D5	0.921242	by two contigs, 1 for 0-1257, the contig length is 4000, so we can recover from it the full length,  2 for 1399-1803 only cant be recovered from 1359-1399
+HB0766	p21.F9	0.914859	by two contigs, can recover 40 and 10 in each but not necessary since they are unmapped and there is overlap so we cant convince by ORF
+PL0046	p21.F9	0.739759	by two contigs, 13:490 and 810:1245, can recover 3:490+22 but not necessary... increasing uncertainty
+PL0080	p25.A12	0.715112	by two contigs, 0-543 can extend to 0-543+24, 937-1383 extend to 929-1383 but again not necessary...
