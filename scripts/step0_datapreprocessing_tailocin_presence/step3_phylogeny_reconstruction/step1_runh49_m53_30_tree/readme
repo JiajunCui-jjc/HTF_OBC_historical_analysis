@@ -1,0 +1,4 @@
+step1_callvcf_modern_53_30  step2_callvcf_h46  step3_merge_buildtree
+maptoOTU5only ref
+step1 and step2 call vcf for the three sets, 
+step3 merge and run two trees.

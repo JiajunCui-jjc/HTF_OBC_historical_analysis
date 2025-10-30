@@ -1,15 +1,15 @@
 #!/bin/bash
-
+#since we show this with mapping stats so we use the otu5only ref to keep them in consistent
 # Input files
-OTU5_ref="/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/HTFreference/OTU5_ref/Pseudomonas.plate25.C2.pilon.contigs_renamed.with_Tail_Fiber_Haps.fasta"
+OTU5_ref="/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/HTFreference/OTU5_ref_noHTFhaplotypes/Pseudomonas.OTU5_ref.fasta"
 REF="/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/HTFreference/tailocin_region.fa"
-h40bam_READ_DIR="/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/all_fastq_h49/Ps_bams_h49_dedup/h40_bams_softlink"
+
+h43bam_READ_DIR=/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h43_bams_softlink
 format=".mapped_to_Pseudomonas.dd.q20.markeddup.bam"
-
-m57bam="/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/all_fastq_m57/all_bams_m57/"
-formatm57="_mapped_Ps_q20.dedup.bam"
-
-
+#.mapped_to_Pseudomonas.dd.q20.markeddup.bam
+m57bam="/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/all_fastq_m57/all_bams_m57_OTU5refonly_dedup/"
+#p4.E6_mapped_Ps_q20.dedup.sorted.bam
+formatm57="_mapped_Ps_q20.dedup.sorted.bam"
 
 OUT_DIR="/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/results/step0_datapreprocessing_tailocin_presence/step4_tailocin_presence"
 THREADS=4
@@ -19,8 +19,8 @@ cp $REF $OUT_DIR
 # Step 0: Index BAMs
 # -------------------------
 
-echo "📂 Indexing H40 BAMs..."
-for bam in "$h40bam_READ_DIR"/*"$format"; do
+echo "📂 Indexing H43 BAMs..."
+for bam in "$h43bam_READ_DIR"/*"$format"; do
     if [ ! -f "$bam.bai" ]; then
         echo "🔧 Indexing $(basename "$bam")"
         samtools index -@ $THREADS "$bam"
@@ -81,10 +81,10 @@ process_bam () {
     echo -e "${sample}\t${cov_prop}\t${avg_depth}" >> "$output"
 }
 
-# -------- H40 samples --------
-for bam in "$h40bam_READ_DIR"/*"$format"; do
+# -------- H43 samples --------
+for bam in "$h43bam_READ_DIR"/*"$format"; do
     sample=$(basename "$bam" "$format")
-    echo "📘 Processing H40 sample: $sample"
+    echo "📘 Processing H43 sample: $sample"
     process_bam "$bam" "$sample"
 done
 
@@ -103,10 +103,10 @@ echo "✅ Done. Output saved to: $output"
 
 summary_out="$OUT_DIR/avg_stats_tailocin.txt"
 
-# Split into temp files for h40 and m57
+# Split into temp files for h43 and m57
 grep -v "^sample" "$output" > "$OUT_DIR/all_samples.tmp"
 
-grep -Ff <(ls "$h40bam_READ_DIR"/*"$format" | xargs -n1 basename | sed "s/$format//") "$OUT_DIR/all_samples.tmp" > "$OUT_DIR/h40_samples.tsv"
+grep -Ff <(ls "$h43bam_READ_DIR"/*"$format" | xargs -n1 basename | sed "s/$format//") "$OUT_DIR/all_samples.tmp" > "$OUT_DIR/h43_samples.tsv"
 grep -Ff <(ls "$m57bam"/*"$formatm57" | xargs -n1 basename | sed "s/$formatm57//") "$OUT_DIR/all_samples.tmp" > "$OUT_DIR/m57_samples.tsv"
 
 # Function to compute mean for a file
@@ -125,7 +125,7 @@ compute_avg () {
 
 {
     echo -e "group\tavg_tailocin_cov_prop\tavg_tailocin_depth"
-    compute_avg "$OUT_DIR/h40_samples.tsv" "H40"
+    compute_avg "$OUT_DIR/h43_samples.tsv" "H43"
     compute_avg "$OUT_DIR/m57_samples.tsv" "M57"
     compute_avg "$OUT_DIR/all_samples.tmp" "ALL"
 } > "$summary_out"
