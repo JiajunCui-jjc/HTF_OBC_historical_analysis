@@ -2,7 +2,7 @@
 
 ---
 
-### [`step0_wholegenome_7refs/`](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/b7142d1efcbe7022caad783e09d3235af973e87a/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step0_wholegenome_7refs)
+### [`step0_wholegenome_7refs/`](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/99001840be68251201d8ad9982588e861863dc92/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step0_wholegenome_7refs)
 
 - `step1_generatepaf.sh`  
 - `step2_summarypaf_corrected_byhand.sh`  
@@ -21,7 +21,7 @@
 ### [`step1.2_refkmers_hamming_filtering/`](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/b7142d1efcbe7022caad783e09d3235af973e87a/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step1.2_refkmers_hamming_filtering)
 
 > In **step1.2**, I compute the hamming distance matrix and visualize it, then use R to iteratively filter out any k-mer pairs with distance ≤1.  
-> This yields the final `kmers_unique_hamming2` set. [See results.](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/6e2e399e4e7be69c1d048f882571e1418aed81b2/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/kmers_unique_hamming2) [See Rplot of kmers locations.](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/6e2e399e4e7be69c1d048f882571e1418aed81b2/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/kmers_unique_hamming2/runlocationofkmers/HTF_kmer_positions_after.pdf)
+> This yields the final `kmers_unique_hamming2` set. [See results.](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/99001840be68251201d8ad9982588e861863dc92/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/kmers_unique_hamming2) [See Rplot of kmers locations.](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/99001840be68251201d8ad9982588e861863dc92/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step1_cal_hamming_pairwise_matrix/Rvisualization/runlocationofkmers/HTF_kmer_positions_after.pdf)
 
 ---
 
@@ -43,11 +43,11 @@
 - `step3_dump_wgdistribution_Rvisual.R`  
 
 > In **step3**, I analyze whole-genome (WG) k-mer distributions.  
-> I visualize the distribution in R ( 2 < read <=mean +3*sd to show higher resolution). [See the whole genome kmer distribution](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/9dcc3b3ae058536717f726ee66d104b129c770fa/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step2_isolate_kmers/isolate_jf/distribution/filtered)
+> I visualize the distribution in R ( 2 < read <=mean +3*sd to show higher resolution). [See the whole genome kmer distribution](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/8aec893343d313dd5b48790f80e923c219184e99/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step2_isolate_kmers/distribution/filtered)
 
 ---
 
-### [`step4_query_and_filterby_wgthreshold/`](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/b7142d1efcbe7022caad783e09d3235af973e87a/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step4_query_and_filterby_wgthreshold)
+### [`step4_query_and_filterby_wgthreshold/`](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/8aec893343d313dd5b48790f80e923c219184e99/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step4_query_and_filterby_wgthreshold)
 
 > In **step4**, I query each isolate’s k-mers and filter them using the average WG k-mer threshold.  
 > Then I:
@@ -55,7 +55,7 @@
 > - Use R to calculate the proportion of HTF-specific k-mers to the total matched HTF k-mers for that isolate
 > - Use this index to rank the best HTF matches  
 > - Generate mixture histograms of HTF and WG k-mer distributions
-> To do this, I run `step1.sh` to obtain `wg_p25.c2_depthsummary` (long-format k-mer counts), then run `mix.R` to plot the distribution. [See mixed kmer distribution plots](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/0be4345d26b12a9e1e9d88831ca1f1476a78677e/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step3_query_kmers/kmer_distribution_mix/distributions)
+> To do this, I run `step1.sh` to obtain `wg_p25.c2_depthsummary` (long-format k-mer counts), then run `mix.R` to plot the distribution. [See mixed kmer distribution plots](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/c8321aa3b4a9b4bd0ee00a4b03a66d36255e3c59/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step3_query_kmers/kmer_distribution_mix)
 
 ---
 
@@ -66,7 +66,7 @@
 > - Isolates that break the HTF-OBC pattern:
 >   - Remove `64.GBR` as a uncertain calls  
 >   - Confirm `PL0240` as a confident break
-> - [See analysis summary slides](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/1cf701cfecc3025ad6d43a7c47ae4783d15816d2/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step2_coinfection/summary_breaking_coninfection)
+> - [See analysis summary slides](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/c8321aa3b4a9b4bd0ee00a4b03a66d36255e3c59/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step2_coinfection/breaking_coninfection/additional_analysis_breakingisolates_coinfection.pptx)
 > - Calculate HTF length group frequency differences, plot boxplots and raw data versus time and geography.
 
 ---
@@ -75,12 +75,12 @@
 
 #### `combine/step1/`
 
-> In `combine`, I merge the HTF results with O-antigen data [See table](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/8f6838eebf2e91b341e8b2133a905cdca54a4d69/results/figures_tables/supptables/supptable2sum/merged_final_HTF_tailocin.txt).  
-> This is the [**final main figure**](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/c2712d1d74848bd6f7a825a79ea9944951e8d4ed/results/figures_tables/suppfigs/pdfs/mainfig1new.png).
+> In `combine`, I merge the HTF results with O-antigen data [See table](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/c8321aa3b4a9b4bd0ee00a4b03a66d36255e3c59/results/step3_combine/combined_HTF_oantigen_m57_h43.txt).  
+> This is the [**final main figure**](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/3c0c43dabd8abe6f4712b38e43f595d691cb1f51/results/figureandtable/figs/pdfs/mainfig1.png).
 
 #### `../confidence_matrix/`
 
-> In `confidence_matrix`, I combine **local assembly** and **k-mer** results to produce a **confidence matrix of HTF calls**. [See plots](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/c2712d1d74848bd6f7a825a79ea9944951e8d4ed/results/figures_tables/suppfig1_confidence_matrix_HTF/step2_Rvisual)
+> In `confidence_matrix`, I combine **local assembly** and **k-mer** results to produce a **confidence matrix of HTF calls**. [See plots](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/3c0c43dabd8abe6f4712b38e43f595d691cb1f51/results/figureandtable/figs/pdfs/othersupps/supp5_confidence)
 
 ---
 
