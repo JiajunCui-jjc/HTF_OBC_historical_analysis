@@ -49,7 +49,7 @@
 
 ### [`step4_query_and_filterby_wgthreshold/`](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/8aec893343d313dd5b48790f80e923c219184e99/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step4_query_and_filterby_wgthreshold)
 
-> In **step4**, I query each isolate’s k-mers and filter them using the average WG k-mer threshold.  
+> In **step4**, I query each isolate’s k-mers and filter them using the average whole-genome kmer depth threshold (mean – 0.5 SD for historical, mean wg kmer depth for modern) after excluding low-depth wg k-mers (≤ 1). 
 > Then I:
 > - Summarize the raw k-mer counts of each HTF–isolate pair
 > - Use R to calculate the proportion of HTF-specific k-mers to the total matched HTF k-mers for that isolate
