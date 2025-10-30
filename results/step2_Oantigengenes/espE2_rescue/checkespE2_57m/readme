@@ -1,0 +1,144 @@
+reverse is to see p24b5 and p5.c1 if any short contig mapped to parts of the big espE2 region but actually the reverse folder is the same as before...
+p24.b5 is OBC absent and p5.c1 is OBC present, also p12.F2 is OBC present but the epsE2 is missing...
+
+
+pipe: run 7full + 30 and before we have all analysis in week 49 and 50 saying that:
+
+ref >epsE_2|utg000001l_p25.C2:1017115-1021941 ends with TAA
+
+mapped only front half gene:
+
+21 with ends at TGA, in which 12 have tails (the tail length is all 162) now end with TGA with a gene length of 4827-162=4665:
+
+9 full length 4827bp:
+>p12.A11:53375-58201
+>p20.G9:599596-604422
+>p21.A8:53451-58277
+>p21.F9:53451-58277
+>p22.D4:36093-40919
+>p26.D6:71049-75875
+>p26.E7:41446-46272
+>p3.F8:167701-172527
+>p6.B9:36131-40957
+
+12 shorter4665bp:
+>p13.C1:43384-48210 (4665bp)
+>p13.C7:242857-247683 (4665bp)
+>p21.E3:43383-48209 (4665bp)
+>p21.F1:317254-322080 (4665bp)
+>p22.A8:43260-48086 (4665bp)
+>p22.B5:43300-48126 (4665bp)
+>p27.D6:1194323-1199149 (4665bp)
+>p4.E5:35995-40821 (4665bp)
+>p4.E6:43300-48126 (4665bp)
+>p5.C3:43384-48210 (4665bp)
+>p8.B9:36140-40966 (4665bp)
+>p8.C7:721101-725927 (4665bp)
+
+9 full length mapped ends with TAA (except p20.D4 and p6.A10 ends with TGA with extra 3 base, so the length is 4827+3)
+>p12.E2:36342-41168,
+>p20.D4:125912-130738 (4830bp),
+>p25.B2:15720-20546
+>p25.C2:142782-147608
+>p25.D2:5480-10306
+>p3.A3:34343-39169
+>p3.F12:79205-84031
+>p6.A10:36463-41289 (4830bp),
+>p8.B3:79204-84030
+
+1 has gaps when mapped to p25.C2, ends with TAA, so the length is 4773
+>p26.B7:43179-47951 
+
+#now we have 23 end with TGA, 8 with TAA, 16 absent
+#now we have 16 length is 4827, 1 with 4773 (p27.B6), 2 with 4830, and 12 with 4665, 16 absent
+
+#no mapping N=16
+(red, yellow are present, pink, blue are absent, old color...)
+p12.F2 (yellow but no contig)
+p12.G7 (blue)
+p13.D10 (blue)
+p13.F3 (pink)
+p22.D1 (yellow but no contig at all, also by m1)
+p23.A3 (pink)
+p24.H2 (pink)
+p25.A12 (blue)
+p25.C11 (yellow but no contig at all, also by m1)
+p27.F2 (blue)
+p3.G9 (blue)
+p4.D2 (blue)
+p5.H11 (pink)
+p7.G11 (pink)
+p8.E4 (blue)
+p8.H7 (pink)
+
+we can use tagH1 to locate the p22.D1 and p25.C11 epsE2, ALSO P12.F2
+	
+and we did found (see week50) the first half of p25.C11 (incontinuous contig) and the full p22.D1 (TGA)
+the two samples have espE2 but too diverse, and also the p25.C11 epSE2 was interrupted, by tagH1 we can only know the first half of the espE2 gene, so better ignore…
+the p22.D1 has full length but a little shorter (4827-88=4739bp).
+
+and then we have 10 more fasta and also need to ascertain p12.F2: 
+
+p1.G2 (absent) nomatch
+p20.F10 (present) 4827_endwithTGA
+p22.C1 (absent) nomatch
+p23.B2 (absent) nomatch
+p23.B8 (present) 4827_endwithTGA
+p24.B5 (absent) only300bp_checklater
+p4.A6 (present) 4827full_endwithTAA
+p5.C1 (present) only300bp_checklater
+p5.D5 (present) 4665TGA
+p9.C4 (absent) nomatch
+
+all matched P/A except p24.B5 and p5.C1 so we need to figure out these with p12.F2 then we are safe...
+
+
+
+#now we have 23+1+3=27 end with TGA, 8+1=9 with TAA, 16-3+4=17 absent, 1 half (p25.C11), 3 unknown (p12.F2, p24.B5 and p5.C1). in total 57
+#now we have 16+3 length is 4827, 1 with 4773 (p27.B6), 2 with 4830, and 12+1 with 4665, 17 absent, 1 half (p25.C11), 1 4739bp (p22.D1), 3 unknown (p12.F2, p24.B5 and p5.C1). in total 57
+
+
+then use tagH1 to locate the espE2 for the three unknown (p12.F2, p24.B5 and p5.C1):
+for example before we have:
+tagH_1|utg000001l_p25.C2:1015755-1017122
+>epsE_2|utg000001l_p25.C2:1017115-1021941
+so the epsE_2 start should be start_epsE2=(end_tagH1-7)
+
+#p12.F2  tagH_1|utg000001l_p25.C2:1015755-1017122        1368    0       1097    +       1       1043802 1004158 1005255 1077    1097    60      NM:i:20 ms:i:697        AS:i:697        nn:i:0  tp:A:P  cm:i:73 s1:i:843        s2:i:0  de:f:0.0182     rl:i:0  cg:Z:1097M
+#p22.D1  tagH_1|utg000001l_p25.C2:1015755-1017122        1368    0       1097    +       275     69660   41503   42600   1077    1097    60      NM:i:20 ms:i:697        AS:i:697        nn:i:0  tp:A:P  cm:i:73 s1:i:843        s2:i:0  de:f:0.0182     rl:i:0  cg:Z:1097M
+#p25.C11 tagH_1|utg000001l_p25.C2:1015755-1017122        1368    0       1109    -       932     13858   2709    3818    1088    1109    60      NM:i:21 ms:i:689        AS:i:689        nn:i:0  tp:A:P  cm:i:68 s1:i:805        s2:i:0  de:f:0.0189     rl:i:0  cg:Z:1109M
+#p5.C1   tagH_1|utg000001l_p25.C2:1015755-1017122        1368    0       1097    -       66      1004901 38767   39864   1077    1097    60      NM:i:20 ms:i:697        AS:i:697        nn:i:0  tp:A:P  cm:i:73 s1:i:843        s2:i:0  de:f:0.0182     rl:i:0  cg:Z:1097M
+#no p24.B5 tagH1
+so the epsE_2 should be around: 
+p12.F2: strands: +
+				start: (1005255+(1368-1097)-7)=1005519
+				end: 1005519+4827=1010346
+				the coordinate: 1:1005519-1010346
+p22.D1: strands: +
+				start: (42600+(1368-1097)-7)=42864
+				end: 42864+4827=47691
+				the coordinate: 275:42864-47691
+p25.C11: strands: -
+			   start: 2709-(1368-1109)+7+1=2458
+				 end: 2458-4827... not complete but have a look though, 
+				 the coordinate: 932:0-2458
+p5.C1: strands: -
+			   start: 38767-(1368-1097)+7+1=38504
+				 end: 38504-4827=33677
+				 the coordinate: 66:33677-38504
+
+then i found p22.D1, p12.F2 and p5.C1 have TGA end, the length is 4729bp, while p25.C11 has only half and p24.B5 has no tagH1...
+
+so now finally we have:
+#now we have 29 end with TGA, 9 with TAA, 18 absent, 1 half (p25.C11) in total 57
+#now we have 16+3 length is 4827, 1 with 4773 (p27.B6), 2 with 4830, and 12+1 with 4665, 18 absent, 1 half (p25.C11), 3 4739bp (p22.D1) in total 57
+
+#then we do expasy and summarize:
+manually one by one check the open frame and make sure cut the end to the first stop codon...
+then we have a fasta and a aa msa by emboss transeq that contains 38 complete + 1 half (p25.C11) and 18 absent epsE2... in total 57
+
+finally do a summary table and give the final aa and dna msa...:
+
+sample Oantigen_P/A espE2length note
+
+
