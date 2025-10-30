@@ -1,6 +1,0 @@
-tools=/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/shfortailocin/tools
-
-reference_genome=/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/HTFreference/OTU5_ref/Pseudomonas.OTU5_ref.fasta
-sixgene=/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/results/step2_Oantigengenes/historical46_modern57_bybamcov/output.fasta
-paf_file=/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/results/step2_Oantigengenes/historical46_modern57_bybamcov/Pseudomonas.OTU5_ref_sixgene.paf
-$tools/minimap2/minimap2 -cx asm5 "$reference_genome" "$sixgene"> "$paf_file"
