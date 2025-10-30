@@ -67,7 +67,7 @@
 >   - Remove `64.GBR` as a uncertain calls  
 >   - Confirm `PL0240` as a confident break
 > - [See analysis summary slides](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/c8321aa3b4a9b4bd0ee00a4b03a66d36255e3c59/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step2_coinfection/breaking_coninfection/additional_analysis_breakingisolates_coinfection.pptx)
-> - Calculate HTF length group frequency differences, plot boxplots and raw data versus time and geography.
+> - [Calculate HTF length group frequency differences, plot boxplots and raw data versus time and geography](scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/authenticate_the2breakingisolates/HTFlengthfreq). [See results](results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step3_HTFfreq).
 
 ---
 
