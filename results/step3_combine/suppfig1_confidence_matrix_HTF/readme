@@ -1,0 +1,4 @@
+HTF kmer is from step3_combine/step1
+HTF mapping is from step3_combine/step3
+HTF HP2 length was calculated from fna sent by taliaB which contains all seqs of HTF they have.
+Some mapping results paf have multiple best matching inside the 4 haplotypes that have the same 1803 length (p25.c2 p26.d6...), so i merge them as length in visualizaiotn and also i use length in the HTF from bigdataset col. 
