@@ -1,0 +1,87 @@
+ 
+#note
+#p5.C1 matches only 286bp from 49:16-302 but the contig 49 length is 302, so try to reverse the query and ref assemby to see if we can find any hit
+#p24.B5 contig16 match 0-311 but length is 311, try as p5.C1
+
+bash step2_retrieve.sh 
+
+
+-
+pExtracted: p12.A11 (53375-58201) from 5
+-
+Extracted: p12.E2 (36342-41168) from 1
++
+Extracted: p13.C1 (43384-48210) from 70
++
+Extracted: p13.C7 (242857-247683) from 60
++
+Extracted: p20.D4 (125912-130738) from 13
+-
+Extracted: p20.F10 (53451-58277) from 16
++
+Extracted: p20.G9 (599596-604422) from 47
+-
+Extracted: p21.A8 (53451-58277) from 1
++
+Extracted: p21.E3 (43383-48209) from 14
++
+Extracted: p21.F1 (317254-322080) from 61
+-
+Extracted: p21.F9 (53451-58277) from 12
++
+Extracted: p22.A8 (43260-48086) from 20
++
+Extracted: p22.B5 (43300-48126) from 41
+-
+Extracted: p22.D4 (36093-40919) from 109
+-
+Extracted: p23.B8 (41423-46249) from 85
++
+[faidx] Truncated sequence: 16:1-3856
+Extracted: p24.B5 (1-3856) from 16
++
+Extracted: p25.B2 (15720-20546) from 953
++
+Extracted: p25.C2 (142782-147608) from 30
+-
+Extracted: p25.D2 (5480-10306) from 558
+-
+Extracted: p26.D6 (71049-75875) from 524
+-
+Extracted: p26.E7 (41446-46272) from 13
++
+Extracted: p27.D6 (1194323-1199149) from 1
++
+Extracted: p3.A3 (34343-39169) from 187
++
+Extracted: p3.F12 (79205-84031) from 13
++
+Extracted: p3.F8 (167701-172527) from 169
++
+Extracted: p4.A6 (79170-83996) from 32
+-
+Extracted: p4.E5 (35995-40821) from 182
++
+Extracted: p4.E6 (43300-48126) from 28
++
+[faidx] Truncated sequence: 49:17-3909
+Extracted: p5.C1 (17-3909) from 49
++
+Extracted: p5.C3 (43384-48210) from 12
++
+Extracted: p5.D5 (36497-41323) from 14
+-
+Extracted: p6.A10 (36463-41289) from 40
+-
+Extracted: p6.B9 (36131-40957) from 2
++
+Extracted: p8.B3 (79204-84030) from 50
+-
+Extracted: p8.B9 (36140-40966) from 26
++
+Extracted: p8.C7 (721101-725927) from 63
+Extracting p26.B7 from 74:43179-47951
+Extraction completed. Sequences saved in: /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/results/step2_Oantigengenes/espE2_rescue/checkespE2_57m/sub_7full_30_retrieved_epsE2_sequences.fasta
+
+[1]+  Done                    bash step2_retrieve.sh
+

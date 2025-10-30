@@ -1,0 +1,9 @@
+historical46_modern57_bybamcov:
+From the step1 to step7, I did step1 and step2 to get the coordinates of the six genes in the p25.c2 ref I used which has multiple contigs. Then I run step3 and step4, step5 and step6 to calculate the covered proportion and relative read depth of each isolate read library to the six genes. The bam files were generated previously with bwa aln, the example code is in example_code_data_preprocessing.sh. Then I run step7 to generate the binary matrix after filtering both: (i) coverage ≥ 50% and (ii) mean depth ≥ 75% of the isolate’s genome-wide average; otherwise, it was scored as absent.
+
+
+checkespE2_contigs
+The espE2 locus required additional curation due to its length (~4.5 kb) and high allelic divergence. For modern isolates, we first identified reads mapping to the P. viridiflava p25.C2 espE2 reference. Isolates with fully mapped variants were retained, whereas those with only partial mappings were revisited to recover the complete gene sequence (~4,527 bp ± 200 bp) by extending coordinates from the conserved mapped region within the FASTA contig. This process generated a comprehensive set of diverse modern espE2 haplotypes.
+For historical isolates, which lack whole-genome assemblies, this modern haplotype set was used as an expanded reference. Reads mapping to any haplotype were extracted and locally assembled using SPAdes v3.13.0. Assembled contigs were then aligned against the modern haplotype set with minimap2 v2.1 to identify the best-matching allele.
+For both modern and historical datasets, rescued espE2 sequences were translated into amino acids by Expasy, open reading frames (ORFs) were identified via start/stop codon detection, and sequences were aligned with Clustal Omega v1.2.4. The resulting multiple sequence alignments and allele length distributions are provided in the Supplementary Materials.
+
