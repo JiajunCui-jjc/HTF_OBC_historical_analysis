@@ -1,0 +1,674 @@
+IQ-TREE 2.2.6 COVID-edition built Dec  8 2023
+
+Input file name: bialleliconly_h43_m53_96samples.min96.phy
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 4766
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 96 sequences with 8228 nucleotide sites
+Number of constant sites: 0 (= 0% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 0 (= 0% of all sites)
+Number of parsimony informative sites: 4750
+Number of distinct site patterns: 4178
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+F+ASC+R4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+GTR+F+ASC+R4    -102546.699  205455.398 +        1  205463.586 +        1  206725.167 +        1
+TVM+F+ASC+R4    -102561.543  205483.087 - 9.71e-07  205491.184 - 1.02e-06  206745.840 - 3.24e-05
+GTR+F+ASC+R5    -102552.495  205470.991 - 0.000411  205479.363 - 0.000375  206754.790 - 3.69e-07
+TVM+F+ASC+R5    -102564.561  205493.122 - 6.43e-09  205501.402 - 6.14e-09  206769.906 - 1.93e-10
+GTR+F+ASC+R3    -102582.428  205522.857 - 2.25e-15  205530.864 - 2.46e-15  206778.595 -  2.5e-12
+TVM+F+ASC+R3    -102596.647  205549.294 - 4.08e-21  205557.211 - 4.67e-21  206798.017 - 1.52e-16
+TIM+F+ASC+R4    -102768.654  205895.307 - 2.98e-96  205903.314 - 3.27e-96  207151.045 - 3.32e-93
+K3Pu+F+ASC+R4   -102781.889  205919.777 - 1.45e-101  205927.694 - 1.66e-101  207168.500 - 5.39e-97
+TIM+F+ASC+R5    -102777.502  205917.004 - 5.8e-101  205925.192 - 5.8e-101  207186.773 - 5.8e-101
+TIM+F+ASC+R3    -102799.806  205953.612 - 6.52e-109  205961.440 - 7.8e-109  207195.320 - 8.08e-103
+K3Pu+F+ASC+R3   -102814.351  205980.702 - 8.54e-115  205988.441 - 1.07e-114  207215.395 - 3.53e-107
+K3Pu+F+ASC+R5   -102807.188  205974.376 - 2.02e-113  205982.474 - 2.11e-113  207237.130 - 6.74e-112
+GTR+F+ASC+R2    -102828.265  206010.531 - 2.85e-121  206018.359 - 3.41e-121  207252.239 - 3.53e-115
+TVM+F+ASC+R2    -102839.435  206030.869 - 1.09e-125  206038.608 - 1.37e-125  207265.561 - 4.52e-118
+TIM+F+ASC+R2    -103032.495  206414.991 - 4.24e-209  206422.641 - 5.54e-209  207642.668 - 5.85e-200
+K3Pu+F+ASC+R2   -103044.019  206436.039 - 1.14e-213  206443.601 - 1.56e-213  207656.701 - 5.25e-203
+TIM2+F+ASC+R4   -103035.092  206428.183 - 5.78e-212  206436.190 - 6.33e-212  207683.922 - 6.44e-209
+TPM2u+F+ASC+R4  -103046.816  206449.632 - 1.27e-216  206457.549 - 1.46e-216  207698.355 - 4.73e-212
+TIM2+F+ASC+R5   -103043.547  206449.094 - 1.67e-216  206457.282 - 1.67e-216  207718.863 - 1.67e-216
+TIM2+F+ASC+R3   -103066.254  206486.509 - 1.25e-224  206494.337 - 1.5e-224  207728.217 - 1.55e-218
+TPM2u+F+ASC+R5  -103053.619  206467.238 - 1.91e-220  206475.335 -   2e-220  207729.991 - 6.39e-219
+TPM2u+F+ASC+R3  -103077.237  206506.474 - 5.77e-229  206514.213 - 7.23e-229  207741.167 - 2.39e-221
+TIM3+F+ASC+R4   -103155.046  206668.092 - 4.64e-264  206676.099 - 5.08e-264  207923.830 - 5.17e-261
+TIM3+F+ASC+R5   -103157.341  206676.682 - 6.33e-266  206684.870 - 6.33e-266  207946.451 - 6.33e-266
+TPM3u+F+ASC+R4  -103172.683  206701.366 - 2.76e-271  206709.283 - 3.16e-271  207950.089 - 1.03e-266
+TIM3+F+ASC+R3   -103185.474  206724.948 - 2.09e-276  206732.776 - 2.51e-276  207966.656 - 2.59e-270
+TPM3u+F+ASC+R3  -103203.355  206758.709 - 9.76e-284  206766.448 - 1.22e-283  207993.402 - 4.04e-276
+TPM3u+F+ASC+R5  -103197.943  206755.886 -   4e-283  206763.984 - 4.19e-283  208018.640 - 1.34e-281
+GTR+F+ASC+G4    -103283.736  206919.473 - 1.2e-318  206927.211 - 1.51e-318  208154.165 - 4.98e-311
+TVM+F+ASC+G4    -103299.374  206948.748 -        0  206956.398 -        0  208176.425 - 7.3e-316
+TIM2+F+ASC+R2   -103301.109  206952.217 -        0  206959.868 -        0  208179.895 - 1.29e-316
+TPM2u+F+ASC+R2  -103310.701  206969.402 -        0  206976.965 -        0  208190.064 - 7.97e-319
+TIM3+F+ASC+R2   -103419.240  207188.480 -        0  207196.130 -        0  208416.157 -        0
+TPM3u+F+ASC+R2  -103432.999  207213.999 -        0  207221.561 -        0  208434.660 -        0
+TN+F+ASC+R4     -103465.062  207286.124 -        0  207294.041 -        0  208534.847 -        0
+HKY+F+ASC+R4    -103480.248  207314.496 -        0  207322.324 -        0  208556.204 -        0
+TN+F+ASC+R3     -103492.530  207337.060 -        0  207344.799 -        0  208571.752 -        0
+TIM+F+ASC+G4    -103506.623  207361.247 -        0  207368.809 -        0  208581.909 -        0
+HKY+F+ASC+R3    -103507.065  207364.130 -        0  207371.780 -        0  208591.807 -        0
+TN+F+ASC+R5     -103489.505  207339.010 -        0  207347.107 -        0  208601.764 -        0
+K3Pu+F+ASC+G4   -103523.239  207392.477 -        0  207399.952 -        0  208606.124 -        0
+HKY+F+ASC+R5    -103502.535  207363.070 -        0  207371.077 -        0  208618.809 -        0
+TN+F+ASC+R2     -103716.995  207781.991 -        0  207789.553 -        0  209002.653 -        0
+HKY+F+ASC+R2    -103729.086  207804.172 -        0  207811.647 -        0  209017.819 -        0
+TVMe+ASC+R4     -103713.914  207781.828 -        0  207789.655 -        0  209023.536 -        0
+TVMe+ASC+R3     -103726.376  207802.752 -        0  207810.402 -        0  209030.429 -        0
+SYM+ASC+R4      -103714.017  207784.034 -        0  207791.951 -        0  209032.757 -        0
+TVMe+ASC+R5     -103712.325  207782.651 -        0  207790.658 -        0  209038.389 -        0
+SYM+ASC+R3      -103726.032  207804.064 -        0  207811.803 -        0  209038.756 -        0
+SYM+ASC+R5      -103726.124  207812.248 -        0  207820.346 -        0  209075.002 -        0
+TIM2+F+ASC+G4   -103766.234  207880.467 -        0  207888.030 -        0  209101.129 -        0
+TPM2u+F+ASC+G4  -103780.401  207906.802 -        0  207914.277 -        0  209120.449 -        0
+K3P+ASC+R4      -103776.561  207903.122 -        0  207910.772 -        0  209130.799 -        0
+K3P+ASC+R3      -103788.693  207923.387 -        0  207930.862 -        0  209137.033 -        0
+TIMe+ASC+R4     -103776.139  207904.277 -        0  207912.016 -        0  209138.969 -        0
+TIMe+ASC+R3     -103787.974  207923.948 -        0  207931.510 -        0  209144.610 -        0
+K3P+ASC+R5      -103786.990  207927.981 -        0  207935.808 -        0  209169.688 -        0
+TIMe+ASC+R5     -103787.082  207930.163 -        0  207938.080 -        0  209178.886 -        0
+TPM3+ASC+R4     -103872.741  208095.481 -        0  208103.131 -        0  209323.158 -        0
+TPM3+ASC+R3     -103884.121  208114.243 -        0  208121.718 -        0  209327.889 -        0
+TIM3e+ASC+R4    -103872.420  208096.839 -        0  208104.578 -        0  209331.532 -        0
+TIM3e+ASC+R3    -103883.762  208115.524 -        0  208123.087 -        0  209336.186 -        0
+K2P+ASC+R4      -103886.007  208120.014 -        0  208127.576 -        0  209340.676 -        0
+TPM2+ASC+R4     -103883.217  208116.433 -        0  208124.084 -        0  209344.111 -        0
+K2P+ASC+R3      -103897.389  208138.778 -        0  208146.166 -        0  209345.409 -        0
+TNe+ASC+R4      -103885.367  208120.733 -        0  208128.383 -        0  209348.410 -        0
+TPM2+ASC+R3     -103894.820  208135.641 -        0  208143.116 -        0  209349.287 -        0
+TIM2e+ASC+R4    -103882.787  208117.575 -        0  208125.313 -        0  209352.267 -        0
+TNe+ASC+R3      -103897.066  208140.131 -        0  208147.606 -        0  209353.778 -        0
+TIM2e+ASC+R3    -103894.069  208136.139 -        0  208143.701 -        0  209356.801 -        0
+TPM3+ASC+R5     -103885.080  208124.160 -        0  208131.988 -        0  209365.868 -        0
+TIM3+F+ASC+G4   -103899.576  208147.151 -        0  208154.713 -        0  209367.813 -        0
+TIM3e+ASC+R5    -103882.661  208121.323 -        0  208129.240 -        0  209370.046 -        0
+TPM2+ASC+R5     -103890.913  208135.826 -        0  208143.654 -        0  209377.534 -        0
+K2P+ASC+R5      -103895.973  208143.945 -        0  208151.684 -        0  209378.638 -        0
+TNe+ASC+R5      -103892.815  208139.630 -        0  208147.458 -        0  209381.338 -        0
+TIM2e+ASC+R5    -103893.561  208143.122 -        0  208151.039 -        0  209391.845 -        0
+TPM3u+F+ASC+G4  -103918.347  208182.693 -        0  208190.168 -        0  209396.340 -        0
+TVMe+ASC+R2     -103941.947  208229.895 -        0  208237.370 -        0  209443.541 -        0
+SYM+ASC+R2      -103941.326  208230.651 -        0  208238.214 -        0  209451.313 -        0
+K3P+ASC+R2      -103998.327  208338.654 -        0  208345.956 -        0  209538.270 -        0
+TIMe+ASC+R2     -103997.576  208339.151 -        0  208346.539 -        0  209545.782 -        0
+TPM3+ASC+R2     -104096.096  208534.193 -        0  208541.495 -        0  209733.809 -        0
+TIM3e+ASC+R2    -104095.773  208535.546 -        0  208542.934 -        0  209742.177 -        0
+K2P+ASC+R2      -104107.263  208554.526 -        0  208561.742 -        0  209747.127 -        0
+TPM2+ASC+R2     -104105.490  208552.979 -        0  208560.281 -        0  209752.595 -        0
+TNe+ASC+R2      -104106.498  208554.996 -        0  208562.298 -        0  209754.612 -        0
+TIM2e+ASC+R2    -104104.535  208553.070 -        0  208560.459 -        0  209759.702 -        0
+TN+F+ASC+G4     -104213.211  208772.422 -        0  208779.897 -        0  209986.069 -        0
+HKY+F+ASC+G4    -104230.457  208804.914 -        0  208812.303 -        0  210011.546 -        0
+TVMe+ASC+G4     -104619.865  209583.730 -        0  209591.118 -        0  210790.361 -        0
+SYM+ASC+G4      -104618.928  209583.856 -        0  209591.331 -        0  210797.502 -        0
+K3P+ASC+G4      -104655.929  209651.858 -        0  209659.074 -        0  210844.458 -        0
+TIMe+ASC+G4     -104654.719  209651.437 -        0  209658.739 -        0  210851.053 -        0
+TPM3+ASC+G4     -104758.385  209856.771 -        0  209863.987 -        0  211049.371 -        0
+K2P+ASC+G4      -104763.181  209864.362 -        0  209871.492 -        0  211049.947 -        0
+TNe+ASC+G4      -104761.967  209863.934 -        0  209871.150 -        0  211056.535 -        0
+TIM3e+ASC+G4    -104757.463  209856.926 -        0  209864.228 -        0  211056.542 -        0
+TPM2+ASC+G4     -104763.190  209866.381 -        0  209873.597 -        0  211058.982 -        0
+TIM2e+ASC+G4    -104761.978  209865.956 -        0  209873.257 -        0  211065.572 -        0
+GTR+F+ASC       -105518.349  211386.699 -        0  211394.349 -        0  212614.376 -        0
+TVM+F+ASC       -105530.635  211409.270 -        0  211416.832 -        0  212629.932 -        0
+GTR+F+R2        -105523.278  211400.556 -        0  211408.383 -        0  212642.264 -        0
+TVM+F+R2        -105534.322  211420.645 -        0  211428.383 -        0  212655.337 -        0
+GTR+F+R3        -105523.291  211404.582 -        0  211412.589 -        0  212660.320 -        0
+TIM+F+ASC       -105655.381  211656.762 -        0  211664.237 -        0  212870.409 -        0
+TIM+F+R2        -105653.162  211656.325 -        0  211663.975 -        0  212884.002 -        0
+K3Pu+F+ASC      -105668.551  211681.103 -        0  211688.491 -        0  212887.734 -        0
+K3Pu+F+R2       -105664.476  211676.952 -        0  211684.514 -        0  212897.613 -        0
+TIM2+F+ASC      -105917.345  212180.691 -        0  212188.166 -        0  213394.337 -        0
+TPM2u+F+ASC     -105927.366  212198.733 -        0  212206.121 -        0  213405.364 -        0
+TIM2+F+R2       -105923.354  212196.708 -        0  212204.359 -        0  213424.386 -        0
+TPM2u+F+R2      -105932.458  212212.916 -        0  212220.479 -        0  213433.578 -        0
+GTR+F+G4        -105975.176  212302.352 -        0  212310.091 -        0  213537.044 -        0
+TIM3+F+R2       -106016.346  212382.691 -        0  212390.341 -        0  213610.368 -        0
+TIM3+F+ASC      -106025.414  212396.828 -        0  212404.303 -        0  213610.475 -        0
+TPM3u+F+R2      -106030.034  212408.068 -        0  212415.631 -        0  213628.730 -        0
+TPM3u+F+ASC     -106041.211  212426.421 -        0  212433.809 -        0  213633.052 -        0
+TVMe+R2         -106084.980  212515.959 -        0  212523.434 -        0  213729.606 -        0
+K3P+R2          -106096.949  212535.898 -        0  212543.199 -        0  213735.514 -        0
+SYM+R2          -106084.468  212516.937 -        0  212524.499 -        0  213737.599 -        0
+TIMe+R2         -106096.372  212536.744 -        0  212544.132 -        0  213743.375 -        0
+K2P+R2          -106206.209  212752.418 -        0  212759.634 -        0  213945.019 -        0
+TPM2+R2         -106202.875  212747.750 -        0  212755.052 -        0  213947.366 -        0
+TNe+R2          -106205.622  212753.244 -        0  212760.546 -        0  213952.860 -        0
+TPM3+R2         -106206.206  212754.412 -        0  212761.714 -        0  213954.028 -        0
+TIM2e+R2        -106202.383  212748.766 -        0  212756.155 -        0  213955.398 -        0
+TIM3e+R2        -106205.631  212755.262 -        0  212762.650 -        0  213961.893 -        0
+TN+F+R2         -106226.255  212800.509 -        0  212808.072 -        0  214021.171 -        0
+HKY+F+R2        -106237.752  212821.505 -        0  212828.980 -        0  214035.151 -        0
+TN+F+ASC        -106244.667  212833.335 -        0  212840.723 -        0  214039.966 -        0
+HKY+F+ASC       -106257.859  212857.718 -        0  212865.020 -        0  214057.334 -        0
+TVMe+ASC        -106270.573  212883.146 -        0  212890.448 -        0  214082.762 -        0
+SYM+ASC         -106270.219  212884.438 -        0  212891.827 -        0  214091.070 -        0
+K3P+ASC         -106294.213  212926.426 -        0  212933.557 -        0  214112.011 -        0
+TIMe+ASC        -106293.888  212927.776 -        0  212934.992 -        0  214120.377 -        0
+K2P+ASC         -106400.337  213136.674 -        0  213143.720 -        0  214315.244 -        0
+TPM3+ASC        -106398.677  213135.354 -        0  213142.485 -        0  214320.940 -        0
+TPM2+ASC        -106399.819  213137.639 -        0  213144.770 -        0  214323.224 -        0
+TNe+ASC         -106400.011  213138.023 -        0  213145.154 -        0  214323.608 -        0
+TIM3e+ASC       -106398.348  213136.696 -        0  213143.912 -        0  214329.297 -        0
+TIM2e+ASC       -106399.490  213138.980 -        0  213146.196 -        0  214331.581 -        0
+GTR+F           -107136.274  214622.549 -        0  214630.199 -        0  215850.226 -        0
+JC+ASC+R4       -110893.512  222133.024 -        0  222140.499 -        0  223346.671 -        0
+JC+ASC+R3       -110904.278  222150.556 -        0  222157.858 -        0  223350.172 -        0
+JC+ASC+R5       -110903.683  222157.367 -        0  222165.017 -        0  223385.044 -        0
+JC+ASC+R2       -111100.247  222538.494 -        0  222545.625 -        0  223724.079 -        0
+JC+ASC+G4       -111730.278  223796.556 -        0  223803.602 -        0  224975.127 -        0
+JC+R2           -113215.427  226768.853 -        0  226775.984 -        0  227954.439 -        0
+JC+ASC          -113329.436  226992.872 -        0  226999.834 -        0  228164.427 -        0
+F81+F+ASC+R4    -113556.517  227465.035 -        0  227472.773 -        0  228699.727 -        0
+F81+F+ASC+R3    -113568.417  227484.834 -        0  227492.397 -        0  228705.496 -        0
+F81+F+ASC+R5    -113565.595  227487.191 -        0  227495.108 -        0  228735.914 -        0
+F81+F+ASC+R2    -113758.325  227860.651 -        0  227868.039 -        0  229067.282 -        0
+F81+F+ASC+G4    -114344.610  229031.221 -        0  229038.523 -        0  230230.837 -        0
+F81+F+R2        -115897.405  232138.811 -        0  232146.199 -        0  233345.442 -        0
+F81+F+ASC       -115960.065  232260.130 -        0  232267.346 -        0  233452.731 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+ASC+R4
+
+Rate parameter R:
+
+  A-C: 1.1622
+  A-G: 6.3986
+  A-T: 1.2001
+  C-G: 0.2459
+  C-T: 5.5072
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.1212
+  pi(C) = 0.3776
+  pi(G) = 0.3694
+  pi(T) = 0.1318
+
+Rate matrix Q:
+
+  A    -2.068    0.3065     1.651    0.1105
+  C   0.09839   -0.6687   0.06342    0.5069
+  G    0.5417   0.06484   -0.6986   0.09205
+  T    0.1016     1.453     0.258    -1.812
+
+Model of rate heterogeneity: FreeRate with 4 categories
+Site proportion and rates:  (0.7287,0.2784) (0.2036,1.853) (0.05897,5.25) (0.008765,12.59)
+
+ Category  Relative_rate  Proportion
+  1         0.2784         0.7287
+  2         1.853          0.2036
+  3         5.25           0.05897
+  4         12.59          0.008765
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -102405.9988 (s.e. 780.9312)
+Unconstrained log-likelihood (without tree): -63197.4746
+Number of free parameters (#branches + #model parameters): 181
+Akaike information criterion (AIC) score: 205173.9975
+Corrected Akaike information criterion (AICc) score: 205182.1859
+Bayesian information criterion (BIC) score: 206443.7665
+
+Total tree length (sum of branch lengths): 1.1800
+Sum of internal branch lengths: 0.2424 (20.5406% of tree length)
+
+WARNING: 6 near-zero internal branches (<0.0001) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon '/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//109.NOR_1990.mapped_to_Pseudomonas.dd.q20.markeddup.bam' is drawn at root
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
++----------/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//109.NOR_1990.mapped_to_Pseudomonas.dd.q20.markeddup.bam
+|
+|                 +------------/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//120.RUS_1860.mapped_to_Pseudomonas.dd.q20.markeddup.bam
+|              +--| (100/69)
+|              |  +------------PL0220
+|           +--| (88.2/57)
+|           |  |  +------/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//86.NOR_1911_S7.mapped_to_Pseudomonas.dd.q20.markeddup.bam
+|           |  +--| (69.3/57)
+|           |     |  +-----------p8.C7
+|           |     +--| (87.9/60)
+|           |        +-----PL0027
+|        +--| (42.6/55)
+|        |  |                                       +-------/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//27.ESP_1975.mapped_to_Pseudomonas.dd.q20.markeddup.bam
+|        |  |                               +-------| (100/100)
+|        |  |                               |       |          +--------------------/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//34.ESP_1985c_S36.mapped_to_Pseudomonas.dd.q20.markeddup.bam
+|        |  |                               |       |       +--| (51/77)
+|        |  |                               |       |       |  +--------------PL0131
+|        |  |                               |       |   +---| (99.7/100)
+|        |  |                               |       |   |   |   +--------------p27.D6
+|        |  |                               |       |   |   +---| (99.7/88)
+|        |  |                               |       |   |       +-----------------PL0046
+|        |  |                               |       +---| (81.7/93)
+|        |  |                               |           +-----------------------------p13.F3
+|        |  |                          +----| (99.7/99)
+|        |  |                          |    |         +----------------------------/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//76.LTU_2009_S19.mapped_to_Pseudomonas.dd.q20.markeddup.bam
+|        |  |                          |    |  +------| (100/100)
+|        |  |                          |    |  |      +-----------------------------PL0080
+|        |  |                          |    +--| (28.7/85)
+|        |  |                          |       |       +--------------------------p24.H2
+|        |  |                          |       +-------| (100/100)
+|        |  |                          |               +--------------------PL0127
+|        |  |                       +--| (93/96)
+|        |  |                       |  +---------/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//30.ESP_1983b.mapped_to_Pseudomonas.dd.q20.markeddup.bam
+|        |  |                    +--| (99.9/100)
+|        |  |                    |  +---------PL0073
+|        |  |                 +--| (92.7/93)
+|        |  |                 |  |                       +-------/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//64.GBR_1933b_S36.mapped_to_Pseudomonas.dd.q20.markeddup.bam
+|        |  |                 |  |             +---------| (100/100)
+|        |  |                 |  |             |         |     +-------------p8.H7
+|        |  |                 |  |             |         |  +--| (89.4/99)
+|        |  |                 |  |             |         |  |  +-------------PL0210
+|        |  |                 |  |             |         +--| (94.9/100)
+|        |  |                 |  |             |            +-------------PL0240
+|        |  |                 |  |        +----| (100/100)
+|        |  |                 |  |        |    +-----PL0222
+|        |  |                 |  |     +--| (89.4/96)
+|        |  |                 |  |     |  +--HB0840
+|        |  |                 |  |  +--| (92/76)
+|        |  |                 |  |  |  +----PL0230
+|        |  |                 |  +**| (43.1/34)
+|        |  |                 |     +--HB0841
+|        |  |              +--| (87.7/12)
+|        |  |              |  |                              +--------/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//75.LTU_1894_S30.mapped_to_Pseudomonas.dd.q20.markeddup.bam
+|        |  |              |  |                  +-----------| (100/100)
+|        |  |              |  |                  |           +----------------p27.F2
+|        |  |              |  |             +----| (99.8/100)
+|        |  |              |  |             |    +----------------PL0185
+|        |  |              |  |          +--| (90.3/38)
+|        |  |              |  |          |  +---------------------------p1.G2
+|        |  |              |  |       +--| (86.8/72)
+|        |  |              |  |       |  |            +-------------------------p12.E2
+|        |  |              |  |       |  |     +------| (100/96)
+|        |  |              |  |       |  |     |      +---------------------------p26.B7
+|        |  |              |  |       |  |  +--| (92/40)
+|        |  |              |  |       |  |  |  |       +-----------------------------p13.D10
+|        |  |              |  |       |  |  |  |  +----| (99.5/99)
+|        |  |              |  |       |  |  |  |  |    +------------------------------p22.C1
+|        |  |              |  |       |  |  |  +--| (62.4/65)
+|        |  |              |  |       |  |  |     |                                      +**p5.H11
+|        |  |              |  |       |  |  |     +--------------------------------------| (100/100)
+|        |  |              |  |       |  |  |                                            +**p7.G11
+|        |  |              |  |       |  +--| (81.5/40)
+|        |  |              |  |       |     |                                         +**p13.C1
+|        |  |              |  |       |     |                                      +**| (71.3/99)
+|        |  |              |  |       |     |                                      |  +**p21.E3
+|        |  |              |  |       |     |     +--------------------------------| (100/100)
+|        |  |              |  |       |     |     |                                +**p4.E5
+|        |  |              |  |       |     |  +--| (95.9/71)
+|        |  |              |  |       |     |  |  |                           +**p25.A12
+|        |  |              |  |       |     |  |  +---------------------------| (100/100)
+|        |  |              |  |       |     |  |                              +--p8.E4
+|        |  |              |  |       |     +--| (96.3/69)
+|        |  |              |  |       |        |   +--------------------------p4.D2
+|        |  |              |  |       |        +---| (99.3/68)
+|        |  |              |  |       |            +-----------------------------PL0051
+|        |  |              |  |  +----| (100/100)
+|        |  |              |  |  |    |  +--------------HB0814
+|        |  |              |  |  |    +--| (99.9/98)
+|        |  |              |  |  |       +----------------------p24.B5
+|        |  |              |  +--| (100/100)
+|        |  |              |     +-----HB0808
+|        |  |           +**| (0/7)
+|        |  |           |  |  +**p25.B2
+|        |  |           |  +**| (0/80)
+|        |  |           |     +**p25.C2
+|        |  |        +--| (45.2/40)
+|        |  |        |  |  +------------------------------p23.B2
+|        |  |        |  +--| (91.9/55)
+|        |  |        |     +----PL0065
+|        |  |     +--| (92.3/97)
+|        |  |     |  |                                +**p12.A11
+|        |  |     |  |                             +**| (73.7/99)
+|        |  |     |  |                             |  +**p20.G9
+|        |  |     |  |              +--------------| (100/100)
+|        |  |     |  |              |              +**p20.F10
+|        |  |     |  |           +--| (99/66)
+|        |  |     |  |           |  |                 +**p22.D1
+|        |  |     |  |           |  +-----------------| (100/100)
+|        |  |     |  |           |                    +**p5.C1
+|        |  |     |  |        +--| (52.4/64)
+|        |  |     |  |        |  |     +-----------------p12.G7
+|        |  |     |  |        |  |  +--| (33.7/72)
+|        |  |     |  |        |  |  |  +--------------------p3.G9
+|        |  |     |  |        |  +--| (58/58)
+|        |  |     |  |        |     +-----------------p20.D4
+|        |  |     |  |     +--| (96/80)
+|        |  |     |  |     |  |              +--p25.C11
+|        |  |     |  |     |  |  +-----------| (100/100)
+|        |  |     |  |     |  |  |           +--PL0001
+|        |  |     |  |     |  +--| (99.7/74)
+|        |  |     |  |     |     +----------------PL0042
+|        |  |     |  |  +--| (99/99)
+|        |  |     |  |  |  +------------PL0053
+|        |  |     |  +--| (96.5/99)
+|        |  |     |     +--PL0102
+|        |  |  +--| (86/84)
+|        |  |  |  |  +--PL0139
+|        |  |  |  +--| (95/92)
+|        |  |  |     +-----PL0224
+|        |  +--| (93.2/73)
+|        |     |     +-------------HB0766
+|        |     |  +--| (98.6/89)
+|        |     |  |  +-----PL0235
+|        |     +--| (92.1/80)
+|        |        +----PL0105
+|     +--| (18.2/61)
+|     |  |                      +**p21.F1
+|     |  |                  +---| (100/100)
+|     |  |                  |   +**p8.B9
+|     |  |           +------| (100/100)
+|     |  |           |      +--p5.D5
+|     |  |        +--| (96.9/91)
+|     |  |        |  +-----------PL0137
+|     |  |     +--| (47.6/52)
+|     |  |     |  +------------PL0068
+|     |  |  +--| (97.1/61)
+|     |  |  |  |           +--p22.D4
+|     |  |  |  |   +-------| (100/100)
+|     |  |  |  |   |       |  +**p26.D6
+|     |  |  |  |   |       +**| (73.4/100)
+|     |  |  |  |   |          +**p6.B9
+|     |  |  |  +---| (100/100)
+|     |  |  |      +--------p3.F8
+|     |  +--| (73.5/55)
+|     |     +-----PL0087
+|  +--| (89.9/78)
+|  |  |  +--PL0026
+|  |  +--| (100/100)
+|  |     +--PL0059
++--| (99.4/93)
+|  |           +--/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//33.ESP_1985b.mapped_to_Pseudomonas.dd.q20.markeddup.bam
+|  |  +--------| (100/100)
+|  |  |        |  +**p23.B8
+|  |  |        +--| (96.4/100)
+|  |  |           +**p26.E7
+|  +--| (86.5/79)
+|     +-----------HB0737
+|
++-------------p23.A3
+
+Tree in newick format:
+
+(/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//109.NOR_1990.mapped_to_Pseudomonas.dd.q20.markeddup.bam:0.0105663105,((((((/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//120.RUS_1860.mapped_to_Pseudomonas.dd.q20.markeddup.bam:0.0128214190,PL0220:0.0128093142)100/69:0.0017829492,(/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//86.NOR_1911_S7.mapped_to_Pseudomonas.dd.q20.markeddup.bam:0.0070138346,(p8.C7:0.0120514326,PL0027:0.0056974609)87.9/60:0.0008403675)69.3/57:0.0002816606)88.2/57:0.0003591409,(((((((((((/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//27.ESP_1975.mapped_to_Pseudomonas.dd.q20.markeddup.bam:0.0079437941,(((/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//34.ESP_1985c_S36.mapped_to_Pseudomonas.dd.q20.markeddup.bam:0.0198954859,PL0131:0.0145385510)51/77:0.0020760745,(p27.D6:0.0148030760,PL0046:0.0168561658)99.7/88:0.0039163037)99.7/100:0.0039423554,p13.F3:0.0285166859)81.7/93:0.0042193052)100/100:0.0077078019,((/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//76.LTU_2009_S19.mapped_to_Pseudomonas.dd.q20.markeddup.bam:0.0275664445,PL0080:0.0282278379)100/100:0.0068512018,(p24.H2:0.0259293428,PL0127:0.0197074089)100/100:0.0081401811)28.7/85:0.0020909091)99.7/99:0.0048898906,/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//30.ESP_1983b.mapped_to_Pseudomonas.dd.q20.markeddup.bam:0.0094618416)93/96:0.0028615347,PL0073:0.0096324115)99.9/100:0.0021605131,(((((/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//64.GBR_1933b_S36.mapped_to_Pseudomonas.dd.q20.markeddup.bam:0.0075470797,((p8.H7:0.0135914291,PL0210:0.0135294550)89.4/99:0.0031255073,PL0240:0.0135274973)94.9/100:0.0024089045)100/100:0.0099296032,PL0222:0.0064665701)100/100:0.0048503876,HB0840:0.0017889238)89.4/96:0.0010693484,PL0230:0.0047232303)92/76:0.0004165243,HB0841:0.0023937906)43.1/34:0.0000790259)92.7/93:0.0003128747,((((((/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//75.LTU_1894_S30.mapped_to_Pseudomonas.dd.q20.markeddup.bam:0.0089488080,p27.F2:0.0164840599)100/100:0.0112693535,PL0185:0.0167513004)99.8/100:0.0050378854,p1.G2:0.0270175000)90.3/38:0.0014624811,(((p12.E2:0.0247179936,p26.B7:0.0269673263)100/96:0.0068693115,((p13.D10:0.0287976453,p22.C1:0.0295989735)99.5/99:0.0050913458,(p5.H11:0.0000024750,p7.G11:0.0000565958)100/100:0.0364644099)62.4/65:0.0013016345)92/40:0.0010982733,((((p13.C1:0.0000009797,p21.E3:0.0000009797)71.3/99:0.0000568613,p4.E5:0.0000009797)100/100:0.0310400118,(p25.A12:0.0000024814,p8.E4:0.0001716598)100/100:0.0262540228)95.9/71:0.0036979159,(p4.D2:0.0256902824,PL0051:0.0283514339)99.3/68:0.0041720378)96.3/69:0.0018822779)81.5/40:0.0019991487)86.8/72:0.0016998405,(HB0814:0.0148452957,p24.B5:0.0217335690)99.9/98:0.0032599826)100/100:0.0048803884,HB0808:0.0061586959)100/100:0.0021942699)87.7/12:0.0002588173,(p25.B2:0.0000009797,p25.C2:0.0000009797)0/80:0.0000020230)0/7:0.0000022123,(p23.B2:0.0291661372,PL0065:0.0052863257)91.9/55:0.0007132325)45.2/40:0.0001331502,(((((((p12.A11:0.0000009797,p20.G9:0.0000009797)73.7/99:0.0000578783,p20.F10:0.0000027876)100/100:0.0143936851,(p22.D1:0.0000550737,p5.C1:0.0001206660)100/100:0.0170822539)99/66:0.0021873340,((p12.G7:0.0170567601,p3.G9:0.0199231824)33.7/72:0.0023900484,p20.D4:0.0169796897)58/58:0.0012468139)52.4/64:0.0010822267,((p25.C11:0.0008308828,PL0001:0.0007118831)100/100:0.0118992140,PL0042:0.0163026029)99.7/74:0.0019082256)96/80:0.0013923796,PL0053:0.0126366167)99/99:0.0010158842,PL0102:0.0016889148)96.5/99:0.0005526052)92.3/97:0.0002839500,(PL0139:0.0032896459,PL0224:0.0065004419)95/92:0.0004667192)86/84:0.0003583198,((HB0766:0.0135039437,PL0235:0.0064104805)98.6/89:0.0012210286,PL0105:0.0048326882)92.1/80:0.0004978060)93.2/73:0.0004421431)42.6/55:0.0003283756,((((((p21.F1:0.0000009797,p8.B9:0.0000009797)100/100:0.0045944112,p5.D5:0.0032867842)100/100:0.0072380368,PL0137:0.0119844320)96.9/91:0.0017255144,PL0068:0.0126258048)47.6/52:0.0006634786,((p22.D4:0.0001791744,(p26.D6:0.0000590374,p6.B9:0.0000009797)73.4/100:0.0000595649)100/100:0.0078399323,p3.F8:0.0091664414)100/100:0.0044425872)97.1/61:0.0011263239,PL0087:0.0057964468)73.5/55:0.0004510298)18.2/61:0.0005831475,(PL0026:0.0027279325,PL0059:0.0005475800)100/100:0.0031143407)89.9/78:0.0009390096,((/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//33.ESP_1985b.mapped_to_Pseudomonas.dd.q20.markeddup.bam:0.0002378426,(p23.B8:0.0000009797,p26.E7:0.0000009797)96.4/100:0.0002990022)100/100:0.0091306252,HB0737:0.0117001541)86.5/79:0.0011371414)99.4/93:0.0020449222,p23.A3:0.0131344783);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -102406.688718
+Robinson-Foulds distance between ML tree and consensus tree: 8
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++----------/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//109.NOR_1990.mapped_to_Pseudomonas.dd.q20.markeddup.bam
+|
+|                 +------------/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//120.RUS_1860.mapped_to_Pseudomonas.dd.q20.markeddup.bam
+|              +--| (69)
+|              |  +------------PL0220
+|           +--| (57)
+|           |  |  +------/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//86.NOR_1911_S7.mapped_to_Pseudomonas.dd.q20.markeddup.bam
+|           |  +--| (57)
+|           |     |  +-----------p8.C7
+|           |     +--| (60)
+|           |        +-----PL0027
+|        +--| (55)
+|        |  |                                       +-------/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//27.ESP_1975.mapped_to_Pseudomonas.dd.q20.markeddup.bam
+|        |  |                               +-------| (100)
+|        |  |                               |       |          +--------------------/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//34.ESP_1985c_S36.mapped_to_Pseudomonas.dd.q20.markeddup.bam
+|        |  |                               |       |       +--| (77)
+|        |  |                               |       |       |  +--------------PL0131
+|        |  |                               |       |   +---| (100)
+|        |  |                               |       |   |   |   +--------------p27.D6
+|        |  |                               |       |   |   +---| (88)
+|        |  |                               |       |   |       +-----------------PL0046
+|        |  |                               |       +---| (93)
+|        |  |                               |           +-----------------------------p13.F3
+|        |  |                          +----| (99)
+|        |  |                          |    |         +----------------------------/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//76.LTU_2009_S19.mapped_to_Pseudomonas.dd.q20.markeddup.bam
+|        |  |                          |    |  +------| (100)
+|        |  |                          |    |  |      +-----------------------------PL0080
+|        |  |                          |    +--| (85)
+|        |  |                          |       |       +--------------------------p24.H2
+|        |  |                          |       +-------| (100)
+|        |  |                          |               +--------------------PL0127
+|        |  |                       +--| (96)
+|        |  |                       |  +---------/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//30.ESP_1983b.mapped_to_Pseudomonas.dd.q20.markeddup.bam
+|        |  |                    +--| (100)
+|        |  |                    |  +---------PL0073
+|        |  |                 +--| (43)
+|        |  |                 |  +--HB0841
+|        |  |              +--| (93)
+|        |  |              |  |                    +-------/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//64.GBR_1933b_S36.mapped_to_Pseudomonas.dd.q20.markeddup.bam
+|        |  |              |  |          +---------| (100)
+|        |  |              |  |          |         |     +-------------p8.H7
+|        |  |              |  |          |         |  +--| (99)
+|        |  |              |  |          |         |  |  +-------------PL0210
+|        |  |              |  |          |         +--| (100)
+|        |  |              |  |          |            +-------------PL0240
+|        |  |              |  |     +----| (100)
+|        |  |              |  |     |    +-----PL0222
+|        |  |              |  |  +--| (96)
+|        |  |              |  |  |  +--HB0840
+|        |  |              |  +--| (76)
+|        |  |              |     +---PL0230
+|        |  |           +--| (48)
+|        |  |           |  |                 +**p25.B2
+|        |  |           |  |              +**|
+|        |  |           |  |              |  +**p8.B3
+|        |  |           |  |           +**|
+|        |  |           |  |           |  +**p3.F12
+|        |  |           |  |        +**|
+|        |  |           |  |        |  +**p4.A6
+|        |  |           |  |     +**|
+|        |  |           |  |     |  +**p3.A3
+|        |  |           |  |  +--|
+|        |  |           |  |  |  +**p25.D2
+|        |  |           |  +--| (80)
+|        |  |           |     +--p25.C2
+|        |  |        +--| (43)
+|        |  |        |  |  +------------------------------p23.B2
+|        |  |        |  +--| (55)
+|        |  |        |     +----PL0065
+|        |  |     +--| (97)
+|        |  |     |  |                                 +--------/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//75.LTU_1894_S30.mapped_to_Pseudomonas.dd.q20.markeddup.bam
+|        |  |     |  |                     +-----------| (100)
+|        |  |     |  |                     |           +----------------p27.F2
+|        |  |     |  |                +----| (100)
+|        |  |     |  |                |    +----------------PL0185
+|        |  |     |  |             +--| (38)
+|        |  |     |  |             |  +---------------------------p1.G2
+|        |  |     |  |          +--| (72)
+|        |  |     |  |          |  |            +-------------------------p12.E2
+|        |  |     |  |          |  |     +------| (96)
+|        |  |     |  |          |  |     |      +---------------------------p26.B7
+|        |  |     |  |          |  |  +--| (40)
+|        |  |     |  |          |  |  |  |       +-----------------------------p13.D10
+|        |  |     |  |          |  |  |  |  +----| (99)
+|        |  |     |  |          |  |  |  |  |    +------------------------------p22.C1
+|        |  |     |  |          |  |  |  +--| (65)
+|        |  |     |  |          |  |  |     |                                     +--p5.H11
+|        |  |     |  |          |  |  |     +-------------------------------------| (100)
+|        |  |     |  |          |  |  |                                           +--p7.G11
+|        |  |     |  |          |  +--| (40)
+|        |  |     |  |          |     |                                                     +**p13.C1
+|        |  |     |  |          |     |                                                  +**|
+|        |  |     |  |          |     |                                                  |  +**p4.E6
+|        |  |     |  |          |     |                                               +**|
+|        |  |     |  |          |     |                                               |  +**p22.A8
+|        |  |     |  |          |     |                                            +**|
+|        |  |     |  |          |     |                                            |  +**p22.B5
+|        |  |     |  |          |     |                                         +--|
+|        |  |     |  |          |     |                                         |  +**p5.C3
+|        |  |     |  |          |     |                                      +--| (99)
+|        |  |     |  |          |     |                                      |  +--p21.E3
+|        |  |     |  |          |     |     +--------------------------------| (100)
+|        |  |     |  |          |     |     |                                +--p4.E5
+|        |  |     |  |          |     |  +--| (71)
+|        |  |     |  |          |     |  |  |                           +--p25.A12
+|        |  |     |  |          |     |  |  +---------------------------| (100)
+|        |  |     |  |          |     |  |                              +--p8.E4
+|        |  |     |  |          |     +--| (69)
+|        |  |     |  |          |        |   +--------------------------p4.D2
+|        |  |     |  |          |        +---| (68)
+|        |  |     |  |          |            +-----------------------------PL0051
+|        |  |     |  |     +----| (100)
+|        |  |     |  |     |    |  +--------------HB0814
+|        |  |     |  |     |    +--| (98)
+|        |  |     |  |     |       +----------------------p24.B5
+|        |  |     |  |  +--| (100)
+|        |  |     |  |  |  +-----HB0808
+|        |  |     |  +--| (42)
+|        |  |     |     |                                      +**p12.A11
+|        |  |     |     |                                   +**|
+|        |  |     |     |                                   |  +**p21.F9
+|        |  |     |     |                                +--|
+|        |  |     |     |                                |  +**p21.A8
+|        |  |     |     |                             +--| (99)
+|        |  |     |     |                             |  +--p20.G9
+|        |  |     |     |              +--------------| (100)
+|        |  |     |     |              |              +--p20.F10
+|        |  |     |     |           +--| (66)
+|        |  |     |     |           |  |                 +--p22.D1
+|        |  |     |     |           |  +-----------------| (100)
+|        |  |     |     |           |                    +--p5.C1
+|        |  |     |     |        +--| (64)
+|        |  |     |     |        |  |     +-----------------p12.G7
+|        |  |     |     |        |  |  +--| (72)
+|        |  |     |     |        |  |  |  +--------------------p3.G9
+|        |  |     |     |        |  +--| (58)
+|        |  |     |     |        |     +-----------------p20.D4
+|        |  |     |     |     +--| (80)
+|        |  |     |     |     |  |              +--p25.C11
+|        |  |     |     |     |  |  +-----------| (100)
+|        |  |     |     |     |  |  |           +--PL0001
+|        |  |     |     |     |  +--| (74)
+|        |  |     |     |     |     +----------------PL0042
+|        |  |     |     |  +--| (99)
+|        |  |     |     |  |  +------------PL0053
+|        |  |     |     +--| (99)
+|        |  |     |        +--PL0102
+|        |  |  +--| (84)
+|        |  |  |  |  +--PL0139
+|        |  |  |  +--| (92)
+|        |  |  |     +-----PL0224
+|        |  +--| (73)
+|        |     |     +-------------HB0766
+|        |     |  +--| (89)
+|        |     |  |  +-----PL0235
+|        |     +--| (80)
+|        |        +----PL0105
+|     +--| (61)
+|     |  |                      +--p21.F1
+|     |  |                  +---| (100)
+|     |  |                  |   +--p8.B9
+|     |  |           +------| (100)
+|     |  |           |      +--p5.D5
+|     |  |        +--| (91)
+|     |  |        |  +-----------PL0137
+|     |  |     +--| (52)
+|     |  |     |  +------------PL0068
+|     |  |  +--| (61)
+|     |  |  |  |           +--p22.D4
+|     |  |  |  |   +-------| (100)
+|     |  |  |  |   |       |  +--p26.D6
+|     |  |  |  |   |       +--| (100)
+|     |  |  |  |   |          +--p6.B9
+|     |  |  |  +---| (100)
+|     |  |  |      +--------p3.F8
+|     |  +--| (55)
+|     |     +-----PL0087
+|  +--| (78)
+|  |  |  +--PL0026
+|  |  +--| (100)
+|  |     +--PL0059
++--| (93)
+|  |           +--/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//33.ESP_1985b.mapped_to_Pseudomonas.dd.q20.markeddup.bam
+|  |  +--------| (100)
+|  |  |        |  +--p23.B8
+|  |  |        +--| (100)
+|  |  |           +--p26.E7
+|  +--| (79)
+|     +-----------HB0737
+|
++-------------p23.A3
+
+
+Consensus tree in newick format: 
+
+(/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//109.NOR_1990.mapped_to_Pseudomonas.dd.q20.markeddup.bam:0.0105971060,((((((/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//120.RUS_1860.mapped_to_Pseudomonas.dd.q20.markeddup.bam:0.0128600361,PL0220:0.0128471672)69:0.0017877803,(/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//86.NOR_1911_S7.mapped_to_Pseudomonas.dd.q20.markeddup.bam:0.0070343364,(p8.C7:0.0120864282,PL0027:0.0057151239)60:0.0008430958)57:0.0002835432)57:0.0003619486,(((((((((((/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//27.ESP_1975.mapped_to_Pseudomonas.dd.q20.markeddup.bam:0.0079742205,(((/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//34.ESP_1985c_S36.mapped_to_Pseudomonas.dd.q20.markeddup.bam:0.0199635551,PL0131:0.0145922457)77:0.0020835616,(p27.D6:0.0148555601,PL0046:0.0169178524)88:0.0039307240)100:0.0039553703,p13.F3:0.0286160323)93:0.0042335411)100:0.0077374381,((/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//76.LTU_2009_S19.mapped_to_Pseudomonas.dd.q20.markeddup.bam:0.0276625691,PL0080:0.0283253215)100:0.0068709163,(p24.H2:0.0260238182,PL0127:0.0197773293)100:0.0081637122)85:0.0021011135)99:0.0048997932,/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//30.ESP_1983b.mapped_to_Pseudomonas.dd.q20.markeddup.bam:0.0095017141)96:0.0028338590,PL0073:0.0096995667)100:0.0022419899,HB0841:0.0023990033)43:0.0001905088,((((/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//64.GBR_1933b_S36.mapped_to_Pseudomonas.dd.q20.markeddup.bam:0.0075776279,((p8.H7:0.0136396747,PL0210:0.0135699622)99:0.0031349786,PL0240:0.0135722904)100:0.0024131283)100:0.0099623726,PL0222:0.0064939987)100:0.0050263521,HB0840:0.0016339802)96:0.0010984373,PL0230:0.0045923124)76:0.0004240947)93:0.0004538712,((((((p25.B2:0.0000000000,p8.B3:0.0000000000):0.0000000000,p3.F12:0.0000000000):0.0000000000,p4.A6:0.0000000000):0.0000000000,p3.A3:0.0000000000):0.0000000000,p25.D2:0.0000000000):0.0000028837,p25.C2:0.0000028837)80:0.0000028837)48:0.0000090475,(p23.B2:0.0292668446,PL0065:0.0052960176)55:0.0007155319)43:0.0001365593,(((((((/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//75.LTU_1894_S30.mapped_to_Pseudomonas.dd.q20.markeddup.bam:0.0089948029,p27.F2:0.0165129885)100:0.0112775050,PL0185:0.0168090967)100:0.0050372538,p1.G2:0.0271049388)38:0.0014555562,(((p12.E2:0.0248136487,p26.B7:0.0270536804)96:0.0068950209,((p13.D10:0.0288951496,p22.C1:0.0296990338)99:0.0051073138,(p5.H11:0.0000028837,p7.G11:0.0000571008)100:0.0365582544)65:0.0013040057)40:0.0011114712,((((((((p13.C1:0.0000000000,p4.E6:0.0000000000):0.0000000000,p22.A8:0.0000000000):0.0000000000,p22.B5:0.0000000000):0.0000000000,p5.C3:0.0000000000):0.0000028837,p21.E3:0.0000028837)99:0.0000573214,p4.E5:0.0000028837)100:0.0311094933,(p25.A12:0.0000028837,p8.E4:0.0001727324)100:0.0263799891)71:0.0037136250,(p4.D2:0.0257372695,PL0051:0.0284607372)68:0.0041745853)69:0.0018956370)40:0.0019924059)72:0.0017031870,(HB0814:0.0148773276,p24.B5:0.0218239458)98:0.0032571736)100:0.0049050929,HB0808:0.0062111768)100:0.0022395247,(((((((((p12.A11:0.0000000000,p21.F9:0.0000000000):0.0000000000,p21.A8:0.0000000000):0.0000028837,p20.G9:0.0000028837)99:0.0000584423,p20.F10:0.0000028837)100:0.0144434824,(p22.D1:0.0000562440,p5.C1:0.0001214645)100:0.0171318091)66:0.0021944030,((p12.G7:0.0171171434,p3.G9:0.0199831307)72:0.0023978222,p20.D4:0.0170379013)58:0.0012517409)64:0.0010881278,((p25.C11:0.0008335631,PL0001:0.0007152960)100:0.0119373761,PL0042:0.0163510451)74:0.0019013502)80:0.0014703574,PL0053:0.0126176188)99:0.0010159423,PL0102:0.0016295948)99:0.0005405561)42:0.0000723733)97:0.0002854480,(PL0139:0.0033031498,PL0224:0.0065234552)92:0.0004744092)84:0.0003515503,((HB0766:0.0135460090,PL0235:0.0064286441)89:0.0012244447,PL0105:0.0048466450)80:0.0005004226)73:0.0004437780)55:0.0003309828,((((((p21.F1:0.0000028837,p8.B9:0.0000028837)100:0.0046072605,p5.D5:0.0032969445)100:0.0072586462,PL0137:0.0120195753)91:0.0017307476,PL0068:0.0126621808)52:0.0006658624,((p22.D4:0.0001796807,(p26.D6:0.0000598647,p6.B9:0.0000028837)100:0.0000598914)100:0.0078627216,p3.F8:0.0091927116)100:0.0044552132)61:0.0011289848,PL0087:0.0058137934)55:0.0004522539)61:0.0005858291,(PL0026:0.0027359336,PL0059:0.0005505949)100:0.0031246467)78:0.0009418190,((/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//33.ESP_1985b.mapped_to_Pseudomonas.dd.q20.markeddup.bam:0.0002388883,(p23.B8:0.0000028837,p26.E7:0.0000028837)100:0.0003001445)100:0.0091580068,HB0737:0.0117339598)79:0.0011403567)93:0.0020516204,p23.A3:0.0131736531);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t bialleliconly_h43_m53_96samples.min96.phy.treefile -m "GTR{1.1622,6.39856,1.2001,0.245852,5.50722}+F{0.121212,0.377634,0.36936,0.131794}+ASC+R4{0.728702,0.278413,0.20356,1.85282,0.0589733,5.25033,0.00876501,12.5875}" --length 8228
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s bialleliconly_h43_m53_96samples.min96.phy --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s bialleliconly_h43_m53_96samples.min96.phy --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Oct 25 02:38:08 2025
+Total CPU time used: 405.128701 seconds (0h:6m:45s)
+Total wall-clock time used: 590.4105539 seconds (0h:9m:50s)
+

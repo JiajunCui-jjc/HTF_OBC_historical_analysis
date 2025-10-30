@@ -1,0 +1,760 @@
+IQ-TREE multicore version 2.2.6 COVID-edition for Linux 64-bit built Dec  8 2023
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    burns-609-38.local (AVX2, FMA3, 15 GB RAM)
+Command: iqtree -T AUTO -s bialleliconly_h49_m83_132samples.min125.phy -m MFP -B 1000 -alrt 1000
+Seed:    491640 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Oct 25 02:09:09 2025
+Kernel:  AVX+FMA - auto-detect threads (8 CPU cores detected)
+
+Reading alignment file bialleliconly_h49_m83_132samples.min125.phy ... Phylip format detected
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.00612135 secs using 97.95% CPU
+Alignment has 132 sequences with 3357 columns, 3283 distinct patterns
+2269 parsimony-informative, 1088 singleton sites, 0 constant sites
+                                                                                                                                                                                                                                                             Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00140042 secs using 99.97% CPU
+   1  /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//109.NOR_1990.mapped_to_Pseudomonas.dd.q20.markeddup.bam        0.03%    passed     99.07%
+   2  /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//120.RUS_1860.mapped_to_Pseudomonas.dd.q20.markeddup.bam        1.10%    passed     96.66%
+   3  /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//27.ESP_1975.mapped_to_Pseudomonas.dd.q20.markeddup.bam        11.35%    passed     80.86%
+   4  /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//30.ESP_1983b.mapped_to_Pseudomonas.dd.q20.markeddup.bam       11.86%    passed     96.57%
+   5  /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//33.ESP_1985b.mapped_to_Pseudomonas.dd.q20.markeddup.bam        0.00%    passed     98.61%
+   6  /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//34.ESP_1985c_S36.mapped_to_Pseudomonas.dd.q20.markeddup.bam    0.00%    passed     99.96%
+   7  /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//64.GBR_1933b_S36.mapped_to_Pseudomonas.dd.q20.markeddup.bam    0.06%    passed     97.99%
+   8  /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//75.LTU_1894_S30.mapped_to_Pseudomonas.dd.q20.markeddup.bam     0.12%    passed     99.59%
+   9  /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//76.LTU_2009_S19.mapped_to_Pseudomonas.dd.q20.markeddup.bam     0.00%    passed     99.64%
+  10  /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//86.NOR_1911_S7.mapped_to_Pseudomonas.dd.q20.markeddup.bam      8.88%    passed     97.27%
+  11  DC3000                                                                                                                                                                                                                                                         0.48%    passed     51.17%
+  12  HB0737                                                                                                                                                                                                                                                         0.09%    passed     97.93%
+  13  HB0766                                                                                                                                                                                                                                                         0.03%    passed     97.91%
+  14  HB0808                                                                                                                                                                                                                                                        13.61%    passed     95.09%
+  15  HB0814                                                                                                                                                                                                                                                         0.12%    passed     97.23%
+  16  HB0828                                                                                                                                                                                                                                                         1.22%    passed     99.72%
+  17  HB0840                                                                                                                                                                                                                                                         3.34%    passed     88.05%
+  18  HB0841                                                                                                                                                                                                                                                         5.15%    passed     97.80%
+  19  HB0863                                                                                                                                                                                                                                                         3.60%    passed     31.95%
+  20  p12.A11                                                                                                                                                                                                                                                        0.00%    passed     96.42%
+  21  p12.A9                                                                                                                                                                                                                                                        15.01%    passed     93.74%
+  22  p12.E2                                                                                                                                                                                                                                                         0.00%    passed     99.90%
+  23  p12.G7                                                                                                                                                                                                                                                         0.00%    passed     97.20%
+  24  p12.H7                                                                                                                                                                                                                                                         2.98%    passed     52.82%
+  25  p13.C1                                                                                                                                                                                                                                                         0.00%    passed     99.92%
+  26  p13.D10                                                                                                                                                                                                                                                        0.00%    passed     98.12%
+  27  p13.D5                                                                                                                                                                                                                                                         9.80%    passed     83.04%
+  28  p13.F1                                                                                                                                                                                                                                                         1.91%    passed     14.18%
+  29  p13.F3                                                                                                                                                                                                                                                         0.09%    passed     99.38%
+  30  p13.F5                                                                                                                                                                                                                                                        17.16%    failed      0.00%
+  31  p1.G2                                                                                                                                                                                                                                                          0.00%    passed     98.96%
+  32  p20.B10                                                                                                                                                                                                                                                        5.78%    passed     22.45%
+  33  p20.D4                                                                                                                                                                                                                                                         0.03%    passed     97.66%
+  34  p20.F10                                                                                                                                                                                                                                                        0.00%    passed     96.42%
+  35  p20.G9                                                                                                                                                                                                                                                         0.00%    passed     96.42%
+  36  p21.A8                                                                                                                                                                                                                                                         0.00%    passed     96.42%
+  37  p21.E3                                                                                                                                                                                                                                                         0.00%    passed     99.92%
+  38  p21.F1                                                                                                                                                                                                                                                         0.00%    passed     96.02%
+  39  p21.F9                                                                                                                                                                                                                                                         0.00%    passed     96.42%
+  40  p22.A8                                                                                                                                                                                                                                                         0.00%    passed     99.92%
+  41  p22.B5                                                                                                                                                                                                                                                         0.00%    passed     99.92%
+  42  p22.C1                                                                                                                                                                                                                                                         0.00%    passed     99.79%
+  43  p22.D1                                                                                                                                                                                                                                                         0.00%    passed     99.61%
+  44  p22.D4                                                                                                                                                                                                                                                         0.33%    passed     96.80%
+  45  p23.A3                                                                                                                                                                                                                                                         0.00%    passed     98.60%
+  46  p23.A5                                                                                                                                                                                                                                                        17.19%    passed     36.14%
+  47  p23.B2                                                                                                                                                                                                                                                         0.00%    passed     96.09%
+  48  p23.B4                                                                                                                                                                                                                                                        14.95%    passed     44.86%
+  49  p23.B8                                                                                                                                                                                                                                                         0.00%    passed     98.61%
+  50  p24.B5                                                                                                                                                                                                                                                         0.00%    passed     97.09%
+  51  p24.H2                                                                                                                                                                                                                                                         0.00%    passed     99.05%
+  52  p25.A12                                                                                                                                                                                                                                                        0.12%    passed     99.57%
+  53  p25.B2                                                                                                                                                                                                                                                         0.00%    passed     92.10%
+  54  p25.C11                                                                                                                                                                                                                                                        0.18%    passed     96.75%
+  55  p25.C2                                                                                                                                                                                                                                                         0.00%    passed     92.10%
+  56  p25.D2                                                                                                                                                                                                                                                         0.00%    passed     92.10%
+  57  p26.B7                                                                                                                                                                                                                                                         0.00%    passed     98.93%
+  58  p26.C10                                                                                                                                                                                                                                                        1.76%    passed     39.87%
+  59  p26.D6                                                                                                                                                                                                                                                         0.03%    passed     98.15%
+  60  p26.E7                                                                                                                                                                                                                                                         0.00%    passed     98.61%
+  61  p26.F6                                                                                                                                                                                                                                                        28.09%    passed     29.26%
+  62  p27.C5                                                                                                                                                                                                                                                         9.29%    passed     43.29%
+  63  p27.D6                                                                                                                                                                                                                                                         0.00%    passed     99.61%
+  64  p27.F2                                                                                                                                                                                                                                                         0.00%    passed     99.90%
+  65  p3.A3                                                                                                                                                                                                                                                          0.00%    passed     92.10%
+  66  p3.F12                                                                                                                                                                                                                                                         0.00%    passed     92.10%
+  67  p3.F8                                                                                                                                                                                                                                                          0.00%    passed     99.05%
+  68  p3.G11                                                                                                                                                                                                                                                         0.98%    passed     64.27%
+  69  p3.G9                                                                                                                                                                                                                                                          0.00%    passed     97.33%
+  70  p4.A6                                                                                                                                                                                                                                                          0.00%    passed     92.10%
+  71  p4.A8                                                                                                                                                                                                                                                          3.10%    passed     66.37%
+  72  p4.C5                                                                                                                                                                                                                                                         14.75%    passed     32.83%
+  73  p4.D11                                                                                                                                                                                                                                                         4.47%    passed     15.93%
+  74  p4.D2                                                                                                                                                                                                                                                          0.00%    passed     96.02%
+  75  p4.E5                                                                                                                                                                                                                                                          0.00%    passed     99.92%
+  76  p4.E6                                                                                                                                                                                                                                                          0.00%    passed     99.92%
+  77  p4.H3                                                                                                                                                                                                                                                          2.41%    passed     21.10%
+  78  p5.A5                                                                                                                                                                                                                                                          0.57%    passed     70.47%
+  79  p5.C1                                                                                                                                                                                                                                                          0.00%    passed     99.65%
+  80  p5.C3                                                                                                                                                                                                                                                          0.00%    passed     99.92%
+  81  p5.D5                                                                                                                                                                                                                                                          0.00%    passed     95.60%
+  82  p5.F2                                                                                                                                                                                                                                                          6.14%    failed      1.59%
+  83  p5.H11                                                                                                                                                                                                                                                         0.00%    passed     96.58%
+  84  p6.B5                                                                                                                                                                                                                                                          1.01%    passed     46.21%
+  85  p6.B9                                                                                                                                                                                                                                                          0.00%    passed     98.40%
+  86  p6.D10                                                                                                                                                                                                                                                         5.48%    failed      0.72%
+  87  p6.E9                                                                                                                                                                                                                                                          3.63%    failed      0.43%
+  88  p6.F1                                                                                                                                                                                                                                                          0.45%    passed     19.17%
+  89  p6.G2                                                                                                                                                                                                                                                          0.63%    passed     51.51%
+  90  p6.G3                                                                                                                                                                                                                                                          2.41%    passed     21.66%
+  91  p7.F2                                                                                                                                                                                                                                                          2.71%    passed     23.74%
+  92  p7.G11                                                                                                                                                                                                                                                         0.00%    passed     96.58%
+  93  p8.B3                                                                                                                                                                                                                                                          0.00%    passed     92.10%
+  94  p8.B9                                                                                                                                                                                                                                                          0.00%    passed     96.02%
+  95  p8.C7                                                                                                                                                                                                                                                          0.00%    passed     99.07%
+  96  p8.D11                                                                                                                                                                                                                                                         2.86%    passed     18.18%
+  97  p8.E4                                                                                                                                                                                                                                                          0.03%    passed     99.48%
+  98  p8.G10                                                                                                                                                                                                                                                         2.95%    passed     26.15%
+  99  p8.G2                                                                                                                                                                                                                                                          3.10%    failed      3.14%
+ 100  p8.H7                                                                                                                                                                                                                                                          0.00%    passed     98.34%
+ 101  p9.H10                                                                                                                                                                                                                                                         3.07%    passed     18.29%
+ 102  PL0001                                                                                                                                                                                                                                                         0.36%    passed     97.24%
+ 103  PL0026                                                                                                                                                                                                                                                         9.98%    passed     99.82%
+ 104  PL0027                                                                                                                                                                                                                                                        12.42%    passed     99.29%
+ 105  PL0042                                                                                                                                                                                                                                                         0.00%    passed     98.43%
+ 106  PL0046                                                                                                                                                                                                                                                         0.09%    passed     99.62%
+ 107  PL0051                                                                                                                                                                                                                                                         0.03%    passed     99.88%
+ 108  PL0053                                                                                                                                                                                                                                                         0.00%    passed     98.69%
+ 109  PL0059                                                                                                                                                                                                                                                         0.12%    passed     98.86%
+ 110  PL0065                                                                                                                                                                                                                                                        12.33%    passed     83.45%
+ 111  PL0066                                                                                                                                                                                                                                                         4.86%    passed     88.92%
+ 112  PL0068                                                                                                                                                                                                                                                         0.15%    passed     98.63%
+ 113  PL0073                                                                                                                                                                                                                                                         2.03%    passed     95.57%
+ 114  PL0080                                                                                                                                                                                                                                                         0.03%    passed     99.74%
+ 115  PL0087                                                                                                                                                                                                                                                        14.72%    passed     89.22%
+ 116  PL0102                                                                                                                                                                                                                                                         0.00%    passed     94.01%
+ 117  PL0105                                                                                                                                                                                                                                                        25.95%    passed     29.31%
+ 118  PL0108                                                                                                                                                                                                                                                         1.85%    passed     41.44%
+ 119  PL0127                                                                                                                                                                                                                                                         0.09%    passed     96.70%
+ 120  PL0131                                                                                                                                                                                                                                                         0.06%    passed     99.23%
+ 121  PL0137                                                                                                                                                                                                                                                         0.00%    passed     98.58%
+ 122  PL0139                                                                                                                                                                                                                                                         5.87%    passed     90.17%
+ 123  PL0185                                                                                                                                                                                                                                                         1.94%    passed    100.00%
+ 124  PL0203                                                                                                                                                                                                                                                         3.43%    passed     90.96%
+ 125  PL0210                                                                                                                                                                                                                                                         0.00%    passed     95.60%
+ 126  PL0220                                                                                                                                                                                                                                                         0.00%    passed     98.08%
+ 127  PL0222                                                                                                                                                                                                                                                        22.94%    passed     40.02%
+ 128  PL0224                                                                                                                                                                                                                                                         0.09%    passed     96.16%
+ 129  PL0230                                                                                                                                                                                                                                                         7.03%    passed     93.62%
+ 130  PL0235                                                                                                                                                                                                                                                         0.48%    passed     94.06%
+ 131  PL0240                                                                                                                                                                                                                                                         0.03%    passed     99.73%
+ 132  PL0258                                                                                                                                                                                                                                                         1.91%    passed     91.15%
+****  TOTAL                                                                                                                                                                                                                                                          2.84%  5 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: p23.B8 is identical to /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//33.ESP_1985b.mapped_to_Pseudomonas.dd.q20.markeddup.bam but kept for subsequent analysis
+NOTE: p20.F10 is identical to p12.A11 but kept for subsequent analysis
+NOTE: p21.E3 is identical to p13.C1 but kept for subsequent analysis
+NOTE: p8.B9 is identical to p21.F1 but kept for subsequent analysis
+NOTE: p25.C2 is identical to p25.B2 but kept for subsequent analysis
+NOTE: p7.G11 is identical to p5.H11 but kept for subsequent analysis
+Checking for duplicate sequences: done in 0.00212748 secs using 48.32% CPU
+Identifying sites to remove: done in 0.00494797 secs using 78.64% CPU
+NOTE: 14 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: p26.E7 (identical to /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data//all_fastq_h49/Ps_bams_maptoOTU5withouthaplotype_h49_dedup/h49_bams_softlink//33.ESP_1985b.mapped_to_Pseudomonas.dd.q20.markeddup.bam) is ignored but added at the end
+NOTE: p20.G9 (identical to p12.A11) is ignored but added at the end
+NOTE: p21.A8 (identical to p12.A11) is ignored but added at the end
+NOTE: p21.F9 (identical to p12.A11) is ignored but added at the end
+NOTE: p22.A8 (identical to p13.C1) is ignored but added at the end
+NOTE: p22.B5 (identical to p13.C1) is ignored but added at the end
+NOTE: p4.E5 (identical to p13.C1) is ignored but added at the end
+NOTE: p4.E6 (identical to p13.C1) is ignored but added at the end
+NOTE: p5.C3 (identical to p13.C1) is ignored but added at the end
+NOTE: p25.D2 (identical to p25.B2) is ignored but added at the end
+NOTE: p3.A3 (identical to p25.B2) is ignored but added at the end
+NOTE: p3.F12 (identical to p25.B2) is ignored but added at the end
+NOTE: p4.A6 (identical to p25.B2) is ignored but added at the end
+NOTE: p8.B3 (identical to p25.B2) is ignored but added at the end
+Alignment was printed to bialleliconly_h49_m83_132samples.min125.phy.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to bialleliconly_h49_m83_132samples.min125.phy.uniqueseq.phy
+
+Creating fast initial parsimony tree by random order stepwise addition...
+0.067 seconds, parsimony score: 7386 (based on 3357 sites)
+Measuring multi-threading efficiency up to 8 CPU cores
+Increase to 10 rounds for branch lengths
+12 trees examined
+Threads: 1 / Time: 8.190 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -78962
+Threads: 2 / Time: 8.239 sec / Speedup: 0.994 / Efficiency: 50% / LogL: -78962
+Determining AUTO threadcount: done in 16.4337 secs using 99.54% CPU
+BEST NUMBER OF THREADS: 1
+
+Perform fast likelihood tree search using GTR+ASC+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Optimizing NNI: done in 1.74009 secs using 99.64% CPU
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -40220.315
+Optimal log-likelihood: -40219.551
+Rate parameters:  A-C: 0.67145  A-G: 8.79089  A-T: 1.86722  C-G: 0.74522  C-T: 8.03557  G-T: 1.00000
+Base frequencies:  A: 0.196  C: 0.313  G: 0.261  T: 0.229
+Gamma shape alpha: 0.741
+Parameters optimization took 1 rounds (0.478 sec)
+Time for fast ML tree search: 6.480 seconds
+
+NOTE: ModelFinder requires 138 MB RAM!
+ModelFinder will test up to 484 DNA models (sample size: 3357) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         41112.859    241 82707.718    82745.164    84182.349
+  2  GTR+F+ASC     40748.400    241 81978.799    82016.245    83453.431
+  3  GTR+F+G4      40972.521    242 82429.041    82466.810    83909.792
+  4  GTR+F+ASC+G4  40219.179    242 80922.357    80960.126    82403.108
+  5  GTR+F+R2      40770.228    243 82026.456    82064.550    83513.325
+  6  GTR+F+R3      40770.183    245 82030.367    82069.113    83529.473
+ 14  GTR+F+ASC+R2  40122.582    243 80731.164    80769.258    82218.033
+ 15  GTR+F+ASC+R3  40074.512    245 80639.025    80677.771    82138.131
+ 16  GTR+F+ASC+R4  40074.594    247 80643.189    80682.595    82154.533
+ 24  SYM+ASC       40820.787    238 82117.573    82154.060    83573.849
+ 26  SYM+ASC+G4    40295.328    239 81068.655    81105.460    82531.049
+ 27  SYM+R2        40818.751    240 82117.502    82154.627    83586.015
+ 36  SYM+ASC+R2    40183.913    240 80847.826    80884.950    82316.339
+ 37  SYM+ASC+R3    40141.314    242 80766.628    80804.397    82247.378
+ 38  SYM+ASC+R4    40142.069    244 80772.137    80810.556    82265.125
+ 46  TVM+F+ASC     40752.419    240 81984.838    82021.962    83453.350
+ 48  TVM+F+ASC+G4  40221.944    241 80925.887    80963.333    82400.519
+ 49  TVM+F+R2      40774.516    242 82033.032    82070.801    83513.783
+ 58  TVM+F+ASC+R2  40124.735    242 80733.470    80771.239    82214.221
+ 59  TVM+F+ASC+R3  40077.342    244 80642.684    80681.103    82135.672
+ 60  TVM+F+ASC+R4  40077.428    246 80646.856    80685.931    82152.081
+ 68  TVMe+ASC      40828.909    237 82131.818    82167.987    83581.974
+ 70  TVMe+ASC+G4   40306.178    238 81088.356    81124.842    82544.631
+ 71  TVMe+R2       40823.225    239 82124.450    82161.255    83586.844
+ 80  TVMe+ASC+R2   40199.745    239 80877.491    80914.295    82339.884
+ 81  TVMe+ASC+R3   40154.910    241 80791.820    80829.266    82266.452
+ 82  TVMe+ASC+R4   40155.373    243 80796.747    80834.840    82283.616
+ 90  TIM3+F+ASC    40782.814    239 82043.628    82080.433    83506.022
+ 92  TIM3+F+ASC+G4 40253.247    240 80986.494    81023.619    82455.007
+ 93  TIM3+F+R2     40800.945    241 82083.891    82121.337    83558.522
+102  TIM3+F+ASC+R2 40155.237    241 80792.473    80829.919    82267.105
+103  TIM3+F+ASC+R3 40107.649    243 80701.299    80739.392    82188.168
+104  TIM3+F+ASC+R4 40107.696    245 80705.393    80744.139    82204.500
+112  TIM3e+ASC     40843.625    236 82159.250    82195.104    83603.288
+114  TIM3e+ASC+G4  40315.574    237 81105.148    81141.317    82555.304
+115  TIM3e+R2      40839.881    238 82155.762    82192.248    83612.037
+124  TIM3e+ASC+R2  40203.024    238 80882.047    80918.534    82338.323
+125  TIM3e+ASC+R3  40160.402    240 80800.804    80837.929    82269.317
+NOTE: 5.320 seconds to dump checkpoint file, increase to 107.000
+126  TIM3e+ASC+R4  40160.940    242 80805.880    80843.648    82286.630
+134  TIM2+F+ASC    40831.112    239 82140.224    82177.028    83602.618
+136  TIM2+F+ASC+G4 40305.254    240 81090.508    81127.632    82559.020
+137  TIM2+F+R2     40842.932    241 82167.865    82205.311    83642.497
+146  TIM2+F+ASC+R2 40204.414    241 80890.828    80928.274    82365.459
+147  TIM2+F+ASC+R3 40157.762    243 80801.524    80839.617    82288.393
+148  TIM2+F+ASC+R4 40158.689    245 80807.378    80846.125    82306.485
+156  TIM2e+ASC     40870.009    236 82212.017    82247.871    83656.055
+158  TIM2e+ASC+G4  40337.268    237 81148.537    81184.706    82598.693
+159  TIM2e+R2      40864.466    238 82204.933    82241.419    83661.208
+168  TIM2e+ASC+R2  40221.732    238 80919.465    80955.951    82375.740
+169  TIM2e+ASC+R3  40178.864    240 80837.728    80874.853    82306.241
+170  TIM2e+ASC+R4  40179.271    242 80842.543    80880.311    82323.293
+178  TIM+F+ASC     40831.425    239 82140.851    82177.655    83603.244
+180  TIM+F+ASC+G4  40308.506    240 81097.012    81134.136    82565.525
+181  TIM+F+R2      40842.250    241 82166.500    82203.946    83641.132
+190  TIM+F+ASC+R2  40206.976    241 80895.953    80933.399    82370.584
+191  TIM+F+ASC+R3  40161.225    243 80808.450    80846.543    82295.319
+192  TIM+F+ASC+R4  40161.482    245 80812.964    80851.710    82312.070
+200  TIMe+ASC      40850.839    236 82173.678    82209.532    83617.715
+202  TIMe+ASC+G4   40319.140    237 81112.280    81148.450    82562.437
+203  TIMe+R2       40847.423    238 82170.846    82207.333    83627.121
+212  TIMe+ASC+R2   40204.199    238 80884.399    80920.885    82340.674
+213  TIMe+ASC+R3   40161.579    240 80803.157    80840.282    82271.670
+214  TIMe+ASC+R4   40162.399    242 80808.797    80846.566    82289.548
+222  TPM3u+F+ASC   40786.942    238 82049.884    82086.370    83506.159
+224  TPM3u+F+ASC+G4 40256.109    239 80990.218    81027.023    82452.612
+225  TPM3u+F+R2    40805.208    240 82090.416    82127.540    83558.928
+234  TPM3u+F+ASC+R2 40157.311    240 80794.623    80831.747    82263.135
+235  TPM3u+F+ASC+R3 40110.426    242 80704.851    80742.620    82185.602
+236  TPM3u+F+ASC+R4 40110.313    244 80708.626    80747.045    82201.614
+244  TPM3+ASC      40851.803    235 82173.605    82209.145    83611.524
+246  TPM3+ASC+G4   40326.383    236 81124.766    81160.620    82568.803
+247  TPM3+R2       40844.360    237 82162.719    82198.889    83612.876
+256  TPM3+ASC+R2   40218.817    237 80911.635    80947.804    82361.791
+257  TPM3+ASC+R3   40174.147    239 80826.295    80863.099    82288.688
+258  TPM3+ASC+R4   40174.528    241 80831.056    80868.502    82305.687
+266  TPM2u+F+ASC   40834.845    238 82145.689    82182.175    83601.964
+268  TPM2u+F+ASC+G4 40307.965    239 81093.931    81130.735    82556.325
+269  TPM2u+F+R2    40847.271    240 82174.543    82211.667    83643.055
+278  TPM2u+F+ASC+R2 40206.303    240 80892.605    80929.730    82361.118
+279  TPM2u+F+ASC+R3 40160.567    242 80805.134    80842.902    82285.884
+280  TPM2u+F+ASC+R4 40160.669    244 80809.339    80847.758    82302.327
+288  TPM2+ASC      40878.184    235 82226.368    82261.908    83664.287
+290  TPM2+ASC+G4   40348.951    236 81169.901    81205.755    82613.939
+291  TPM2+R2       40869.106    237 82212.212    82248.381    83662.368
+300  TPM2+ASC+R2   40238.470    237 80950.941    80987.110    82401.097
+301  TPM2+ASC+R3   40193.600    239 80865.199    80902.004    82327.593
+302  TPM2+ASC+R4   40194.328    241 80870.656    80908.102    82345.287
+310  K3Pu+F+ASC    40835.225    238 82146.450    82182.936    83602.725
+312  K3Pu+F+ASC+G4 40311.187    239 81100.373    81137.178    82562.767
+313  K3Pu+F+R2     40846.507    240 82173.015    82210.139    83641.528
+322  K3Pu+F+ASC+R2 40208.785    240 80897.570    80934.694    82366.082
+323  K3Pu+F+ASC+R3 40164.094    242 80812.188    80849.957    82292.938
+324  K3Pu+F+ASC+R4 40164.709    244 80817.419    80855.838    82310.407
+332  K3P+ASC       40859.055    235 82188.109    82223.649    83626.028
+334  K3P+ASC+G4    40330.779    236 81133.558    81169.412    82577.596
+335  K3P+R2        40852.069    237 82178.138    82214.307    83628.294
+344  K3P+ASC+R2    40220.998    237 80915.996    80952.165    82366.152
+345  K3P+ASC+R3    40176.212    239 80830.423    80867.228    82292.817
+WARNING: Log-likelihood -40177.6 of K3P+ASC+R4 worse than K3P+ASC+R3 -40176.2
+346  K3P+ASC+R4    40177.635    241 80837.270    80874.715    82311.901
+354  TN+F+ASC      40844.824    238 82165.648    82202.134    83621.923
+356  TN+F+ASC+G4   40320.293    239 81118.586    81155.390    82580.980
+357  TN+F+R2       40855.096    240 82190.193    82227.317    83658.705
+366  TN+F+ASC+R2   40218.536    240 80917.072    80954.196    82385.584
+367  TN+F+ASC+R3   40172.569    242 80829.139    80866.908    82309.889
+368  TN+F+ASC+R4   40172.854    244 80833.708    80872.127    82326.696
+376  TNe+ASC       40870.870    235 82211.741    82247.280    83649.659
+378  TNe+ASC+G4    40337.553    236 81147.105    81182.959    82591.143
+379  TNe+R2        40865.607    237 82205.215    82241.384    83655.371
+388  TNe+ASC+R2    40221.809    237 80917.617    80953.787    82367.774
+389  TNe+ASC+R3    40179.009    239 80836.018    80872.822    82298.412
+390  TNe+ASC+R4    40179.877    241 80841.754    80879.200    82316.386
+398  HKY+F+ASC     40848.645    237 82171.290    82207.459    83621.446
+400  HKY+F+ASC+G4  40323.000    238 81122.000    81158.486    82578.275
+401  HKY+F+R2      40859.373    239 82196.746    82233.551    83659.140
+410  HKY+F+ASC+R2  40220.391    239 80918.783    80955.588    82381.177
+411  HKY+F+ASC+R3  40175.498    241 80832.996    80870.442    82307.628
+412  HKY+F+ASC+R4  40175.946    243 80837.892    80875.985    82324.761
+420  K2P+ASC       40879.079    234 82226.158    82261.385    83657.957
+422  K2P+ASC+G4    40349.181    235 81168.362    81203.902    82606.281
+423  K2P+R2        40870.247    236 82212.493    82248.347    83656.531
+432  K2P+ASC+R2    40238.570    236 80949.139    80984.993    82393.177
+433  K2P+ASC+R3    40193.696    238 80863.392    80899.879    82319.668
+WARNING: Log-likelihood -40194.9 of K2P+ASC+R4 worse than K2P+ASC+R3 -40193.7
+434  K2P+ASC+R4    40194.864    240 80869.728    80906.852    82338.240
+442  F81+F+ASC     44237.578    236 88947.156    88983.010    90391.194
+444  F81+F+ASC+G4  43739.899    237 87953.798    87989.968    89403.955
+445  F81+F+R2      44287.534    238 89051.069    89087.555    90507.344
+454  F81+F+ASC+R2  43645.621    238 87767.242    87803.728    89223.517
+455  F81+F+ASC+R3  43603.159    240 87686.318    87723.442    89154.830
+WARNING: Log-likelihood -43604.3 of F81+F+ASC+R4 worse than F81+F+ASC+R3 -43603.2
+456  F81+F+ASC+R4  43604.347    242 87692.694    87730.463    89173.444
+464  JC+ASC        44219.344    233 88904.688    88939.605    90330.369
+466  JC+ASC+G4     43718.177    234 87904.355    87939.582    89336.155
+467  JC+R2         44262.812    235 88995.625    89031.165    90433.544
+476  JC+ASC+R2     43619.773    235 87709.545    87745.085    89147.464
+477  JC+ASC+R3     43578.860    237 87631.721    87667.890    89081.877
+WARNING: Log-likelihood -43579.9 of JC+ASC+R4 worse than JC+ASC+R3 -43578.9
+478  JC+ASC+R4     43579.869    239 87637.738    87674.543    89100.132
+Akaike Information Criterion:           GTR+F+ASC+R3
+Corrected Akaike Information Criterion: GTR+F+ASC+R3
+Bayesian Information Criterion:         TVM+F+ASC+R3
+Best-fit model: TVM+F+ASC+R3 chosen according to BIC
+
+All model information printed to bialleliconly_h49_m83_132samples.min125.phy.model.gz
+CPU time for ModelFinder: 899.609 seconds (0h:14m:59s)
+Wall-clock time for ModelFinder: 910.372 seconds (0h:15m:10s)
+Generating 1000 samples for ultrafast bootstrap (seed: 491640)...
+
+NOTE: 50 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -40077.342
+Optimal log-likelihood: -40077.265
+Rate parameters:  A-C: 0.66846  A-G: 8.43517  A-T: 1.83973  C-G: 0.73018  C-T: 8.43517  G-T: 1.00000
+Base frequencies:  A: 0.196  C: 0.313  G: 0.261  T: 0.229
+Site proportion and rates:  (0.726,0.370) (0.240,2.162) (0.034,6.218)
+Parameters optimization took 1 rounds (0.309 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.0869711 secs using 99.99% CPU
+Computing ML distances took 0.088832 sec (of wall-clock time) 0.088824 sec (of CPU time)
+Loading distance matrix: done in 0.00667492 secs using 99.96% CPU
+Setting up auxiliary I and S matrices: done in 0.000258572 secs using 99.78% CPU
+Constructing RapidNJ tree: done in 0.00098598 secs using 99.9% CPU
+Computing RapidNJ tree took 0.001264 sec (of wall-clock time) 0.001265 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -40684.325
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 4.668 second
+Computing log-likelihood of 98 initial trees ... 7.581 seconds
+Current best score: -40077.265
+
+Do NNI search on 20 best initial trees
+Optimizing NNI: done in 1.09955 secs using 99.44% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -40046.536
+Optimizing NNI: done in 1.46946 secs using 99.78% CPU
+Optimizing NNI: done in 1.64558 secs using 99.56% CPU
+Optimizing NNI: done in 1.90328 secs using 99.78% CPU
+Optimizing NNI: done in 1.48391 secs using 99.58% CPU
+Optimizing NNI: done in 1.0849 secs using 99.62% CPU
+Optimizing NNI: done in 2.00532 secs using 99.54% CPU
+Optimizing NNI: done in 1.48402 secs using 99.58% CPU
+Optimizing NNI: done in 1.88595 secs using 99.56% CPU
+Optimizing NNI: done in 1.57926 secs using 99.74% CPU
+Iteration 10 / LogL: -40067.183 / Time: 0h:0m:30s
+Optimizing NNI: done in 1.82671 secs using 99.39% CPU
+Optimizing NNI: done in 1.86795 secs using 99.88% CPU
+Optimizing NNI: done in 1.58411 secs using 99.61% CPU
+Optimizing NNI: done in 2.3611 secs using 99.78% CPU
+Optimizing NNI: done in 2.0233 secs using 99.74% CPU
+Optimizing NNI: done in 2.4389 secs using 99.5% CPU
+Optimizing NNI: done in 1.8708 secs using 99.67% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 17: -40030.669
+Optimizing NNI: done in 1.82015 secs using 99.6% CPU
+Optimizing NNI: done in 1.56068 secs using 99.73% CPU
+Optimizing NNI: done in 1.38135 secs using 99.92% CPU
+Iteration 20 / LogL: -40098.317 / Time: 0h:0m:51s
+Finish initializing candidate tree set (20)
+Current best tree score: -40030.669 / CPU time: 49.737
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Optimizing NNI: done in 1.71537 secs using 99.46% CPU
+Optimizing NNI: done in 1.3327 secs using 99.69% CPU
+Optimizing NNI: done in 1.62355 secs using 99.68% CPU
+Optimizing NNI: done in 1.73704 secs using 99.36% CPU
+Optimizing NNI: done in 1.44139 secs using 99.5% CPU
+Optimizing NNI: done in 1.46881 secs using 99.38% CPU
+Optimizing NNI: done in 2.03394 secs using 99.3% CPU
+Optimizing NNI: done in 1.56127 secs using 99.35% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 28: -40025.885
+Optimizing NNI: done in 1.66233 secs using 99.99% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 29: -40005.812
+Optimizing NNI: done in 2.13001 secs using 99.57% CPU
+Iteration 30 / LogL: -40032.926 / Time: 0h:1m:10s (0h:4m:1s left)
+Optimizing NNI: done in 1.93209 secs using 99.68% CPU
+Optimizing NNI: done in 1.72323 secs using 99.76% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 32: -40001.973
+Optimizing NNI: done in 1.42172 secs using 99.5% CPU
+Optimizing NNI: done in 1.26024 secs using 99.43% CPU
+Optimizing NNI: done in 1.13366 secs using 99.72% CPU
+Optimizing NNI: done in 1.73601 secs using 99.7% CPU
+Optimizing NNI: done in 1.92647 secs using 99.37% CPU
+Optimizing NNI: done in 1.7587 secs using 99.59% CPU
+Optimizing NNI: done in 1.42891 secs using 99.43% CPU
+Optimizing NNI: done in 1.6332 secs using 99.68% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 40: -39998.018
+Iteration 40 / LogL: -39998.018 / Time: 0h:1m:28s (0h:3m:46s left)
+Optimizing NNI: done in 1.39279 secs using 99.7% CPU
+Optimizing NNI: done in 1.5209 secs using 99.53% CPU
+Optimizing NNI: done in 1.80131 secs using 99.54% CPU
+Optimizing NNI: done in 1.22495 secs using 99.34% CPU
+Optimizing NNI: done in 1.58447 secs using 99.61% CPU
+Optimizing NNI: done in 1.5674 secs using 99.67% CPU
+Optimizing NNI: done in 1.2635 secs using 99.36% CPU
+Optimizing NNI: done in 1.65506 secs using 99.75% CPU
+Optimizing NNI: done in 1.73104 secs using 99.7% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 49: -39986.563
+Optimizing NNI: done in 1.53167 secs using 99.4% CPU
+Iteration 50 / LogL: -40030.210 / Time: 0h:1m:46s (0h:3m:34s left)
+Log-likelihood cutoff on original alignment: -40151.645
+Optimizing NNI: done in 1.77009 secs using 99.42% CPU
+Optimizing NNI: done in 1.53709 secs using 99.6% CPU
+Optimizing NNI: done in 1.4584 secs using 99.44% CPU
+Optimizing NNI: done in 1.3693 secs using 99.48% CPU
+Optimizing NNI: done in 1.294 secs using 99.76% CPU
+Optimizing NNI: done in 1.27928 secs using 99.21% CPU
+Optimizing NNI: done in 1.3568 secs using 99.77% CPU
+Optimizing NNI: done in 1.38824 secs using 99.63% CPU
+Optimizing NNI: done in 1.50895 secs using 99.72% CPU
+Optimizing NNI: done in 1.79326 secs using 99.65% CPU
+Iteration 60 / LogL: -39993.637 / Time: 0h:2m:1s (0h:3m:3s left)
+Optimizing NNI: done in 1.48511 secs using 99.65% CPU
+Optimizing NNI: done in 1.70324 secs using 99.7% CPU
+Optimizing NNI: done in 1.82928 secs using 99.44% CPU
+Optimizing NNI: done in 1.69354 secs using 99.46% CPU
+Optimizing NNI: done in 1.44666 secs using 99.57% CPU
+Optimizing NNI: done in 1.34382 secs using 99.62% CPU
+Optimizing NNI: done in 1.8357 secs using 99.5% CPU
+Optimizing NNI: done in 1.83875 secs using 99.61% CPU
+Optimizing NNI: done in 1.33727 secs using 99.84% CPU
+Optimizing NNI: done in 1.54716 secs using 99.47% CPU
+Iteration 70 / LogL: -39989.993 / Time: 0h:2m:18s (0h:2m:38s left)
+Optimizing NNI: done in 1.36006 secs using 99.47% CPU
+Optimizing NNI: done in 2.07196 secs using 99.75% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 72: -39982.302
+Optimizing NNI: done in 1.20116 secs using 99.16% CPU
+Optimizing NNI: done in 1.45521 secs using 99.51% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 74: -39974.489
+Optimizing NNI: done in 1.25341 secs using 99.19% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 75: -39970.226
+Optimizing NNI: done in 1.80146 secs using 99.6% CPU
+Optimizing NNI: done in 1.40881 secs using 99.42% CPU
+Optimizing NNI: done in 1.64491 secs using 99.62% CPU
+Optimizing NNI: done in 1.20589 secs using 99.82% CPU
+Optimizing NNI: done in 1.71251 secs using 99.7% CPU
+Iteration 80 / LogL: -40027.357 / Time: 0h:2m:39s (0h:3m:11s left)
+Optimizing NNI: done in 1.54537 secs using 99.73% CPU
+Optimizing NNI: done in 1.60072 secs using 99.68% CPU
+Optimizing NNI: done in 1.65111 secs using 99.63% CPU
+Optimizing NNI: done in 1.60747 secs using 99.74% CPU
+Optimizing NNI: done in 1.55363 secs using 99.41% CPU
+Optimizing NNI: done in 1.49234 secs using 99.79% CPU
+Optimizing NNI: done in 1.39618 secs using 99.77% CPU
+Optimizing NNI: done in 1.395 secs using 99.2% CPU
+Optimizing NNI: done in 1.73615 secs using 99.7% CPU
+Optimizing NNI: done in 1.80138 secs using 99.77% CPU
+Iteration 90 / LogL: -39986.880 / Time: 0h:2m:55s (0h:2m:47s left)
+Optimizing NNI: done in 1.28315 secs using 99.68% CPU
+Optimizing NNI: done in 1.52224 secs using 99.59% CPU
+Optimizing NNI: done in 1.31938 secs using 99.53% CPU
+Optimizing NNI: done in 1.41575 secs using 99.78% CPU
+Optimizing NNI: done in 1.41819 secs using 99.78% CPU
+Optimizing NNI: done in 1.2482 secs using 99.99% CPU
+Optimizing NNI: done in 1.65224 secs using 99.56% CPU
+Optimizing NNI: done in 1.63454 secs using 99.8% CPU
+Optimizing NNI: done in 1.48708 secs using 99.45% CPU
+Optimizing NNI: done in 1.36933 secs using 99.33% CPU
+Iteration 100 / LogL: -39977.997 / Time: 0h:3m:9s (0h:2m:23s left)
+Log-likelihood cutoff on original alignment: -40138.254
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.951
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Optimizing NNI: done in 1.01112 secs using 99.79% CPU
+Optimizing NNI: done in 1.1788 secs using 99.56% CPU
+Optimizing NNI: done in 1.60423 secs using 99.74% CPU
+Optimizing NNI: done in 1.89308 secs using 99.72% CPU
+Optimizing NNI: done in 1.36345 secs using 99.77% CPU
+Optimizing NNI: done in 1.23659 secs using 99.42% CPU
+Optimizing NNI: done in 1.37308 secs using 99.55% CPU
+Optimizing NNI: done in 1.62214 secs using 99.8% CPU
+Optimizing NNI: done in 1.40888 secs using 99.78% CPU
+Optimizing NNI: done in 1.23353 secs using 99.42% CPU
+Iteration 110 / LogL: -39979.958 / Time: 0h:3m:24s (0h:2m:48s left)
+Optimizing NNI: done in 1.73776 secs using 99.87% CPU
+Optimizing NNI: done in 1.81194 secs using 99.55% CPU
+Optimizing NNI: done in 1.52721 secs using 99.66% CPU
+Optimizing NNI: done in 1.21853 secs using 99.17% CPU
+Optimizing NNI: done in 1.3975 secs using 99.56% CPU
+Optimizing NNI: done in 1.59225 secs using 99.8% CPU
+Optimizing NNI: done in 1.97283 secs using 99.74% CPU
+Optimizing NNI: done in 1.36482 secs using 99.55% CPU
+Optimizing NNI: done in 1.64332 secs using 99.68% CPU
+Optimizing NNI: done in 1.45095 secs using 99.37% CPU
+Iteration 120 / LogL: -40007.428 / Time: 0h:3m:41s (0h:2m:28s left)
+Optimizing NNI: done in 1.48597 secs using 99.32% CPU
+Optimizing NNI: done in 1.84491 secs using 99.77% CPU
+Optimizing NNI: done in 1.69334 secs using 99.93% CPU
+Optimizing NNI: done in 1.42401 secs using 99.78% CPU
+Optimizing NNI: done in 1.33904 secs using 99.54% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 125: -39969.477
+Optimizing NNI: done in 1.82407 secs using 99.44% CPU
+Optimizing NNI: done in 1.55114 secs using 99.28% CPU
+Optimizing NNI: done in 1.44038 secs using 99.71% CPU
+Optimizing NNI: done in 1.60089 secs using 99.8% CPU
+Optimizing NNI: done in 1.70247 secs using 99.87% CPU
+Iteration 130 / LogL: -40002.969 / Time: 0h:3m:59s (0h:2m:56s left)
+Optimizing NNI: done in 1.76094 secs using 99.65% CPU
+Optimizing NNI: done in 1.47662 secs using 99.52% CPU
+Optimizing NNI: done in 1.36798 secs using 99.62% CPU
+Optimizing NNI: done in 1.5618 secs using 99.86% CPU
+Optimizing NNI: done in 1.68051 secs using 99.51% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 135: -39967.004
+Optimizing NNI: done in 1.77988 secs using 99.82% CPU
+Optimizing NNI: done in 1.56477 secs using 99.41% CPU
+Optimizing NNI: done in 1.24515 secs using 99.67% CPU
+Optimizing NNI: done in 1.51147 secs using 99.2% CPU
+Optimizing NNI: done in 1.35845 secs using 99.69% CPU
+Iteration 140 / LogL: -40008.609 / Time: 0h:4m:15s (0h:2m:54s left)
+Optimizing NNI: done in 1.34488 secs using 99.54% CPU
+Optimizing NNI: done in 1.29614 secs using 99.53% CPU
+Optimizing NNI: done in 1.59457 secs using 99.93% CPU
+Optimizing NNI: done in 1.52599 secs using 99.46% CPU
+Optimizing NNI: done in 1.59811 secs using 99.61% CPU
+Optimizing NNI: done in 1.33534 secs using 99.61% CPU
+Optimizing NNI: done in 1.82812 secs using 99.71% CPU
+Optimizing NNI: done in 1.12884 secs using 99.63% CPU
+Optimizing NNI: done in 1.49076 secs using 99.52% CPU
+Optimizing NNI: done in 1.72988 secs using 99.81% CPU
+Iteration 150 / LogL: -39983.080 / Time: 0h:4m:30s (0h:2m:34s left)
+Log-likelihood cutoff on original alignment: -40138.254
+Optimizing NNI: done in 1.93476 secs using 99.63% CPU
+Optimizing NNI: done in 1.30801 secs using 99.61% CPU
+Optimizing NNI: done in 1.3045 secs using 99.53% CPU
+Optimizing NNI: done in 1.60592 secs using 99.55% CPU
+Optimizing NNI: done in 1.28041 secs using 99.21% CPU
+Optimizing NNI: done in 1.60234 secs using 99.61% CPU
+Optimizing NNI: done in 1.54909 secs using 99.79% CPU
+Optimizing NNI: done in 1.50855 secs using 99.92% CPU
+Optimizing NNI: done in 1.52573 secs using 99.6% CPU
+Optimizing NNI: done in 1.33533 secs using 99.69% CPU
+Iteration 160 / LogL: -39984.787 / Time: 0h:4m:46s (0h:2m:15s left)
+Optimizing NNI: done in 1.72132 secs using 99.47% CPU
+Optimizing NNI: done in 1.37514 secs using 99.7% CPU
+Optimizing NNI: done in 1.08371 secs using 99.44% CPU
+Optimizing NNI: done in 1.42179 secs using 99.36% CPU
+Optimizing NNI: done in 1.33014 secs using 99.69% CPU
+Optimizing NNI: done in 1.39605 secs using 99.42% CPU
+Optimizing NNI: done in 1.22885 secs using 99.66% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 167: -39966.284
+Optimizing NNI: done in 1.52726 secs using 99.4% CPU
+Optimizing NNI: done in 1.62067 secs using 99.62% CPU
+Optimizing NNI: done in 1.82191 secs using 99.77% CPU
+Iteration 170 / LogL: -39985.976 / Time: 0h:5m:7s (0h:2m:56s left)
+Optimizing NNI: done in 1.6719 secs using 99.21% CPU
+Optimizing NNI: done in 1.30028 secs using 99.84% CPU
+Optimizing NNI: done in 1.41124 secs using 99.42% CPU
+Optimizing NNI: done in 1.21829 secs using 99.82% CPU
+Optimizing NNI: done in 1.47381 secs using 99.85% CPU
+Optimizing NNI: done in 1.46942 secs using 99.04% CPU
+Optimizing NNI: done in 1.77667 secs using 99.71% CPU
+Optimizing NNI: done in 1.52275 secs using 99.33% CPU
+Optimizing NNI: done in 1.35685 secs using 99.55% CPU
+Optimizing NNI: done in 1.76586 secs using 99.54% CPU
+Iteration 180 / LogL: -39970.147 / Time: 0h:5m:23s (0h:2m:37s left)
+Optimizing NNI: done in 1.45182 secs using 99.44% CPU
+Optimizing NNI: done in 1.55286 secs using 99.54% CPU
+Optimizing NNI: done in 1.55326 secs using 99.67% CPU
+Optimizing NNI: done in 1.33548 secs using 99.76% CPU
+Optimizing NNI: done in 1.5395 secs using 99.66% CPU
+Optimizing NNI: done in 1.61111 secs using 99.68% CPU
+Optimizing NNI: done in 1.12069 secs using 99.81% CPU
+Optimizing NNI: done in 1.54101 secs using 99.79% CPU
+Optimizing NNI: done in 1.55747 secs using 99.73% CPU
+Optimizing NNI: done in 1.62193 secs using 99.8% CPU
+Iteration 190 / LogL: -39981.708 / Time: 0h:5m:38s (0h:2m:18s left)
+Optimizing NNI: done in 1.58944 secs using 99.61% CPU
+Optimizing NNI: done in 2.14692 secs using 99.76% CPU
+Optimizing NNI: done in 1.6328 secs using 99.62% CPU
+Optimizing NNI: done in 1.55653 secs using 99.6% CPU
+Optimizing NNI: done in 1.81054 secs using 99.77% CPU
+Optimizing NNI: done in 1.19542 secs using 99.65% CPU
+Optimizing NNI: done in 1.41435 secs using 99.64% CPU
+Optimizing NNI: done in 1.51368 secs using 99.53% CPU
+Optimizing NNI: done in 1.49197 secs using 99.79% CPU
+Optimizing NNI: done in 1.44229 secs using 99.64% CPU
+Iteration 200 / LogL: -40017.055 / Time: 0h:5m:54s (0h:1m:59s left)
+Log-likelihood cutoff on original alignment: -40138.254
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.992
+Optimizing NNI: done in 1.56879 secs using 99.48% CPU
+Optimizing NNI: done in 1.23429 secs using 99.66% CPU
+Optimizing NNI: done in 1.30957 secs using 99.61% CPU
+Optimizing NNI: done in 1.43838 secs using 99.71% CPU
+Optimizing NNI: done in 1.51206 secs using 99.59% CPU
+Optimizing NNI: done in 1.2102 secs using 99.66% CPU
+Optimizing NNI: done in 1.3606 secs using 99.62% CPU
+Optimizing NNI: done in 1.47556 secs using 99.65% CPU
+Optimizing NNI: done in 1.6316 secs using 99.62% CPU
+Optimizing NNI: done in 1.19439 secs using 99.4% CPU
+Iteration 210 / LogL: -40012.353 / Time: 0h:6m:10s (0h:2m:39s left)
+Optimizing NNI: done in 2.14597 secs using 99.62% CPU
+Optimizing NNI: done in 0.891241 secs using 99.54% CPU
+Optimizing NNI: done in 1.29674 secs using 99.91% CPU
+Optimizing NNI: done in 1.6205 secs using 99.8% CPU
+Optimizing NNI: done in 1.46645 secs using 99.72% CPU
+Optimizing NNI: done in 1.76479 secs using 99.59% CPU
+Optimizing NNI: done in 1.22891 secs using 99.5% CPU
+Optimizing NNI: done in 1.41044 secs using 99.63% CPU
+Optimizing NNI: done in 1.3774 secs using 99.48% CPU
+Optimizing NNI: done in 1.8742 secs using 99.83% CPU
+Iteration 220 / LogL: -39967.503 / Time: 0h:6m:26s (0h:2m:21s left)
+Optimizing NNI: done in 1.221 secs using 99.33% CPU
+Optimizing NNI: done in 1.74818 secs using 99.76% CPU
+Optimizing NNI: done in 1.13293 secs using 99.55% CPU
+Optimizing NNI: done in 1.88124 secs using 99.56% CPU
+Optimizing NNI: done in 1.41915 secs using 99.43% CPU
+Optimizing NNI: done in 1.58379 secs using 99.55% CPU
+Optimizing NNI: done in 1.30445 secs using 99.76% CPU
+Optimizing NNI: done in 1.36674 secs using 99.4% CPU
+Optimizing NNI: done in 1.65658 secs using 99.45% CPU
+Optimizing NNI: done in 1.15443 secs using 99.47% CPU
+Iteration 230 / LogL: -39967.350 / Time: 0h:6m:48s (0h:2m:4s left)
+Optimizing NNI: done in 1.06836 secs using 99.71% CPU
+Optimizing NNI: done in 1.93727 secs using 99.52% CPU
+Optimizing NNI: done in 1.55836 secs using 99.67% CPU
+Optimizing NNI: done in 1.73039 secs using 99.7% CPU
+Optimizing NNI: done in 1.31687 secs using 99.76% CPU
+Optimizing NNI: done in 1.38041 secs using 99.77% CPU
+Optimizing NNI: done in 1.3035 secs using 99.68% CPU
+Optimizing NNI: done in 1.42377 secs using 99.85% CPU
+NOTE: 124.492 seconds to dump checkpoint file, increase to 2490.000
+Optimizing NNI: done in 1.51155 secs using 99.28% CPU
+Optimizing NNI: done in 1.38908 secs using 99.26% CPU
+Iteration 240 / LogL: -39970.727 / Time: 0h:9m:22s (0h:2m:21s left)
+Optimizing NNI: done in 1.43725 secs using 99.38% CPU
+Optimizing NNI: done in 1.05517 secs using 99.17% CPU
+Optimizing NNI: done in 1.51467 secs using 99.59% CPU
+Optimizing NNI: done in 1.26694 secs using 99.75% CPU
+Optimizing NNI: done in 1.59795 secs using 99.8% CPU
+Optimizing NNI: done in 1.53309 secs using 99.73% CPU
+Optimizing NNI: done in 1.42765 secs using 99.71% CPU
+Optimizing NNI: done in 1.47407 secs using 99.79% CPU
+Optimizing NNI: done in 1.2993 secs using 99.76% CPU
+Optimizing NNI: done in 1.38929 secs using 99.84% CPU
+Iteration 250 / LogL: -40062.482 / Time: 0h:10m:27s (0h:2m:6s left)
+Log-likelihood cutoff on original alignment: -40138.254
+Optimizing NNI: done in 1.4315 secs using 99.85% CPU
+Optimizing NNI: done in 1.47539 secs using 99.58% CPU
+Optimizing NNI: done in 1.28087 secs using 99.75% CPU
+Optimizing NNI: done in 1.6111 secs using 99.62% CPU
+Optimizing NNI: done in 1.31363 secs using 99.56% CPU
+Optimizing NNI: done in 1.5902 secs using 99.13% CPU
+Optimizing NNI: done in 1.91287 secs using 99.59% CPU
+Optimizing NNI: done in 1.34357 secs using 99.34% CPU
+Optimizing NNI: done in 1.40348 secs using 99.49% CPU
+Optimizing NNI: done in 1.5805 secs using 99.15% CPU
+Iteration 260 / LogL: -39968.688 / Time: 0h:10m:55s (0h:1m:41s left)
+Optimizing NNI: done in 1.56349 secs using 99.24% CPU
+Optimizing NNI: done in 1.1651 secs using 99.47% CPU
+Optimizing NNI: done in 1.36996 secs using 99.47% CPU
+Optimizing NNI: done in 1.55733 secs using 99.11% CPU
+Optimizing NNI: done in 1.33546 secs using 99.61% CPU
+Optimizing NNI: done in 1.65182 secs using 99.5% CPU
+Optimizing NNI: done in 1.53949 secs using 99.29% CPU
+Optimizing NNI: done in 1.25001 secs using 99.19% CPU
+TREE SEARCH COMPLETED AFTER 268 ITERATIONS / Time: 0h:11m:15s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -39966.284
+2. Current log-likelihood: -39966.272
+Optimal log-likelihood: -39966.267
+Rate parameters:  A-C: 0.67030  A-G: 8.46742  A-T: 1.81107  C-G: 0.72475  C-T: 8.46742  G-T: 1.00000
+Base frequencies:  A: 0.196  C: 0.313  G: 0.261  T: 0.229
+Site proportion and rates:  (0.746,0.391) (0.232,2.367) (0.022,7.282)
+Parameters optimization took 2 rounds (0.583 sec)
+BEST SCORE FOUND : -39966.267
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+Alternative NNI shows better log-likelihood -39966.259 > -39966.267
+6.191 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file bialleliconly_h49_m83_132samples.min125.phy.splits.nex
+Total tree length: 1.594
+
+Total number of iterations: 268
+CPU time used for tree search: 432.584 sec (0h:7m:12s)
+Wall-clock time used for tree search: 673.970 sec (0h:11m:13s)
+Total CPU time used: 441.068 sec (0h:7m:21s)
+Total wall-clock time used: 691.116 sec (0h:11m:31s)
+
+Computing bootstrap consensus tree...
+Reading input file bialleliconly_h49_m83_132samples.min125.phy.splits.nex...
+118 taxa and 872 splits.
+Consensus tree written to bialleliconly_h49_m83_132samples.min125.phy.contree
+Reading input trees file bialleliconly_h49_m83_132samples.min125.phy.contree
+Log-likelihood of consensus tree: -39967.852
+
+Analysis results written to: 
+  IQ-TREE report:                bialleliconly_h49_m83_132samples.min125.phy.iqtree
+  Maximum-likelihood tree:       bialleliconly_h49_m83_132samples.min125.phy.treefile
+  Likelihood distances:          bialleliconly_h49_m83_132samples.min125.phy.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          bialleliconly_h49_m83_132samples.min125.phy.splits.nex
+  Consensus tree:                bialleliconly_h49_m83_132samples.min125.phy.contree
+  Screen log file:               bialleliconly_h49_m83_132samples.min125.phy.log
+
+Date and Time: Sat Oct 25 02:36:10 2025
