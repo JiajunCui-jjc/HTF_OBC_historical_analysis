@@ -1,6 +1,6 @@
 ## HTF–O–Antigen–Gene Presence Summary and espE2 recovering
 
-## [Step 1:](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/40b14f7905c53ea71f77e7c36d4c439fb4a744b6/scripts/step3_combine/step1_generateasummarytable_HTF_Oantigen.sh)
+## [Step 1:](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/3d6f964db5d50e89721a8571a4ffec01c5bb03a5/scripts/step3_combine/step1_generateasummarytable_HTF_Oantigen.sh)
 
 ## Step 1.1: Input Files
 
@@ -10,7 +10,7 @@
 
 [./results/step2_Oantigengenes/espE2_rescue/fish_historical/final_sixgenes_withm57_h36_epsE2rescued_binary_matrix.tsv](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/f2e0253fdd33c23b7d3d43982dbe2bd895d1e699/results/step2_Oantigengenes/espE2_rescue/fish_historical/final_sixgenes_withm57_h36_epsE2rescued_binary_matrix.tsv)
 
-notes for [espE2 length calculation](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/40b14f7905c53ea71f77e7c36d4c439fb4a744b6/scripts/step3_combine/step1_generateasummarytable_HTF_Oantigen.sh):
+notes for [espE2 length calculation](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/3d6f964db5d50e89721a8571a4ffec01c5bb03a5/scripts/step3_combine/step1_generateasummarytable_HTF_Oantigen.sh):
 [./results/step2_Oantigengenes/espE2_rescue/checkespE2_57m/final_afterexpasy/completeopenframe.18empty_39fasta.txt](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/blob/f2e0253fdd33c23b7d3d43982dbe2bd895d1e699/results/step2_Oantigengenes/espE2_rescue/checkespE2_57m/final_afterexpasy/completeopenframe.18empty_39fasta.txt)
 
 - If a sequence is present → espE2_PA = 1  
@@ -53,8 +53,8 @@ sample, HTFgroup_Oantigen_PA, wfgD_PA, rmlC1_PA, tagG1_PA, tagH1_PA, spsA_PA, es
 
 ---
 
-## Step 3: [Confidence matrix](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/62488f1c57edbfbb10c1220c9e41ad6b8836566c/results/figures_tables/suppfig1_confidence_matrix_HTF/step2_Rvisual)
-columns: modern57 and h35
+## Step 3: [Confidence matrix](https://github.com/JiajunCui-jjc/HTF_OBC_historical_analysis/tree/3d6f964db5d50e89721a8571a4ffec01c5bb03a5/scripts/step3_combine/step3_confidencematrix)
+columns: modern57 and h43
 rows: HTF by kmer, HTF by local assembly and HTF modern from previous study
 
 
