@@ -1,0 +1,6 @@
+output a stacked plot and a summary sample + HTF table and a newsummary.tsv which the prop is the prop of HTF kmers/ total matched kmers, 
+35 /40 historical samples were recovered other than ("PL0027", "PL0053", "PL0065", "30.ESP_1983b", "PL0026")
+
+PL0065 had a small number of kmers passing the filtering, but now after using the rmdup fastq, its zero.
+
+
