@@ -1,0 +1,19 @@
+Loaded 7 references:
+  HTF_p7.G11: 1199 kmers
+  HTF_p5.D5: 998 kmers
+  HTF_p26.D6: 44 kmers
+  HTF_p25.C2: 1212 kmers
+  HTF_p25.A12: 777 kmers
+  HTF_p23.B8: 31 kmers
+  HTF_p21.F9: 746 kmers
+Total pairwise comparisons: 20,004,358
+Loaded 7 references:
+  HTF_p7.G11: 1199 kmers
+  HTF_p5.D5: 998 kmers
+  HTF_p26.D6: 44 kmers
+  HTF_p25.C2: 1212 kmers
+  HTF_p25.A12: 777 kmers
+  HTF_p23.B8: 31 kmers
+  HTF_p21.F9: 746 kmers
+Total pairwise comparisons: 20,004,358
+✅ Saved output to /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/shfortailocin/wholegenomeunique_2025keykmer_74HTF/step7_filter_wholegenomekemrdepth_hammingdistance/step2_hammingdistance/kmers_unique/step1_cal_hamming_foreachrefpair/pairwise_hamming_distance_longformatbypy.tsv
