@@ -1,0 +1,7 @@
+Country	Dataset	Plus	Minus	Test	P_Value	Significance
+Germany	Historical	2	6	binomial	0.289063	ns
+Germany	Modern	6.685	1.315	prop.test	0.0576195	ns
+Spain	Historical	8	6	binomial	0.790527	ns
+Spain	Modern	11.693	2.307	prop.test	0.012124	*
+UK	Historical	3	4	binomial	1	ns
+UK	Modern	5.879	1.121	prop.test	0.0721208	ns
