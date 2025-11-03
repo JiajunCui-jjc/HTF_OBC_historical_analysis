@@ -3,18 +3,18 @@
 ========================================================
 
 >> All 49 samples:
-At_percent  : 0.319 (0.002–0.667)
-At_covered  : 0.748 (0.019–0.903)
-At_depth    : 5.542 (0.020–14.321)
-Ps_percent  : 0.050 (0.002–0.366)
-Ps_covered  : 0.829 (0.602–0.956)
-Ps_depth    : 14.849 (1.068–138.295)
+At_proportion: 0.319 (0.002–0.667)
+At_covered_proportion: 0.748 (0.019–0.903)
+At_average_depth: 5.542 (0.020–14.321)
+Ps_proportion: 0.050 (0.002–0.366)
+Ps_covered_proportion: 0.829 (0.602–0.956)
+Ps_average_depth: 14.849 (1.068–138.295)
 
 >> hATUE5 (43 samples, excluding HB0828, HB0863, PL0066, PL0108, PL0203, PL0258):
-At_percent  : 0.310 (0.002–0.667)
-At_covered  : 0.730 (0.019–0.903)
-At_depth    : 5.217 (0.020–12.346)
-Ps_percent  : 0.057 (0.002–0.366)
-Ps_covered  : 0.841 (0.602–0.956)
-Ps_depth    : 16.581 (1.068–138.295)
+At_proportion: 0.310 (0.002–0.667)
+At_covered_proportion: 0.730 (0.019–0.903)
+At_average_depth: 5.217 (0.020–12.346)
+Ps_proportion: 0.057 (0.002–0.366)
+Ps_covered_proportion: 0.841 (0.602–0.956)
+Ps_average_depth: 16.581 (1.068–138.295)
 ========================================================

@@ -1,4 +1,4 @@
-samplename At_percent At_covered At_depth Ps_percent Ps_covered Ps_depth
+samplename At_proportion At_covered_proportion At_average_depth Ps_proportion Ps_covered_proportion Ps_average_depth
 PL0105 0.519 0.89425 08.59994 0.00481 0.64746 01.19464
 PL0087 0.440 0.88464 08.3713 0.00339 0.62676 01.15478
 HB0808 0.551 0.88061 05.32631 0.00568 0.60175 01.06792
