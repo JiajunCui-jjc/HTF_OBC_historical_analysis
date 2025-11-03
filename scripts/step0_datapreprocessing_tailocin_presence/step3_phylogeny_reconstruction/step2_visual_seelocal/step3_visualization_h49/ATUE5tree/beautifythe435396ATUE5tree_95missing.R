@@ -12,14 +12,14 @@ library(stringr)
 library(phangorn)
 
 # ---- Paths ----
-treefile <- "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/scripts/step0_datapreprocessing_tailocin_presence/step3_phylogeny_tree/results_h43_m53/tree/bialleliconly_h43_m53_96samples.min96.phy.treefile"
+treefile <- "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/results/step0_datapreprocessing_tailocin_presence/step3_phylogeny_tree/tree_ATUE5/bialleliconly_h43_m53_96samples.min96.phy.treefile"
 
-out_dir   <- "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/scripts/step0_datapreprocessing_tailocin_presence/step3_phylogeny_tree/step3_visualization_h49/ATUE5tree/"
+out_dir   <- "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/scripts/step0_datapreprocessing_tailocin_presence/step3_phylogeny_reconstruction/step2_visual_seelocal/step3_visualization_h49/ATUE5tree"
+setwd(out_dir)
+atue5_list <- file.path("/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/scripts/step0_datapreprocessing_tailocin_presence/step3_phylogeny_reconstruction/step2_visual_seelocal/step3_visualization_h49/samples_m53_h43.txt")
 
-atue5_list <- file.path("/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/scripts/step0_datapreprocessing_tailocin_presence/step3_phylogeny_tree/step3_visualization_h49/samples_m53_h43.txt")
-
-out_pdf_midroot <- "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/scripts/step0_datapreprocessing_tailocin_presence/step3_phylogeny_tree/step3_visualization_h49/ATUE5tree/supfigh43_ATUE5_tree_midroot.pdf"
-out_pdf_unrooted <- "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/scripts/step0_datapreprocessing_tailocin_presence/step3_phylogeny_tree/step3_visualization_h49/ATUE5tree/supfigh43_ATUE5_tree_unrooted_dashed.pdf"
+out_pdf_midroot <- "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/scripts/step0_datapreprocessing_tailocin_presence/step3_phylogeny_reconstruction/step2_visual_seelocal/step3_visualization_h49/ATUE5tree/supfigh43_ATUE5_tree_midroot.pdf"
+out_pdf_unrooted <- "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/scripts/step0_datapreprocessing_tailocin_presence/step3_phylogeny_reconstruction/step2_visual_seelocal/step3_visualization_h49/ATUE5tree/supfigh43_ATUE5_tree_unrooted_dashed.pdf"
 
 dir.create(dirname(out_pdf_midroot), showWarnings = FALSE, recursive = TRUE)
 
@@ -141,3 +141,83 @@ col_mod  <- "#1b9e77"   # green – Modern ATUE5
     ggsave(out_pdf_unrooted, plot = p_unroot_final,
            width = 10, height = 10, dpi = 600, useDingbats = FALSE)
     cat("✅ Unrooted dashed-line tree saved to:", out_pdf_unrooted, "\n")
+    
+    
+    # ============================================================
+    # 3️⃣ Midpoint-rooted tree colored by HTF haplotype + shape by era
+    # ============================================================
+    
+    library(readr)
+    library(dplyr)
+    
+    # ---- Load haplotype info ----
+    dominant_path <- "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step3_HTFfreq/step2_3_HTF_oantigen_dominant_table.tsv"
+    
+    dominant_df <- read.table(dominant_path, header = TRUE, sep = "\t") %>%
+      mutate(LengthGroup = case_when(
+        Reference == "HTF_p7.G11" ~ "1830",
+        Reference == "HTF_p25.A12" ~ "1383",
+        Reference %in% c("HTF_p5.D5", "HTF_p23.B8", "HTF_p26.D6", "HTF_p25.C2") ~ "1803",
+        Reference == "HTF_p21.F9" ~ "1245",
+        TRUE ~ NA_character_
+      )) %>%
+      filter(!is.na(LengthGroup)) %>%
+      select(Isolate, LengthGroup)
+    
+    # ---- Define colors and shapes ----
+    length_colors <- c(
+      "1830" = "#f6d6ff",
+      "1383" = "#638ccc",
+      "1803" = "#800233",
+      "1245" = "#f9d42a"
+    )
+    shape_values <- c("Historical" = 16, "Modern" = 17)
+    
+    # ---- Prepare midpoint-rooted tree ----
+    tr_mid <- phangorn::midpoint(tr_sub)
+    tr_mid <- ladderize(tr_mid)
+    
+    p_mid_haplo <- ggtree(tr_mid, layout = "rectangular", size = 0.35, color = "black")
+    
+    tip_df_mid_haplo <- p_mid_haplo$data %>%
+      filter(isTip) %>%
+      mutate(
+        Isolate = label,
+        IsolateType = ifelse(str_detect(label, "^p"), "Modern", "Historical")
+      ) %>%
+      left_join(dominant_df, by = "Isolate")
+    
+    # ---- Add colored & shaped tips ----
+    p_mid_final_haplo <- p_mid_haplo +
+      geom_tippoint(
+        data = tip_df_mid_haplo,
+        aes(color = LengthGroup, shape = IsolateType),
+        size = 2.6, stroke = 0.3, alpha = 0.95
+      ) +
+      scale_color_manual(
+        name = "HTF haplotypes (bp)",
+        values = length_colors,
+        na.value = "grey70"
+      ) +
+      scale_shape_manual(
+        name = "Sample type",
+        values = shape_values
+      ) +
+      guides(
+        color = guide_legend(override.aes = list(size = 3.5, alpha = 1)),
+        shape = guide_legend(override.aes = list(size = 3.5, alpha = 1))
+      ) +
+      theme_tree2() +
+      theme(
+        legend.position = c(0.83, 0.88),
+        legend.text = element_text(size = 12, face = "bold"),
+        legend.title = element_text(size = 13, face = "bold"),
+        plot.margin = margin(8, 10, 8, 10),
+        plot.title = element_text(hjust = 0.5, face = "bold", size = 15)
+      ) 
+    # ---- Save ----
+    out_pdf_mid_haplo <- file.path(out_dir, "supfigh43_ATUE5_tree_midroot_HTFhaplo.pdf")
+    ggsave(out_pdf_mid_haplo, plot = p_mid_final_haplo,
+           width = 10, height = 8, dpi = 600, useDingbats = FALSE)
+    cat("✅ Midroot HTF-haplotype tree saved to:", out_pdf_mid_haplo, "\n")
+    
