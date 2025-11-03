@@ -9,7 +9,7 @@ library(dplyr)
 setwd("/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/results/step0_datapreprocessing_tailocin_presence/step1_h49metadata/")
 
 # ---- Full paths ----
-meta_file <-  "tmp489_withdatesandlocs_uniq.txt"
+meta_file <-  "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57_h46/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/HTFlengthfreq/tmp489_withdatesandlocs_uniq.txt"
 newstats_file <- "h49dedup_maptoOTU5withouthaplotype_stats.txt"
 
 
@@ -27,7 +27,7 @@ newstats <- read.table(newstats_file, header = TRUE, sep = " ", stringsAsFactors
 # ---- Drop old At/Ps columns ----
 meta_clean <- meta %>%
   select(-At_percent, -At_covered, -At_depth,
-         -Ps_percent, -Ps_covered, -Ps_depth,-group)
+         -Ps_percent, -Ps_covered, -Ps_depth)
 meta_clean$source[meta_clean$source == 'PL'] <- 'This study'
 meta_clean$source[meta_clean$source == '(Latorre et al., 2022)'] <- '(Lang et al., 2024)'
 meta_clean$source[meta_clean$source == '(Lopez et al., 2022)'] <- '(Lopez et al., 2025)'
@@ -47,9 +47,10 @@ meta_updated <- meta_clean %>%
 # ---- Desired order ----
 desired_order <- c(
   "SAMPLE", "TYPE", "YEAR", "COUNTRY",
-  "At_percent", "At_covered", "At_depth",
-  "Ps_percent", "Ps_covered", "Ps_depth", "source"
+  "At_proportion", "At_covered_proportion", "At_average_depth",
+  "Ps_proportion", "Ps_covered_proportion", "Ps_average_depth", "group", "source"
 )
+#At_proportion At_covered_proportion At_average_depth Ps_proportion Ps_covered_proportion Ps_average_depth
 available_cols <- intersect(desired_order, colnames(meta_updated))
 meta_updated <- meta_updated[, c(available_cols, setdiff(colnames(meta_updated), available_cols))]
 
@@ -59,11 +60,37 @@ if (length(missing) > 0) {
   cat("⚠️ Warning: samples in metadata without updated stats:\n")
   print(missing)
 }
+# ---- Update group assignments ----
+# ---- Update group assignments ----
+excluded_samples <- c("HB0828", "HB0863", "PL0066", "PL0108", "PL0203", "PL0258")
+
+meta_updated <- meta_updated %>%
+  mutate(
+    group = case_when(
+      SAMPLE %in% excluded_samples ~ "nonATUE5",
+    
+      TRUE ~ "ATUE5"
+    )
+  )
+
+meta_updated2 <- meta_updated %>%
+  mutate(
+    # convert selected proportion columns to percentages (always 2 decimals)
+    across(
+      c(At_proportion, At_covered_proportion, Ps_proportion, Ps_covered_proportion),
+      ~ paste0(formatC(.x * 100, format = "f", digits = 2), "%")
+    ),
+    # round other numeric columns (like depths) to 2 decimals
+    across(
+      where(is.numeric),
+      ~ round(.x, 2)
+    )
+  )
 
 # ---- Save updated metadata ----
-write.table(meta_updated, outfile2, sep = "\t", quote = FALSE, row.names = FALSE)
-write.table(meta_updated, outfile3, sep = "\t", quote = FALSE, row.names = FALSE)
-cat("✅ Updated metadata written to:\n", normalizePath(outfile), "\n", outfile2, "\n", outfile3, "\n")
+write.table(meta_updated2, outfile2, sep = "\t", quote = FALSE, row.names = FALSE)
+write.table(meta_updated2, outfile3, sep = "\t", quote = FALSE, row.names = FALSE)
+cat("✅ Updated metadata written to:\n", normalizePath(outfile2), "\n", outfile2, "\n", outfile3, "\n")
 
 # ============================
 # Summary block: avg (min–max)
@@ -74,9 +101,9 @@ summ_stat <- function(x) {
   sprintf("%.3f (%.3f–%.3f)", mean(x, na.rm = TRUE), min(x, na.rm = TRUE), max(x, na.rm = TRUE))
 }
 
-stat_cols <- c("At_percent", "At_covered", "At_depth",
-               "Ps_percent", "Ps_covered", "Ps_depth")
-
+stat_cols <- c("At_proportion", "At_covered_proportion", "At_average_depth",
+               "Ps_proportion", "Ps_covered_proportion", "Ps_average_depth")
+#At_proportion	At_covered_proportion	At_average_depth	Ps_proportio	Ps_covered_proportion	Ps_average_depth
 # ---- Exclude six non-ATUE5 ----
 excluded_samples <- c("HB0828", "HB0863", "PL0066", "PL0108", "PL0203", "PL0258")
 meta_trim <- meta_updated %>% filter(!SAMPLE %in% excluded_samples)
@@ -112,7 +139,7 @@ summary_lines <- c(summary_lines, "=============================================
 # ---- Write summary to file ----
 writeLines(summary_lines, summary_file2)
 
-cat("✅ Summary written to:\n", normalizePath(summary_file), "\n", summary_file2, "\n\n")
+cat("✅ Summary written to:\n", normalizePath(summary_file2), "\n", summary_file2, "\n\n")
 
 # ---- Also print on screen ----
 cat(paste(summary_lines, collapse = "\n"), "\n")
