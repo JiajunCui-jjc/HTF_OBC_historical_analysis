@@ -1,5 +1,4 @@
 #!/bin/bash
-set -euo pipefail
 
 # Config
 wd="/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57"
