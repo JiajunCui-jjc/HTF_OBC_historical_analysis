@@ -6396,10 +6396,10 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:export-bgcolor="#ffffffff"
-     inkscape:zoom="0.87175712"
-     inkscape:cx="300.54243"
-     inkscape:cy="245.48122"
-     inkscape:window-width="1288"
+     inkscape:zoom="2.4657015"
+     inkscape:cx="542.03642"
+     inkscape:cy="264.02223"
+     inkscape:window-width="1296"
      inkscape:window-height="665"
      inkscape:window-x="0"
      inkscape:window-y="25"
@@ -11975,9 +11975,10 @@
        id="text1498"
        xml:space="preserve"
        transform="matrix(0.32,0,0,0.32,12.133942,23.359987)"
-       clip-path="url(#clipPath1499)"><tspan
+       clip-path="url(#clipPath1499)"
+       style="font-size:37.5px"><tspan
          id="tspan1498"
-         style="font-variant:normal;font-weight:700;font-size:41.6667px;font-family:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:700;font-size:37.5px;font-family:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          y="0">A</tspan></text>
     <text
