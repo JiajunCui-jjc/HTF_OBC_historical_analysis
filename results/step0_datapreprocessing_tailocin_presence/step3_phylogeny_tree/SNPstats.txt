@@ -1,2 +1,2 @@
 allmergedSNPs,nomultiSNPs,biallelicSNPs
-5583,5555,198
+1240,1233,60
