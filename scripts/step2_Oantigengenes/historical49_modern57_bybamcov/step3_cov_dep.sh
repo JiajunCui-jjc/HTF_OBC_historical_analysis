@@ -37,8 +37,8 @@ mkdir -p $OUTPUT_DIR ${OUTPUT_DIR}/coverage_h49_m57/
 OUTPUT_FILE="${OUTPUT_DIR}/coverage_h49_m57/${sample}_gene_coverage.tsv"
 
 # Define genes of interest in BED format
-GENE_COORDS="${OUTPUT_DIR}/after_step2_coordinates.bed"
-
+#GENE_COORDS="${OUTPUT_DIR}/after_step2_coordinates.bed"
+GENE_COORDS="/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/scripts/step2_Oantigengenes/historical49_modern57_bybamcov/gene_coordinates.bed"
 
 # Header for output file
     echo -e "Sample\tGene\tAvg_Coverage\tCovered_Proportion\tRelative_Read_Depth\tTotal_Ref_Depth" > "$OUTPUT_FILE"

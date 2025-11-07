@@ -20,10 +20,10 @@ set -euo pipefail
 RESULTS_DIR="/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/results/step2_Oantigengenes/historical49_modern57_bybamcov/coverage_h49_m57"
 BAM_DIR="/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/all_fastq_h49/all_raw_meta_fastq_h49/../Ps_bams_maptoOTU5_with_haplotype_h49_dedup/h49_bams_softlink"
 SAMPLE_LIST="/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/historical49.txt"
-GENOME_LENGTH=5941411  # reference genome length
+GENOME_LENGTH=5954076  # reference genome length
 
 OUT_DIR="$RESULTS_DIR"
-TMP_DIR="${OUT_DIR}/tmp"
+TMP_DIR="${OUT_DIR}/tmpdepth"
 mkdir -p "$TMP_DIR"
 
 OUT_FILE="${OUT_DIR}/depth_thresholds_mean_minus_025sd.tsv"

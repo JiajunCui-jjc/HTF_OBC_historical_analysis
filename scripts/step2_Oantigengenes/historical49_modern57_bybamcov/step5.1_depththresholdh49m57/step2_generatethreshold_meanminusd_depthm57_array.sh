@@ -1,6 +1,6 @@
 #!/bin/bash -l
-#$ -l tmem=6G
-#$ -l h_vmem=6G
+#$ -l tmem=3G
+#$ -l h_vmem=3G
 #$ -l h_rt=1:00:0
 #$ -cwd
 #$ -V
@@ -20,10 +20,10 @@ set -euo pipefail
 RESULTS_DIR="/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/results/step2_Oantigengenes/historical49_modern57_bybamcov/coverage_h49_m57"
 BAM_DIR="/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/all_fastq_m57/all_bams_m57_OTU5refonly_dedup/"
 SAMPLE_LIST="/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/modern57.txt"
-GENOME_LENGTH=5941411  # reference genome length
+GENOME_LENGTH=5954076
 
 OUT_DIR="$RESULTS_DIR"
-TMP_DIR="${OUT_DIR}/tmp"
+TMP_DIR="${OUT_DIR}/tmpdepth"
 mkdir -p "$TMP_DIR"
 
 OUT_FILE="${OUT_DIR}/depth_thresholds_mean_minus_025sd.tsv"
