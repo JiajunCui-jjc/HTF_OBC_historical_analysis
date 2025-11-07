@@ -1,5 +1,0 @@
-for endogenous prop
-we dont do dedup,
-simply we mapped against At ref, then count reads mapped to At.
-Then rm At mapped reads and then mapped against Ps ref (without HTF and TFA haplotypes), and count reads mapped to Ps.
-
