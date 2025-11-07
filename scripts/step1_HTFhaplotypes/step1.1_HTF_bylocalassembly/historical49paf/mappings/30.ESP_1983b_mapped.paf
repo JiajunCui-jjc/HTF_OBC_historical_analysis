@@ -1,5 +1,0 @@
-tailocin	20929	13000	13801	-	NODE_1_length_801_cov_1.636719	801	0	801	784	801	60	NM:i:17	ms:i:507	AS:i:461	nn:i:0	tp:A:P	cm:i:53	s1:i:625	s2:i:0	de:f:0.0212	rl:i:0	cg:Z:801M
-tailocin	20929	4720	5287	+	NODE_3_length_594_cov_1.889483	594	0	567	562	567	60	NM:i:5	ms:i:467	AS:i:467	nn:i:0	tp:A:P	cm:i:48	s1:i:516	s2:i:0	de:f:0.0088	rl:i:0	cg:Z:567M
-tailocin	20929	5579	6245	-	NODE_2_length_666_cov_1.723539	666	0	666	654	666	60	NM:i:12	ms:i:426	AS:i:426	nn:i:0	tp:A:P	cm:i:47	s1:i:523	s2:i:0	de:f:0.0180	rl:i:0	cg:Z:666M
-tailocin	20929	7593	7954	-	NODE_8_length_372_cov_1.861357	372	11	372	359	361	60	NM:i:2	ms:i:321	AS:i:321	nn:i:0	tp:A:P	cm:i:28	s1:i:317	s2:i:0	de:f:0.0055	rl:i:0	cg:Z:361M
-tailocin	20929	12340	12731	+	NODE_7_length_391_cov_2.120112	391	0	391	383	391	60	NM:i:8	ms:i:231	AS:i:231	nn:i:0	tp:A:P	cm:i:18	s1:i:250	s2:i:0	de:f:0.0205	rl:i:0	cg:Z:391M
