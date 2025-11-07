@@ -6,7 +6,7 @@
 #$ -j y
 #$ -V
 #$ -S /bin/bash
-#$ -N PLHB39_reads
+#$ -N lopezcollapse_reads
 #$ -e /SAN/ugi/plant_genom/jiajucui/logs/
 #$ -o /SAN/ugi/plant_genom/jiajucui/logs/
 # Define the base directories

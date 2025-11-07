@@ -4,7 +4,7 @@
 #$ -l h_rt=2:30:0
 #$ -S /bin/bash
 #$ -N h49_localassembly
-#$ -hold_jid PLHB39_reads,lopez10_reads
+#$ -hold_jid PLHB39_reads,PLHB39_extractreads,lopez10_reads
 #$ -e /SAN/ugi/plant_genom/jiajucui/logs/
 #$ -o /SAN/ugi/plant_genom/jiajucui/logs/
 
@@ -30,7 +30,7 @@ rm -r $assembly_dir $mapping_dir
 mkdir -p $assembly_dir  $mapping_dir 
 
 tailocin_fasta="/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/HTFreference/tailocin_regiondoublecheck.fa"
-reference_genome="/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/HTFreference/OTU5_ref/Pseudomonas.plate25.C2.pilon.contigs_renamed.with_Tail_Fiber_Haps.fasta"
+reference_genome="/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/HTFreference/OTU5_ref/ref.withhyplotype.fasta"
 tailocin_region="/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/HTFreference/regions.txt"
 
 #in the formated_region, all the TFA and HTF are reversed, make sure all of them are strand + like tailocin first

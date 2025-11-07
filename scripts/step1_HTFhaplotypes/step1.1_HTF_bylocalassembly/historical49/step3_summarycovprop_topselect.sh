@@ -1,5 +1,4 @@
 #!/bin/bash
-set -euo pipefail
 
 # Directories
 samples_txt="/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.1_HTF_bylocalassembly/historical49paf/mappings/sampleswithassemblies.txt"
