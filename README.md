@@ -7,13 +7,13 @@ This repository contains scripts, data, and results for profiling the hypothetic
 Main Figure
 --------------
 
-![HTF - OBC pattern](results/figureandtable/figs/pdfs/mainfig1ink.png)
-[samples included](results/step3_combine/mainfig_HTFoantigen_m53_h43_38/m53_h38_heatmap_sixgene_only_with_HTFanno.pdf), 
-[samples filtering note](results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step2_coinfection/breaking_coninfection)
+![HTF - OBC pattern](/results/figureandtable/figs/pdfs/mainfig1.png)
+[samples included](/results/step3_combine/mainfig_HTFoantigen_m53_h43_38/m53_h38_heatmap_sixgene_only_with_HTFanno.pdf), 
+[samples filtering note](/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step2_coinfection/breaking_coninfection)
 
 Analysis pipeline
 --------------
-[**Data Preprocessing**](scripts/step0_datapreprocessing_tailocin_presence/readme.md)
+[**Data Preprocessing**](/scripts/step0_datapreprocessing_tailocin_presence/readme.md)
  
 - Extract ATUE5-mapped reads from historical plant herbarium metagenomes
 - Authenticate historical DNA damage patterns
@@ -22,11 +22,11 @@ Analysis pipeline
 
 **HTF Haplotype Assignment**:
 
-- [Local Assembly Approach](scripts/step1_HTFhaplotypes/step1.1_HTF_bylocalassembly/readme.md):
+- [Local Assembly Approach](/scripts/step1_HTFhaplotypes/step1.1_HTF_bylocalassembly/readme.md):
     - Extract reads mapping to HTF/TFA regions
     - Assemble with SPAdes (skip for modern samples, since we have modern assemblies)
     - Assign best haplotype based on covered proportion (minimap2)
-- [K-mer Based Approach](scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/readme.md):
+- [K-mer Based Approach](/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/readme.md):
     - Build whole-genome-exclusive HTF-unique kmers
     - Apply iterative Hamming ≥ 2 filtering across haplotypes
     - Query isolate .jf files (Jellyfish)
@@ -34,7 +34,7 @@ Analysis pipeline
     - Detect coinfections if multiple haplotypes exceed threshold
     - HTF length group frequency distribution
 
-[**O-antigen Gene P/A Detection**](scripts/step2_Oantigengenes/readme.md):
+[**O-antigen Gene P/A Detection**](/scripts/step2_Oantigengenes/readme.md):
 
 - A gene is considered present if:
     (i) coverage ≥ 65%
@@ -42,7 +42,7 @@ Analysis pipeline
   
 - espE4 handled separately via extended mapping and contig rescue
 
-[**Combined Analysis**](scripts/step3_combine/readme.md):
+[**Combined Analysis**](/scripts/step3_combine/readme.md):
 
 - Merge HTF and OBC profiles
 - Output metadata tables and combined heatmaps
