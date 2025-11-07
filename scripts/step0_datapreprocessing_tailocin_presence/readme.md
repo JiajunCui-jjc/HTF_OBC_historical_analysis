@@ -3,7 +3,7 @@
 This pipeline describes the steps used to extract, authenticate, and analyze historical *Pseudomonas viridiflava* ATUE5 genomes from *Arabidopsis thaliana* herbarium-derived metagenomes collected between 1817 and 2015.
 
 ---
-## [Step 1: Extract ATUE5-Mapped Reads](scripts/step0_datapreprocessing_tailocin_presence/step1_extract_h49_m57genomes_stats)
+## [Step 1: Extract ATUE5-Mapped Reads](/HTF_OBC_historical_analysis/scripts/step0_datapreprocessing_tailocin_presence/step1_extract_h49_m57genomes_stats)
 
 A total of 49 globally distributed *A. thaliana* herbarium specimens were screened for the presence of *P. viridiflava* ATUE5.
 
