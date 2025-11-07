@@ -88,32 +88,34 @@ dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
 # === Plot: Arabidopsis ===
 p_at <- ggplot(at_all %>% filter(Length > 0 & Length <= 200),
                aes(x = Length, y = Prop, group = Sample)) +
-  geom_line(alpha = 0.8, color = "#d5da6d") +  # olive-green
+  geom_line(alpha = 0.8, color = "#d5da6d") +
   scale_y_continuous(labels = percent_format(accuracy = 1), limits = c(0, 0.15)) +
   scale_x_continuous(limits = c(0, 200), breaks = seq(0, 200, 50)) +
   labs(x = "Read length (bp)", y = "Reads (%)",
        title = expression(italic("Arabidopsis thaliana"))) +
-  theme_classic(base_size = 12) +
+  theme_classic(base_size = 17) +      # ⬅️ Bigger base font
   theme(
-    plot.title = element_text(size = 13, face = "bold", hjust = 0.5),
-    axis.title = element_text(size = 12, face = "bold"),
-    axis.text  = element_text(size = 11, face = "bold")
+    plot.title = element_text(size = 18, face = "bold.italic", hjust = 0.5),
+    axis.title = element_text(size = 16, face = "bold"),
+    axis.text  = element_text(size = 14, face = "bold")
   )
+
 
 # === Plot: Pseudomonas ===
 p_ps <- ggplot(ps_all %>% filter(Length > 0 & Length <= 200),
                aes(x = Length, y = Prop, group = Sample)) +
-  geom_line(alpha = 0.8, color = "#e86b7d") +  # coral
+  geom_line(alpha = 0.8, color = "#e86b7d") +
   scale_y_continuous(labels = percent_format(accuracy = 1), limits = c(0, 0.15)) +
   scale_x_continuous(limits = c(0, 200), breaks = seq(0, 200, 50)) +
   labs(x = "Read length (bp)", y = "Reads (%)",
        title = expression(italic(Pseudomonas) ~ "sp.")) +
-  theme_classic(base_size = 12) +
+  theme_classic(base_size = 17) +
   theme(
-    plot.title = element_text(size = 13, face = "bold", hjust = 0.5),
-    axis.title = element_text(size = 12, face = "bold"),
-    axis.text  = element_text(size = 11, face = "bold")
+    plot.title = element_text(size = 18, face = "bold.italic", hjust = 0.5),
+    axis.title = element_text(size = 16, face = "bold"),
+    axis.text  = element_text(size = 14, face = "bold")
   )
+
 
 # === Save separate panels ===
 ggsave(file.path(out_dir, "ReadLength_Arabidopsis.pdf"), p_at, width = 7, height = 5)

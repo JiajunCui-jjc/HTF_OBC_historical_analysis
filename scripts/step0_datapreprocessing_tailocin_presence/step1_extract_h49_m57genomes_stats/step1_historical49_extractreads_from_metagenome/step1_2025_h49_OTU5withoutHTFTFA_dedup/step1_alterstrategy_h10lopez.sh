@@ -32,9 +32,8 @@ out_answer=${answerspath}/answers_for_${samplename}.txt
 echo "${samplename}:" > "$out_answer"
 
 refAt=/SAN/ugi/plant_genom/jiajucui/1_initial_data/reference_genome_At/Arabidopsis_thaliana.TAIR10.dna.toplevel.fa
-#refPs=/SAN/ugi/plant_genom/jiajucui/1_initial_data/reference_genome_Ps_with_tailocin_haplotypes/Pseudomonas.plate25.C2.pilon.contigs_renamed.with_Tail_Fiber_Haps.fasta
-refPs="/SAN/ugi/plant_genom/jiajucui/1_initial_data/reference_genome_Ps/Pseudomonas.OTU5_ref.fasta"
-
+refPs='/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/HTFreference/OTU5_ref_noHTFhaplotypes/ref.fasta'
+#refPs='/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/HTFreference/OTU5_ref/ref.withhyplotype.fasta'
 #r1o="$wd/data/all_fastq_h49/all_raw_meta_fastq_h49/${samplename}.R1.fastq.gz"
 #r2o="$wd/data/all_fastq_h49/all_raw_meta_fastq_h49/${samplename}.R2.fastq.gz"
 
@@ -183,7 +182,7 @@ samtools view "$dedup_bam" \
 
 # --- average depth ---
 echo 'q6 Average depth of Ps genome?' >> "$out_answer"
-len=5941411
+len=5954076
 awk -v len=$len '{sum+=$3} END {print sum/len}' "$covfile" >> "$out_answer"
 
 # --- cleanup ---

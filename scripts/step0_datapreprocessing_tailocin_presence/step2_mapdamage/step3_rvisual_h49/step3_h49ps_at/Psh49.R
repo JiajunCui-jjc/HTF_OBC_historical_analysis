@@ -1,4 +1,3 @@
-
 #!/usr/bin/env Rscript
 # -------------------------------------------------------------------------
 # Plot 5′ C→T and 3′ G→A misincorporation frequencies for 49 historical samples
@@ -67,16 +66,16 @@ df_3p <- df_49 %>% filter(End == "3p")
 p1 <- ggplot(df_5p, aes(x = pos_from_end, y = proportion, group = sample)) +
   geom_line(color = "#D04F4F", size = 0.8, alpha = 0.8) +
   labs(
-    title = expression("5′ C to T deamination in 46 historical " * italic("Pseudomonas") * " sp. genomes"),
+    title = expression("5′ C to T deamination in 49 historical " * italic("Pseudomonas") * " sp. genomes"),
     x = "Distance from 5′ end (bp)",
-    y = "C→T frequency"
+    y = "C to T frequency"
   ) +
-  theme_bw() +
+  theme_bw(base_size = 18, base_family = "Helvetica") +
   theme(
     panel.grid = element_blank(),
-    plot.title = element_text(size = 16, hjust = 0.5),
-    axis.title = element_text(size = 14),
-    axis.text = element_text(size = 12)
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    axis.title = element_text(size = 18, face = "bold"),
+    axis.text = element_text(size = 16, face = "bold")
   ) +
   ylim(0, 0.04)
 
@@ -88,18 +87,18 @@ p2 <- ggplot(df_3p, aes(x = pos_from_end, y = proportion, group = sample)) +
     x = "Distance from 3′ end (bp)",
     y = "G→A frequency"
   ) +
-  theme_bw() +
+  theme_bw(base_size = 18, base_family = "Helvetica") +
   theme(
     panel.grid = element_blank(),
-    plot.title = element_text(size = 16, hjust = 0.5),
-    axis.title = element_text(size = 14),
-    axis.text = element_text(size = 12)
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    axis.title = element_text(size = 18, face = "bold"),
+    axis.text = element_text(size = 16, face = "bold")
   ) +
   ylim(0, 0.04)
 
 # === Save figures ===
-ggsave(file.path(outdir, "CtoT_Ps.png"), p1, width = 9, height = 5, dpi = 600)
-ggsave(file.path(outdir, "GtoA_Ps.png"), p2, width = 9, height = 5, dpi = 600)
+ggsave(file.path(outdir, "CtoT_Ps.png"), p1, width = 9, height = 5, dpi = 600, bg = "white")
+ggsave(file.path(outdir, "GtoA_Ps.png"), p2, width = 9, height = 5, dpi = 600, bg = "white")
 
-cat("\n🎯 Saved plots:\n  -", file.path(outdir, "CtoT_At.png"),
-    "\n  -", file.path(outdir, "GtoA_At.png"), "\n")
+cat("\n🎯 Saved plots:\n  -", file.path(outdir, "CtoT_Ps.png"),
+    "\n  -", file.path(outdir, "GtoA_Ps.png"), "\n")

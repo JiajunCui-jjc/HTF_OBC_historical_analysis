@@ -6,7 +6,7 @@
 #$ -wd /SAN/ugi/plant_genom/jiajucui/
 #$ -V
 #$ -N s2025_h39
-#$ -t 1-39
+#$ -t 6
 #$ -o /SAN/ugi/plant_genom/jiajucui/logs/
 #$ -e /SAN/ugi/plant_genom/jiajucui/logs/
 
@@ -20,7 +20,7 @@ source ~/miniconda3/bin/activate phylogeny_snp
 #thecollapsed file sotrage
 #the path of intermediate files: ${pathtmp}
 pathtmp=2025_h49
-answerspath=answer2025_h49
+answerspath=answer2025_h49_notused_withHTFTFA
 mkdir -p /SAN/ugi/plant_genom/jiajucui/${answerspath}/
 #mkdir -p /SAN/ugi/plant_genom/jiajucui/3_quality_control/${pathtmp}/
 samplename=$(grep -E '^(HB|PL)' /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/historical49.txt | sed -n ${i}p)
@@ -53,59 +53,59 @@ out_dir=/SAN/ugi/plant_genom/jiajucui/4_mapping_to_A_thaliana/${pathtmp}
 # q1 What is the percentage of A.thaliana DNA?
 # ===========================================================
 
-bwa aln -t 8 -l 1024 -f ${out_dir}/${samplename}.collapsed.sai ${refAt} ${collapsed}
+#bwa aln -t 8 -l 1024 -f ${out_dir}/${samplename}.collapsed.sai ${refAt} ${collapsed}
 
-bwa samse -r @RG\\tID:${samplename}\\tSM:${samplename} \
-  -f ${out_dir}/${samplename}.collapsed_At.sam ${refAt} ${out_dir}/${samplename}.collapsed.sai ${collapsed}
+#bwa samse -r @RG\\tID:${samplename}\\tSM:${samplename} \
+#  -f ${out_dir}/${samplename}.collapsed_At.sam ${refAt} ${out_dir}/${samplename}.collapsed.sai ${collapsed}
 
-samtools flagstat ${out_dir}/${samplename}.collapsed_At.sam > ${out_dir}/${samplename}_Atsam_flagstats.log
+#samtools flagstat ${out_dir}/${samplename}.collapsed_At.sam > ${out_dir}/${samplename}_Atsam_flagstats.log
 
-echo "q1 What is the percentage of A.thaliana DNA?" >> /SAN/ugi/plant_genom/jiajucui/${answerspath}/answers_for_${samplename}.txt
-echo "reads in total (allrawreads):" >> /SAN/ugi/plant_genom/jiajucui/${answerspath}/answers_for_${samplename}.txt
-grep 'in total' ${out_dir}/${samplename}_Atsam_flagstats.log >> /SAN/ugi/plant_genom/jiajucui/${answerspath}/answers_for_${samplename}.txt
+#echo "q1 What is the percentage of A.thaliana DNA?" >> /SAN/ugi/plant_genom/jiajucui/${answerspath}/answers_for_${samplename}.txt
+#echo "reads in total (allrawreads):" >> /SAN/ugi/plant_genom/jiajucui/${answerspath}/answers_for_${samplename}.txt
+#grep 'in total' ${out_dir}/${samplename}_Atsam_flagstats.log >> /SAN/ugi/plant_genom/jiajucui/${answerspath}/answers_for_${samplename}.txt
 
 # convert mapped reads to BAM with mapQ≥20
-samtools view -@ 4 -F 4 -q 20 -Sbh -o ${out_dir}/${samplename}_mapped_At_q20.bam ${out_dir}/${samplename}.collapsed_At.sam
-rm ${out_dir}/${samplename}.collapsed.sai
+#samtools view -@ 4 -F 4 -q 20 -Sbh -o ${out_dir}/${samplename}_mapped_At_q20.bam ${out_dir}/${samplename}.collapsed_At.sam
+#rm ${out_dir}/${samplename}.collapsed.sai
 
-samtools flagstat ${out_dir}/${samplename}_mapped_At_q20.bam > ${out_dir}/${samplename}_At_q20_flagstats.log
-echo "reads mapped to At (-q20):" >> /SAN/ugi/plant_genom/jiajucui/${answerspath}/answers_for_${samplename}.txt
-grep 'mapped (' ${out_dir}/${samplename}_At_q20_flagstats.log >> /SAN/ugi/plant_genom/jiajucui/${answerspath}/answers_for_${samplename}.txt
+#samtools flagstat ${out_dir}/${samplename}_mapped_At_q20.bam > ${out_dir}/${samplename}_At_q20_flagstats.log
+#echo "reads mapped to At (-q20):" >> /SAN/ugi/plant_genom/jiajucui/${answerspath}/answers_for_${samplename}.txt
+#grep 'mapped (' ${out_dir}/${samplename}_At_q20_flagstats.log >> /SAN/ugi/plant_genom/jiajucui/${answerspath}/answers_for_${samplename}.txt
 
 
 # ===========================================================
 # q1.1 Covered genome proportion (after markdup removal)
 # ===========================================================
-echo "q1.1 What is the covered genome proportion of A.thaliana DNA?" >> /SAN/ugi/plant_genom/jiajucui/${answerspath}/answers_for_${samplename}.txt
+#echo "q1.1 What is the covered genome proportion of A.thaliana DNA?" >> /SAN/ugi/plant_genom/jiajucui/${answerspath}/answers_for_${samplename}.txt
 
 # Remove duplicates and sort
-samtools sort -o ${out_dir}/${samplename}_mapped_At_q20.sorted.bam ${out_dir}/${samplename}_mapped_At_q20.bam
-samtools markdup -r -@ 4 ${out_dir}/${samplename}_mapped_At_q20.sorted.bam ${out_dir}/${samplename}_mapped_At_q20.sorted.markdup.bam
-samtools sort -o ${out_dir}/${samplename}_mapped_At_q20.markdup.sorted.bam ${out_dir}/${samplename}_mapped_At_q20.sorted.markdup.bam
-samtools index ${out_dir}/${samplename}_mapped_At_q20.markdup.sorted.bam
-rm ${out_dir}/${samplename}_mapped_At_q20.markdup.bam ${out_dir}/${samplename}_mapped_At_q20.bam
+#samtools sort -o ${out_dir}/${samplename}_mapped_At_q20.sorted.bam ${out_dir}/${samplename}_mapped_At_q20.bam
+#samtools markdup -r -@ 4 ${out_dir}/${samplename}_mapped_At_q20.sorted.bam ${out_dir}/${samplename}_mapped_At_q20.sorted.markdup.bam
+#samtools sort -o ${out_dir}/${samplename}_mapped_At_q20.markdup.sorted.bam ${out_dir}/${samplename}_mapped_At_q20.sorted.markdup.bam
+#samtools index ${out_dir}/${samplename}_mapped_At_q20.markdup.sorted.bam
+#rm ${out_dir}/${samplename}_mapped_At_q20.markdup.bam ${out_dir}/${samplename}_mapped_At_q20.bam
 
-samtools coverage ${out_dir}/${samplename}_mapped_At_q20.markdup.sorted.bam > ${out_dir}/${samplename}_mapped_At_q20.markdup.sorted.bysamtoolscoverage.txt
+#samtools coverage ${out_dir}/${samplename}_mapped_At_q20.markdup.sorted.bam > ${out_dir}/${samplename}_mapped_At_q20.markdup.sorted.bysamtoolscoverage.txt
 
-echo "total length of At ref:" >> /SAN/ugi/plant_genom/jiajucui/${answerspath}/answers_for_${samplename}.txt
-awk '{sum+=$3;} END{print sum;}' ${out_dir}/${samplename}_mapped_At_q20.markdup.sorted.bysamtoolscoverage.txt >> /SAN/ugi/plant_genom/jiajucui/${answerspath}/answers_for_${samplename}.txt
+#echo "total length of At ref:" >> /SAN/ugi/plant_genom/jiajucui/${answerspath}/answers_for_${samplename}.txt
+#awk '{sum+=$3;} END{print sum;}' ${out_dir}/${samplename}_mapped_At_q20.markdup.sorted.bysamtoolscoverage.txt >> /SAN/ugi/plant_genom/jiajucui/${answerspath}/answers_for_${samplename}.txt
 
-echo "base mapped to At ref:" >> /SAN/ugi/plant_genom/jiajucui/${answerspath}/answers_for_${samplename}.txt
-awk '{sum+=$5;} END{print sum;}' ${out_dir}/${samplename}_mapped_At_q20.markdup.sorted.bysamtoolscoverage.txt >> /SAN/ugi/plant_genom/jiajucui/${answerspath}/answers_for_${samplename}.txt
+#echo "base mapped to At ref:" >> /SAN/ugi/plant_genom/jiajucui/${answerspath}/answers_for_${samplename}.txt
+#awk '{sum+=$5;} END{print sum;}' ${out_dir}/${samplename}_mapped_At_q20.markdup.sorted.bysamtoolscoverage.txt >> /SAN/ugi/plant_genom/jiajucui/${answerspath}/answers_for_${samplename}.txt
 
 
 # ===========================================================
 # q1.2 Average depth
 # ===========================================================
-echo "q1.2 What is the read depth of A.thaliana DNA?" >> /SAN/ugi/plant_genom/jiajucui/${answerspath}/answers_for_${samplename}.txt
-echo "read depth to At ref:" >> /SAN/ugi/plant_genom/jiajucui/${answerspath}/answers_for_${samplename}.txt
-awk '{sum+=($3*$7);} END{print sum/119667750;}' ${out_dir}/${samplename}_mapped_At_q20.markdup.sorted.bysamtoolscoverage.txt >> /SAN/ugi/plant_genom/jiajucui/${answerspath}/answers_for_${samplename}.txt
+#echo "q1.2 What is the read depth of A.thaliana DNA?" >> /SAN/ugi/plant_genom/jiajucui/${answerspath}/answers_for_${samplename}.txt
+#echo "read depth to At ref:" >> /SAN/ugi/plant_genom/jiajucui/${answerspath}/answers_for_${samplename}.txt
+#awk '{sum+=($3*$7);} END{print sum/119667750;}' ${out_dir}/${samplename}_mapped_At_q20.markdup.sorted.bysamtoolscoverage.txt >> /SAN/ugi/plant_genom/jiajucui/${answerspath}/answers_for_${samplename}.txt
 
 
 # ===========================================================
 # Cleanup intermediate files
 # ===========================================================
-rm ${out_dir}/${samplename}_mapped_At_q20.markdup.sorted.bysamtoolscoverage.txt
+#rm ${out_dir}/${samplename}_mapped_At_q20.markdup.sorted.bysamtoolscoverage.txt
 
 
 # ===========================================================
@@ -114,9 +114,9 @@ rm ${out_dir}/${samplename}_mapped_At_q20.markdup.sorted.bysamtoolscoverage.txt
 echo "q2 What is the percentage of Pseudomonas DNA after removing mapped reads to A.thaliana?" >> /SAN/ugi/plant_genom/jiajucui/${answerspath}/answers_for_${samplename}.txt
 
 # Extract unmapped reads (-bf 4)
-samtools view -bf 4 ${out_dir}/${samplename}.collapsed_At.sam > ${out_dir}/${samplename}_after_removal_mappedAt.bam
+#samtools view -bf 4 ${out_dir}/${samplename}.collapsed_At.sam > ${out_dir}/${samplename}_after_removal_mappedAt.bam
 
-rm ${out_dir}/${samplename}.collapsed_At.sam
+#rm ${out_dir}/${samplename}.collapsed_At.sam
 
 echo "All calculation done. Final BAMs retained:"
 echo " - ${samplename}_mapped_At_q20.markdup.sorted.bam"
@@ -263,10 +263,10 @@ rm -f ${base_dir}/${samplename}.mapped_to_Pseudomonas.dd.q20.bam
 
 echo "Removed intermediate files for ${samplename}"
 echo "All done."
-mkdir -p /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/all_fastq_h49/At_bams_h49_dedup/
+#mkdir -p /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/all_fastq_h49/At_bams_h49_dedup/
 mkdir -p /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/all_fastq_h49/Ps_bams_maptoOTU5_with_haplotype_h49_dedup/
-ln -s /SAN/ugi/plant_genom/jiajucui/4_mapping_to_A_thaliana/${pathtmp}/${samplename}_mapped_At_q20.markdup.sorted.bam \
-/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/all_fastq_h49/At_bams_h49_dedup/
+#ln -s /SAN/ugi/plant_genom/jiajucui/4_mapping_to_A_thaliana/${pathtmp}/${samplename}_mapped_At_q20.markdup.sorted.bam \
+#/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/all_fastq_h49/At_bams_h49_dedup/
 
 ln -s /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/${pathtmp}/${samplename}.mapped_to_Pseudomonas.dd.q20.markeddup.bam \
 /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/all_fastq_h49/Ps_bams_maptoOTU5_with_haplotype_h49_dedup/

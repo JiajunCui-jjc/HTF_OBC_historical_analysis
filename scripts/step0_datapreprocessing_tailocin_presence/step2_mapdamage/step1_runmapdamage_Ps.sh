@@ -27,8 +27,10 @@ samplename=$(cat /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin
 #(base) [jiajucui@pchuckle step2_mapdamageplot]$ ls
 #stats1stbaseall49  toAt  tops
 wd=/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/results/step0_datapreprocessing_tailocin_presence/step2_mapdamageplot
-refPs=/SAN/ugi/plant_genom/jiajucui/1_initial_data/reference_genome_Ps/Pseudomonas.OTU5_ref.fasta
+refPs=/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/HTFreference/OTU5_ref_noHTFhaplotypes/ref.fasta
+
 refAt=/SAN/ugi/plant_genom/jiajucui/1_initial_data/reference_genome_At/Arabidopsis_thaliana.TAIR10.dna.toplevel.fa
+mkdir -p  ${wd}/tops/
 cd ${wd}/tops/
 #echo "samplename: ${samplename}"  | tee -a ${wd}/md.log
 #mapDamage -i /SAN/ugi/plant_genom/jiajucui/4_mapping_to_A_thaliana/2023_37HB/${samplename}*.bam -r ${refAt}

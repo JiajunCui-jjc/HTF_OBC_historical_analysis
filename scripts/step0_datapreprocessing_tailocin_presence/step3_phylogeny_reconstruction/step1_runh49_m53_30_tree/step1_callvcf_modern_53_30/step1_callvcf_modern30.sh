@@ -1,7 +1,7 @@
 #!/bin/bash -l
-#$ -l tmem=6G
-#$ -l h_vmem=6G
-#$ -l h_rt=12:00:0
+#$ -l tmem=8G
+#$ -l h_vmem=8G
+#$ -l h_rt=1:00:0
 #$ -cwd
 #$ -V
 #$ -N m30_callvcf
@@ -16,9 +16,8 @@
 # ============================================================
 
 source ~/miniconda3/bin/activate phylogeny_snp
-REF="/SAN/ugi/plant_genom/jiajucui/1_initial_data/reference_genome_Ps/Pseudomonas.OTU5_ref.fasta"
+REF=/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/HTFreference/OTU5_ref_noHTFhaplotypes/ref.fasta
 
-#REF="/SAN/ugi/plant_genom/jiajucui/1_initial_data/reference_genome_Ps_with_tailocin_haplotypes/Pseudomonas.plate25.C2.pilon.contigs_renamed.with_Tail_Fiber_Haps.fasta"
 
 LIST="/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/modern30.txt"
 BAM_DIR="/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/all_fastq_m30_nonATUE5/all_bams_m30_OTU5refonly_dedup"

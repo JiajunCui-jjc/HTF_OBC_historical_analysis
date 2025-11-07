@@ -1,3 +1,3 @@
 used h49dedup_maptoOTU5withouthaplotype_stats.txt  as the final to show in draft
-
+also we did one contig ref
 h49_stats.txt is dedup mapto OTU5withHTFTFA no big diff since we exclude HTF and TFA when calculate...

@@ -14,11 +14,11 @@ library(phangorn)
 library(ggnewscale)  # <-- allows multiple color scales
 
 # ---- Paths ----
-out_dir   <- "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/scripts/step0_datapreprocessing_tailocin_presence/step3_phylogeny_tree/step3_visualization_h49"
+out_dir   <- "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/scripts/step0_datapreprocessing_tailocin_presence/step3_phylogeny_reconstruction/step2_visual_seelocal/step3_visualization_h49/"
 #treefile  <- file.path("/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/scripts/step0_datapreprocessing_tailocin_presence/step3_phylogeny_tree/results_h46_m83_129/bialleliconly_h46_m83_129samples.min129.phy.treefile")
 
 #treefile  <- file.path("/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/scripts/step0_datapreprocessing_tailocin_presence/step3_phylogeny_tree/results_h46_m85_131/bialleliconly_h46_m85_131samples.min131.phy.treefile")
-treefile  <- file.path("/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/scripts/step0_datapreprocessing_tailocin_presence/step3_phylogeny_tree/tree95missing/bialleliconly_h49_m83_132samples.min125.phy.treefile")
+treefile  <- file.path("/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/results/step0_datapreprocessing_tailocin_presence/step3_phylogeny_tree/tree95missing/bialleliconly_h49_m83_132samples.min125.phy.treefile")
 
 atue5_file <- file.path(out_dir, "samples_m53_h43.txt")
 outfile_pdf <- file.path(out_dir, "material2_treeofATUE5andnon53_30_43_95missing.pdf")

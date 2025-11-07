@@ -14,12 +14,14 @@
 # SNP calling for 3 historical Pseudomonas viridiflava genomes
 # Reference includes tailocin haplotypes (HTF + TFA)
 # ============================================================
+export TMPDIR=/SAN/ugi/plant_genom/jiajucui/tmp_bcftools
+mkdir -p "$TMPDIR"
 
 source ~/miniconda3/bin/activate phylogeny_snp
 
 # --- reference without HTF + TFA regions ---
-#REF="/SAN/ugi/plant_genom/jiajucui/1_initial_data/reference_genome_Ps_with_tailocin_haplotypes/Pseudomonas.plate25.C2.pilon.contigs_renamed.with_Tail_Fiber_Haps.fasta"
-REF="/SAN/ugi/plant_genom/jiajucui/1_initial_data/reference_genome_Ps/Pseudomonas.OTU5_ref.fasta"
+REF=/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/HTFreference/OTU5_ref_noHTFhaplotypes/ref.fasta
+
 
 # --- input sample list ---
 LIST="/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/historical49.txt"

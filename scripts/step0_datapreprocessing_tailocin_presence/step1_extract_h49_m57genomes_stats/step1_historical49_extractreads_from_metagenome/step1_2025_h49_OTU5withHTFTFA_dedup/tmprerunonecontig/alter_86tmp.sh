@@ -5,8 +5,9 @@
 #$ -l h_rt=24:00:0
 #$ -wd /SAN/ugi/plant_genom/jiajucui/
 #$ -V
-#$ -N lopez10
-#$ -t 1-10
+#$ -N one_HTFlopez10
+#$ -t 10
+#$ -hold_jid lopez10_otu5ref
 #$ -o /SAN/ugi/plant_genom/jiajucui/logs/
 #$ -e /SAN/ugi/plant_genom/jiajucui/logs/
 
@@ -58,56 +59,56 @@ bwa samse $refAt ${baseAt}/${samplename}.collapsed.sai $collapsed \
   | samtools view -b - | samtools sort -o ${baseAt}/${samplename}.collapsed_At.sorted.bam
 samtools index ${baseAt}/${samplename}.collapsed_At.sorted.bam
 
-bwa aln -t 4 -l 1024 $refAt $r1t > ${baseAt}/${samplename}.r1.sai
-bwa aln -t 4 -l 1024 $refAt $r2t > ${baseAt}/${samplename}.r2.sai
-bwa sampe $refAt ${baseAt}/${samplename}.r1.sai ${baseAt}/${samplename}.r2.sai $r1t $r2t \
-  | samtools view -b - | samtools sort -o ${baseAt}/${samplename}.r1r2_At.sorted.bam
-samtools index ${baseAt}/${samplename}.r1r2_At.sorted.bam
+#bwa aln -t 4 -l 1024 $refAt $r1t > ${baseAt}/${samplename}.r1.sai
+#bwa aln -t 4 -l 1024 $refAt $r2t > ${baseAt}/${samplename}.r2.sai
+#bwa sampe $refAt ${baseAt}/${samplename}.r1.sai ${baseAt}/${samplename}.r2.sai $r1t $r2t \
+#  | samtools view -b - | samtools sort -o ${baseAt}/${samplename}.r1r2_At.sorted.bam
+#samtools index ${baseAt}/${samplename}.r1r2_At.sorted.bam
 
 # merge both
-samtools merge -n ${baseAt}/${samplename}.combined_At.bam \
-  ${baseAt}/${samplename}.collapsed_At.sorted.bam \
-  ${baseAt}/${samplename}.r1r2_At.sorted.bam
-samtools sort -o ${baseAt}/${samplename}.combined_At.sorted.bam ${baseAt}/${samplename}.combined_At.bam
-samtools index ${baseAt}/${samplename}.combined_At.sorted.bam
+#samtools merge -n ${baseAt}/${samplename}.combined_At.bam \
+#  ${baseAt}/${samplename}.collapsed_At.sorted.bam \
+#  ${baseAt}/${samplename}.r1r2_At.sorted.bam
+#samtools sort -o ${baseAt}/${samplename}.combined_At.sorted.bam ${baseAt}/${samplename}.combined_At.bam
+#samtools index ${baseAt}/${samplename}.combined_At.sorted.bam
 
-samtools flagstat ${baseAt}/${samplename}.combined_At.sorted.bam > ${baseAt}/${samplename}_Atsam_flagstats.log
-echo "q1 What is the percentage of A.thaliana DNA?" >> "$out_answer"
-echo "reads in total (allrawreads):" >> "$out_answer"
-grep 'in total' ${baseAt}/${samplename}_Atsam_flagstats.log >> "$out_answer"
+#samtools flagstat ${baseAt}/${samplename}.combined_At.sorted.bam > ${baseAt}/${samplename}_Atsam_flagstats.log
+#echo "q1 What is the percentage of A.thaliana DNA?" >> "$out_answer"
+#echo "reads in total (allrawreads):" >> "$out_answer"
+#grep 'in total' ${baseAt}/${samplename}_Atsam_flagstats.log >> "$out_answer"
 
 # Dedup for A.thaliana (sort → rmdup)
-samtools view -@ 4 -F 4 -q 20 -bh -o ${baseAt}/${samplename}_mapped_At_q20.bam ${baseAt}/${samplename}.combined_At.sorted.bam
+#samtools view -@ 4 -F 4 -q 20 -bh -o ${baseAt}/${samplename}_mapped_At_q20.bam ${baseAt}/${samplename}.combined_At.sorted.bam
 
-samtools sort -o ${baseAt}/${samplename}_mapped_At_q20.sorted.bam ${baseAt}/${samplename}_mapped_At_q20.bam
+#samtools sort -o ${baseAt}/${samplename}_mapped_At_q20.sorted.bam ${baseAt}/${samplename}_mapped_At_q20.bam
 
 
 # --- pre-dedup read count ---
-samtools flagstat ${baseAt}/${samplename}_mapped_At_q20.sorted.bam \
-  > ${baseAt}/${samplename}_At_flagstats.q20.log
-echo "reads mapped to At ref:" >> "$out_answer"
-grep 'mapped (' ${baseAt}/${samplename}_At_flagstats.q20.log >> "$out_answer"
+#samtools flagstat ${baseAt}/${samplename}_mapped_At_q20.sorted.bam \
+#  > ${baseAt}/${samplename}_At_flagstats.q20.log
+#echo "reads mapped to At ref:" >> "$out_answer"
+#grep 'mapped (' ${baseAt}/${samplename}_At_flagstats.q20.log >> "$out_answer"
 
-samtools rmdup ${baseAt}/${samplename}_mapped_At_q20.sorted.bam ${baseAt}/${samplename}_mapped_At_q20.rmdup.bam
-samtools sort -o ${baseAt}/${samplename}_mapped_At_q20.rmdup.sorted.bam ${baseAt}/${samplename}_mapped_At_q20.rmdup.bam
-samtools index ${baseAt}/${samplename}_mapped_At_q20.rmdup.sorted.bam
-rm ${baseAt}/${samplename}_mapped_At_q20.bam ${baseAt}/${samplename}_mapped_At_q20.rmdup.bam
+#samtools rmdup ${baseAt}/${samplename}_mapped_At_q20.sorted.bam ${baseAt}/${samplename}_mapped_At_q20.rmdup.bam
+#samtools sort -o ${baseAt}/${samplename}_mapped_At_q20.rmdup.sorted.bam ${baseAt}/${samplename}_mapped_At_q20.rmdup.bam
+#samtools index ${baseAt}/${samplename}_mapped_At_q20.rmdup.sorted.bam
+#rm ${baseAt}/${samplename}_mapped_At_q20.bam ${baseAt}/${samplename}_mapped_At_q20.rmdup.bam
 
 #for q1.1 covered genome proportion of At
-echo "q1.1 What is the covered genome proportion of A.thaliana DNA?" >> "$out_answer"
-samtools coverage ${baseAt}/${samplename}_mapped_At_q20.rmdup.sorted.bam > ${baseAt}/${samplename}_mapped_At_q20.rmdup.sorted.bysamtoolscoverage.txt
-
-echo "total length of At ref:"
-awk '{sum+=$3;} END{print sum;}' ${baseAt}/${samplename}_mapped_At_q20.rmdup.sorted.bysamtoolscoverage.txt >> "$out_answer"
-echo "base mapped to At ref:"
-awk '{sum+=$5;} END{print sum;}' ${baseAt}/${samplename}_mapped_At_q20.rmdup.sorted.bysamtoolscoverage.txt >> "$out_answer"
+#echo "q1.1 What is the covered genome proportion of A.thaliana DNA?" >> "$out_answer"
+#samtools coverage ${baseAt}/${samplename}_mapped_At_q20.rmdup.sorted.bam > ${baseAt}/${samplename}_mapped_At_q20.rmdup.sorted.bysamtoolscoverage.txt
+#
+#echo "total length of At ref:"
+#awk '{sum+=$3;} END{print sum;}' ${baseAt}/${samplename}_mapped_At_q20.rmdup.sorted.bysamtoolscoverage.txt >> "$out_answer"
+#echo "base mapped to At ref:"
+#awk '{sum+=$5;} END{print sum;}' ${baseAt}/${samplename}_mapped_At_q20.rmdup.sorted.bysamtoolscoverage.txt >> "$out_answer"
 
 
 #q1.2 question about the depth of At
 #lenAt=119667750
-echo "q1.2 What is the read depth of A.thaliana DNA?" >> "$out_answer"
-echo "read depth to At ref:" >> "$out_answer"
-awk '{sum+=($3*$7);} END{print sum/119667750;}' ${baseAt}/${samplename}_mapped_At_q20.rmdup.sorted.bysamtoolscoverage.txt >> "$out_answer"
+#echo "q1.2 What is the read depth of A.thaliana DNA?" >> "$out_answer"
+#echo "read depth to At ref:" >> "$out_answer"
+#awk '{sum+=($3*$7);} END{print sum/119667750;}' ${baseAt}/${samplename}_mapped_At_q20.rmdup.sorted.bysamtoolscoverage.txt >> "$out_answer"
 
 # ===========================================================
 # 3. Extract unmapped → Pseudomonas (collapsed + paired)
@@ -221,7 +222,9 @@ echo "Linking deduplicated BAMs for Lopez10 subset into h49 structure..."
 #At_linkdir=/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/all_fastq_h49/At_bams_h49_dedup/h10_lopez
 Ps_linkdir=/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/all_fastq_h49/Ps_bams_maptoOTU5_with_haplotype_h49_dedup/h10_lopez
 
-mkdir -p "$At_linkdir" "$Ps_linkdir"
+mkdir -p "$Ps_linkdir" 
+#"$At_linkdir" 
+"$Ps_linkdir"
 
 # Symlink A.thaliana dedup BAM
 #ln -sf ${baseAt}/${samplename}_mapped_At_q20.rmdup.sorted.bam \
@@ -238,11 +241,9 @@ ln -sf ${basePs}/${samplename}.mapped_to_Pseudomonas.dd.q20.rmdup.bam.bai \
     # 3. Cleanup unnecessary intermediate A.thaliana files
     # ===========================================================
     find "$baseAt" -type f \( \
-        -name "${samplename}.collapsed_At.sorted.bam*" -o \
         -name "${samplename}.collapsed.sai" -o \
         -name "${samplename}.combined_At.bam" -o \
         -name "${samplename}.combined_At.sorted.bam*" -o \
-        -name "${samplename}.r1r2_At.sorted.bam*" -o \
         -name "${samplename}.r1.sai" -o \
         -name "${samplename}.r2.sai" \
       \) -delete

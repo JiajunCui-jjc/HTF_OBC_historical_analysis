@@ -209,9 +209,9 @@ col_mod  <- "#1b9e77"   # green – Modern ATUE5
       ) +
       theme_tree2() +
       theme(
-        legend.position = c(0.83, 0.88),
-        legend.text = element_text(size = 12, face = "bold"),
-        legend.title = element_text(size = 13, face = "bold"),
+        legend.position = c(0.8, 0.78),
+        legend.text = element_text(size = 16),
+        legend.title = element_text(size = 16, face = "bold"),
         plot.margin = margin(8, 10, 8, 10),
         plot.title = element_text(hjust = 0.5, face = "bold", size = 15)
       ) 

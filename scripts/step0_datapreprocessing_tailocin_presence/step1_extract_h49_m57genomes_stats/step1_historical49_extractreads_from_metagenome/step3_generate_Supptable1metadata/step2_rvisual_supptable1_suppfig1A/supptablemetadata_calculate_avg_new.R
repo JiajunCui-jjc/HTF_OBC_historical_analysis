@@ -9,10 +9,9 @@ library(dplyr)
 setwd("/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/results/step0_datapreprocessing_tailocin_presence/step1_h49metadata/")
 
 # ---- Full paths ----
-meta_file <-  "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57_h46/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/HTFlengthfreq/tmp489_withdatesandlocs_uniq.txt"
-newstats_file <- "h49dedup_maptoOTU5withouthaplotype_stats.txt"
+meta_file <-  "/Users/cuijiajun/Desktop/2023-2024\ PhD\ ucl/2024_aMeta/wholepipeAt_Ps/2024_233_analysis/stats/tmp489_withdatesandlocs_uniq.txt"
 
-
+newstats_file<-'h49dedup_maptoOTU5withouthaplotype_stats.txt'
 outfile2 <- "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/results/step0_datapreprocessing_tailocin_presence/step1_h49metadata/SuppTable_h49.txt"
 outfile3 <- "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/results/figureandtable/supptables/SuppTable_h49.txt"
 
@@ -50,6 +49,18 @@ desired_order <- c(
   "At_proportion", "At_covered_proportion", "At_average_depth",
   "Ps_proportion", "Ps_covered_proportion", "Ps_average_depth", "group", "source"
 )
+library(dplyr)
+
+meta_updated <- meta_updated %>%
+  rename(
+    At_proportion = At_percent,
+    At_covered_proportion = At_covered,
+    At_average_depth = At_depth,
+    Ps_proportion = Ps_percent,
+    Ps_covered_proportion = Ps_covered,
+    Ps_average_depth = Ps_depth
+  ) %>%
+  select(all_of(desired_order))
 #At_proportion At_covered_proportion At_average_depth Ps_proportion Ps_covered_proportion Ps_average_depth
 available_cols <- intersect(desired_order, colnames(meta_updated))
 meta_updated <- meta_updated[, c(available_cols, setdiff(colnames(meta_updated), available_cols))]

@@ -28,8 +28,8 @@ fileAt <- "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_s
 file_samples <- "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/data/historical49.txt"
 
 # Year metadata file
-file_dates <- "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/results/figureandtable/supptables/Supptable_h49.txt"
-#temp PL0087 is NA
+file_dates <- "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/results/figureandtable/supptables/Supptable_h49.txt" # temp PL0087 is NA
+
 # ====== Column names for consistency ======
 colnames_v <- c("pos", "ref_base", "value", "group", "total",
                 "proportion", "pos_from_end", "sample")
@@ -60,40 +60,27 @@ tmp1 <- data.frame(
 )
 
 # ====== Add sample years ======
-
-# Read metadata
 dates <- read.table(file_dates, sep = "\t", header = TRUE, stringsAsFactors = FALSE)
-
-# Make sure YEAR is numeric
 dates$YEAR <- suppressWarnings(as.numeric(dates$YEAR))
 
-# Load historical sample list (short names)
 samples49 <- read.table(file_samples, header = FALSE, stringsAsFactors = FALSE)[[1]]
 
-# Filter metadata to only include samples in tmp1 and in your historical49.txt
 dates49 <- dates %>%
   filter(SAMPLE %in% tmp1$sample & SAMPLE %in% samples49) %>%
   select(SAMPLE, YEAR) %>%
   arrange(SAMPLE)
 
-# Align tmp1 (C to T data) with metadata
 filtered_tmp1 <- tmp1 %>%
   filter(sample %in% dates49$SAMPLE) %>%
   arrange(sample)
 
-# Merge frequency + year info
 all_combined <- cbind(filtered_tmp1, dates49)
-colnames(all_combined) <- c("sample", "Ps_1stbaseCtoTfreq", "At_1stbaseCtoTfreq","samplename", "dates")
+colnames(all_combined) <- c("sample", "Ps_1stbaseCtoTfreq", "At_1stbaseCtoTfreq", "samplename", "dates")
 
-
-# Save combined data
 write.table(all_combined, "49samples_firstbase_CtoT_with_dates.txt",
             sep = "\t", quote = FALSE, row.names = FALSE)
 
 cat("✅ Combined data (after removing invalid YEARs):", nrow(all_combined), "samples\n")
-
-
-
 
 # ====== Safe helper to fit linear model ======
 safe_lm <- function(formula, data) {
@@ -115,25 +102,26 @@ if (!is.null(lm_pa)) {
 }
 
 p1 <- ggplot(all_combined, aes(Ps_1stbaseCtoTfreq, At_1stbaseCtoTfreq)) +
-  geom_point(size = 3, alpha = 1) +
-  geom_smooth(method = "lm", se = FALSE, color = col_fit, linewidth = 0.7) +
+  geom_point(size = 4, alpha = 1) +
+  geom_smooth(method = "lm", se = FALSE, color = "black", linewidth = 1) +
   scale_x_continuous(labels = label_number(accuracy = 0.01), limits = c(0, 0.04)) +
   scale_y_continuous(labels = label_number(accuracy = 0.01), limits = c(0, 0.04)) +
   labs(
     title = expression("First-base C to T frequency: " * italic("Pseudomonas") * " sp. vs " * italic("A. thaliana")),
     subtitle = sprintf("Linear fit: R² = %.2f, p = %.3g", R2_pa, p_pa),
-    x = expression(italic("Pseudomonas") * " sp. (C to T at 5′ base)"),
-    y = expression(italic("Arabidopsis thaliana") * " (C to T at 5′ base)")
+    x = expression(italic("Pseudomonas") * " sp. (C to T at 5 end)"),
+    y = expression(italic("Arabidopsis thaliana") * " (C to T at 5 end)")
   ) +
-  theme_conf() +
+  theme_bw(base_size = 18, base_family = "Helvetica") +
   theme(
-    plot.title = element_text(size = 18, face = "bold"),
-    plot.subtitle = element_text(size = 16),
-    axis.title = element_text(size = 16, face = "bold"),
-    axis.text = element_text(size = 14)
+    plot.title = element_text(size = 20, face = "bold"),
+    plot.subtitle = element_text(size = 18),
+    axis.title = element_text(size = 20, face = "bold"),
+    axis.text = element_text(size = 20, face = "bold"),
+    panel.grid = element_blank()
   )
 
-ggsave("49_CtoTcor_Pseudomonas_vs_Arabidopsis.pdf", p1, width = 8.6, height = 7.6)
+ggsave("49_CtoTcor_Pseudomonas_vs_Arabidopsis.pdf", p1, width = 9.6, height = 7.6)
 
 # Remove NA or invalid years
 all_combined <- all_combined %>%
@@ -148,20 +136,21 @@ R2_at <- summ_at$r.squared
 p_at_lm <- coef(summ_at)[2, "Pr(>|t|)"]
 
 p_at <- ggplot(all_combined, aes(dates, At_1stbaseCtoTfreq)) +
-  geom_point(color = "#D04F4F", size = 3, alpha = 1) +
-  geom_smooth(method = "lm", se = FALSE, color = col_fit, linewidth = 0.7) +
+  geom_point(color = "#D04F4F", size = 4, alpha = 1) +
+  geom_smooth(method = "lm", se = FALSE, color = "black", linewidth = 1) +
   scale_y_continuous(labels = percent_format(accuracy = 0.1)) +
   labs(
     title = expression(italic("Arabidopsis thaliana") * " : first-base C to T vs year"),
     subtitle = sprintf("Linear fit: R² = %.2f, p = %.3g", R2_at, p_at_lm),
     x = "Year", y = "C to T frequency"
   ) +
-  theme_conf() +
+  theme_bw(base_size = 18, base_family = "Helvetica") +
   theme(
     plot.title = element_text(size = 20, face = "bold"),
-    plot.subtitle = element_text(size = 16),
-    axis.title = element_text(size = 16, face = "bold"),
-    axis.text = element_text(size = 14)
+    plot.subtitle = element_text(size = 20),
+    axis.title = element_text(size = 20, face = "bold"),
+    axis.text = element_text(size = 20, face = "bold"),
+    panel.grid = element_blank()
   )
 
 ggsave("CtoT_vs_year_Arabidopsis.pdf", p_at, width = 8.6, height = 7.6)
@@ -175,20 +164,21 @@ R2_ps <- summ_ps$r.squared
 p_ps_lm <- coef(summ_ps)[2, "Pr(>|t|)"]
 
 p_ps <- ggplot(all_combined, aes(dates, Ps_1stbaseCtoTfreq)) +
-  geom_point(color = "#D04F4F", size = 3, alpha = 1) +
-  geom_smooth(method = "lm", se = FALSE, color = col_fit, linewidth = 0.7) +
+  geom_point(color = "#D04F4F", size = 4, alpha = 1) +
+  geom_smooth(method = "lm", se = FALSE, color = "black", linewidth = 1) +
   scale_y_continuous(labels = percent_format(accuracy = 0.1)) +
   labs(
     title = expression(italic("Pseudomonas") * " sp.: first-base C to T vs year"),
     subtitle = sprintf("Linear fit: R² = %.2f, p = %.3g", R2_ps, p_ps_lm),
     x = "Year", y = "C to T frequency"
   ) +
-  theme_conf() +
+  theme_bw(base_size = 18, base_family = "Helvetica") +
   theme(
     plot.title = element_text(size = 20, face = "bold"),
-    plot.subtitle = element_text(size = 16),
-    axis.title = element_text(size = 16, face = "bold"),
-    axis.text = element_text(size = 14)
+    plot.subtitle = element_text(size = 20),
+    axis.title = element_text(size = 20, face = "bold"),
+    axis.text = element_text(size = 20, face = "bold"),
+    panel.grid = element_blank()
   )
 
 ggsave("CtoT_vs_year_Pseudomonas.pdf", p_ps, width = 8.6, height = 7.6)

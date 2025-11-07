@@ -21,7 +21,7 @@ sample_list=/SAN/ugi/plant_genom/jiajucui/1_initial_data/new_sequences/h10.txt
 samplename=$(sed -n ${i}p "${sample_list}")
 
 refAt=/SAN/ugi/plant_genom/jiajucui/1_initial_data/reference_genome_At/Arabidopsis_thaliana.TAIR10.dna.toplevel.fa
-refPs=/SAN/ugi/plant_genom/jiajucui/1_initial_data/reference_genome_Ps/Pseudomonas.OTU5_ref.fasta
+refPs=/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/data/HTFreference/OTU5_ref_noHTFhaplotypes/ref.fasta
 
 r1o=/SAN/ugi/plant_genom/jiajucui/1_initial_data/new_sequences/${samplename}.R1.fastq.gz
 r2o=/SAN/ugi/plant_genom/jiajucui/1_initial_data/new_sequences/${samplename}.R2.fastq.gz
@@ -278,6 +278,12 @@ echo -e "${samplename}\tPseudomonas\t${meanPs}" >> ${outdir_ins}/insert_size.txt
 awk 'BEGIN{FS=OFS="\t"} NR>1{m[$1 FS $2]=$3} END{for(k in m) print k, m[k]}' ${outdir_ins}/insert_size.txt \
  | awk -F'\t' 'BEGIN{OFS="\t"} $2=="Arabidopsis"{a[$1]=$3} $2=="Pseudomonas"{p[$1]=$3} END{print "Sample","MeanInsert_At","MeanInsert_Ps"; for(s in a) print s, a[s], (p[s]==""?0:p[s])}' \
  > ${outdir_ins}/mean_insert_wide.tmp
+
+
+
+base_out=/SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/results/step0_datapreprocessing_tailocin_presence/step1_h49metadata/step2_lengthdist_git_andnsqs10insertsize
+outdir_prop=${base_out}/tmreadprop
+outdir_ins=${base_out}/insert_sizes
 
 join -t $'\t' -1 1 -2 1 <(sort -k1,1 ${outdir_prop}/tmreads.txt) <(sort -k1,1 ${outdir_ins}/mean_insert_wide.tmp) \
   > ${outdir_ins}/tmreads_insert_merged.txt
