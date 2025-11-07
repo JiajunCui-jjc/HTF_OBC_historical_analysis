@@ -84,7 +84,7 @@ p_violin <- ggplot(df_all, aes(x = Sample, y = DepthRel)) +
     x = "Sample",
     y = "Relative depth (mean-normalized)"
   ) +
-  theme_minimal(base_size = 12) +
+  theme_minimal(base_size = 14) +
   theme(
     panel.grid = element_blank(),
     panel.background = element_blank(),
@@ -92,7 +92,7 @@ p_violin <- ggplot(df_all, aes(x = Sample, y = DepthRel)) +
     axis.line = element_line(color = "black", linewidth = 0.6),
     axis.ticks = element_line(color = "black", linewidth = 0.6),
     axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1, size = 12,face = "bold"),
-    axis.text.y = element_text(size = 16,face = "bold"),
+    axis.text.y = element_text(size = 18,face = "bold"),
     plot.title = element_text(hjust = 0.5, face = "bold"),
     plot.subtitle = element_text(hjust = 0.5, colour = "grey40"),
     axis.title = element_text(size=20,face = "bold")

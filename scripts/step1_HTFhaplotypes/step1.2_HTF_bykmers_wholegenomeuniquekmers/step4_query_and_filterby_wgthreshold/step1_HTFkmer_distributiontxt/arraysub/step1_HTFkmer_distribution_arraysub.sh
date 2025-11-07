@@ -1,6 +1,6 @@
 #!/bin/bash -l
-#$ -l tmem=20G
-#$ -l h_vmem=20G
+#$ -l tmem=10G
+#$ -l h_vmem=10G
 #$ -l h_rt=2:00:0
 #$ -N hm106HTFdisttxt_array
 #$ -j y

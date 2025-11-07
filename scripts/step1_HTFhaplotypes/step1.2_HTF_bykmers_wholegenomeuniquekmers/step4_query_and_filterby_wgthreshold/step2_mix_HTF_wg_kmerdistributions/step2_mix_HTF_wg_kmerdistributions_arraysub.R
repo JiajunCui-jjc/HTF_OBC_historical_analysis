@@ -3,7 +3,7 @@
 # =============================================================
 # Compare HTF k-mer depth with whole-genome (WG) k-mer depth.
 # Modern samples → 1 red dashed line (mean cutoff)
-# Historical samples → 1 red dashed lines (mean -  SD)
+# Historical samples → 1 red dashed lines (mean -  0.5SD)
 # =============================================================
 
 suppressPackageStartupMessages({
@@ -136,4 +136,5 @@ if (is_modern) {
 outfile <- file.path(out_dir, paste0(sample_name, "_merged.pdf"))
 ggsave(outfile, plot = p, width = 7, height = 5)
 cat("✅ Saved:", outfile, "\n")
+
 

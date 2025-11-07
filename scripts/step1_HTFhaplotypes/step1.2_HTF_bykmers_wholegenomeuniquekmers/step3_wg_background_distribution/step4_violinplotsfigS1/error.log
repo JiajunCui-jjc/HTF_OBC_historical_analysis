@@ -1,61 +1,56 @@
 Warning message:
 package ‘data.table’ was built under R version 4.2.3 
-Warning message:
-package ‘ggplot2’ was built under R version 4.2.3 
 ✅ Found 49 historical (h409 dump files
-[01/49] 109.NOR_1990: mean=16.28 sd=6.99 thr=37.26 n=5686703
-[02/49] 120.RUS_1860: mean=4.73 sd=2.09 thr=11.00 n=3574215
-[03/49] 27.ESP_1975: mean=3.38 sd=0.79 thr=5.77 n=471368
-[04/49] 30.ESP_1983b: mean=3.48 sd=1.66 thr=8.45 n=516906
-[05/49] 33.ESP_1985b: mean=19.99 sd=8.29 thr=44.85 n=5710019
-[06/49] 34.ESP_1985c_S36: mean=28.05 sd=9.24 thr=55.77 n=5315458
-[07/49] 64.GBR_1933b_S36: mean=5.04 sd=2.15 thr=11.49 n=3513409
-[08/49] 75.LTU_1894_S30: mean=4.80 sd=2.12 thr=11.15 n=3821440
-[09/49] 76.LTU_2009_S19: mean=44.67 sd=13.96 thr=86.53 n=5292111
-[10/49] 86.NOR_1911_S7: mean=3.38 sd=0.90 thr=6.07 n=403548
-[11/49] HB0737: mean=6.62 sd=3.01 thr=15.64 n=4486840
-[12/49] HB0766: mean=7.15 sd=3.39 thr=17.31 n=4534496
-[13/49] HB0808: mean=3.32 sd=0.78 thr=5.66 n=209347
-[14/49] HB0814: mean=5.04 sd=2.10 thr=11.33 n=3807994
-[15/49] HB0828: mean=3.74 sd=2.54 thr=11.35 n=582404
-[16/49] HB0840: mean=3.46 sd=1.18 thr=7.01 n=342344
-[17/49] HB0841: mean=3.43 sd=1.13 thr=6.83 n=251470
-[18/49] HB0863: mean=4.68 sd=5.47 thr=21.08 n=335168
-[19/49] PL0001: mean=3.87 sd=1.15 thr=7.31 n=2127821
-[20/49] PL0026: mean=3.31 sd=0.75 thr=5.55 n=215699
-[21/49] PL0027: mean=3.31 sd=0.71 thr=5.44 n=287379
-[22/49] PL0042: mean=58.93 sd=20.15 thr=119.39 n=5532240
-[23/49] PL0046: mean=14.69 sd=5.59 thr=31.45 n=4926288
-[24/49] PL0051: mean=9.73 sd=3.62 thr=20.58 n=4880882
-[25/49] PL0053: mean=7.04 sd=3.52 thr=17.60 n=5810653
-[26/49] PL0059: mean=70.58 sd=42.16 thr=197.07 n=7566948
-[27/49] PL0065: mean=3.35 sd=0.91 thr=6.10 n=320855
-[28/49] PL0066: mean=4.18 sd=3.50 thr=14.70 n=239709
-[29/49] PL0068: mean=8.62 sd=4.03 thr=20.71 n=5138631
-[30/49] PL0073: mean=3.57 sd=0.95 thr=6.41 n=895530
-[31/49] PL0080: mean=18.14 sd=9.75 thr=47.40 n=6085872
-[32/49] PL0087: mean=3.37 sd=1.47 thr=7.77 n=112500
-[33/49] PL0102: mean=11.26 sd=6.35 thr=30.30 n=7620278
-[34/49] PL0105: mean=3.20 sd=0.75 thr=5.46 n=48786
-[35/49] PL0108: mean=9.60 sd=14.28 thr=52.44 n=808696
-[36/49] PL0127: mean=5.99 sd=2.73 thr=14.18 n=4485185
-[37/49] PL0131: mean=28.86 sd=16.07 thr=77.07 n=6485180
-[38/49] PL0137: mean=10.56 sd=3.87 thr=22.16 n=4966636
-[39/49] PL0139: mean=3.41 sd=0.87 thr=6.03 n=429137
-[40/49] PL0185: mean=3.75 sd=1.30 thr=7.65 n=1442945
-[41/49] PL0203: mean=3.55 sd=1.74 thr=8.77 n=147729
-[42/49] PL0210: mean=5.60 sd=2.13 thr=11.98 n=3994499
-[43/49] PL0220: mean=10.55 sd=3.97 thr=22.46 n=4960547
-[44/49] PL0222: mean=3.20 sd=0.84 thr=5.71 n=65443
-[45/49] PL0224: mean=4.05 sd=1.44 thr=8.38 n=2311888
-[46/49] PL0230: mean=3.37 sd=0.78 thr=5.71 n=399025
-[47/49] PL0235: mean=4.14 sd=1.45 thr=8.48 n=2473574
-[48/49] PL0240: mean=5.72 sd=2.34 thr=12.75 n=3915575
-[49/49] PL0258: mean=3.68 sd=2.21 thr=10.30 n=576558
+[01/49] 109.NOR_1990: mean=16.19 sd=6.30 thr=35.09 n=5669945
+[02/49] 120.RUS_1860: mean=4.68 sd=1.70 thr=9.79 n=3526295
+[03/49] 27.ESP_1975: mean=3.35 sd=0.66 thr=5.32 n=468750
+[04/49] 30.ESP_1983b: mean=3.43 sd=0.79 thr=5.79 n=499635
+[05/49] 33.ESP_1985b: mean=19.90 sd=7.81 thr=43.33 n=5693836
+[06/49] 34.ESP_1985c_S36: mean=27.92 sd=8.40 thr=53.12 n=5306072
+[07/49] 64.GBR_1933b_S36: mean=5.01 sd=2.00 thr=11.01 n=3503931
+[08/49] 75.LTU_1894_S30: mean=4.76 sd=1.82 thr=10.21 n=3793669
+[09/49] 76.LTU_2009_S19: mean=44.48 sd=12.39 thr=81.65 n=5281322
+[10/49] 86.NOR_1911_S7: mean=3.32 sd=0.64 thr=5.24 n=395470
+[11/49] HB0737: mean=6.60 sd=2.89 thr=15.26 n=4473490
+[12/49] HB0766: mean=7.09 sd=2.98 thr=16.05 n=4515119
+[13/49] HB0808: mean=3.26 sd=0.60 thr=5.06 n=206444
+[14/49] HB0814: mean=5.01 sd=1.96 thr=10.90 n=3767108
+[15/49] HB0828: mean=3.53 sd=0.97 thr=6.42 n=568691
+[16/49] HB0840: mean=3.36 sd=0.70 thr=5.47 n=333511
+[17/49] HB0841: mean=3.32 sd=0.70 thr=5.41 n=245574
+[18/49] HB0863: mean=4.13 sd=2.50 thr=11.64 n=321034
+[19/49] PL0001: mean=3.86 sd=1.11 thr=7.20 n=2119668
+[20/49] PL0026: mean=3.25 sd=0.56 thr=4.92 n=205348
+[21/49] PL0027: mean=3.27 sd=0.58 thr=5.01 n=283590
+[22/49] PL0042: mean=58.85 sd=20.00 thr=118.84 n=5520591
+[23/49] PL0046: mean=14.63 sd=5.30 thr=30.52 n=4915932
+[24/49] PL0051: mean=9.70 sd=3.49 thr=20.19 n=4868621
+[25/49] PL0053: mean=7.00 sd=3.27 thr=16.82 n=5775950
+[26/49] PL0059: mean=70.47 sd=42.06 thr=196.64 n=7544680
+[27/49] PL0065: mean=3.30 sd=0.65 thr=5.24 n=314531
+[28/49] PL0066: mean=3.80 sd=1.61 thr=8.61 n=230154
+[29/49] PL0068: mean=8.56 sd=3.69 thr=19.62 n=5117275
+[30/49] PL0073: mean=3.54 sd=0.85 thr=6.10 n=890787
+[31/49] PL0080: mean=18.09 sd=9.56 thr=46.78 n=6069970
+[32/49] PL0087: mean=3.19 sd=0.50 thr=4.67 n=105828
+[33/49] PL0102: mean=11.24 sd=6.27 thr=30.04 n=7599581
+[34/49] PL0105: mean=3.13 sd=0.38 thr=4.25 n=46653
+[35/49] PL0108: mean=8.87 sd=10.49 thr=40.33 n=788122
+[36/49] PL0127: mean=5.95 sd=2.52 thr=13.51 n=4457838
+[37/49] PL0131: mean=28.83 sd=15.92 thr=76.60 n=6468165
+[38/49] PL0137: mean=10.52 sd=3.74 thr=21.73 n=4947974
+[39/49] PL0139: mean=3.36 sd=0.68 thr=5.39 n=421455
+[40/49] PL0185: mean=3.70 sd=0.98 thr=6.65 n=1418044
+[41/49] PL0203: mean=3.30 sd=0.68 thr=5.34 n=141113
+[42/49] PL0210: mean=5.58 sd=2.07 thr=11.79 n=3983049
+[43/49] PL0220: mean=10.51 sd=3.81 thr=21.93 n=4941537
+[44/49] PL0222: mean=3.13 sd=0.37 thr=4.25 n=62917
+[45/49] PL0224: mean=4.02 sd=1.29 thr=7.89 n=2273443
+[46/49] PL0230: mean=3.34 sd=0.68 thr=5.36 n=394922
+[47/49] PL0235: mean=4.11 sd=1.34 thr=8.12 n=2465411
+[48/49] PL0240: mean=5.69 sd=2.20 thr=12.30 n=3905505
+[49/49] PL0258: mean=3.51 sd=1.00 thr=6.50 n=562003
             used   (Mb) gc trigger   (Mb)  max used   (Mb)
-Ncells    703419   37.6    1340435   71.6   1340435   71.6
-Vcells 277539011 2117.5  666582642 5085.7 553978116 4226.6
+Ncells    940946   50.3    1529950   81.8   1529950   81.8
+Vcells 276523318 2109.8  663642111 5063.2 551527673 4207.9
 ✅ Combined normalized data for 49 samples
-✅ Saved normalized (mean=1) violin summary figure:
-  - /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step2_isolate_kmers/isolate_jf/distribution/summary_violin_norm1/SuppFig_h49_normalizedMean1_violin_kmer_depth.pdf 
-  - /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step2_isolate_kmers/isolate_jf/distribution/summary_violin_norm1/SuppFig_h49_normalizedMean1_violin_kmer_depth.png 

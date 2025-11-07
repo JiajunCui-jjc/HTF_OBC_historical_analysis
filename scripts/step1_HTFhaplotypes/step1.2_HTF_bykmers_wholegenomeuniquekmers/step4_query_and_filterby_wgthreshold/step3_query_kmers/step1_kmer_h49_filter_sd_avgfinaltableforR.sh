@@ -2,7 +2,7 @@
 #$ -l tmem=10G
 #$ -l h_vmem=10G
 #$ -l h_rt=5:00:0
-#$ -N h49query_1sd
+#$ -N h49query_05sd
 #$ -V
 #$ -cwd
 #$ -e /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step3_query_kmers/logs

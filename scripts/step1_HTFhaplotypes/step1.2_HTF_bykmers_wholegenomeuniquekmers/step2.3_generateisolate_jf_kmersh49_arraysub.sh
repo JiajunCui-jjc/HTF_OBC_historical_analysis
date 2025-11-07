@@ -2,10 +2,11 @@
 #$ -l tmem=20G
 #$ -l h_vmem=20G
 #$ -l h_rt=10:00:0
-#$ -N h49keykmerstep3
+#$ -N h49keykmerstep4
 #$ -V
 #$ -j y
 #$ -cwd
+#$ -hold_jid h49keykmerstep3
 #$ -e /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/logs
 #$ -o /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2025_summer_paperfig_m57/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/logs
 #$ -t 1-49
