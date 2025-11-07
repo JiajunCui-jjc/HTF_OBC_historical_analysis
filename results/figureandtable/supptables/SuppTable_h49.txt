@@ -1,50 +1,50 @@
-SAMPLE	TYPE	YEAR	COUNTRY	At_proportion	At_covered_proportion	At_average_depth	Ps_proportion	Ps_covered_proportion	Ps_average_depth	group	source
-PL0001	Plant tissue herbarium	1966	Spain	61.00%	87.61%	8.76	1.32%	91.16%	4.62	ATUE5	This study
-PL0026	Plant tissue herbarium	2002	Sweden	50.00%	89.86%	12.01	0.51%	72.72%	1.6	ATUE5	This study
-PL0059	Plant tissue herbarium	1985	Spain	12.10%	87.14%	6.85	31.73%	93.33%	138.29	ATUE5	This study
-PL0073	Plant tissue herbarium	1991	Spain	56.30%	88.14%	8.13	1.06%	83.73%	2.86	ATUE5	This study
-PL0087	Plant tissue herbarium	NA	Spain	44.00%	88.46%	8.37	0.34%	62.68%	1.15	ATUE5	This study
-PL0102	Plant tissue herbarium	1888	Germany	25.60%	89.59%	7.46	6.40%	95.60%	31.35	ATUE5	This study
-PL0105	Plant tissue herbarium	1920	Sweden	51.90%	89.42%	8.6	0.48%	64.75%	1.19	ATUE5	This study
-PL0108	Plant tissue herbarium	1946	Sweden	19.60%	89.74%	9.05	0.88%	80.95%	5.07	nonATUE5	This study
-PL0131	Plant tissue herbarium	1980	Spain	18.00%	87.70%	6.55	9.68%	93.16%	53.42	ATUE5	This study
-PL0139	Plant tissue herbarium	1996	Sweden	13.90%	79.11%	2.36	0.48%	71.34%	1.54	ATUE5	This study
-PL0185	Plant tissue herbarium	1994	Germany	43.20%	89.06%	8.35	0.61%	82.22%	2.74	ATUE5	This study
-PL0203	Plant tissue herbarium	1880	United Kingdom	54.80%	88.49%	8.06	0.51%	72.81%	1.71	nonATUE5	This study
-PL0210	Plant tissue herbarium	1838	United Kingdom	30.30%	84.96%	4.18	3.73%	87.84%	10.45	ATUE5	This study
-PL0220	Plant tissue herbarium	1946	United Kingdom	48.60%	88.47%	5.84	8.45%	89.82%	18.6	ATUE5	This study
-PL0222	Plant tissue herbarium	1887	United Kingdom	42.10%	89.12%	8.55	0.36%	65.30%	1.24	ATUE5	This study
-PL0224	Plant tissue herbarium	1889	United Kingdom	20.20%	89.01%	6.4	1.38%	93.53%	7.08	ATUE5	This study
-PL0230	Plant tissue herbarium	1851	United Kingdom	57.30%	90.32%	8.68	0.74%	79.05%	2.04	ATUE5	This study
-PL0235	Plant tissue herbarium	1905	United Kingdom	40.30%	86.39%	4.54	3.94%	92.32%	8.64	ATUE5	This study
-PL0240	Plant tissue herbarium	1875	United Kingdom	66.70%	88.97%	7.57	2.04%	85.09%	7.46	ATUE5	This study
-PL0258	Plant tissue herbarium	1913	United Kingdom	49.90%	88.39%	6.42	1.18%	83.68%	2.8	nonATUE5	This study
-PL0027	Plant tissue herbarium	1939	Sweden	48.30%	89.78%	8.85	0.34%	66.20%	1.28	ATUE5	This study
-PL0042	Plant tissue herbarium	1982	Spain	28.20%	88.62%	8.49	15.49%	94.26%	76.64	ATUE5	This study
-PL0046	Plant tissue herbarium	1974	Spain	49.00%	88.93%	12.17	4.34%	90.17%	19.67	ATUE5	This study
-PL0051	Plant tissue herbarium	1983	Spain	1.50%	20.73%	0.26	4.95%	90.40%	18.58	ATUE5	This study
-PL0053	Plant tissue herbarium	1987	Spain	7.70%	64.01%	1.3	2.71%	94.62%	11.85	ATUE5	This study
-PL0065	Plant tissue herbarium	2015	Spain	39.90%	88.61%	12.35	0.21%	69.27%	1.37	ATUE5	This study
-PL0066	Plant tissue herbarium	2015	Spain	43.40%	89.49%	14.32	0.33%	70.92%	1.66	nonATUE5	This study
-PL0068	Plant tissue herbarium	1986	Spain	17.20%	89.28%	8.43	1.06%	92.31%	12.72	ATUE5	This study
-PL0080	Plant tissue herbarium	1985	Spain	1.90%	39.76%	0.58	4.27%	94.95%	29.93	ATUE5	This study
-PL0127	Plant tissue herbarium	1979	Spain	9.10%	45.22%	0.68	4.66%	93.65%	8.72	ATUE5	This study
-PL0137	Plant tissue herbarium	1961	Sweden	1.30%	1.89%	0.02	36.61%	89.79%	16.81	ATUE5	This study
-27.ESP_1975	Plant tissue herbarium	1975	Spain	5.50%	7.22%	0.64	0.76%	75.42%	1.73	ATUE5	(Lopez et al., 2025)
-30.ESP_1983b	Plant tissue herbarium	1983	Spain	4.70%	47.14%	0.81	0.54%	75.83%	1.76	ATUE5	(Lopez et al., 2025)
-33.ESP_1985b	Plant tissue herbarium	1985	Spain	0.80%	13.26%	0.16	8.93%	91.87%	31.95	ATUE5	(Lopez et al., 2025)
-34.ESP_1985c_S36	Plant tissue herbarium	1985	Spain	22.30%	81.36%	2.4	20.13%	90.39%	41.63	ATUE5	(Lopez et al., 2025)
-64.GBR_1933b_S36	Plant tissue herbarium	1933	UK	39.50%	74.18%	1.95	5.76%	86.92%	5.58	ATUE5	(Lopez et al., 2025)
-75.LTU_1894_S30	Plant tissue herbarium	1894	Lithuania	40.20%	87.96%	3.56	3.71%	91.12%	6.52	ATUE5	(Lopez et al., 2025)
-76.LTU_2009_S19	Plant tissue herbarium	2009	Lithuania	0.20%	3.36%	0.04	26.20%	89.59%	66.34	ATUE5	(Lopez et al., 2025)
-86.NOR_1911_S7	Plant tissue herbarium	1911	Norway	31.60%	83.44%	3.75	0.60%	68.29%	1.37	ATUE5	(Lopez et al., 2025)
-109.NOR_1990	Plant tissue herbarium	1990	Norway	4.80%	30.04%	0.42	12.07%	92.43%	27.15	ATUE5	(Lopez et al., 2025)
-120.RUS_1860	Plant tissue herbarium	1860	Russia	35.70%	70.54%	1.75	6.04%	89.96%	5.68	ATUE5	(Lopez et al., 2025)
-HB0737	Plant tissue herbarium	1937	Germany	40.80%	88.15%	4.52	3.99%	90.58%	9.6	ATUE5	(Lang et al., 2024)
-HB0766	Plant tissue herbarium	1846	Germany	48.90%	88.31%	5.87	2.89%	88.52%	8.27	ATUE5	(Lang et al., 2024)
-HB0808	Plant tissue herbarium	1817	Germany	55.10%	88.06%	5.33	0.57%	60.17%	1.07	ATUE5	(Lang et al., 2024)
-HB0814	Plant tissue herbarium	1882	Germany	19.20%	88.51%	5.05	1.84%	93.96%	9.07	ATUE5	(Lang et al., 2024)
-HB0828	Plant tissue herbarium	1890	Germany	39.10%	89.47%	6.34	0.53%	73.93%	1.79	nonATUE5	(Lang et al., 2024)
-HB0840	Plant tissue herbarium	1851	Germany	49.70%	89.45%	6.09	0.74%	76.72%	1.81	ATUE5	(Lang et al., 2024)
-HB0841	Plant tissue herbarium	1875	Germany	49.40%	89.21%	5.68	0.72%	73.62%	1.62	ATUE5	(Lang et al., 2024)
-HB0863	Plant tissue herbarium	1954	Somalia	23.20%	76.88%	3.05	0.55%	65.41%	1.56	nonATUE5	(Lang et al., 2024)
+SAMPLE	TYPE	YEAR	COUNTRY	At_proportion	At_covered_proportion	At_average_depth	Ps_proportion	Ps_covered_proportion	Ps_average_depth	GROUP	SOURCE
+PL0001	Plant tissue herbarium	1966	Spain	61.00%	87.61%	8.76	1.31%	90.66%	4.58	ATUE5	This study
+PL0026	Plant tissue herbarium	2002	Sweden	50.00%	89.86%	12.01	0.50%	72.29%	1.58	ATUE5	This study
+PL0059	Plant tissue herbarium	1985	Spain	12.10%	87.14%	6.85	31.47%	92.87%	137.41	ATUE5	This study
+PL0073	Plant tissue herbarium	1991	Spain	56.30%	88.14%	8.13	1.05%	83.24%	2.83	ATUE5	This study
+PL0087	Plant tissue herbarium	NA	Spain	44.00%	88.46%	8.37	0.33%	62.29%	1.13	ATUE5	This study
+PL0102	Plant tissue herbarium	1888	Germany	25.60%	89.59%	7.46	6.34%	95.09%	31.13	ATUE5	This study
+PL0105	Plant tissue herbarium	1920	Sweden	51.90%	89.42%	8.6	0.48%	64.37%	1.18	ATUE5	This study
+PL0108	Plant tissue herbarium	1946	Sweden	19.60%	89.74%	9.05	0.82%	80.50%	4.89	nonATUE5	This study
+PL0131	Plant tissue herbarium	1980	Spain	18.00%	87.70%	6.55	9.59%	92.67%	53.07	ATUE5	This study
+PL0139	Plant tissue herbarium	1996	Sweden	13.90%	79.11%	2.36	0.48%	70.92%	1.52	ATUE5	This study
+PL0185	Plant tissue herbarium	1994	Germany	43.20%	89.06%	8.35	0.60%	81.74%	2.7	ATUE5	This study
+PL0203	Plant tissue herbarium	1880	United Kingdom	54.80%	88.49%	8.06	0.50%	72.39%	1.68	nonATUE5	This study
+PL0210	Plant tissue herbarium	1838	United Kingdom	30.30%	84.96%	4.18	3.70%	87.36%	10.36	ATUE5	This study
+PL0220	Plant tissue herbarium	1946	United Kingdom	48.60%	88.47%	5.84	8.37%	89.32%	18.44	ATUE5	This study
+PL0222	Plant tissue herbarium	1887	United Kingdom	42.10%	89.12%	8.55	0.36%	64.92%	1.23	ATUE5	This study
+PL0224	Plant tissue herbarium	1889	United Kingdom	20.20%	89.01%	6.4	1.36%	93.00%	7.01	ATUE5	This study
+PL0230	Plant tissue herbarium	1851	United Kingdom	57.30%	90.32%	8.68	0.73%	78.60%	2.01	ATUE5	This study
+PL0235	Plant tissue herbarium	1905	United Kingdom	40.30%	86.39%	4.54	3.90%	91.81%	8.56	ATUE5	This study
+PL0240	Plant tissue herbarium	1875	United Kingdom	66.70%	88.97%	7.57	2.02%	84.63%	7.38	ATUE5	This study
+PL0258	Plant tissue herbarium	1913	United Kingdom	49.90%	88.39%	6.42	1.15%	83.22%	2.75	nonATUE5	This study
+PL0027	Plant tissue herbarium	1939	Sweden	48.30%	89.78%	8.85	0.33%	65.78%	1.27	ATUE5	This study
+PL0042	Plant tissue herbarium	1982	Spain	28.20%	88.62%	8.49	15.37%	93.77%	76.14	ATUE5	This study
+PL0046	Plant tissue herbarium	1974	Spain	49.00%	88.93%	12.17	4.31%	89.76%	19.52	ATUE5	This study
+PL0051	Plant tissue herbarium	1983	Spain	1.50%	20.73%	0.26	4.89%	89.92%	18.44	ATUE5	This study
+PL0053	Plant tissue herbarium	1987	Spain	7.70%	64.01%	1.3	2.68%	94.16%	11.72	ATUE5	This study
+PL0065	Plant tissue herbarium	2015	Spain	39.90%	88.61%	12.35	0.21%	68.88%	1.35	ATUE5	This study
+PL0066	Plant tissue herbarium	2015	Spain	43.40%	89.49%	14.32	0.32%	70.50%	1.61	nonATUE5	This study
+PL0068	Plant tissue herbarium	1986	Spain	17.20%	89.28%	8.43	1.04%	91.81%	12.58	ATUE5	This study
+PL0080	Plant tissue herbarium	1985	Spain	1.90%	39.76%	0.58	4.23%	94.48%	29.67	ATUE5	This study
+PL0127	Plant tissue herbarium	1979	Spain	9.10%	45.22%	0.68	4.61%	93.15%	8.63	ATUE5	This study
+PL0137	Plant tissue herbarium	1961	Sweden	1.30%	1.89%	0.02	36.32%	89.29%	16.67	ATUE5	This study
+27.ESP_1975	Plant tissue herbarium	1975	Spain	5.50%	7.22%	0.64	0.76%	75.00%	1.71	ATUE5	(Lopez et al., 2025)
+30.ESP_1983b	Plant tissue herbarium	1983	Spain	4.70%	47.14%	0.81	0.54%	75.39%	1.74	ATUE5	(Lopez et al., 2025)
+33.ESP_1985b	Plant tissue herbarium	1985	Spain	0.80%	13.26%	0.16	8.86%	91.39%	31.62	ATUE5	(Lopez et al., 2025)
+34.ESP_1985c_S36	Plant tissue herbarium	1985	Spain	22.30%	81.36%	2.4	19.98%	89.98%	41.23	ATUE5	(Lopez et al., 2025)
+64.GBR_1933b_S36	Plant tissue herbarium	1933	UK	39.50%	74.18%	1.95	5.71%	86.42%	5.51	ATUE5	(Lopez et al., 2025)
+75.LTU_1894_S30	Plant tissue herbarium	1894	Lithuania	40.20%	87.96%	3.56	3.67%	90.64%	6.43	ATUE5	(Lopez et al., 2025)
+76.LTU_2009_S19	Plant tissue herbarium	2009	Lithuania	0.20%	3.36%	0.04	26.02%	89.20%	65.73	ATUE5	(Lopez et al., 2025)
+86.NOR_1911_S7	Plant tissue herbarium	1911	Norway	31.60%	83.44%	3.75	0.60%	67.85%	1.35	ATUE5	(Lopez et al., 2025)
+109.NOR_1990	Plant tissue herbarium	1990	Norway	4.80%	30.04%	0.42	11.96%	91.97%	26.84	ATUE5	(Lopez et al., 2025)
+120.RUS_1860	Plant tissue herbarium	1860	Russia	35.70%	70.54%	1.75	5.96%	89.46%	5.59	ATUE5	(Lopez et al., 2025)
+HB0737	Plant tissue herbarium	1937	Germany	40.80%	88.15%	4.52	3.95%	90.08%	9.5	ATUE5	(Lang et al., 2024)
+HB0766	Plant tissue herbarium	1846	Germany	48.90%	88.31%	5.87	2.85%	88.03%	8.16	ATUE5	(Lang et al., 2024)
+HB0808	Plant tissue herbarium	1817	Germany	55.10%	88.06%	5.33	0.56%	59.81%	1.06	ATUE5	(Lang et al., 2024)
+HB0814	Plant tissue herbarium	1882	Germany	19.20%	88.51%	5.05	1.82%	93.44%	8.98	ATUE5	(Lang et al., 2024)
+HB0828	Plant tissue herbarium	1890	Germany	39.10%	89.47%	6.34	0.52%	73.53%	1.74	nonATUE5	(Lang et al., 2024)
+HB0840	Plant tissue herbarium	1851	Germany	49.70%	89.45%	6.09	0.73%	76.28%	1.78	ATUE5	(Lang et al., 2024)
+HB0841	Plant tissue herbarium	1875	Germany	49.40%	89.21%	5.68	0.71%	73.19%	1.59	ATUE5	(Lang et al., 2024)
+HB0863	Plant tissue herbarium	1954	Somalia	23.20%	76.88%	3.05	0.51%	65.01%	1.49	nonATUE5	(Lang et al., 2024)
