@@ -19,6 +19,7 @@ Analysis pipeline
 - Authenticate historical DNA damage patterns
 - Historical ATUE5 phlogeny reconstruction
 - Identify the presence of tailocin region in historical ATUE5 genomes
+- LD decay and pairwise recombination analysis
 
 **HTF Haplotype Assignment**:
 
