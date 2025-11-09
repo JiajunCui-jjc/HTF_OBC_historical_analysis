@@ -54,5 +54,3 @@ We assessed the presence of the tailocin gene cluster:
 - Genome-wide linkage disequilibrium (LD) and recombination analyses were conducted on 53 modern ATUE5 genomes to test whether HTF–OBC associations arise from physical linkage or selective constraint.
 - LD decay was calculated using VCFtools v0.1.17 from 298,977 high-quality biallelic SNPs; pairwise r² values were binned by inter-SNP distance, showing rapid decay within 2 kb.
 - Recombination rates were estimated using Recophy, which identified recombinant and clonal SNPs across all pairwise genome comparisons.
-
-- 
