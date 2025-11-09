@@ -1,0 +1,2 @@
+allmergedSNPs,nomultiSNPs,biallelicSNPs
+4075852,4051855,298977
