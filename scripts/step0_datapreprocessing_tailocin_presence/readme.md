@@ -48,3 +48,11 @@ We assessed the presence of the tailocin gene cluster:
   - **Average covered proportion**: 0.86  
   - **Average depth**: 17.4×  
 
+
+## [Step 5: LD decay](/scripts/step0_datapreprocessing_tailocin_presence/step3_phylogeny_reconstruction/step1_runh49_m53_30_tree/step4_m53_LDdecay) and [pairwise recombination analysis](/scripts/step0_datapreprocessing_tailocin_presence/step5_recophy_runpairwisevisual.R)
+
+- Genome-wide linkage disequilibrium (LD) and recombination analyses were conducted on 53 modern ATUE5 genomes to test whether HTF–OBC associations arise from physical linkage or selective constraint.
+- LD decay was calculated using VCFtools v0.1.17 from 298,977 high-quality biallelic SNPs; pairwise r² values were binned by inter-SNP distance, showing rapid decay within 2 kb.
+- Recombination rates were estimated using Recophy, which identified recombinant and clonal SNPs across all pairwise genome comparisons.
+
+- 
