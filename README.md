@@ -20,7 +20,7 @@ Analysis pipeline
 - Historical ATUE5 phlogeny reconstruction
 - Identify the presence of tailocin region in historical ATUE5 genomes
 - LD decay and pairwise recombination analysis
-- [raw sequencing data can be found here](/data/historical49_raw_sequencing_availability.txt)
+- [Raw sequencing data can be found here](/data/historical49_raw_sequencing_availability.txt)
 
 **HTF Haplotype Assignment**:
 
