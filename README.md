@@ -20,6 +20,7 @@ Analysis pipeline
 - Historical ATUE5 phlogeny reconstruction
 - Identify the presence of tailocin region in historical ATUE5 genomes
 - LD decay and pairwise recombination analysis
+- (raw sequencing data can be found here)[/data/historical49_raw_sequencing_availability.txt]
 
 **HTF Haplotype Assignment**:
 
@@ -48,13 +49,12 @@ Analysis pipeline
 - Merge HTF and OBC profiles
 - Output metadata tables and combined heatmaps
 
-Large data including raw fastq, fasta, reference and so on are stored on Zenodo. Link: 
-
 [Directory Structure](structure.txt)
 -------------------
 data/
 
-    - modern57.txt, historical*.txt: lists of modern/historical samples.
+    - modern57.txt, historical49.txt: lists of modern/historical samples.
+    - historical49_raw_sequencing_availability.txt: raw sequencing data availability.
     - readme.txt: description of input formats.
 
 scripts/
