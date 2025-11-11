@@ -1,0 +1,53 @@
+PL samples are available here under NCBI SRA PRJEB98841:
+PL0105
+PL0087
+HB0808
+PL0001
+PL0026
+PL0059
+PL0073
+PL0102
+PL0108
+PL0131
+PL0139
+PL0185
+PL0203
+PL0210
+PL0220
+PL0222
+PL0224
+PL0230
+PL0235
+PL0240
+PL0258
+PL0027
+PL0042
+PL0046
+PL0051
+PL0053
+PL0065
+PL0066
+PL0068
+PL0080
+PL0127
+PL0137
+
+109.NOR_1990	SRR33738853	https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=run_browser&acc=SRR33738853&display=metadata
+120.RUS_1860	SRR33738949	https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=run_browser&acc=SRR33738949&display=metadata
+27.ESP_1975	NA
+30.ESP_1983b	SRR33738938	https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=run_browser&acc=SRR33738938&display=metadata
+33.ESP_1985b	SRR33738937	https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=run_browser&acc=SRR33738937&display=metadata
+34.ESP_1985c_S36	SRR33738936	https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=run_browser&acc=SRR33738936&display=metadata
+64.GBR_1933b_S36	SRR33738814	https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=run_browser&acc=SRR33738814&display=metadata
+75.LTU_1894_S30	SRR33738915	https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=run_browser&acc=SRR33738915&display=metadata
+76.LTU_2009_S19	SRR33738914	https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=run_browser&acc=SRR33738914&display=metadata
+86.NOR_1911_S7	SRR33738904	https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=run_browser&acc=SRR33738904&display=metadata
+
+HB samples are available here: https://zenodo.org/records/7156189
+HB0737
+HB0766
+HB0814
+HB0828
+HB0840
+HB0841
+HB0863
