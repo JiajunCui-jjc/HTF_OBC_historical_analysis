@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <!-- Force latest IE rendering engine or ChromeFrame if installed -->
+        <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+        <meta charset="utf-8">
+        <title>RECOPHY results</title>
+        <meta name="description" content="">
+        <meta name="keywords"    content="">
+        <META HTTP-EQUIV="refresh" CONTENT="300">
+        <script src="https://recophy.unibas.ch/js/jquery-3.6.3.min.js"></script>
+        <script>
+         $( document ).ready(function() {
+             $.ajax({
+                 url: "recophy.html",
+                 success: function(x)
+                 {
+                     window.location.assign("recophy.html");
+                 }
+             });
+         });
+        </script>
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://matomo.sib.swiss/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '20']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="https://matomo.sib.swiss/matomo.php?idsite=20&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Matomo Code -->
+
+	
+    </head>
+    <body style="padding: 0px;text-align: center;">
+        <br>
+        <h1>RECOPHY job status</h1>
+        <hr>
+        
+        <h1>RECOPHY is working on your data. Depending on the dataset size, this can take from a few hours to several days. You will be notified by email once the results are ready. If you have NOT provided your email address, please record this URL, since results will eventually appear here. You may close this page/tab.</h1>
+        <hr>
+        <br>
+        <img src="https://recophy.unibas.ch/logos/loader.gif" alt=\"loader\">
+        <br>
+        <h2>Status: Computing</h2>
+        
+        <br>
+        <h4>Contact us:</h4>
+        <p>
+            <a href="mailto:helpdesk@expasy.org?subject=[SwissRegulon]">ExPASy Helpdesk</a>
+        </p>
+        <hr>
+        <br>
+        <h2><a href="https://recophy.unibas.ch">Back to RECOPHY</a></h2>
+    </body> 
+</html>

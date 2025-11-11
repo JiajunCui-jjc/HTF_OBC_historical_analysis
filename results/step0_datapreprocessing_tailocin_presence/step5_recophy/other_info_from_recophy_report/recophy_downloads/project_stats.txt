@@ -1,0 +1,17 @@
+Project name: modern_53ATUE5_onecontig
+Number of strains: 54
+Alignment length: 4309732
+Reference sequence length: 5954076
+Estimated fraction of bi-allelic SNPs with multiple substitutions: 0.02074
+Diversity in multiple genome alignment:
+  Numbers:
+    Invariant: 3928516
+    Bi-allelic: 361936
+    Tri-allelic: 18681
+    Tetra-allelic: 582
+  Fractions:
+    Invariant: 0.91155
+    Bi-allelic: 0.08398
+    Tri-allelic: 0.00433
+    Tetra-allelic: 0.00014
+
