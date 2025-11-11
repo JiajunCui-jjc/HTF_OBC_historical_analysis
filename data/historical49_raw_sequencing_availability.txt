@@ -34,7 +34,7 @@ PL0137
 
 109.NOR_1990	SRR33738853	https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=run_browser&acc=SRR33738853&display=metadata
 120.RUS_1860	SRR33738949	https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=run_browser&acc=SRR33738949&display=metadata
-27.ESP_1975	NA
+27.ESP_1975	notyetpulished
 30.ESP_1983b	SRR33738938	https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=run_browser&acc=SRR33738938&display=metadata
 33.ESP_1985b	SRR33738937	https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=run_browser&acc=SRR33738937&display=metadata
 34.ESP_1985c_S36	SRR33738936	https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=run_browser&acc=SRR33738936&display=metadata
