@@ -50,7 +50,7 @@ Analysis pipeline
 - Output metadata tables and combined heatmaps
 
 
-[**Pankmer_with_Psyr**](/scripts/step4_pankmer_with_Psyr/Readme.md):
+[**Pankmer with Psyr**](/scripts/step4_pankmer_with_Psyr/Readme.md):
 
 - Run pankmer, PCoA and NJ tree for ATUE5 and P.syr strains
 - Visualization
