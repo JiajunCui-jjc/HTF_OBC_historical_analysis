@@ -49,6 +49,12 @@ Analysis pipeline
 - Merge HTF and OBC profiles
 - Output metadata tables and combined heatmaps
 
+
+[**Pankmer_with_Psyr**](/scripts/step4_pankmer_with_Psyr/Readme.md):
+
+- Run pankmer, PCoA and NJ tree for ATUE5 and P.syr strains
+- Visualization
+
 [Directory Structure](structure.txt)
 -------------------
 data/
@@ -65,6 +71,7 @@ scripts/
         - step1.2_HTF_bykmers_wholegenomeuniquekmers/: kmer filtering, querying, and assignment
     - step2_Oantigengenes/: detection of six O-antigen genes P/A including espE2 rescue
     - step3_combine/: integration of HTF and O-antigen data, generation of summary and plots
+    - step4_pankmer_with_Psyr/: run pankmer, PCoA and NJ tree for ATUE5 and P.syr strains.
 
 results/
 
@@ -73,4 +80,6 @@ results/
     - step1_HTFhaplotypes/: HTF haplotype results (assembly/kmer-based)
     - step2_Oantigengenes/: binary P/A gene matrix and espE2 analysis
     - step3_combine/: combined tables and plots (for manuscript figures)
+    - step4_pankmer_with_Psyr/: PCoA and NJ tree visualization for ATUE5 and P.syr strains.
+
 
