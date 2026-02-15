@@ -22,9 +22,9 @@ pankmer clustermap -i ALL_genes.adjmatrix.tsv -o ALL_genes.adjmatrix.jaccard.svg
 # 2. Create PCoA from adjacency matrices
 I used the adjacency matrices from each of the datasets to compute Jaccard distances. I then used the distances to do PCoA's using the `pcoa` function from the `skikit-bio` python package.  
 
-Additionally, I used the [metainfomation](./metainfo/metainfo.ALL.tsv) to color the points in the PCoA figures.  
+Additionally, I used the metainfomation to color the points in the PCoA figures.  
 
-The analyses can be found in this [Jupyter Notebook](Tailocin_PCoA.ipynb)
+The analyses can be found in the Jupyter Notebook.
 
 # 3. Create NJ trees
 Using the Jaccard distances, I created NJ trees with the `DistanceTreeConstructor` function of the `Biophython` package. The code can be found at the same notebook and the produced trees are: `NJ_trees/ALL_genes.distance.jaccard.NJ.newick`, `NJ_trees/only_HTF.distance.jaccard.NJ.newick` and `NJ_trees/without_HTF.distance.jaccard.NJ.newick`
@@ -32,5 +32,3 @@ Using the Jaccard distances, I created NJ trees with the `DistanceTreeConstructo
 # 4. visualize NJ trees
 
 i used the py script and the R to visual the PCoA and final NJ trees in two layouts, radial and polar.
-
-then i used inkscape to adjust the font/ font size/ pdf size to the standard of PNAS
