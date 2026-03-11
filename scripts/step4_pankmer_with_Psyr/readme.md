@@ -78,7 +78,7 @@ Tail fibers were classified as **T1** or **T2** based on BLASTp similarity to 10
 **Protocol:**
 - Each *P. syringae* tail fiber (query) was searched against all 10 reference proteins.
 - Top hits were ranked by **bitscore**.
-- A tail fiber was excluded from classification if it returned **fewer than 6 hits** passing an e-value threshold of **10⁻⁵**.
+- A tail fiber was excluded from classification if it failed passing an e-value threshold of **10⁻⁵**.
 
 ---
 
