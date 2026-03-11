@@ -84,7 +84,7 @@ Tail fibers were classified as **T1** or **T2** based on BLASTp similarity to 10
 
 ## 6. Phylogroup Assignment
 
-Phylogroups were assigned to *P. syringae* strains using **Average Nucleotide Identity (ANI)** comparisons against phylogroup reference strains, following the type strain definitions in **Marques et al. (2024)** (Table 2; https://www.nature.com/articles/s41597-024-03003-x).
+Phylogroups were assigned to *P. syringae* strains using **Average Nucleotide Identity (ANI)** comparisons against phylogroup reference strains, following the type strain definitions in **Marques et al. (2024)** (https://www.nature.com/articles/s41597-024-03003-x).
 
 **Assignment rules:**
 - A genome is assigned to a phylogroup if ANI ≥ **95%** with the corresponding reference strain.
@@ -102,4 +102,4 @@ Phylogroups were assigned to *P. syringae* strains using **Average Nucleotide Id
 | Biopython (`DistanceTreeConstructor`) | Cock et al. (2009) |
 | BLASTp | NCBI BLAST |
 | Tail fiber reference proteins | Fautt et al. (2025) |
-| Phylogroup reference strains | Marques et al. (2024) — Table 2 |
+| Phylogroup reference strains | Marques et al. (2024) |
