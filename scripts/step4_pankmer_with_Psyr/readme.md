@@ -4,7 +4,19 @@ This README describes the computational workflow used to assess tailocin genomic
 
 ---
 
-## 1. Tailocin Region Extraction
+## 1. *Pseudomonas syringae* Genome Dataset
+
+Publicly available *P. syringae* genomes were downloaded from NCBI (source: Patricia, TBC) and filtered for assembly quality:
+
+- Assembly length: **5.5–7.5 Mb**
+- Number of contigs: **< 1,000**
+- N50: **> 100 kb**
+
+To reduce redundancy, genomes were clustered at **99% ANI** and one representative per cluster was selected based on best assembly metrics, yielding a final dataset of **126 *P. syringae* genomes**. For each genome, the tailocin gene cluster flanked by the *trpE* and *trpG* islands was extracted based on GenBank annotations and validated with Pharokka (Bouras et al., 2023; https://doi.org/10.1093/bioinformatics/btac776) and PHOLD (Bouras et al., 2026; https://doi.org/10.1093/nar/gkaf1448).
+
+---
+
+## 2. Tailocin Region Extraction
 
 Tailocin region sequences were extracted from 53 modern assemblies. The tailocin region was defined from the end of *trpE* to the start of *trpG*, using the *P25.C2* assembly as reference:
 
@@ -15,7 +27,7 @@ Each modern assembly was searched for the best minimap2 match to this reference 
 
 ---
 
-## 2. k-mer Indexing with panKmer
+## 3. k-mer Indexing with panKmer
 
 Three separate indices were built from nucleotide sequences of the tailocin gene cluster:
 
@@ -35,7 +47,7 @@ pankmer index -t 10 --rounds 10 -g pankmer_input_fastas/only_HTF     -o only_HTF
 
 ---
 
-## 3. Adjacency Matrices
+## 4. Adjacency Matrices
 
 Adjacency matrices were computed from each index:
 
@@ -54,19 +66,19 @@ pankmer clustermap -i ALL_genes.adjmatrix.tsv -o ALL_genes.adjmatrix.jaccard.svg
 
 ---
 
-## 4. PCoA (Principal Coordinates Analysis)
+## 5. PCoA (Principal Coordinates Analysis)
 
 Jaccard distances were computed from each adjacency matrix. PCoA was then performed using the `pcoa` function from the **scikit-bio** Python package.
 
 Points in PCoA figures are coloured by:
-- **Tail fiber type** (T1 / T2) — see Section 6
-- **Phylogroup** — see Section 7
+- **Tail fiber type** (T1 / T2) — see Section 8
+- **Phylogroup** — see Section 8
 
 The full analysis code is in the **Jupyter Notebook** (see `notebooks/`).
 
 ---
 
-## 5. Neighbour-Joining (NJ) Trees
+## 6. Neighbour-Joining (NJ) Trees
 
 Unrooted NJ trees were reconstructed from Jaccard distance matrices using the `DistanceTreeConstructor` function from **Biopython**. Trees are visualised in two layouts: **radial** and **polar** (using a Python script and R).
 
@@ -82,7 +94,7 @@ Code for tree construction and visualisation is in the Jupyter Notebook and the 
 
 ---
 
-## 6. Tail Fiber Type Assignment (T1 / T2)
+## 7. Tail Fiber Type Assignment (T1 / T2)
 
 Tail fibers were classified as **T1** or **T2** based on BLASTp similarity to 10 reference proteins from Fautt et al. (2025).
 
@@ -92,7 +104,7 @@ Tail fibers were classified as **T1** or **T2** based on BLASTp similarity to 10
 
 ---
 
-## 7. Phylogroup Assignment
+## 8. Phylogroup Assignment
 
 Phylogroups were assigned to *P. syringae* strains using **ANI** comparisons against reference strains from Marques et al. (2024) (https://www.nature.com/articles/s41597-024-03003-x).
 
@@ -107,6 +119,8 @@ Phylogroups were assigned to *P. syringae* strains using **ANI** comparisons aga
 | Tool | Reference |
 |---|---|
 | minimap2 | Li (2018) |
+| Pharokka | Bouras et al. (2023) — https://doi.org/10.1093/bioinformatics/btac776 |
+| PHOLD | Bouras et al. (2026) — https://doi.org/10.1093/nar/gkaf1448 |
 | panKmer | Aylward et al. (2023) |
 | scikit-bio (`pcoa`) | Aton et al. (2026) |
 | Biopython (`DistanceTreeConstructor`) | Cock et al. (2009) |
