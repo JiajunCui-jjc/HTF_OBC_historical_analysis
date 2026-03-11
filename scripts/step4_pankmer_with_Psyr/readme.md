@@ -16,7 +16,7 @@ To reduce redundancy, genomes were clustered at **99% ANI** and one representati
 
 ---
 
-## 2. ATUE5 Tailocin Region Extraction
+## 2. *Pseudomonas viridiflava* ATUE5 Tailocin Region Extraction
 
 Tailocin region sequences were extracted from 53 modern assemblies. The tailocin region was defined from the end of *trpE* to the start of *trpG*, using the *P25.C2* assembly as reference:
 
