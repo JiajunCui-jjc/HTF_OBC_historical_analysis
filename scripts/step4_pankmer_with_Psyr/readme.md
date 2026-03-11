@@ -4,7 +4,18 @@ This README describes the computational workflow used to assess tailocin genomic
 
 ---
 
-## 1. k-mer Indexing with panKmer
+## 1. Tailocin Region Extraction
+
+Tailocin region sequences were extracted from 53 modern assemblies. The tailocin region was defined from the end of *trpE* to the start of *trpG*, using the *P25.C2* assembly as reference:
+
+- **Reference query (minimap2):** `utg000001l_p25.C2:2695984-2717365`
+- **Query length:** 21,382 bp
+
+Each modern assembly was searched for the best minimap2 match to this reference query. In cases where tailocin genes spanned multiple contigs, the matched segments were concatenated to reconstruct the full tailocin sequence. The resulting sequences were exported as a multi-FASTA for downstream inspection and phylogenetic analyses. HTF sequences were extracted separately and open reading frames were manually inspected for both nucleotide and amino acid sequences.
+
+---
+
+## 2. k-mer Indexing with panKmer
 
 Three separate indices were built from nucleotide sequences of the tailocin gene cluster:
 
@@ -24,7 +35,7 @@ pankmer index -t 10 --rounds 10 -g pankmer_input_fastas/only_HTF     -o only_HTF
 
 ---
 
-## 2. Adjacency Matrices
+## 3. Adjacency Matrices
 
 Adjacency matrices were computed from each index:
 
@@ -43,19 +54,19 @@ pankmer clustermap -i ALL_genes.adjmatrix.tsv -o ALL_genes.adjmatrix.jaccard.svg
 
 ---
 
-## 3. PCoA (Principal Coordinates Analysis)
+## 4. PCoA (Principal Coordinates Analysis)
 
 Jaccard distances were computed from each adjacency matrix. PCoA was then performed using the `pcoa` function from the **scikit-bio** Python package.
 
 Points in PCoA figures are coloured by:
-- **Tail fiber type** (T1 / T2) — see Section 5
-- **Phylogroup** — see Section 6
+- **Tail fiber type** (T1 / T2) — see Section 6
+- **Phylogroup** — see Section 7
 
 The full analysis code is in the **Jupyter Notebook** (see `notebooks/`).
 
 ---
 
-## 4. Neighbour-Joining (NJ) Trees
+## 5. Neighbour-Joining (NJ) Trees
 
 Unrooted NJ trees were reconstructed from Jaccard distance matrices using the `DistanceTreeConstructor` function from **Biopython**. Trees are visualised in two layouts: **radial** and **polar** (using a Python script and R).
 
@@ -71,25 +82,23 @@ Code for tree construction and visualisation is in the Jupyter Notebook and the 
 
 ---
 
-## 5. Tail Fiber Type Assignment (T1 / T2)
+## 6. Tail Fiber Type Assignment (T1 / T2)
 
-Tail fibers were classified as **T1** or **T2** based on BLASTp similarity to 10 reference proteins from Fautt et al. (2025), which were used in that study to identify tail fibers across the *P. syringae* species complex.
+Tail fibers were classified as **T1** or **T2** based on BLASTp similarity to 10 reference proteins from Fautt et al. (2025).
 
-**Protocol:**
 - Each *P. syringae* tail fiber (query) was searched against all 10 reference proteins.
 - Top hits were ranked by **bitscore**.
-- A tail fiber was excluded from classification if it failed passing an e-value threshold of **10⁻⁵**.
+- Sequences that did not pass an e-value threshold of **10⁻⁵** were excluded.
 
 ---
 
-## 6. Phylogroup Assignment
+## 7. Phylogroup Assignment
 
-Phylogroups were assigned to *P. syringae* strains using **Average Nucleotide Identity (ANI)** comparisons against phylogroup reference strains, following the type strain definitions in **Marques et al. (2024)** (https://www.nature.com/articles/s41597-024-03003-x).
+Phylogroups were assigned to *P. syringae* strains using **ANI** comparisons against reference strains from Marques et al. (2024) (https://www.nature.com/articles/s41597-024-03003-x).
 
-**Assignment rules:**
-- A genome is assigned to a phylogroup if ANI ≥ **95%** with the corresponding reference strain.
+- A genome is assigned to a phylogroup if ANI ≥ **95%** with the corresponding reference.
 - If ANI ≥ 95% with multiple references, the **highest-scoring** reference is chosen.
-- If ANI < 95% with all references, the genome is **unassigned** (best-hit reference is retained for information). ~10 genomes fall into this category.
+- If ANI < 95% with all references, the genome is **unassigned** (best-hit reference retained). ~10 genomes fall into this category.
 
 ---
 
@@ -97,6 +106,7 @@ Phylogroups were assigned to *P. syringae* strains using **Average Nucleotide Id
 
 | Tool | Reference |
 |---|---|
+| minimap2 | Li (2018) |
 | panKmer | Aylward et al. (2023) |
 | scikit-bio (`pcoa`) | Aton et al. (2026) |
 | Biopython (`DistanceTreeConstructor`) | Cock et al. (2009) |
