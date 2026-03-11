@@ -1,0 +1,14 @@
+dont use the gff from https://github.com/talia-backman/Ps1524_tailocin_tradeoffs/blob/main/data/p25.C2_references/p25.C2.gff, its for multi contig
+
+instead using the one from science paper supp and in our analysis of tailocin presence.
+
+In tailocin covered proportion calculation, i did the tailocin region between trpE adn trpG (from the beg of the first gene after trpE to the end of the last gene before trpG, which is utg000001l_p25.C2:2696041-2716969)
+
+here i extract tailocin region from beg=end of trpE, end= start of trpG.
+
+1. p25.c2 has trpE (2694503-2695984, 1481bp), 
+trpG 2717365 2717964.
+
+so i extract utg000001l_p25.C2:2695984-2717365
+
+the strategy is to use minimap2 to map trpE and trpG in all 52 samples and got the coordinate of the tailocin region which is beg=end of trpE, end= start of trpG from the 52 fasta.
