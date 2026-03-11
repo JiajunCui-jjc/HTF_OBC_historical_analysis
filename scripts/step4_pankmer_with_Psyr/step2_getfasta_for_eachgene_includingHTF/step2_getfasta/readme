@@ -1,0 +1,2 @@
+now we have 26 CDS genes, for each sample, many of them has 25/ 24 lack 1 or 2 genes.
+for HTF, we do a flanking 200bp and then run check manually ORF. then replace

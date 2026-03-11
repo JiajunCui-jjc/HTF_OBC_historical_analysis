@@ -1,0 +1,3 @@
+cp /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2026_PNAS_revision/results/step2_tailocin_HTF_seqs/htf/runinlocal_htf_real_length/runall.sh ./
+
+cp /SAN/ugi/plant_genom/jiajucui/4_mapping_to_pseudomonas/tailocin_2024_TF_Tapemeasure/2026_PNAS_revision/results/step2_tailocin_HTF_seqs/tailocin_pergene/final_withrealHTF/run_final.sh ./
