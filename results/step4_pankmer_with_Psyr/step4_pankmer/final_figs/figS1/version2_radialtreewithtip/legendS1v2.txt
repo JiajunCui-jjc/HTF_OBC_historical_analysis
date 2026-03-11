@@ -1,0 +1,3 @@
+Supplementary Figure X. Tailocin genomic similarity between Pseudomonas viridiflava ATUE5 and Pseudomonas syringae, colored by phylogroup.
+
+Principal coordinates analysis (left) and neighbor-joining trees (right) were constructed from Jaccard distances derived from pan-k-mer comparisons of tailocin regions, with and without the tail fiber sequence. In the PCoA, the first and second principal coordinate dimensions explain 10.9% and 10.0% of the total variation, respectively. In the circular trees, the colour denotes phylogroup assignment.
