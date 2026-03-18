@@ -7,7 +7,7 @@ This repository contains scripts, data, and results for profiling the hypothetic
 Main Figure
 --------------
 
-![HTF - OBC pattern](/results/figureandtable/figs/pdfs/mainfig1.png)
+![HTF - OBC pattern](/results/figureandtable/figs/pdfs/mainfig.png)
 [samples included](/results/step3_combine/mainfig_HTFoantigen_m53_h43_38/m53_h38_heatmap_sixgene_only_with_HTFanno.pdf), 
 [samples filtering note](/results/step1_HTFhaplotypes/step1.2_HTF_bykmers/step4_additionalanalysis/step2_coinfection/breaking_coninfection)
 
