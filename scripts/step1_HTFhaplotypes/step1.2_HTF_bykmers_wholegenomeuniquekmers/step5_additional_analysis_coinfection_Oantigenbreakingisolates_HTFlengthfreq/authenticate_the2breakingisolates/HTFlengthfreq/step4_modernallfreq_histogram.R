@@ -3,6 +3,7 @@ library(ggplot2)
 library(readr)
 library(dplyr)
 library(data.table)
+#in total 1350 modern samples in whcih the four length sum up to 1312
 
 # ---- Input ----
 infile <- "/Users/cuijiajun/Desktop/others/tmphernan/2025_summerpaper_all/2025_summer_paperfig_m57/scripts/step1_HTFhaplotypes/step1.2_HTF_bykmers_wholegenomeuniquekmers/step5_additional_analysis_coinfection_Oantigenbreakingisolates_HTFlengthfreq/HTFlengthfreq/HP12_combined_lengths_sorted.txt"
@@ -374,13 +375,13 @@ df_hist4 <- freq_table_length %>%
   )
 
 # =========================================================
-# 2. Modern (1350 OTU5 isolates)
+# 2. Modern (1350 but 1312 four legth OTU5 isolates)
 # =========================================================
 df_mod4 <- df_summary %>%
   mutate(
     LengthGroup = factor(as.character(Length), levels = length_groups),
     IsolateType = "Modern",
-    TotalN = 1350,
+    TotalN = 1312,
     Oantigen = case_when(
       LengthGroup %in% c("1803","1245") ~ "O-antigen+",
       LengthGroup %in% c("1383","1830") ~ "O-antigen-"
