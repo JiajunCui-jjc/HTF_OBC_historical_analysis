@@ -1,0 +1,22 @@
+=== O-antigen frequency summary: Historical vs Modern (1350 OTU5) ===
+
+Counts used in the plot:
+# A tibble: 4 × 8
+  IsolateType Oantigen   Frequency TotalN Percent Lower Upper Label            
+  <fct>       <fct>          <int>  <dbl>   <dbl> <dbl> <dbl> <chr>            
+1 Historical  O-antigen-        17     38    44.7 0.301 0.603 17/38 (44.7%)    
+2 Historical  O-antigen+        21     38    55.3 0.397 0.699 21/38 (55.3%)    
+3 Modern      O-antigen-       214   1312    16.3 0.144 0.184 214/1312 (16.3%) 
+4 Modern      O-antigen+      1098   1312    83.7 0.816 0.856 1098/1312 (83.7%)
+
+2x2 contingency table used for Fisher's exact test:
+           O-antigen+ O-antigen-
+Historical         21         17
+Modern           1098        214
+
+Fisher's exact test p-value: 5.08103e-05
+Odds ratio: 0.2411
+
+Summary:
+Historical: O-antigen+ = 21/38 (55.3%), O-antigen- = 17/38 (44.7%).
+Modern: O-antigen+ = 1098/1312 (83.7%), O-antigen- = 214/1312 (16.3%).
