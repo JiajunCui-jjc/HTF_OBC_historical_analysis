@@ -40,7 +40,7 @@ Analysis pipeline
 
 - A gene is considered present if:
     (i) coverage ≥ 65%
-    (ii) Mean depth ≥ mean depth - 0.25*sd of the isolate’s genome-wide average
+    (ii) Depth ≥ mean depth - 0.25*sd of the isolate’s genome-wide average
   
 - espE4 handled separately via extended mapping and contig rescue
 
