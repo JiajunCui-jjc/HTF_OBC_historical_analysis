@@ -1,0 +1,2 @@
+Hist_OBC_plus	Hist_OBC_minus	Hist_total	Mod_OBC_plus_full	Mod_OBC_minus_full	Mod_total_full	Downsample_n	ApproachA_Test	ApproachA_Mod_exp_plus	ApproachA_Mod_exp_minus	ApproachA_Odds_ratio	ApproachA_P_value	ApproachA_Significance	ApproachB_Test	ApproachB_N_draws	ApproachB_Median_P	ApproachB_Mean_P	ApproachB_Prop_sig_05	ApproachB_Significance
+21	17	38	1098	214	1312	38	Fisher exact (expected counts, Mod downsampled to n=38)	32	6	0.2363	0.0116315155297171	*	Fisher exact (repeated random downsampling, Mod n=38 w/o replacement, 1,000 draws)	1000	0.011632	0.036847	0.852	*

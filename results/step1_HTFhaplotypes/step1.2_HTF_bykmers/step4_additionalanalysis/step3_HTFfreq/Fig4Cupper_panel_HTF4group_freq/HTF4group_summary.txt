@@ -1,0 +1,53 @@
+=== HTF 4-group frequency summary: Historical vs Modern ===
+Date: 2026-03-21
+
+--- Per-group counts used in the plot ---
+ IsolateType LengthGroup   Oantigen Frequency TotalN Percent     Lower     Upper
+  Historical        1245 O-antigen+        11     38    28.9 17.003278 44.757138
+  Historical        1803 O-antigen+        10     38    26.3 14.971621 42.008846
+  Historical        1830 O-antigen-         7     38    18.4  9.221765 33.418858
+  Historical        1383 O-antigen-        10     38    26.3 14.971621 42.008846
+      Modern        1245 O-antigen+       535   1312    40.8 38.149011 43.459716
+      Modern        1803 O-antigen+       563   1312    42.9 40.257915 45.606644
+      Modern        1830 O-antigen-        66   1312     5.0  3.973514  6.350029
+      Modern        1383 O-antigen-       148   1312    11.3  9.680486 13.106565
+            Label
+    11/38 (28.9%)
+    10/38 (26.3%)
+     7/38 (18.4%)
+    10/38 (26.3%)
+ 535/1312 (40.8%)
+ 563/1312 (42.9%)
+     66/1312 (5%)
+ 148/1312 (11.3%)
+
+--- O-antigen totals aggregated from the 4 groups ---
+Historical: O-antigen+ = 21/38 (55.3%), O-antigen- = 17/38 (44.7%)
+Modern:     O-antigen+ = 1098/1312 (83.7%), O-antigen- = 214/1312 (16.3%)
+
+--- Statistical tests ---
+
+1. Binomial test within Historical (H0: OBC+ proportion = 0.5):
+   21 OBC+ vs 17 OBC- (total n=38): p = 0.627103 [ns]
+
+2. Binomial test within Modern (H0: OBC+ proportion = 0.5):
+   1098 OBC+ vs 214 OBC- (total n=1312): p = 2.28e-143 [***]
+
+3. Fisher exact test per HTF group (Historical vs Modern):
+   HTF-1830 (O-antigen-): Hist 7/38 (18.4%) vs Mod 66/1312 (5.0%) | OR=4.255 | p=3.3067e-03 [**]
+   HTF-1383 (O-antigen-): Hist 10/38 (26.3%) vs Mod 148/1312 (11.3%) | OR=2.806 | p=9.2715e-03 [**]
+   HTF-1245 (O-antigen+): Hist 11/38 (28.9%) vs Mod 535/1312 (40.8%) | OR=0.592 | p=1.7969e-01 [ns]
+   HTF-1803 (O-antigen+): Hist 10/38 (26.3%) vs Mod 563/1312 (42.9%) | OR=0.475 | p=4.5799e-02 [*]
+
+4. Fisher exact test: O-antigen overall, Historical vs Modern (full dataset):
+   Hist 21/38 vs Mod 1098/1312 | OR=0.2411 | p=5.0810e-05 [***]
+
+5. Fisher exact test: O-antigen, Modern downsampled to n=38 (expected-value approach A):
+   Hist 21/38 vs Mod_exp 32/38 | OR=0.2363 | p=1.1632e-02 [*]
+
+6. Fisher exact test: O-antigen, repeated random downsampling (1,000 draws, n=38 w/o replacement):
+   Median p = 0.011632 | Mean p = 0.036847 | Prop. draws sig (p<0.05) = 85.2% [*]
+
+7. Chi-square goodness-of-fit: 4 HTF groups within each era (H0: uniform 25% each):
+   Historical: Chi-sq=0.947, df=3, p=8.1398e-01 [ns]
+   Modern: Chi-sq=607.067, df=3, p=2.9603e-131 [***]

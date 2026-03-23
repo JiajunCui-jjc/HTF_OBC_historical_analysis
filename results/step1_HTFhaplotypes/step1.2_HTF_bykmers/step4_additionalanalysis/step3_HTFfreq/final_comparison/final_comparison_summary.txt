@@ -1,0 +1,155 @@
+================================================================
+FINAL COMPARISON SUMMARY: Fig4C Statistical Tests
+For PNAS Supplementary Material
+Generated: 2026-03-21
+================================================================
+
+OVERVIEW
+--------
+This folder contains four key statistical comparison tables spanning
+the upper, middle, and lower panels of Fig4C.
+
+All tests compare O-antigen biosynthesis cluster (OBC) carriage between
+Historical (pre-antibiotic era, n=38 total) and Modern (n=1312 OTU5)
+P. viridiflava isolates, using different HTF haplotype groupings and
+geographic stratification.
+
+================================================================
+FIGURE 4C — THREE-PANEL LEGEND
+================================================================
+
+  UPPER PANEL — HTF haplotype frequency within each era
+  --------------------------------------------------------
+  Plot type : Frequency bar/dot chart
+  X-axis    : Era (Historical pre-antibiotic | Modern)
+  Y-axis    : Proportion of isolates (%); n_Historical=38, n_Modern=1312
+  Groups    : 4 HTF haplotype groups
+              OBC+  haplotypes: 1803 (OBC+A), 1245 (OBC+B)  — warm tones
+              OBC-  haplotypes: 1383 (OBC-A), 1830 (OBC-B)  — cool tones
+  Stat      : Chi-square goodness-of-fit (H0: each group = 25%) per era
+              + exact binomial on collapsed OBC+/- binary
+  Files     : Table1 (binomial), Table1b (chi-square)
+
+  MIDDLE PANEL — OBC carriage frequency across all isolates per era
+  --------------------------------------------------------
+  Plot type : Dot + Wilson 95% CI
+  X-axis    : Era (Historical | Modern)
+  Y-axis    : Proportion OBC+ or OBC- (%); n_Historical=38, n_Modern=1312
+  Groups    : Two dots per era:
+              OBC+  (#c94f7c, pink)   — isolates carrying OBC
+              OBC-  (#9e9ac8, purple)  — isolates lacking OBC
+  Error bars: Wilson 95% CI (binom::binom.confint, method='wilson')
+  Stat      : Two-sided exact binomial within each era (H0: OBC+ = 50%)
+  Files     : Table2 (binomial)
+
+  LOWER PANEL — Germany only: Historical vs Modern (size-matched)
+  --------------------------------------------------------
+  Plot type : Dot + Wilson 95% CI
+  X-axis    : Germany Historical (n=8) | Modern Germany (downsample n=8)
+  Y-axis    : Proportion OBC+ or OBC- (%)
+  Groups    : Two dots per group:
+              OBC+  (#c94f7c, pink)   — isolates carrying OBC
+              OBC-  (#9e9ac8, purple)  — isolates lacking OBC
+  Error bars: Wilson 95% CI (binom::binom.confint, method='wilson')
+              Historical: n=8, genuine small-sample uncertainty (wide CI)
+              Modern:     n=8 representative draw (mod_exp_plus=7 OBC+); CI centred on
+                          floating proportion (6.695) from full Modern pool (n=1312)
+  Dot labels: Rounded percentage + integer count  e.g. '87.5% (7/8)'
+  Stat      : Two-sided exact binomial within each era (H0: OBC+ = 50%)
+            + 1000 repeated downsampling runs to demonstrate sampling variance
+  Files     : Table3b (within binomial), Table3c (Modern representative binomial),
+              Table4 (downsampling runs, binomial)
+
+  SHARED CONVENTIONS
+  --------------------------------------------------------
+  OBC+  (#c94f7c)  O-antigen biosynthesis cluster PRESENT
+  OBC-  (#9e9ac8)  O-antigen biosynthesis cluster ABSENT
+  Error bars      Wilson 95% CI throughout all panels
+  Significance    *** p<0.001  ** p<0.01  * p<0.05  ns p>=0.05
+  Dashed line     50% reference (equal split)
+
+================================================================
+
+TABLE 1 — Fig4C UPPER PANEL (4 HTF groups, OBC binary, within each era)
+File: Table1_Fig4C_upper_4HTFgroups_OBC_binomial_within_era.tsv
+Test: Two-sided exact binomial test (H0: OBC+ proportion = 0.5)
+Question: Within Historical and within Modern separately, is OBC+ enriched
+          over OBC- (i.e. does one group dominate within an era)?
+Note: This collapses the 4 HTF groups into binary OBC+/- before testing.
+      For the distribution across all 4 groups, see Table1b (chi-square).
+
+TABLE 1b — Fig4C UPPER PANEL (4 HTF groups, chi-square goodness-of-fit)
+File: Table1b_Fig4C_upper_4HTFgroups_chisq_uniform_within_era.tsv
+Test: Chi-square goodness-of-fit (H0: all 4 groups equally frequent, 25%)
+Question: Are the 4 HTF haplotypes uniformly distributed within each era?
+Note: This is the appropriate test for the 4-group within-era comparison.
+      Binomial is suitable only for the collapsed binary OBC+/- question.
+
+TABLE 2 — Fig4C MIDDLE PANEL (OBC binary, within each era)
+File: Table2_Fig4C_middle_OBC_binomial_within_era.tsv
+Test: Two-sided exact binomial test (H0: OBC+ proportion = 0.5)
+Question: Identical to Table 1 — shown separately per panel for clarity.
+
+TABLE 4 — Fig4C LOWER PANEL (Germany n=8, repeated random downsampling, 1000 runs)
+File: Table4_Fig4C_lower_Germany_n8_downsampling_1000draws.tsv
+Test: Repeated random downsampling — 1000 runs of:
+      - Randomly draw n=8 isolates WITHOUT replacement from Modern OBC pool
+      - Two-sided exact binomial test within each drawn group (H0: OBC+ = 50%)
+Purpose: Demonstrate that downsampling to n=8 produces unreliable proportions
+         (only ~21% of runs reach p<0.05) — no cross-era comparison is reported.
+
+----------------------------------------------------------------
+REPEATED DOWNSAMPLING — PURPOSE
+----------------------------------------------------------------
+Repeated random downsampling (used here): draw n=8 WITHOUT replacement
+  from the Modern pool 1000 times and apply a two-sided exact binomial
+  test (H0: OBC+ = 50%) within each drawn sample independently.
+  Purpose: demonstrate that n=8 samples from the Modern pool cannot
+  reliably distinguish their OBC composition from 50/50 — confirming
+  that no cross-era comparison is warranted. This is NOT a test of
+  Historical vs Modern difference.
+
+----------------------------------------------------------------
+BINOMIAL vs CHI-SQUARE for within-era comparisons
+----------------------------------------------------------------
+Binomial test (Tables 1 & 2): appropriate when outcome is BINARY.
+  OBC+ vs OBC- is binary, so binomial is correct for testing whether
+  one group is more common than the other within an era.
+Chi-square goodness-of-fit (Table 1b): appropriate for comparing
+  proportions across 3+ categories simultaneously (4 HTF groups).
+  Using 4 separate binomial tests would inflate the Type I error rate
+  (multiple testing); chi-square tests all 4 groups in one omnibus test.
+
+----------------------------------------------------------------
+SIGNIFICANCE THRESHOLDS
+----------------------------------------------------------------
+*** p < 0.001 | ** p < 0.01 | * p < 0.05 | ns p >= 0.05
+
+----------------------------------------------------------------
+KEY RESULTS SUMMARY
+----------------------------------------------------------------
+Tables 1/2  Within-era binomial (OBC+ vs 50%): see Table1/Table2 files
+Table 3b   Germany Historical binomial: p = 0.2891 [ns]
+Table 3c   Germany Modern representative binomial: p = 0.0703 [ns]
+Table 4    Downsampling (1000 runs): binomial median p = 0.0703 | prop runs p<0.05 = 21.9% [ns]
+
+================================================================
+CONFIDENCE INTERVAL SUMMARY — Lower Panel Germany Plots
+================================================================
+Wilson 95% CIs computed using binom::binom.confint(k, n, method="wilson"). For the Modern representative, k displayed as rounded integer (mod_exp_plus = 7; OBC- = 1). CIs are centred on the floating k (mod_typical_plus = 6.695 = Modern OBC+ proportion × n=8) to reflect the true Modern pool OBC+ proportion rather than the rounded integer.
+
+Panel A of Germany_supp_ABC.pdf uses these same CI values.
+
+Group                            | n | OBC+ k      | OBC+ %   | CI lower % | CI upper %
+----------------------------------------------------------------------------------------
+Germany Historical               | 8 | 2           | 25.0     | 7.1        | 59.1
+Germany Historical OBC-          | 8 | 6           | 75.0     | 40.9       | 92.9
+Modern representative (n=8) OBC+ | 8 | 7           | 87.5     | 49.0       | 96.5
+Modern representative (n=8) OBC- | 8 | 1           | 12.5     | 3.5        | 51.0
+
+Note: k shown as rounded integer (mod_exp_plus = round(6.695) = 7) for display consistency with dot labels in all three plots. CIs are computed from the floating mod_typical_plus (6.695) to centre the errorbar at the true Modern pool OBC+ proportion. Fisher's exact test (Approach A) also uses integer inputs: 7 OBC+ vs 1 OBC- (both groups n=8).
+
+----------------------------------------------------------------
+SIGNIFICANCE THRESHOLDS
+----------------------------------------------------------------
+*** p < 0.001 | ** p < 0.01 | * p < 0.05 | ns p >= 0.05

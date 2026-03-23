@@ -1,0 +1,2 @@
+Country	Hist_plus	Hist_minus	Hist_n	Modern_pool_n	Downsample_n	N_runs	Test_Binomial	Binomial_mean_p	Binomial_median_p	Binomial_prop_sig_05	Binomial_Significance
+Germany	2	6	8	1312	8	1000	Two-sided exact binomial (within each run, H0: OBC+ = 50%)	0.2023	0.0703	0.219	ns

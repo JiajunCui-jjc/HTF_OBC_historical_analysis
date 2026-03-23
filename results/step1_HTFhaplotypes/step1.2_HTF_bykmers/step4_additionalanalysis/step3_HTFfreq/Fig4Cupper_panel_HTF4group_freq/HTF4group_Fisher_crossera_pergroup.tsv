@@ -1,0 +1,5 @@
+LengthGroup	Oantigen	Hist_count	Hist_total	Hist_pct	Mod_count	Mod_total	Mod_pct	Odds_ratio	P_value	Significance
+1830	O-antigen-	7	38	18.4	66	1312	5	4.2546	0.00330666278315629	**
+1383	O-antigen-	10	38	26.3	148	1312	11.3	2.8058	0.00927150628183649	**
+1245	O-antigen+	11	38	28.9	535	1312	40.8	0.5919	0.179691688810977	ns
+1803	O-antigen+	10	38	26.3	563	1312	42.9	0.4754	0.0457986710934796	*

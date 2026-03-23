@@ -1,0 +1,3 @@
+IsolateType	HTF_1803_n	HTF_1245_n	HTF_1383_n	HTF_1830_n	Total_N	Test	ChiSq_statistic	df	P_value	Significance	Interpretation
+Historical	10	11	10	7	38	Chi-square goodness-of-fit (H0: uniform 25% each)	0.947	3	0.813984239123812	ns	H0: each of 4 HTF groups equally likely within era
+Modern	563	535	148	66	1312	Chi-square goodness-of-fit (H0: uniform 25% each)	607.067	3	2.96027479405671e-131	***	H0: each of 4 HTF groups equally likely within era

@@ -1,0 +1,12 @@
+=== Fig4C Upper Panel — In-panel Statistical Annotations ===
+Generated: 2026-03-21
+
+--- Within-era (4 HTF groups, chi-square goodness-of-fit, H0: 25% each) ---
+Historical (n=38):  chi2 = 0.95, df = 3, p = 0.814 [ns]
+Modern    (n=1312): chi2 = 607.1, df = 3, p = 3.0 × 10⁻¹³¹ [***]
+
+--- Within-era OBC+/- (exact binomial, H0: 50/50) ---
+Historical: 21/38 = 55.26% OBC+; p = 0.627 [ns]
+Modern:     1098/1312 = 83.69% OBC+; p = 2.3 × 10⁻¹⁴³ [***]
+
+Significance: *** p<0.001 | ** p<0.01 | * p<0.05 | ns p>=0.05

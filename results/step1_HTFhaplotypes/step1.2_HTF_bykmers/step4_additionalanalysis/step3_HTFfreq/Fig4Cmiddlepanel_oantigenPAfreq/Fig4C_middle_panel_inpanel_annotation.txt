@@ -1,0 +1,13 @@
+=== Fig4C Middle Panel — In-panel Statistical Annotations ===
+Generated: 2026-03-21
+
+--- Within-era (exact binomial, H0: OBC+ = 50%) ---
+Historical (n=38): 21/38 = 55.26% OBC+; p = 0.627 [ns]
+Modern    (n=1312): 1098/1312 = 83.69% OBC+; p = 2.3 × 10⁻¹⁴³ [***]
+
+--- Between-era (Fisher's exact test) ---
+Full dataset: OR = 0.241, p = 5.1 × 10⁻⁵ [***]
+Downsampled n=38 (expected): OR = 0.236, p = 0.012 [*]
+Repeated downsampling (1000 draws, n=38): median p = 0.012; 85.2% of draws p < 0.05
+
+Significance: *** p<0.001 | ** p<0.01 | * p<0.05 | ns p>=0.05

@@ -1,0 +1,38 @@
+=== O-antigen frequency summary: Historical vs Modern (OTU5 strains) ===
+Date: 2026-03-21
+
+Counts used in the plot:
+ IsolateType   Oantigen Frequency TotalN Percent     Lower     Upper
+  Historical O-antigen-        17     38    44.7 0.3014640 0.6029370
+  Historical O-antigen+        21     38    55.3 0.3970630 0.6985360
+      Modern O-antigen-       214   1312    16.3 0.1441063 0.1840802
+      Modern O-antigen+      1098   1312    83.7 0.8159198 0.8558937
+             Label
+     17/38 (44.7%)
+     21/38 (55.3%)
+  214/1312 (16.3%)
+ 1098/1312 (83.7%)
+
+2x2 contingency table used for Fisher's exact test:
+           O-antigen+ O-antigen-
+Historical         21         17
+Modern           1098        214
+
+Fisher's exact test p-value (full dataset): 5.08103e-05
+Odds ratio: 0.2411
+
+Binomial test within Historical (H0: OBC+ = 0.5):
+  21/38 OBC+ | p = 0.627103 [ns]
+
+Binomial test within Modern (H0: OBC+ = 0.5):
+  1098/1312 OBC+ | p = 2.28e-143 [***]
+
+Fisher's exact test (Modern downsampled to n=38, expected-value approach):
+  Hist 21/38 vs Mod_exp 32/38 | p = 1.1632e-02 [*]
+
+Fisher's exact test (repeated random downsampling, 1,000 draws, n=38 w/o replacement):
+  Median p = 0.011632 | Prop. draws sig (p<0.05) = 85.2% [*]
+
+Summary:
+Historical: O-antigen+ = 21/38 (55.3%), O-antigen- = 17/38 (44.7%).
+Modern:     O-antigen+ = 1098/1312 (83.7%), O-antigen- = 214/1312 (16.3%).

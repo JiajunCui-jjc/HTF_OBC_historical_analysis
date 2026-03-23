@@ -1,0 +1,62 @@
+Fig. 4C.  OBC carriage across HTF haplotypes and geographic strata
+in historical and modern P. viridiflava.
+
+========================================================================
+VERSION 1 — LONG (detailed; for supplementary or methods)
+========================================================================
+
+(Upper panel)  Frequency of each of the four major HTF haplotypes — 1803
+and 1245 (OBC-positive; OBC+) and 1383 and 1830 (OBC-negative; OBC−) —
+among Historical (pre-antibiotic era; n = 38) and Modern (n = 1312)
+P. viridiflava isolates. Within the Historical era, OBC+
+haplotypes (1803 + 1245) accounted for 21 of 38 isolates (55.26%).
+The distribution of the four haplotypes was compared against a uniform
+25% expectation within each era (chi-square goodness-of-fit: Historical chi-square goodness-of-fit chi2 = 0.95, df = 3, p = 0.814 [ns];
+Modern chi2 = 607.1, df = 3, p = 3.0 × 10⁻¹³¹ [***]).
+
+(Middle panel)  OBC carriage frequency (OBC+ and OBC−) across all isolates
+in each era (Historical n = 38, Modern n = 1312). OBC+ isolates comprised
+55.26% (21/38) of Historical and 83.69% (1098/1312) of Modern isolates.
+OBC+ carriage differed from equal split (50%) in both eras
+(Historical: exact binomial p = 0.627 [ns]; Modern: exact binomial p = 2.3 × 10⁻¹⁴³ [***]).
+
+(Supplementary Fig.)  Downsampling OBC frequency analysis.
+
+(A)  OBC frequency in Germany Historical isolates (n = 8;
+2/8 = 25% OBC+; Wilson 95% confidence intervals).
+Exact binomial test (H₀: OBC+ = 50%) yielded p = 0.289 [ns],
+indicating no significant deviation from equal OBC+/− split in this dataset.
+
+(B)  To assess OBC frequency differences between Historical and Modern
+datasets without bias from geographic origin and sample size, the Modern pool
+(n = 1312) was downsampled to match the Germany Historical sample size
+(n = 8). 1000 independent runs were performed, each drawing n = 8
+isolates without replacement. OBC+ and OBC− proportions per run are shown
+as a boxplot (IQR with median line, whiskers 1.5×IQR) with individual
+run proportions overlaid as jittered points.
+
+(C)  Distribution of two-sided exact binomial p-values across 1000
+downsampling runs. Within each run, OBC frequency was assessed by exact
+binomial test (H₀: OBC+ = 50%%). Red dashed line: α = 0.05.
+Only 21.9% of runs yielded binomial p < 0.05 (median p = 0.070),
+indicating that n = 8 samples from the Modern dataset do not reliably
+represent the true Modern OBC frequency. Accordingly, there is insufficient
+power to perform a cross-dataset OBC frequency comparison, and no such
+comparison is reported.
+
+========================================================================
+VERSION 2 — SHORT (concise; for main figure caption)
+========================================================================
+
+(Upper panel)  Frequency of four HTF haplotypes (1803, 1245 = OBC+;
+1383, 1830 = OBC−) in Historical (n = 38) and Modern (n = 1312) isolates.
+OBC+ haplotypes comprised 55.26% of Historical and 83.69% of Modern isolates
+(chi-square goodness-of-fit: Historical chi-square goodness-of-fit chi2 = 0.95, df = 3, p = 0.814 [ns]; Modern chi2 = 607.1, df = 3, p = 3.0 × 10⁻¹³¹ [***]).
+
+(Middle panel)  OBC+ frequency per era
+(Historical 55.26% [21/38], exact binomial p = 0.627 [ns];
+Modern 83.69% [1098/1312], exact binomial p = 2.3 × 10⁻¹⁴³ [***]).
+
+(Supplementary Fig.)  Downsampling OBC frequency analysis.
+(A) Germany Historical OBC frequency (n=8; Wilson 95% CI; exact binomial p = 0.289 [ns]). (B, C) To assess OBC frequency differences between historical and modern datasets without bias from geographic origin and sample size, 1000 downsampling runs (n=8 without replacement from Modern Germany dataset, n=1312) were performed. OBC frequency within each run was assessed by exact binomial test. Only 21.9% of runs yielded p < 0.05 (median p = 0.070), indicating that n=8 samples from the Modern dataset do not reliably represent the true Modern OBC frequency and there is insufficient power for cross-dataset comparison.
+

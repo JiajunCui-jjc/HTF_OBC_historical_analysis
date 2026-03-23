@@ -1,0 +1,3 @@
+IsolateType	OBC_plus_n	OBC_minus_n	Total_N	Prop_OBC_plus	Test	P_value	CI_lower_plus	CI_upper_plus	Significance
+Historical	21	17	38	55.26	Two-sided exact binomial (H0: p_plus = 0.5)	0.627102570157149	38.3	71.38	ns
+Modern	1098	214	1312	83.69	Two-sided exact binomial (H0: p_plus = 0.5)	2.27540173735248e-143	81.58	85.65	***
