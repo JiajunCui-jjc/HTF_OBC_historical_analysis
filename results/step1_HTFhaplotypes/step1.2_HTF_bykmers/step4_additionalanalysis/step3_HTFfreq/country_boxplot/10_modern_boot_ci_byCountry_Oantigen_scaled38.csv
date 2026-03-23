@@ -1,9 +1,0 @@
-"country","Oantigen","MeanPct","LowerPct","UpperPct","MeanCount","LowerCount","UpperCount"
-"Germany","O-antigen+",17.63,17.63,17.63,6.7,6.7,6.7
-"Germany","O-antigen-",3.42,3.42,3.42,1.3,1.3,1.3
-"Spain","O-antigen+",31.03,31.03,31.03,11.79,11.79,11.79
-"Spain","O-antigen-",5.81,5.81,5.81,2.21,2.21,2.21
-"Sweden","O-antigen+",6.52,6.52,6.52,2.48,2.48,2.48
-"Sweden","O-antigen-",1.37,1.37,1.37,0.52,0.52,0.52
-"UK","O-antigen+",15.28,15.28,15.28,5.81,5.81,5.81
-"UK","O-antigen-",3.14,3.14,3.14,1.19,1.19,1.19

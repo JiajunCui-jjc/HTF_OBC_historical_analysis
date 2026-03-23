@@ -1,4 +1,0 @@
-Country	Hist_Plus	Hist_Minus	Mod_Plus	Mod_Minus	P_Value	Significance
-Germany	2	6	6.715	1.285	0.0179343	*
-Spain	8	6	11.729	2.271	0.122423	ns
-UK	3	4	5.902	1.098	0.107	ns
