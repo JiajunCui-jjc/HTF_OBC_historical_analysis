@@ -1142,64 +1142,295 @@ base_theme <- theme_classic(base_size = 6, base_family = "Helvetica") +
         legend.position = "top",
         legend.text     = element_text(size = 6,  family = "Helvetica"),
         legend.key.size = unit(0.35, "lines"),
-        plot.title      = element_text(size = 7,  family = "Helvetica", hjust = 0.5),
-        plot.tag        = element_text(size = 8,  family = "Helvetica", face = "bold"),
+        plot.title      = element_text(size = 7,  family = "Helvetica",
+                                       hjust = 0.5),
+        plot.tag        = element_text(size = 8,  family = "Helvetica"),
         axis.line       = element_line(linewidth = 0.3),
         axis.ticks      = element_line(linewidth = 0.3),
         plot.margin     = margin(t = 6, r = 6, b = 3, l = 3, unit = "pt"))
 
-# ---- Panel A: Historical Germany dot + Wilson CI ----
+# ---- Panel A: Historical Germany — single panel, both groups on x-axis ----
+# X-axis  : "OBC−" / "OBC+"  (clean, just the group name)
+# Top text : "6/8\n75%" / "2/8\n25%" placed ABOVE the 100% line via geom_text
+#            (coord_cartesian clip="off" lets text float above y=1.0 without
+#             extending the axis scale past 100%)
+
 df_A <- data.frame(
-  Oantigen    = c("O-antigen+", "O-antigen-"),
-  Proportion  = c(germany_plus / germany_n, germany_minus / germany_n),
-  Lower       = c(hist_ci_plus$lower,  hist_ci_minus$lower),
-  Upper       = c(hist_ci_plus$upper,  hist_ci_minus$upper),
-  Count_label = c(germany_plus, germany_minus),
+  Oantigen    = c("O-antigen-",  "O-antigen+"),
+  Proportion  = c(germany_minus / germany_n, germany_plus / germany_n),
+  Lower       = c(hist_ci_minus$lower,  hist_ci_plus$lower),
+  Upper       = c(hist_ci_minus$upper,  hist_ci_plus$upper),
+  Count_label = c(germany_minus, germany_plus),
   Total       = germany_n,
   stringsAsFactors = FALSE
 )
 
 pA <- ggplot(df_A, aes(x = Oantigen, y = Proportion, color = Oantigen)) +
-  geom_point(size = 1.5, alpha = 0.85, show.legend = FALSE) +
+  geom_point(size = 0.9, alpha = 0.85, show.legend = FALSE) +
   geom_errorbar(aes(ymin = Lower, ymax = Upper),
                 width = 0.12, linewidth = 0.4, show.legend = FALSE) +
-  geom_text(aes(label = paste0(round(Count_label / Total * 100, 1), "% (",
-                               Count_label, "/", Total, ")")),
-            vjust = -0.7, size = 2.0,
-            color = "black", show.legend = FALSE) +
+  # Count/proportion label floated above the 100% ceiling
+  geom_text(aes(y = 1.03,
+                label = paste0(Count_label, "/", Total, "\n",
+                               round(Proportion * 100), "%")),
+            size = 1.8, fontface = "plain", color = "black",
+            lineheight = 1.1, vjust = 0, show.legend = FALSE) +
   scale_color_manual(values = obc_colors) +
+  # No limits here — limits go in coord_cartesian so geom_text above 1.0 is kept
   scale_y_continuous(labels = percent_format(accuracy = 1),
-                     limits = c(0, 1.30),
                      breaks = c(0, 0.25, 0.50, 0.75, 1.00),
                      expand = expansion(mult = c(0, 0))) +
-  scale_x_discrete(labels = c("O-antigen+" = "OBC+", "O-antigen-" = "OBC\u2212")) +
-  coord_cartesian(clip = "off") +
-  labs(x = "", y = "Proportion (%)",
+  scale_x_discrete(labels = c("O-antigen-" = "OBC\u2212",
+                               "O-antigen+" = "OBC+")) +
+  coord_cartesian(ylim = c(0, 1.00), clip = "off") +
+  labs(x = "", y = "Frequency (%)",
        title = sprintf("Historical Germany (n=%d)", germany_n)) +
-  base_theme
+  base_theme +
+  theme(axis.text.x  = element_text(size = 5.5, family = "Helvetica"),
+        plot.margin  = margin(t = 22, r = 6, b = 3, l = 3, unit = "pt"))
 
-# ---- Panel B: Modern downsampling boxplot + jitter ----
-df_B <- bind_rows(
-  data.frame(Oantigen = "O-antigen+", Proportion = downsamp_details$Prop_plus),
-  data.frame(Oantigen = "O-antigen-", Proportion = downsamp_details$Prop_minus)
+# ---- Panel B: Grouped downsampling outcomes — one facet per draw outcome ----
+# Facet order : OBC− count 0 → 8  (= Plus_Modern descending 8 → 0)
+# Facet title : "OBC−/OBC+"  e.g. "0/8"
+# Facet subtitle : % of 1000 runs that fell in this group  e.g. "21%"
+
+# All possible outcomes 0/8 … 8/0 (including groups with 0 observed runs)
+# Strip subtitle = exact proportion to 1 decimal place  e.g. "22.4%"
+run_freq <- data.frame(Plus_Modern = 0:n_samp) %>%
+  left_join(
+    downsamp_details %>% count(Plus_Modern, name = "n_runs"),
+    by = "Plus_Modern"
+  ) %>%
+  mutate(n_runs        = ifelse(is.na(n_runs), 0L, n_runs),
+         Minus_Modern  = n_samp - Plus_Modern,
+         run_pct_exact = round(n_runs / n_downsamp_lower * 100, 1),
+         run_pct_label = paste0(sprintf("%.1f", run_pct_exact), "%"),
+         Group_label   = paste0(Minus_Modern, "/", n_samp,
+                                "\n", run_pct_label)) %>%
+  filter(n_runs > 0)   # drop groups with 0 observed runs
+
+# Order: OBC− ascending (0 → 8)
+obs_levels <- run_freq %>% arrange(Minus_Modern) %>% pull(Group_label)
+run_freq   <- run_freq %>%
+  mutate(Group_label = factor(Group_label, levels = obs_levels))
+
+# Background jitter: only runs that actually occurred (groups with n_runs > 0)
+df_B_jitter <- bind_rows(
+  downsamp_details %>%
+    transmute(Plus_Modern,
+              Oantigen   = "O-antigen+",
+              Proportion = Prop_plus),
+  downsamp_details %>%
+    transmute(Plus_Modern,
+              Oantigen   = "O-antigen-",
+              Proportion = Prop_minus)
+) %>%
+  left_join(run_freq %>% select(Plus_Modern, Group_label), by = "Plus_Modern") %>%
+  mutate(Group_label = factor(Group_label, levels = obs_levels))
+
+# Summary dots + Wilson 95% CI — built from run_freq so ALL groups get a dot
+df_B_dots <- bind_rows(
+  run_freq %>% transmute(Plus_Modern, Group_label,
+                         Oantigen   = "O-antigen+",
+                         k_val      = Plus_Modern,
+                         Proportion = Plus_Modern / n_samp),
+  run_freq %>% transmute(Plus_Modern, Group_label,
+                         Oantigen   = "O-antigen-",
+                         k_val      = n_samp - Plus_Modern,
+                         Proportion = (n_samp - Plus_Modern) / n_samp)
+) %>%
+  arrange(desc(Plus_Modern), Oantigen) %>%
+  rowwise() %>%
+  mutate(
+    ci_r  = list(binom.confint(k_val, n_samp, method = "wilson")),
+    Lower = ci_r$lower,
+    Upper = ci_r$upper
+  ) %>%
+  ungroup() %>%
+  select(-ci_r)
+
+# ---- shared pB theme addon ----
+pB_theme_extra <- theme(
+  strip.text       = element_text(size = 5, family = "Helvetica", lineheight = 1.1),
+  strip.background = element_blank(),
+  panel.spacing    = unit(2, "pt"),
+  axis.text.x      = element_text(size = 5.5, family = "Helvetica",
+                                  angle = 90, hjust = 1, vjust = 0.5),
+  plot.margin      = margin(t = 10, r = 6, b = 3, l = 3, unit = "pt")
 )
 
-pB <- ggplot(df_B, aes(x = Oantigen, y = Proportion, color = Oantigen, fill = Oantigen)) +
-  geom_boxplot(alpha = 0.20, outlier.shape = NA, width = 0.45,
-               linewidth = 0.4, fatten = 2, show.legend = FALSE) +
-  geom_jitter(width = 0.15, alpha = 0.25, size = 0.4, shape = 16, show.legend = FALSE) +
-  scale_color_manual(values = obc_colors) +
-  scale_fill_manual(values  = obc_colors) +
-  scale_y_continuous(labels = percent_format(accuracy = 1),
-                     limits = c(0, 1.25),
-                     breaks = c(0, 0.25, 0.50, 0.75, 1.00),
-                     expand = expansion(mult = c(0, 0))) +
-  scale_x_discrete(labels = c("O-antigen+" = "OBC+", "O-antigen-" = "OBC\u2212")) +
-  coord_cartesian(clip = "off") +
-  labs(x = "", y = "Proportion (%)",
-       # shorter title to avoid clipping at narrow panel width
-       title = sprintf("Modern downsampled\n(n=%d, %d runs)", n_samp, n_downsamp_lower)) +
-  base_theme
+pB_scale_and_labs <-
+  list(
+    facet_wrap(~Group_label, nrow = 1),
+    scale_color_manual(values = obc_colors),
+    scale_y_continuous(labels = percent_format(accuracy = 1),
+                       breaks = c(0, 0.25, 0.50, 0.75, 1.00),
+                       expand = expansion(mult = c(0, 0))),
+    scale_x_discrete(labels = c("O-antigen+" = "OBC+", "O-antigen-" = "OBC\u2212")),
+    coord_cartesian(ylim = c(0, 1.00), clip = "off"),
+    labs(x = "", y = "Frequency (%)",
+         title = sprintf("Modern downsampled\n(n=%d per draw, %d runs)",
+                         n_samp, n_downsamp_lower)),
+    base_theme,
+    pB_theme_extra
+  )
+
+# ---- Version WITH jitter ----
+pB <- ggplot() +
+  geom_jitter(data = df_B_jitter,
+              aes(x = Oantigen, y = Proportion, color = Oantigen),
+              width = 0.46, height = 0.005,
+              alpha = 0.18, size = 0.30, shape = 16,
+              show.legend = FALSE) +
+  geom_errorbar(data = df_B_dots,
+                aes(x = Oantigen, ymin = Lower, ymax = Upper, color = Oantigen),
+                width = 0.35, linewidth = 0.4, show.legend = FALSE) +
+  geom_point(data = df_B_dots,
+             aes(x = Oantigen, y = Proportion, color = Oantigen),
+             size = 0.9, alpha = 0.92, show.legend = FALSE) +
+  pB_scale_and_labs
+
+# ---- Version WITHOUT jitter ----
+pB_nojitter <- ggplot() +
+  geom_errorbar(data = df_B_dots,
+                aes(x = Oantigen, ymin = Lower, ymax = Upper, color = Oantigen),
+                width = 0.35, linewidth = 0.4, show.legend = FALSE) +
+  geom_point(data = df_B_dots,
+             aes(x = Oantigen, y = Proportion, color = Oantigen),
+             size = 0.9, alpha = 0.92, show.legend = FALSE) +
+  pB_scale_and_labs
+
+# -----------------------------------------------------------
+# Write Panel B group detail table
+# Columns: Group | OBC- | OBC+ | n_samp | n_runs | exact_pct | rounded_pct |
+#          OBC+_prop | CI_lower | CI_upper
+# Also explains why rounded percentages may not sum to 100%.
+# -----------------------------------------------------------
+panelB_table_path <- file.path(outdir_lower, "PanelB_group_detail_table.txt")
+
+# Compute CI for each group × OBC type, keep only groups in run_freq
+panelB_detail <- run_freq %>%
+  arrange(Minus_Modern) %>%
+  rowwise() %>%
+  mutate(
+    OBC_minus   = Minus_Modern,
+    OBC_plus    = Plus_Modern,
+    n_total     = n_samp,
+    exact_pct   = round(n_runs / n_downsamp_lower * 100, 2),
+    # Wilson CI for OBC+ proportion within this group
+    ci_plus     = list(binom.confint(Plus_Modern,  n_samp, method = "wilson")),
+    ci_minus    = list(binom.confint(Minus_Modern, n_samp, method = "wilson")),
+    OBCplus_prop  = round(Plus_Modern  / n_samp * 100, 1),
+    OBCplus_CI_lo = round(ci_plus$lower  * 100, 1),
+    OBCplus_CI_hi = round(ci_plus$upper  * 100, 1),
+    OBCminus_prop = round(Minus_Modern / n_samp * 100, 1),
+    OBCminus_CI_lo = round(ci_minus$lower * 100, 1),
+    OBCminus_CI_hi = round(ci_minus$upper * 100, 1)
+  ) %>%
+  ungroup() %>%
+  select(Group = Group_label, OBC_minus, OBC_plus, n_total,
+         n_runs, exact_pct, rounded_pct = run_pct_exact,
+         OBCplus_prop, OBCplus_CI_lo, OBCplus_CI_hi,
+         OBCminus_prop, OBCminus_CI_lo, OBCminus_CI_hi)
+
+# Clean up newlines in Group label for plain text output
+panelB_detail$Group <- gsub("\n", "  ", panelB_detail$Group)
+
+zt <- file(panelB_table_path, open = "wt")
+writeLines("================================================================", zt)
+writeLines("Panel B — Downsampling Group Detail Table", zt)
+writeLines(sprintf("Generated: %s", Sys.Date()), zt)
+writeLines(sprintf("Modern pool n = %s  |  Draws per run: n = %d  |  Total runs: %d",
+                   mod_pool_n, n_samp, n_downsamp_lower), zt)
+writeLines("================================================================", zt)
+writeLines("", zt)
+writeLines("Column definitions", zt)
+writeLines("------------------", zt)
+writeLines("  Group          : OBC-/OBC+ draw outcome  (line 2 = % of runs)", zt)
+writeLines("  OBC_minus      : Number of OBC- isolates in this draw outcome", zt)
+writeLines("  OBC_plus       : Number of OBC+ isolates in this draw outcome", zt)
+writeLines("  n_total        : Draw size (always 8)", zt)
+writeLines("  n_runs         : Runs (out of 1000) that produced this outcome", zt)
+writeLines("  exact_pct      : Exact run % (n_runs / 1000 * 100)", zt)
+writeLines("  rounded_pct    : Rounded run % (shown in figure strip subtitle)", zt)
+writeLines("  OBCplus_prop   : OBC+ proportion for this outcome (%) = OBC_plus/8", zt)
+writeLines("  OBCplus_CI     : Wilson 95% CI for OBC+ proportion [lo, hi]", zt)
+writeLines("  OBCminus_prop  : OBC- proportion for this outcome (%) = OBC_minus/8", zt)
+writeLines("  OBCminus_CI    : Wilson 95% CI for OBC- proportion [lo, hi]", zt)
+writeLines("", zt)
+
+# Header
+hdr <- sprintf("%-12s %9s %9s %7s %7s %10s %12s | %12s %14s | %13s %14s",
+               "Group", "OBC_minus", "OBC_plus", "n_total", "n_runs",
+               "exact_pct", "rounded_pct",
+               "OBCplus_%", "OBCplus_CI",
+               "OBCminus_%", "OBCminus_CI")
+writeLines(hdr, zt)
+writeLines(paste(rep("-", nchar(hdr)), collapse = ""), zt)
+
+for (i in seq_len(nrow(panelB_detail))) {
+  r <- panelB_detail[i, ]
+  writeLines(sprintf(
+    "%-12s %9d %9d %7d %7d %10.2f %12.1f | %12.1f  [%5.1f, %5.1f] | %13.1f  [%5.1f, %5.1f]",
+    r$Group, r$OBC_minus, r$OBC_plus, r$n_total, r$n_runs,
+    r$exact_pct, r$rounded_pct,
+    r$OBCplus_prop,  r$OBCplus_CI_lo,  r$OBCplus_CI_hi,
+    r$OBCminus_prop, r$OBCminus_CI_lo, r$OBCminus_CI_hi
+  ), zt)
+}
+
+writeLines(paste(rep("-", nchar(hdr)), collapse = ""), zt)
+# Totals row
+writeLines(sprintf(
+  "%-12s %9s %9s %7s %7d %10.2f %12.1f",
+  "TOTAL", "", "", "",
+  sum(panelB_detail$n_runs),
+  sum(panelB_detail$exact_pct),
+  sum(panelB_detail$rounded_pct)
+), zt)
+
+writeLines("", zt)
+writeLines("================================================================", zt)
+writeLines("WHY DO THE ROUNDED PERCENTAGES NOT SUM TO EXACTLY 100%?", zt)
+writeLines("================================================================", zt)
+writeLines("", zt)
+writeLines("Each group percentage displayed in the figure strip is independently", zt)
+writeLines("rounded to the nearest whole number (round(n_runs / 1000 * 100)).", zt)
+writeLines("This is a well-known rounding artefact:", zt)
+writeLines("  - The EXACT proportions always sum to 1.000 (100%) by definition,", zt)
+writeLines("    because every run lands in exactly one group.", zt)
+writeLines("  - However, rounding each proportion independently to integers can", zt)
+writeLines("    cause the displayed sum to be 99% or 101% rather than 100%.", zt)
+writeLines("    For example: 22.4% + 38.6% + 25.5% + 9.8% + 1.7% = 98.0/100", zt)
+writeLines("    but round() gives 22 + 39 + 26 + 10 + 2 = 99.", zt)
+writeLines("  - This is NOT an error in the data or sampling — it is solely a", zt)
+writeLines("    display/rounding artefact. The exact_pct column above always", zt)
+writeLines(sprintf("    sums to %.2f%%.", sum(panelB_detail$exact_pct)), zt)
+writeLines("", zt)
+writeLines("  Solution if exact 100% sum is required: use the largest-remainder", zt)
+writeLines("  (Hamilton) rounding method instead of independent rounding.", zt)
+writeLines("================================================================", zt)
+close(zt)
+
+cat(sprintf("\n\u2705 Panel B group detail table written to:\n   %s\n", panelB_table_path))
+
+# Helper: format a p-value as academic text (defined here so Panel C and later
+# sections can all use it; the definition further below in Section 10 is redundant
+# but harmless — R simply re-assigns the same function object)
+fmt_p <- function(p, digits = 3) {
+  if (is.na(p) || is.null(p)) return("[NA]")
+  if (p < 0.001) {
+    exp_val  <- floor(log10(p))
+    coeff    <- p / 10^exp_val
+    sup_map  <- c("0"="\u2070","1"="\u00b9","2"="\u00b2","3"="\u00b3",
+                  "4"="\u2074","5"="\u2075","6"="\u2076","7"="\u2077",
+                  "8"="\u2078","9"="\u2079")
+    exp_sup  <- paste(sapply(strsplit(as.character(abs(exp_val)),"")[[1]],
+                             function(d) sup_map[d]), collapse="")
+    return(sprintf("= %.1f \u00d7 10\u207b%s", coeff, exp_sup))
+  }
+  sprintf("= %.*f", digits, p)
+}
 
 # ---- Panel C: Binomial within-draw p-value distribution ----
 prop_binom_sig  <- round(downsamp_summary_n8$Binomial_prop_sig_05 * 100, 1)
@@ -1221,7 +1452,7 @@ pC <- ggplot(downsamp_details, aes(x = Binomial_p)) +
            y     = Inf,
            label = sprintf("%.1f%% runs p < 0.05", prop_binom_sig),
            hjust = 0, vjust = 1.4,
-           size  = 2.0, color = "red", fontface = "bold",
+           size  = 2.0, color = "red", fontface = "plain",
            family = "Helvetica") +
   scale_x_continuous(breaks = c(0, 0.25, 0.5, 0.75, 1),
                      expand = expansion(add = c(0.02, 0.02))) +
@@ -1230,18 +1461,21 @@ pC <- ggplot(downsamp_details, aes(x = Binomial_p)) +
   coord_cartesian(clip = "off") +
   labs(x = "Binomial p-value",
        y = "Proportion of runs",
-       title = sprintf("Modern downsampling\nbinomial p-value distribution\n(%d runs)", n_downsamp_lower)) +
+       title = sprintf("Modern downsampling\np-value distribution\n(%d runs)", n_downsamp_lower)) +
   base_theme +
   theme(legend.position = "none")
 
-# ---- Combine: row1 = A | B,  row2 = C | spacer (C same width as A or B) ----
+# ---- Combine: row1 = A (narrow) | B (wide, faceted groups) ----
+#               row2 = C (narrow) | spacer
+# pB gets ~3× the column width of pA/pC so all facets breathe comfortably
 p_ABC <- (pA | pB) / (pC | plot_spacer()) +
+  plot_layout(widths = c(1, 3)) +
   plot_annotation(tag_levels = "A") &
-  theme(plot.tag = element_text(size = 8, face = "bold"))
+  theme(plot.tag = element_text(size = 8))
 
-# Save dimensions: 11 cm wide × 10 cm tall
+# Save dimensions: 11 cm wide × 11 cm tall (publication column width; fonts 5–7 pt)
 fig_w <- 11 / 2.54   # → inches
-fig_h <- 10 / 2.54   # → inches
+fig_h <- 11 / 2.54   # → inches
 
 ggsave(file.path(outdir_lower, "Germany_supp_ABC.pdf"),
        plot = p_ABC, width = fig_w, height = fig_h, dpi = 1000)
@@ -1252,6 +1486,23 @@ ggsave(file.path(outdir_lower, "Germany_supp_ABC.svg"),
 
 cat("\n\u2705 Germany supplementary ABC figure saved (PDF + PNG + SVG).\n")
 cat("   Files: Germany_supp_ABC.pdf / .png / .svg\n")
+cat("   Path:", outdir_lower, "\n")
+
+# ---- No-jitter version ----
+p_ABC_nojitter <- (pA | pB_nojitter) / (pC | plot_spacer()) +
+  plot_layout(widths = c(1, 3)) +
+  plot_annotation(tag_levels = "A") &
+  theme(plot.tag = element_text(size = 8))
+
+ggsave(file.path(outdir_lower, "Germany_supp_ABC_nojitter.pdf"),
+       plot = p_ABC_nojitter, width = fig_w, height = fig_h, dpi = 1000)
+ggsave(file.path(outdir_lower, "Germany_supp_ABC_nojitter.png"),
+       plot = p_ABC_nojitter, width = fig_w, height = fig_h, dpi = 1000)
+ggsave(file.path(outdir_lower, "Germany_supp_ABC_nojitter.svg"),
+       plot = p_ABC_nojitter, width = fig_w, height = fig_h)
+
+cat("\n\u2705 Germany supplementary ABC (no-jitter) figure saved (PDF + PNG + SVG).\n")
+cat("   Files: Germany_supp_ABC_nojitter.pdf / .png / .svg\n")
 cat("   Path:", outdir_lower, "\n")
 
 # -----------------------------------------------------------
@@ -1480,6 +1731,19 @@ ger_ds_str  <- sprintf("median binomial p %s; %.1f%% of %d downsample runs p < 0
                         downsamp_summary_n8$Binomial_prop_sig_05 * 100,
                         n_downsamp_lower)
 
+# Germany Historical vs Modern representative (n=8 vs n=8) Fisher test
+# (Approach A deterministic: balanced 2×2 table using integer expected counts)
+ft_exp_n8  <- fisher.test(matrix(c(germany_plus,  germany_minus,
+                                    mod_exp_plus,  mod_exp_minus),
+                                  nrow = 2, byrow = FALSE))
+ger_fish_or <- round(unname(ft_exp_n8$estimate), 3)
+ger_fish_p  <- ft_exp_n8$p.value
+
+# Downsampling summary scalars used by text-generation blocks below
+# (Binomial within-draw results — Fisher columns were removed in an earlier refactor)
+ger_ds_med <- downsamp_summary_n8$Binomial_median_p
+ger_ds_pct <- round(downsamp_summary_n8$Binomial_prop_sig_05 * 100, 1)
+
 # ---- Write the markdown ----
 rm_path <- file.path(step3_outdir, "Fig4C_Results_and_Methods.md")
 rz <- file(rm_path, open = "wt")
@@ -1677,8 +1941,8 @@ mod_prop_pct       <- round(mod_prop_plus_all * 100, 1)       # 83.7
 ger_fish_or_readme <- round(unname(ft_exp_n8$estimate), 3)
 ger_fish_p_readme  <- ft_exp_n8$p.value
 ger_fish_sig       <- sig_stars_step5(ger_fish_p_readme)
-ger_ds_pct_readme  <- round(downsamp_summary_n8$Fisher_prop_sig_05 * 100, 1)
-ger_ds_med_readme  <- downsamp_summary_n8$Fisher_median_p
+ger_ds_pct_readme  <- round(downsamp_summary_n8$Binomial_prop_sig_05 * 100, 1)
+ger_ds_med_readme  <- downsamp_summary_n8$Binomial_median_p
 ger_hist_binom_p   <- binom_germany_within$p.value
 ger_hist_binom_sig <- sig_stars_step5(ger_hist_binom_p)
 
