@@ -1,2 +1,0 @@
-Country	IsolateType	OBC_plus_n	OBC_minus_n	Total_N	Prop_OBC_plus	Test	P_value	CI_lower_plus	CI_upper_plus	Significance	Notes
-Germany	Historical	2	6	8	25	Two-sided exact binomial (H0: OBC+ proportion = 0.5)	0.2890625	3.19	65.09	ns	Germany Historical only; n=8 (2 OBC+, 6 OBC-)

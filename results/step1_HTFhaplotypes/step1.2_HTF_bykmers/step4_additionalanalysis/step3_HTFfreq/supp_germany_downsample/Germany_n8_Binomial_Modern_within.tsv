@@ -1,2 +1,0 @@
-Country	IsolateType	OBC_plus_n	OBC_minus_n	Total_N	Prop_OBC_plus	Test	P_value	CI_lower_plus	CI_upper_plus	Significance	Notes
-Germany	Modern (representative n=8 draw)	6.7	1.3	8	83.69	Two-sided exact binomial (H0: OBC+ proportion = 0.5); integer input = round(6.7) = 7	0.0703125	47.35	99.68	ns	Same representative draw as simple lower panel plot: 6.7 OBC+ / 1.3 OBC- out of n=8
