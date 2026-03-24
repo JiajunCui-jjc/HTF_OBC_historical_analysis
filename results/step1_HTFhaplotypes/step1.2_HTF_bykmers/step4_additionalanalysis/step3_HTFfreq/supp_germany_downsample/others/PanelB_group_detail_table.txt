@@ -1,0 +1,51 @@
+================================================================
+Panel B — Downsampling Group Detail Table
+Generated: 2026-03-24
+Modern pool n = 1312  |  Draws per run: n = 8  |  Total runs: 1000
+================================================================
+
+Column definitions
+------------------
+  Group          : OBC-/OBC+ draw outcome  (line 2 = % of runs)
+  OBC_minus      : Number of OBC- isolates in this draw outcome
+  OBC_plus       : Number of OBC+ isolates in this draw outcome
+  n_total        : Draw size (always 8)
+  n_runs         : Runs (out of 1000) that produced this outcome
+  exact_pct      : Exact run % (n_runs / 1000 * 100)
+  rounded_pct    : Rounded run % (shown in figure strip subtitle)
+  OBCplus_prop   : OBC+ proportion for this outcome (%) = OBC_plus/8
+  OBCplus_CI     : Wilson 95% CI for OBC+ proportion [lo, hi]
+  OBCminus_prop  : OBC- proportion for this outcome (%) = OBC_minus/8
+  OBCminus_CI    : Wilson 95% CI for OBC- proportion [lo, hi]
+
+Group        OBC_minus  OBC_plus n_total  n_runs  exact_pct  rounded_pct |    OBCplus_%     OBCplus_CI |    OBCminus_%    OBCminus_CI
+-------------------------------------------------------------------------------------------------------------------------------------
+0/8  21.9%           0         8       8     219      21.90         21.9 |        100.0  [ 67.6, 100.0] |           0.0  [  0.0,  32.4]
+1/8  39.3%           1         7       8     393      39.30         39.3 |         87.5  [ 52.9,  97.8] |          12.5  [  2.2,  47.1]
+2/8  26.1%           2         6       8     261      26.10         26.1 |         75.0  [ 40.9,  92.9] |          25.0  [  7.1,  59.1]
+3/8  10.5%           3         5       8     105      10.50         10.5 |         62.5  [ 30.6,  86.3] |          37.5  [ 13.7,  69.4]
+4/8  1.9%            4         4       8      19       1.90          1.9 |         50.0  [ 21.5,  78.5] |          50.0  [ 21.5,  78.5]
+5/8  0.3%            5         3       8       3       0.30          0.3 |         37.5  [ 13.7,  69.4] |          62.5  [ 30.6,  86.3]
+-------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                       1000     100.00        100.0
+
+================================================================
+WHY DO THE ROUNDED PERCENTAGES NOT SUM TO EXACTLY 100%?
+================================================================
+
+Each group percentage displayed in the figure strip is independently
+rounded to the nearest whole number (round(n_runs / 1000 * 100)).
+This is a well-known rounding artefact:
+  - The EXACT proportions always sum to 1.000 (100%) by definition,
+    because every run lands in exactly one group.
+  - However, rounding each proportion independently to integers can
+    cause the displayed sum to be 99% or 101% rather than 100%.
+    For example: 22.4% + 38.6% + 25.5% + 9.8% + 1.7% = 98.0/100
+    but round() gives 22 + 39 + 26 + 10 + 2 = 99.
+  - This is NOT an error in the data or sampling — it is solely a
+    display/rounding artefact. The exact_pct column above always
+    sums to 100.00%.
+
+  Solution if exact 100% sum is required: use the largest-remainder
+  (Hamilton) rounding method instead of independent rounding.
+================================================================

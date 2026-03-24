@@ -1,0 +1,78 @@
+================================================================
+SUPPLEMENTARY NOTE — Germany Historical OBC carriage analysis
+supp_germany_downsample/
+Generated: 2026-03-24
+================================================================
+
+STATISTICAL APPROACH
+--------------------
+OBC carriage was assessed within each era using two complementary tests:
+
+  (1) Four-group HTF haplotype composition (upper panel):
+      Chi-square goodness-of-fit test — are the four HTF haplotypes
+      (1803, 1245, 1383, 1830) equally distributed within each era?
+      H₀: each group = 25%.
+
+  (2) Binary OBC+/− carriage (middle panel):
+      Two-sided exact binomial test within each era —
+      does OBC+ frequency differ from 50%%? H₀: OBC+ = 50%%.
+
+WHY NO CROSS-ERA COMPARISON WAS PERFORMED
+------------------------------------------
+Comparing Germany Historical (n = 8) against Modern isolates
+requires downsampling the Modern pool (n = 1312) to n = 8 to achieve
+sample-size parity. At such small n, the resulting proportion carries
+substantial sampling variance and cannot serve as a reliable reference.
+
+To quantify this variance, we performed 1000 independent downsample runs:
+in each run, n = 8 isolates were drawn without replacement from the
+Modern pool, and a two-sided exact binomial test was applied to the
+sampled observations (H₀: OBC+ = 50%).
+Across 1000 runs, only 21.9% yielded p < 0.05 (median p = 0.070).
+In the vast majority of runs, a random sample of n = 8 from the
+Modern pool could not be distinguished from a 50/50 split, indicating
+insufficient information to yield a reliable Modern reference proportion.
+Accordingly, no cross-era comparison is reported.
+
+FIGURE DESCRIPTION — Germany_supp_ABC.pdf
+------------------------------------------
+Panel A — Historical Germany (n=8) OBC carriage.
+  OBC+ = 2/8 (25%); OBC− = 6/8 (75%).
+  Dots: solid, slightly transparent (alpha=0.85).
+  Error bars: Wilson 95%% confidence intervals,
+  binom::binom.confint(k, n=8, method='wilson').
+  OBC+ Wilson 95% CI: 7.1% – 59.1%;
+  OBC− Wilson 95% CI: 40.9% – 92.9%.
+  Wide CIs reflect genuine small-sample uncertainty at n=8.
+
+Panel B — OBC+/− proportion distribution across 1000 downsample runs.
+  Each run: n=8 isolates sampled without replacement from the
+  Modern pool (n=1312). Points: individual run proportions
+  (solid circles, jittered horizontally; alpha=0.25).
+  Box: IQR (25th–75th percentile); centre line: median;
+  whiskers: 1.5×IQR.
+  The dispersion across runs reflects the high sampling variance at
+  n=8, confirming that the downsampled proportion is unreliable.
+
+Panel C — Binomial p-value distribution across 1000 downsample runs.
+  Within each run, a two-sided exact binomial test was applied to the
+  sampled n=8 observations (H₀: OBC+ = 50%%), independent of Historical Germany.
+  Histogram normalised to proportion of runs per bin.
+  Red dashed line: significance threshold α = 0.05.
+  Only 21.9% of runs yielded p < 0.05 (median p = 0.070),
+  indicating that n=8 samples from the Modern pool lack the power to
+  reliably discriminate OBC composition from a 50/50 distribution.
+
+METHODS
+-------
+Confidence intervals (Panel A): Wilson score 95%% CI,
+  binom::binom.confint(k, n, method='wilson'). Preferred over
+  Clopper-Pearson for small n: better coverage, less conservative.
+
+Downsampling (Panels B, C): set.seed(42);
+  1000 independent downsample runs of n=8 isolates drawn
+  without replacement from Modern pool (n=1312). Per run:
+  two-sided exact binomial test (H₀: OBC+ = 50%).
+  No cross-era comparison is reported (see rationale above).
+
+Significance thresholds: *** p<0.001 | ** p<0.01 | * p<0.05 | ns p≥0.05

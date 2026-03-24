@@ -1,0 +1,22 @@
+=== Fig4C Lower Panel — In-panel Statistical Annotations ===
+Generated: 2026-03-24
+
+--- Within-era: Germany Historical (exact binomial, H0: OBC+ = 50%) ---
+Germany Historical (n=8): 2/8 = 25% OBC+; p = 0.289 [ns]
+  Wilson 95% CI for OBC+: 7.1% - 59.1%
+
+--- Within-era: Modern representative n=8 (exact binomial, H0: OBC+ = 50%) ---
+Modern representative (n=8): 7/8 = 83.7% OBC+ [rounded: 7/8 = 87.5%]; p = 0.070 [ns]
+  Wilson 95% CI for OBC+ (CI uses floating k=6.695): 49.0% - 96.5%
+
+--- Between-era: Germany Historical vs Modern (Fisher's exact, balanced n=8 vs n=8) ---
+Approach A (deterministic): OR = 0.062, p = 0.041 [*]
+  [Germany Hist: 2 OBC+, 6 OBC-] vs [Modern rep: 7 OBC+, 1 OBC-]
+Approach B (downsampling, 1000 draws, n=8 from pool n=1312):
+
+--- Plot label note ---
+Simple lower panel dot labels show ROUNDED integer proportion:
+  Historical: 25% (2/8)
+  Modern rep: 87.5% (7/8)  [floating CI k = 6.695/8 = 83.7%]
+
+Significance: *** p<0.001 | ** p<0.01 | * p<0.05 | ns p>=0.05
