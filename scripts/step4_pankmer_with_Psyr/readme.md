@@ -6,7 +6,7 @@ This README describes the computational workflow used to assess tailocin genomic
 
 ## 1. *Pseudomonas syringae* Genome Dataset
 
-Publicly available *P. syringae* genomes were downloaded from NCBI (source: Patricia, TBC) and filtered for assembly quality:
+Publicly available *P. syringae* genomes were downloaded from NCBI (source: https://github.com/pgirardi/ps1524_tradeoffs, TBC) and filtered for assembly quality:
 
 - Assembly length: **5.5–7.5 Mb**
 - Number of contigs: **< 1,000**
