@@ -52,6 +52,7 @@ Analysis pipeline
 
 [**Pankmer with Psyr**](/scripts/step4_pankmer_with_Psyr/readme.md):
 
+- Build Pseudomonas syringae dataset ([check Patricia's github]((https://github.com/pgirardi/ps1524_tradeoffs)))
 - Run pankmer, PCoA and NJ tree for ATUE5 and P.syr strains
 - Visualization
 
